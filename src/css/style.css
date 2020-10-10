@@ -1,0 +1,24 @@
+/*! purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/*! purgecss end ignore */
+@tailwind utilities;
+
+@layer base {
+    * {
+        scroll-behavior: smooth;
+    }
+    body {
+        overflow-x: hidden;
+    }
+
+}
+
+@layer components {
+    .btn {
+        @apply bg-white text-center text-primary text-sm py-4 rounded-full px-10 mt-6 font-bold transform;
+    }
+    .btn:hover {
+        @apply -translate-y-1 duration-700 shadow-2xl
+    }
+}
