@@ -1,17 +1,17 @@
 import { Link } from "gatsby";
 import React from "react";
-import deWocracyWhite from "../images/dewocracy-white.png";
+import dewocracyLogo from "../images/dewocracy-blue.png";
 import Headroom from "react-headroom";
 
 function Header() {
   // const [isExpanded, toggleExpansion] = useState(false);
   return (
     <Headroom wrapperStyle={{ position: "absolute" }}>
-      <header className="flex flex-wrap items-center justify-between max-w-6xl p-6">
+      <header className="flex flex-wrap items-center justify-center md:justify-between pl-0 md:pl-8 py-4 md:py-6 w-screen bg-white h-18 shadow-xl">
         <Link to="/">
           <h1 className="flex items-center no-underline">
-            <figure className="w-32">
-              <img alt="DeWocracy logo" src={deWocracyWhite} />
+            <figure>
+              <img width="150px" alt="DeWocracy logo" src={dewocracyLogo} />
             </figure>
           </h1>
         </Link>
