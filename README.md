@@ -36,7 +36,6 @@ Use `npm run build` to build your site for production.
 - [Prettier documentation](https://prettier.io/docs/en/index.html)
 - [ESLint documentation](https://eslint.org/docs/user-guide/configuring)
 
-
-## Credits 
+## Credits
 
 - [Gatsby Starter Tailwind](https://github.com/taylorbryant/gatsby-starter-tailwind)

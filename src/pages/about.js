@@ -25,7 +25,6 @@ function AboutPage() {
             – Thomas Nagel
           </cite>
         </div>
-
       </section>
     </Layout>
   );

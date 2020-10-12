@@ -1,22 +1,23 @@
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 import React from "react";
 import deWocracyWhite from "../images/dewocracy-white.png";
 import Headroom from "react-headroom";
 
 function Header() {
-    // const [isExpanded, toggleExpansion] = useState(false);
-    return (
-        <Headroom wrapperStyle={{position: 'absolute'}}>
-            <header className="flex flex-wrap items-center justify-between max-w-6xl p-6">
-                <Link to="/">
-                    <h1 className="flex items-center no-underline">
-                        <figure className="w-32">
-                            <img alt="DeWocracy logo" src={deWocracyWhite}/>
-                        </figure>
-                    </h1>
-                </Link>
-            </header>
-        </Headroom>)
+  // const [isExpanded, toggleExpansion] = useState(false);
+  return (
+    <Headroom wrapperStyle={{ position: "absolute" }}>
+      <header className="flex flex-wrap items-center justify-between max-w-6xl p-6">
+        <Link to="/">
+          <h1 className="flex items-center no-underline">
+            <figure className="w-32">
+              <img alt="DeWocracy logo" src={deWocracyWhite} />
+            </figure>
+          </h1>
+        </Link>
+      </header>
+    </Headroom>
+  );
 }
 
 /**

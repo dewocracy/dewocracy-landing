@@ -69,9 +69,11 @@ function SEO({ description, lang, meta, keywords, title }) {
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
     >
-      <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet"/>
+      <link
+        href="https://fonts.googleapis.com/css?family=Inter"
+        rel="stylesheet"
+      />
     </Helmet>
-
   );
 }
 

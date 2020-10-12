@@ -8,9 +8,9 @@ module.exports = {
     title: `DeWocracy`,
     description: `Democratizando el trabajo desde cualquier lugar.`,
     author: `@taylorbryant`,
-    linkedin: 'https://www.linkedin.com/company/dewocracy/',
-    twitter: 'https://twitter.com/de_wocracy',
-    medium: 'https://medium.com/dewocracy',
+    linkedin: "https://www.linkedin.com/company/dewocracy/",
+    twitter: "https://twitter.com/de_wocracy",
+    medium: "https://medium.com/dewocracy",
   },
   plugins: [
     `gatsby-plugin-eslint`,
