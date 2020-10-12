@@ -1,5 +1,6 @@
 import React from "react";
-
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import bgPurpleStrokes from "../images/bg-purple-strokes.png";
@@ -13,15 +14,12 @@ import feat4 from "../images/dewocracy-feat-4.png";
 import feat5 from "../images/dewocracy-feat-5.png";
 import feat6 from "../images/dewocracy-feat-6.png";
 import { PaymentsPlans } from "../components/payments-plans";
+import { ContactForm } from "../components/contact-form";
 
 function IndexPage() {
   return (
     <Layout>
-      <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Home"
-      />
-
+      <SEO title="Home" />
       <div
         className="w-full bg-fixed min-h-screen"
         style={{ backgroundImage: `url(${bgPurpleStrokes})` }}
@@ -48,13 +46,18 @@ function IndexPage() {
           </div>
           <div>
             <figure className="w-auto md:w-200">
-              <img src={mockup1} alt="DeWocracy admin dashboard & mobile app" />
+              <Zoom>
+                <img
+                  src={mockup1}
+                  alt="DeWocracy admin dashboard & mobile app"
+                />
+              </Zoom>
             </figure>
           </div>
         </section>
       </div>
 
-      <div className="w-full bg-fixed min-h-screen bg-darkBlue py-32">
+      <div className="w-full bg-fixed min-h-screen bg-darkBlue py-16 md:py-32">
         <section className="container mx-auto text-white px-8 md:px-0">
           <div className="md:w-1/2">
             <p className="py-8 text-teal font-bold leading-tight text-xl">
@@ -136,7 +139,9 @@ function IndexPage() {
             </div>
             <div>
               <figure className="w-auto md:w-200">
-                <img src={mockup3} alt="DeWocracy Admin Dashboard" />
+                <Zoom>
+                  <img src={mockup3} alt="DeWocracy Admin Dashboard" />
+                </Zoom>
               </figure>
             </div>
           </div>
@@ -166,7 +171,12 @@ function IndexPage() {
           </div>
           <div>
             <figure className="w-200 w-auto md:w-200">
-              <img src={mockup2} alt="DeWocracy admin dashboard & mobile app" />
+              <Zoom>
+                <img
+                  src={mockup2}
+                  alt="DeWocracy admin dashboard & mobile app"
+                />
+              </Zoom>
             </figure>
           </div>
         </section>
@@ -195,59 +205,7 @@ function IndexPage() {
           <h2 className="font-bold text-white text-2xl md:text-4xl pb-16">
             ¿En qué te podemos ayudar?
           </h2>
-          <form
-            name="contact"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
-            <div className="w-1/2 grid gap-4">
-              <div className="grid gap-4 w-1/2">
-                <label htmlFor="name" className="font-bold pr-4">
-                  Nombre:
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  required
-                  placeholder="Gustav Mahler"
-                  className="rounded-sm text-black p-2 h-10"
-                />
-              </div>
-              <div className="grid gap-4 w-1/2">
-                <label htmlFor="email" className="font-bold pr-4">
-                  Email:
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  placeholder="name@domain.com"
-                  className="rounded-sm text-black p-2 h-10"
-                />
-              </div>
-
-              <div className="grid grid-cols-1 justify-center mt-md:mr-16 mt-4 gap-y-4">
-                <label htmlFor="message" className="font-bold">
-                  Mensaje:
-                </label>
-                <textarea
-                  className="h-40 rounded-sm text-black p-2 md:m-0"
-                  required
-                  maxLength="500"
-                  name="message"
-                />
-              </div>
-              <input type="hidden" name="form-name" value="contact" />
-              <div className="flex justify-center">
-                <input
-                  type="submit"
-                  className="btn text-greyBlue cursor-pointer w-full md:w-auto "
-                  value="Enviar"
-                />
-              </div>
-            </div>
-          </form>
+          <ContactForm />
         </section>
       </div>
     </Layout>
