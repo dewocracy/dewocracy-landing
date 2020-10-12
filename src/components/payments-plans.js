@@ -39,7 +39,7 @@ export const PaymentsPlans = () => {
                 </p>
               ) : (
                 <button
-                  className="btn text-grey bg-transparent"
+                  className="btn text-white bg-transparent"
                   onClick={changePlan}
                 >
                   {text}
