@@ -79,7 +79,12 @@ function SEO({ description, lang, meta, keywords, title }) {
 
 SEO.defaultProps = {
   lang: `en`,
-  keywords: [],
+  keywords: [
+    `dewocracy`,
+    `espacio oficina`,
+    `oficina`,
+    `optimizar espacio oficina`,
+  ],
   meta: [],
 };
 
