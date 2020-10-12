@@ -30,7 +30,7 @@ export const PaymentsPlans = () => {
   return (
     <Fragment>
       <div className="grid justify-center">
-        <div className="grid md:grid-cols-2 gap-x-24 mb-8">
+        <div className="grid md:grid-cols-2 gap-x-12 lg:gap-x-24 mb-8">
           {Object.entries(plans).map(([key, { text }]) => (
             <Fragment key={key}>
               {key === plan ? (

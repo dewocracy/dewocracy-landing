@@ -24,10 +24,10 @@ function IndexPage() {
         className="w-full bg-fixed min-h-screen"
         style={{ backgroundImage: `url(${bgPurpleStrokes})` }}
       >
-        <section className="container mx-auto text-white grid grid-cols-1 md:grid-cols-2 min-h-screen content-center gap-32">
-          <div className="grid content-center px-8 md:px-0">
-            <div className="mt-24 md:mt-0">
-              <h1 className="text-4xl md:text-6xl font-bold text-white leading-none l:text-justify pb-4">
+        <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center gap-32">
+          <div className="grid content-center px-8 lg:px-0">
+            <div className="mt-24 lg:mt-0">
+              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-none lg:text-justify pb-4">
                 Democratizando el trabajo desde cualquier lugar.
               </h1>
               <p className="font-bold text-xl">
@@ -45,7 +45,7 @@ function IndexPage() {
             </div>
           </div>
           <div>
-            <figure className="w-auto md:w-200">
+            <figure className="w-auto lg:w-200">
               <Zoom>
                 <img
                   src={mockup1}
@@ -57,18 +57,18 @@ function IndexPage() {
         </section>
       </div>
 
-      <div className="w-full bg-fixed min-h-screen bg-darkBlue py-16 md:py-32">
-        <section className="container mx-auto text-white px-8 md:px-0">
-          <div className="md:w-1/2">
+      <div className="w-full bg-fixed min-h-screen bg-darkBlue py-16 lg:py-32">
+        <section className="container mx-auto text-white px-8 lg:px-0">
+          <div className="lg:w-1/2">
             <p className="py-8 text-teal font-bold leading-tight text-xl">
               Plataforma para la empresas
             </p>
-            <h2 className="font-bold text-white text-2xl md:text-4xl pb-20">
+            <h2 className="font-bold text-white text-2xl lg:text-4xl pb-20">
               Gestiona de forma dinámica la ocupación en tu oficina y desde
               dónde trabajan tus empleados.
             </h2>
           </div>
-          <div className="grid content-center grid grid-cols-1 md:grid-cols-2 content-center gap-32">
+          <div className="grid content-center grid grid-cols-1 lg:grid-cols-2 content-center gap-32">
             <div className="grid content-center grid grid-cols-1 sm:grid-cols-2 content-center gap-x-8 gap-y-24">
               <div>
                 <figure className="w-48">
@@ -138,7 +138,7 @@ function IndexPage() {
               </div>
             </div>
             <div>
-              <figure className="w-auto md:w-200">
+              <figure className="w-auto lg:w-200">
                 <Zoom>
                   <img src={mockup3} alt="DeWocracy Admin Dashboard" />
                 </Zoom>
@@ -149,13 +149,13 @@ function IndexPage() {
       </div>
 
       <div className="w-full bg-fixed min-h-screen py-32">
-        <section className="container mx-auto text-darkBlue grid grid-cols-1 md:grid-cols-2 min-h-screen content-center gap-32">
-          <div className="grid content-center px-8 md:px-0">
+        <section className="container mx-auto text-darkBlue grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center gap-32">
+          <div className="grid content-center px-8 lg:px-0">
             <div>
               <p className="pb-8 text-primary font-bold text-xl">
                 Plataforma para empleados
               </p>
-              <h2 className="text-2xl md:text-4xl font-bold leading-tight l:text-justify pb-8">
+              <h2 className="text-2xl lg:text-4xl font-bold leading-tight l:text-justify pb-8">
                 Interacción en tiempo real entre el empleado y la empresa para
                 reservar su espacio de oficina.
               </h2>
@@ -170,7 +170,7 @@ function IndexPage() {
             </div>
           </div>
           <div>
-            <figure className="w-200 w-auto md:w-200">
+            <figure className="w-200 w-auto lg:w-200">
               <Zoom>
                 <img
                   src={mockup2}
@@ -186,11 +186,11 @@ function IndexPage() {
         className="w-full bg-fixed min-h-screen py-32"
         style={{ backgroundImage: `url(${bgPurpleStrokes})` }}
       >
-        <section className="container mx-auto text-white px-8 md:px-0">
+        <section className="container mx-auto text-white px-8 lg:px-0">
           <p className="py-8 font-bold leading-tight text-xl">
             Planes y precios
           </p>
-          <h2 className="font-bold text-white text-2xl md:text-4xl pb-8">
+          <h2 className="font-bold text-white text-2xl lg:text-4xl pb-8">
             Selecciona el plan que necesitas para tu empresa.
           </h2>
           <PaymentsPlans />
@@ -198,11 +198,11 @@ function IndexPage() {
       </div>
 
       <div className="w-full bg-fixed py-16 bg-darkBlue">
-        <section className="container mx-auto text-white px-8 md:px-0">
+        <section className="container mx-auto text-white px-8 lg:px-0">
           <p className="py-8 font-bold leading-tight text-xl" id="contact">
             Contacto
           </p>
-          <h2 className="font-bold text-white text-2xl md:text-4xl pb-16">
+          <h2 className="font-bold text-white text-2xl lg:text-4xl pb-16">
             ¿En qué te podemos ayudar?
           </h2>
           <ContactForm />

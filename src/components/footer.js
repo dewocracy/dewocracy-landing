@@ -18,7 +18,7 @@ export const Footer = () => {
   `);
   return (
     <footer className="w-full bg-fixed py-16 px-8 md:px-0">
-      <section className="container mx-auto text-white grid md:grid-cols-3 gap-4  justify-center md:justify-between">
+      <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4  justify-center lg:justify-between">
         <div className="flex justify-center">
           <a href="/" title="DeWocracy home">
             <img
@@ -48,7 +48,7 @@ export const Footer = () => {
             />
           </a>
         </div>
-        <div className="grid justify-items-center md:justify-items-end md:items-end">
+        <div className="grid justify-items-center lg:justify-items-end lg:items-end">
           <p className="text-greyBlue font-bold text-right flex justify-between w-64">
             <a
               href={site.siteMetadata.linkedin}
