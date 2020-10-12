@@ -11,7 +11,6 @@ npm i --global gatsby-cli
 Run the project in development mode:
 
 ```sh
-cd my-new-website
 npm run develop
 ```
 
@@ -28,7 +27,7 @@ Use `npm run build` to build your site for production.
 
 ### Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/taylorbryant/gatsby-starter-tailwind)
+[![Netlify](https://www.netlify.com/img/deploy/button.svg)]
 
 ## Resources
 
