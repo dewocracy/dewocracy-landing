@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { navigate } from 'gatsby-link'
 
 function encode(data) {
@@ -8,7 +8,7 @@ function encode(data) {
 }
 
 export const ContactForm = () => {
-  const [state, setState] = React.useState({});
+  const [state, setState] = useState({});
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
@@ -39,6 +39,9 @@ export const ContactForm = () => {
     >
       {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
       <input type="hidden" name="form-name" value="contact" />
+      <p className="hidden">
+        <label>Don’t fill this out if you are a human: <input name="bot-field"/></label>
+      </p>
       <div className="w-1/2 grid gap-4">
         <div className="grid gap-4 w-1/2">
           <label htmlFor="name" className="font-bold pr-4">
