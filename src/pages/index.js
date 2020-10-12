@@ -27,7 +27,7 @@ function IndexPage() {
         <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center gap-32">
           <div className="grid content-center px-8 lg:px-0">
             <div className="mt-24 lg:mt-0">
-              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-none lg:text-justify pb-4">
+              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-none pb-4">
                 Democratizando el trabajo desde cualquier lugar.
               </h1>
               <p className="font-bold text-xl">
@@ -45,7 +45,7 @@ function IndexPage() {
             </div>
           </div>
           <div>
-            <figure className="w-auto lg:w-200">
+            <figure className="w-auto lg:w-200 lg:pt-24">
               <Zoom>
                 <img
                   src={mockup1}
