@@ -22,12 +22,12 @@ function IndexPage() {
                 title="Home"
             />
 
-            <div className="w-full bg-fixed h-screen" style={{backgroundImage: `url(${bgPurpleStrokes})`}}>
+            <div className="w-full bg-fixed min-h-screen" style={{backgroundImage: `url(${bgPurpleStrokes})`}}>
                 <section
                     className="container mx-auto text-white grid grid-cols-1 md:grid-cols-2 min-h-screen content-center gap-32">
-                    <div className="grid content-center">
-                        <div>
-                            <h1 className="text-6xl font-bold text-white leading-none l:text-justify pb-4">
+                    <div className="grid content-center px-8 md:px-0">
+                        <div className="mt-24 md:mt-0">
+                            <h1 className="text-4xl md:text-6xl font-bold text-white leading-none l:text-justify pb-4">
                                 Democratizando el trabajo desde cualquier lugar.
                             </h1>
                             <p className="font-bold text-xl">
@@ -49,10 +49,11 @@ function IndexPage() {
             </div>
 
             <div className="w-full bg-fixed min-h-screen bg-darkBlue py-32">
-                <section className="container mx-auto text-white">
+                <section className="container mx-auto text-white px-8 md:px-0">
                     <div className="md:w-1/2">
                         <p className="py-8 text-teal font-bold leading-tight text-xl">Plataforma para la empresas</p>
-                        <h2 className="font-bold text-white text-4xl pb-20">Gestiona de forma dinámica la ocupación en
+                        <h2 className="font-bold text-white text-2xl md:text-4xl pb-20">Gestiona de forma dinámica la
+                            ocupación en
                             tu oficina y desde dónde trabajan tus empleados.</h2>
                     </div>
                     <div className="grid content-center grid grid-cols-1 md:grid-cols-2 content-center gap-32">
@@ -122,10 +123,10 @@ function IndexPage() {
             <div className="w-full bg-fixed min-h-screen py-32">
                 <section
                     className="container mx-auto text-darkBlue grid grid-cols-1 md:grid-cols-2 min-h-screen content-center gap-32">
-                    <div className="grid content-center">
+                    <div className="grid content-center px-8 md:px-0">
                         <div>
                             <p className="pb-8 text-primary font-bold text-xl">Plataforma para empleados</p>
-                            <h2 className="text-4xl font-bold leading-tight l:text-justify pb-8">
+                            <h2 className="text-2xl md:text-4xl font-bold leading-tight l:text-justify pb-8">
                                 Interacción en tiempo real entre el empleado y la empresa para reservar su espacio de
                                 oficina.
                             </h2>
@@ -147,32 +148,43 @@ function IndexPage() {
             </div>
 
             <div className="w-full bg-fixed min-h-screen py-32" style={{backgroundImage: `url(${bgPurpleStrokes})`}}>
-                <section className="container mx-auto text-white">
+                <section className="container mx-auto text-white px-8 md:px-0">
                     <p className="py-8 font-bold leading-tight text-xl">Planes y precios</p>
-                    <h2 className="font-bold text-white text-4xl pb-8">Selecciona el plan que necesitas para tu
+                    <h2 className="font-bold text-white text-2xl md:text-4xl pb-8">Selecciona el plan que necesitas para
+                        tu
                         empresa.</h2>
                     <PaymentsPlans/>
                 </section>
             </div>
 
-            <div className="w-full bg-fixed py-32 bg-darkBlue">
-                <section className="container mx-auto text-white">
+            <div className="w-full bg-fixed py-16 bg-darkBlue">
+                <section className="container mx-auto text-white px-8 md:px-0">
                     <p className="py-8 font-bold leading-tight text-xl" id="contact">Contacto</p>
-                    <h2 className="font-bold text-white text-4xl pb-16">¿En qué te podemos ayudar?</h2>
-
-                    <div className="grid justify-center">
-                        <form action="">
-                            <div className="grid md:grid-cols-2 gap-y-4">
-                                <label htmlFor="name" className="font-bold">Nombre:</label>
-                                <input type="text" name="name" required className="rounded-sm"/>
-                                <label htmlFor="email" className="font-bold">Email:</label>
-                                <input type="email" name="email" required className="rounded-sm"/>
-                                <label htmlFor="message" className="font-bold">Mensaje:</label>
-                                <textarea className="rounded-sm" required maxLength="500" name="message"/>
+                    <h2 className="font-bold text-white text-2xl md:text-4xl pb-16">¿En qué te podemos ayudar?</h2>
+                    <form action="">
+                        <div className="w-1/2 grid gap-4">
+                            <div className="grid gap-4 w-1/2">
+                                <label htmlFor="name" className="font-bold pr-4">Nombre:</label>
+                                <input type="text" name="name" required placeholder="Gustav Mahler"
+                                       className="rounded-sm text-black p-2 h-10"/>
                             </div>
-                            <input type="submit" className="btn text-greyBlue" value="Enviar"/>
-                        </form>
-                    </div>
+                            <div className="grid gap-4 w-1/2">
+                                <label htmlFor="email" className="font-bold pr-4">Email:</label>
+                                <input type="email" name="email" required placeholder="name@domain.com"
+                                       className="rounded-sm text-black p-2 h-10"/>
+                            </div>
+
+                            <div className="grid grid-cols-1 justify-center mt-md:mr-16 mt-4 gap-y-4">
+                                <label htmlFor="message" className="font-bold">Mensaje:</label>
+                                <textarea className="h-40 rounded-sm text-black p-2 md:m-0" required maxLength="500"
+                                          name="message"/>
+                            </div>
+                            <div className="flex justify-center">
+                                <input type="submit" className="btn text-greyBlue cursor-pointer w-full md:w-auto " value="Enviar"/>
+                            </div>
+                        </div>
+
+                    </form>
                 </section>
             </div>
         </Layout>

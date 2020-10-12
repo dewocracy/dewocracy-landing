@@ -37,8 +37,8 @@ export const PaymentsPlans = () => {
         </div>
         <div className="grid lg:grid-cols-3 gap-8 justify-center">
             <div className="rounded-lg bg-white p-8 md:p-12 max-w-md">
-                <p className="text-lightBlue text-4xl font-bold">Free</p>
-                <p className="text-lightBlue text-4xl">
+                <p className="text-lightBlue text-2xl md:text-4xl font-bold">Free</p>
+                <p className="text-lightBlue text-2xl md:text-4xl">
                     <span className="font-bold">{getCurrencyText(0)}</span>
                     <span className="text-xl"> / Month - User</span>
                 </p>
@@ -67,8 +67,8 @@ export const PaymentsPlans = () => {
                 </button>
             </div>
             <div className="rounded-lg bg-white p-8 md:p-12 max-w-md">
-                <p className="text-purple text-4xl font-bold">Start up</p>
-                <p className="text-purple text-4xl">
+                <p className="text-purple text-2xl md:text-4xl font-bold">Start up</p>
+                <p className="text-purple text-2xl md:text-4xl">
                     <span className="font-bold">{startup}</span>
                     <span className="text-xl"> / Month - User</span>
                 </p>
@@ -97,14 +97,13 @@ export const PaymentsPlans = () => {
                 </button>
             </div>
             <div className="rounded-lg bg-white p-8 md:p-12 max-w-md">
-                <p className="text-primary text-4xl font-bold">Business</p>
-                <p className="text-primary text-4xl">
+                <p className="text-primary text-2xl md:text-4xl font-bold">Business</p>
+                <p className="text-primary text-2xl md:text-4xl">
                     <span className="font-bold">{business}</span>
                     <span className="text-xl"> / Month - User</span>
                 </p>
                 <ol className="text-black text-lg py-8">
-                    <li className="my-3"><FontAwesomeIcon icon={faCheck}
-                                                          className="absolute text-lightBlue mr-4 leading-8"/>
+                    <li className="my-3"><FontAwesomeIcon icon={faCheck} className="absolute text-lightBlue mr-4 leading-8"/>
                         <span className="ml-8 inline">Administradores Ilimitados</span>
                     </li>
                     <li className="my-3"><FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4"/>
