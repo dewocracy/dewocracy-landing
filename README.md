@@ -27,7 +27,7 @@ Use `npm run build` to build your site for production.
 
 ### Netlify
 
-![Netlify](https://www.netlify.com/img/deploy/button.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6261a901-6f6e-4e5c-9d20-fa696bd456b5/deploy-status)](https://app.netlify.com/sites/naughty-hugle-6870d0/deploys)
 
 ## Resources
 
