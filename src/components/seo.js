@@ -67,7 +67,11 @@ function SEO({ description, lang, meta, keywords, title }) {
         )
         .concat(meta)}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={
+        title === "Home"
+          ? site.siteMetadata.title
+          : `%s | ${site.siteMetadata.title}`
+      }
     >
       <link
         href="https://fonts.googleapis.com/css?family=Inter"

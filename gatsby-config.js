@@ -22,9 +22,9 @@ module.exports = {
         short_name: `DeWocracy`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.brand,
+        theme_color: fullConfig.theme.colors.primary,
         display: `minimal-ui`,
-        icon: `src/images/DW-logo-32x32.png`,
+        icon: `src/images/dw-blue.png`,
       },
     },
     {

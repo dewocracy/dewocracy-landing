@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import { navigate } from 'gatsby-link'
+import React, { useState } from "react";
+import { navigate } from "gatsby-link";
 
 function encode(data) {
   return Object.keys(data)
@@ -40,7 +40,9 @@ export const ContactForm = () => {
       {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
       <input type="hidden" name="form-name" value="contact" />
       <p className="hidden">
-        <label>Don’t fill this out if you are a human: <input name="bot-field"/></label>
+        <label>
+          Don’t fill this out if you are a human: <input name="bot-field" />
+        </label>
       </p>
       <div className="w-1/2 grid gap-4">
         <div className="grid gap-4 w-1/2">

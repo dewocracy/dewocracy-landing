@@ -21,9 +21,20 @@ module.exports = {
       width: {
         200: "200%",
       },
+      animation: {
+        fadeIn: "fadeIn 2s ease-in forwards",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 0.5 },
+        },
+      },
     },
   },
-  variants: {},
+  variants: {
+    animation: ["motion-safe"],
+  },
   // https://github.com/tailwindcss/custom-forms
   plugins: [require("@tailwindcss/custom-forms")],
 };

@@ -148,7 +148,7 @@ function IndexPage() {
         </section>
       </div>
 
-      <div className="w-full bg-fixed min-h-screen py-32">
+      <div className="w-full bg-fixed min-h-screen py-16 lg:py-32">
         <section className="container mx-auto text-darkBlue grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center gap-32">
           <div className="grid content-center px-8 lg:px-0">
             <div>
