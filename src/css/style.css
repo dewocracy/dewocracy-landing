@@ -31,6 +31,7 @@
   .scroll-top {
     line-height: 0;
     margin-top: -4px;
+    margin-left: -1px;
   }
   .scroll-top-container:hover {
     @apply opacity-100;

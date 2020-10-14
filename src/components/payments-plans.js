@@ -82,7 +82,10 @@ export const PaymentsPlans = () => {
               Análisis de Competencia
             </li>
           </ol>
-          <a className="btn bg-lightBlue text-white w-full block" href="#contact">
+          <a
+            className="btn bg-lightBlue text-white w-full block"
+            href="#contact"
+          >
             Get free
           </a>
         </div>
@@ -159,7 +162,9 @@ export const PaymentsPlans = () => {
               Análisis de Competencia
             </li>
           </ol>
-          <a className="btn bg-primary text-white w-full block" href="#contact">Explore</a>
+          <a className="btn bg-primary text-white w-full block" href="#contact">
+            Explore
+          </a>
         </div>
       </div>
     </Fragment>
