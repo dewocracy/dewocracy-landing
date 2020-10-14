@@ -82,9 +82,9 @@ export const PaymentsPlans = () => {
               Análisis de Competencia
             </li>
           </ol>
-          <button className="btn bg-lightBlue text-white w-full">
+          <a className="btn bg-lightBlue text-white w-full block" href="#contact">
             Get free
-          </button>
+          </a>
         </div>
         <div className="rounded-lg bg-white p-8 md:p-12 max-w-md">
           <p className="text-purple text-2xl md:text-4xl font-bold">Start up</p>
@@ -118,9 +118,9 @@ export const PaymentsPlans = () => {
               Análisis de Competencia
             </li>
           </ol>
-          <button className="btn bg-purple text-white w-full">
+          <a className="btn bg-purple text-white w-full block" href="#contact">
             Sign Up Now
-          </button>
+          </a>
         </div>
         <div className="rounded-lg bg-white p-8 md:p-12 max-w-md">
           <p className="text-primary text-2xl md:text-4xl font-bold">
@@ -159,7 +159,7 @@ export const PaymentsPlans = () => {
               Análisis de Competencia
             </li>
           </ol>
-          <button className="btn bg-primary text-white w-full">Explore</button>
+          <a className="btn bg-primary text-white w-full block" href="#contact">Explore</a>
         </div>
       </div>
     </Fragment>

@@ -35,6 +35,12 @@ module.exports = {
   variants: {
     animation: ["motion-safe"],
   },
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+    defaultLineHeights: true,
+    standardFontWeights: true,
+  },
   // https://github.com/tailwindcss/custom-forms
   plugins: [require("@tailwindcss/custom-forms")],
 };
