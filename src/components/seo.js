@@ -30,7 +30,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: title !== "Home" ? title : site.siteMetadata.title,
         },
         {
           property: `og:description`,

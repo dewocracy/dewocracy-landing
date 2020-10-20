@@ -26,9 +26,7 @@ class ScrollToTop {
     }
   }
 
-  /** When the user clicks on the button, scroll to the top of the document */
   ScrollToTop() {
-    /** The user is scrolled to the top of the page */
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     window.pageYOffset = 0;
@@ -36,7 +34,6 @@ class ScrollToTop {
 }
 
 exports.onRouteUpdate = () => {
-  /** If the current page is an article page */
   if (document.getElementById("scroll-top-container")) {
     new ScrollToTop().Initialize();
   }

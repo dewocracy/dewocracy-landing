@@ -71,6 +71,19 @@ export const ContactForm = () => {
             onChange={handleChange}
           />
         </div>
+        <div className="grid gap-4 w-1/2">
+          <label htmlFor="email" className="font-bold pr-4">
+            Empresa:
+          </label>
+          <input
+              type="text"
+              name="company"
+              required
+              placeholder="Empresa"
+              className="rounded-sm text-black p-2 h-10"
+              onChange={handleChange}
+          />
+        </div>
 
         <div className="grid grid-cols-1 justify-center mt-md:mr-16 mt-4 gap-y-4">
           <label htmlFor="message" className="font-bold">

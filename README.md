@@ -1,33 +1,26 @@
-# DeWocracy landing page
+# DeWocracy.com [![Netlify Status](https://api.netlify.com/api/v1/badges/6261a901-6f6e-4e5c-9d20-fa696bd456b5/deploy-status)](https://app.netlify.com/sites/dewocracy/deploys)
 
 ## Get started
-
-Install the Gatsby CLI:
-
-```sh
-npm i --global gatsby-cli
-```
 
 Run the project in development mode:
 
 ```sh
-npm run develop
+yarn dev
 ```
 
 ## Format and lint
 
-- `npm run analyze` - See what ESLint and Prettier can fix
-- `npm run fix` - Run Prettier and ESLint with the `--fix` option
+- `yarn lint` - ESLint fix
+- `yarn format` - Prettier fix
 
 ## Build your site
 
-Use `npm run build` to build your site for production.
+`yarn build` to build your site for production.
 
 ## Deployment
 
-### Netlify
+Deployment powered by Netlify
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6261a901-6f6e-4e5c-9d20-fa696bd456b5/deploy-status)](https://app.netlify.com/sites/naughty-hugle-6870d0/deploys)
 
 ## Resources
 
