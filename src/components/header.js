@@ -17,12 +17,12 @@ function Header() {
                   className="items-center block px-3 py-2 border border-lightBlue border-opacity-25 rounded w-10 md:hidden"
                   onClick={() => toggleExpansion(!isExpanded)}
               >
-                  <FontAwesomeIcon icon={faBars} className="text-lightBlue" />
+                  <FontAwesomeIcon icon={faBars} className="text-primary" />
               </button>
               <nav
                   className={`${
                       isExpanded ? `block` : `hidden`
-                  } md:items-center w-full md:w-auto text-lightBlue`}
+                  } md:items-center w-full md:w-auto text-primary`}
               >
                   {[
                       {
