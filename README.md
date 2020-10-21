@@ -21,7 +21,6 @@ yarn dev
 
 Deployment powered by Netlify
 
-
 ## Resources
 
 - [Gatsby documentation](https://www.gatsbyjs.org/docs/)

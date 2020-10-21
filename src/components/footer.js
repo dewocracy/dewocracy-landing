@@ -49,7 +49,7 @@ export const Footer = () => {
           </a>
         </div>
         <div className="grid justify-items-center lg:justify-items-end lg:items-end">
-          <p className="text-greyBlue font-bold text-right flex justify-between w-64">
+          <p className="text-primary font-bold text-right flex justify-between w-64">
             <a
               href={site.siteMetadata.linkedin}
               rel="noreferrer noopener"
