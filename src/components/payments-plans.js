@@ -105,7 +105,7 @@ export const PaymentsPlans = () => {
           <ol className="text-black text-sm md:text-md xl:text-lg">
             <li className="my-3">
               <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
-              <Trans>1 Administrador</Trans>
+              <Trans>1 administrador</Trans>
             </li>
             <li className="my-3">
               <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
