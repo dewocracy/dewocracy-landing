@@ -15,7 +15,7 @@
 
 @layer components {
   .btn {
-    @apply bg-white text-center text-primary text-sm py-4 rounded-full px-10 mt-6 font-bold transform;
+    @apply bg-white text-center text-primary text-sm py-4 rounded-full px-10 font-bold transform leading-none;
   }
   .btn:hover {
     @apply -translate-y-1 duration-700 shadow-2xl;

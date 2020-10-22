@@ -51,13 +51,15 @@ export const PaymentsPlans = () => {
         </div>
       </div>
       <div className="grid lg:grid-cols-3 gap-8 justify-center">
-        <div className="rounded-lg bg-white p-8 md:p-12 max-w-md">
-          <p className="text-lightBlue text-2xl md:text-4xl font-bold"><Trans>Free</Trans></p>
-          <p className="text-lightBlue text-2xl md:text-4xl">
-            <span className="font-bold">{getCurrencyText(0)}</span>
-            <span className="text-xl"><Trans> Mes / Usuario</Trans></span>
-          </p>
-          <ol className="text-black text-lg py-8">
+        <div className="grid rounded-lg bg-white p-8 md:p-10 lg:p-12 max-w-md gap-y-8">
+          <div>
+            <p className="text-lightBlue text-2xl md:text-4xl font-bold"><Trans>Free</Trans></p>
+            <p className="text-lightBlue text-2xl md:text-4xl">
+              <span className="font-bold">{getCurrencyText(0)}</span>
+              <span className="text-sm"><Trans> Mes / Usuario</Trans></span>
+            </p>
+          </div>
+          <ol className="text-black text-sm md:text-md xl:text-lg ">
             <li className="my-3">
               <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
               <Trans>1 administrador</Trans>
@@ -90,15 +92,17 @@ export const PaymentsPlans = () => {
             <Trans>Pruébalo gratis</Trans>
           </a>
         </div>
-        <div className="rounded-lg bg-white p-8 md:p-12 max-w-md">
-          <p className="text-purple text-2xl md:text-4xl font-bold">
-            <Trans>Startup</Trans>
-          </p>
-          <p className="text-purple text-2xl md:text-4xl">
-            <span className="font-bold">{startup}</span>
-            <span className="text-xl"><Trans> Mes / Usuario</Trans></span>
-          </p>
-          <ol className="text-black text-lg py-8">
+        <div className="grid rounded-lg bg-white p-8 md:p-10 lg:p-12 max-w-md gap-y-8">
+          <div>
+            <p className="text-purple text-2xl md:text-4xl font-bold">
+              <Trans>Startup</Trans>
+            </p>
+            <p className="text-purple text-2xl md:text-4xl">
+              <span className="font-bold">{startup}</span>
+              <span className="text-sm"><Trans> Mes / Usuario</Trans></span>
+            </p>
+          </div>
+          <ol className="text-black text-sm md:text-md xl:text-lg">
             <li className="my-3">
               <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
               <Trans>1 Administrador</Trans>
@@ -128,17 +132,19 @@ export const PaymentsPlans = () => {
             <Trans>Empieza ahora</Trans>
           </a>
         </div>
-        <div className="rounded-lg bg-white p-8 md:p-12 max-w-md">
-          <p className="text-primary text-2xl md:text-4xl font-bold">
-            <Trans>Business</Trans>
-          </p>
-          <p className="text-primary text-2xl md:text-4xl">
-            <span className="font-bold">{business}</span>
-            <span className="text-xl">
-              <Trans> Mes / Usuario</Trans>
-            </span>
-          </p>
-          <ol className="text-black text-lg py-8">
+        <div className="grid rounded-lg bg-white p-8 md:p-10 lg:p-12 max-w-md gap-y-8">
+          <div>
+            <p className="text-primary text-2xl md:text-4xl font-bold">
+              <Trans>Business</Trans>
+            </p>
+            <p className="text-primary text-2xl md:text-4xl">
+              <span className="font-bold">{business}</span>
+              <span className="text-sm">
+                <Trans> Mes / Usuario</Trans>
+              </span>
+            </p>
+          </div>
+          <ol className="text-black text-sm md:text-md xl:text-lg">
             <li className="my-3">
               <FontAwesomeIcon
                 icon={faCheck}
