@@ -15,6 +15,7 @@ import feat5 from "../images/dewocracy-feat-5.png";
 import feat6 from "../images/dewocracy-feat-6.png";
 import { PaymentsPlans } from "../components/payments-plans";
 import { ContactForm } from "../components/contact-form";
+import { Trans } from "gatsby-plugin-react-i18next";
 
 function IndexPage() {
   return (
@@ -28,18 +29,20 @@ function IndexPage() {
           <div className="grid content-center px-8 lg:px-0">
             <div className="mt-24 lg:mt-0">
               <h1 className="text-4xl lg:text-6xl font-bold text-white leading-none pb-4">
-                Democratizando el trabajo desde cualquier lugar.
+                <Trans>Democratizando el trabajo desde cualquier lugar.</Trans>
               </h1>
               <p className="font-bold text-xl">
-                Gestiona de manera fácil y centralizada la ocupación en tu
-                oficina.
+                <Trans>
+                  Gestiona de manera fácil y centralizada la ocupación en tu
+                  oficina.
+                </Trans>
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <a className="btn" href="#contact">
-                  Descargar iOS
+                  <Trans>Descargar iOS</Trans>
                 </a>
                 <a className="btn" href="#contact">
-                  Descargar Android
+                  <Trans>Descargar Android</Trans>
                 </a>
               </div>
             </div>
@@ -61,11 +64,13 @@ function IndexPage() {
         <section className="container mx-auto text-white px-8 lg:px-0">
           <div className="lg:w-1/2">
             <p className="py-8 text-teal font-bold leading-tight text-xl">
-              Plataforma para la empresas
+              <Trans>Plataforma para la empresa</Trans>
             </p>
             <h2 className="font-bold text-white text-2xl lg:text-4xl pb-20">
-              Gestiona de forma dinámica la ocupación en tu oficina y desde
-              dónde trabajan tus empleados.
+              <Trans>
+                Gestiona de forma dinámica la ocupación en tu oficina y desde
+                dónde trabajan tus empleados.
+              </Trans>
             </h2>
           </div>
           <div className="grid content-center grid grid-cols-1 lg:grid-cols-2 content-center gap-32">
@@ -74,53 +79,71 @@ function IndexPage() {
                 <figure className="w-48">
                   <img src={feat1} alt="DeWocracy feature 1" width="60" />
                 </figure>
-                <h3 className="text-xl font-bold py-2">Límites de ocupación</h3>
+                <h3 className="text-xl font-bold py-2">
+                  <Trans>Límites de ocupación</Trans>
+                </h3>
                 <p className="text-opacity-75">
-                  Añade límites de ocupación en la oficina consiguiendo una
-                  distancia de seguridad óptima para tus trabajadores.
+                  <Trans>
+                    Añade límites de ocupación en la oficina consiguiendo una
+                    distancia de seguridad óptima para tus trabajadores.
+                  </Trans>
                 </p>
               </div>
               <div>
                 <figure className="w-48">
                   <img src={feat6} alt="DeWocracy feature 1" width="60" />
                 </figure>
-                <h3 className="text-xl font-bold py-2">Control horario</h3>
+                <h3 className="text-xl font-bold py-2">
+                  <Trans>Control horario</Trans>
+                </h3>
                 <p className="text-opacity-75">
-                  Control horario y fichaje de acuerdo con la legalidad y
-                  adaptado al teletrabajo. Visualiza las horas trabajadas de tus
-                  empleados y equipos.
+                  <Trans>
+                    Control horario y fichaje de acuerdo con la legalidad y
+                    adaptado al teletrabajo. Visualiza las horas trabajadas de
+                    tus empleados y equipos.
+                  </Trans>
                 </p>
               </div>
               <div>
                 <figure className="w-48">
                   <img src={feat3} alt="DeWocracy feature 1" width="60" />
                 </figure>
-                <h3 className="text-xl font-bold py-2">Gestión de equipos</h3>
+                <h3 className="text-xl font-bold py-2">
+                  <Trans>Gestión de equipos</Trans>
+                </h3>
                 <p className="text-opacity-75">
-                  Organiza a tus empleados en equipos de trabajo. Gestiona la
-                  ocupación teniendo en cuenta aquellos empleados que intractúan
-                  entre sí con más frecuencia.
+                  <Trans>
+                    Organiza a tus empleados en equipos de trabajo. Gestiona la
+                    ocupación teniendo en cuenta aquellos empleados que
+                    intractúan entre sí con más frecuencia.
+                  </Trans>
                 </p>
               </div>
               <div>
                 <figure className="w-48">
                   <img src={feat2} alt="DeWocracy feature" width="60" />
                 </figure>
-                <h3 className="text-xl font-bold py-2">Control de costes</h3>
+                <h3 className="text-xl font-bold py-2">
+                  <Trans>Control de costes</Trans>
+                </h3>
                 <p className="text-opacity-75">
-                  Entiende el impacto económico que supone tener equipos
-                  trabajando remotamente. Analiza costes y vías de ahorro.
+                  <Trans>
+                    Entiende el impacto económico que supone tener equipos
+                    trabajando remotamente. Analiza costes y vías de ahorro.
+                  </Trans>
                 </p>
               </div>
               <div>
                 <figure className="w-48">
                   <img src={feat5} alt="DeWocracy feature" width="60" />
                 </figure>
-                <h3 className="text-xl font-bold py-2">Espacios de trabajo</h3>
+                <h3 className="text-xl font-bold py-2">
+                  <Trans>Espacios de trabajo</Trans>
+                </h3>
                 <p className="text-opacity-75">
-                  Monitoriza en tiempo real desde dónde trabajan tus equipos.
-                  Obtiene los datos necesarios para el desarrollo una estrategia
-                  de trabajo en oficina y remoto.
+                  <Trans>
+                    Monitoriza en tiempo real desde dónde trabajan tus equipos. Obtiene los datos necesarios para el desarrollo de una estrategia híbrida de trabajo en oficina y remoto.
+                  </Trans>
                 </p>
               </div>
               <div>
@@ -128,12 +151,14 @@ function IndexPage() {
                   <img src={feat4} alt="DeWocracy feature" width="60" />
                 </figure>
                 <h3 className="text-xl font-bold py-2">
-                  Gestión de vacaciones
+                  <Trans>Gestión de vacaciones</Trans>
                 </h3>
                 <p className="text-opacity-75">
-                  Administra la gestión de vacaciones, ausencias y bajas de
-                  forma centralizada. Digitaliza la experiencia y elimina
-                  procesos ineficientes.
+                  <Trans>
+                    Administra la gestión de vacaciones, ausencias y bajas de
+                    forma centralizada. Digitaliza la experiencia y elimina
+                    procesos ineficientes.
+                  </Trans>
                 </p>
               </div>
             </div>
@@ -153,19 +178,24 @@ function IndexPage() {
           <div className="grid content-center px-8 lg:px-0">
             <div>
               <p className="pb-8 text-primary font-bold text-xl">
-                Plataforma para empleados
+                <Trans>Aplicación para empleados</Trans>
               </p>
               <h2 className="text-2xl lg:text-4xl font-bold leading-tight l:text-justify pb-8">
-                Interacción en tiempo real entre el empleado y la empresa para
-                reservar su espacio de oficina.
+                <Trans>
+                  Interacción en tiempo real entre el empleado y la empresa para
+                  reservar su espacio de oficina.
+                </Trans>
               </h2>
               <p className="text-greyBlue text-xl">
-                A través de nuestra aplicación móvil, el empleado puede indicar
-                en su calendario desde dónde trabajará y visualizar también la
-                ubicación prevista de sus compañeros. Puede visualizar por
-                semana, mes y año los lugares desde dónde ha trabajado, así como
-                indicar las horas trabajadas mediante un sistema de control
-                horario digitalizado cumpliendo con la legalidad vigente.
+                <Trans>
+                  A través de nuestra aplicación móvil, el empleado puede
+                  indicar en su calendario desde dónde trabajará y visualizar
+                  también la ubicación prevista de sus compañeros. Puede
+                  visualizar por semana, mes y año los lugares desde dónde ha
+                  trabajado, así como indicar las horas trabajadas mediante un
+                  sistema de control horario digitalizado cumpliendo con la
+                  legalidad vigente.
+                </Trans>
               </p>
             </div>
           </div>
@@ -186,12 +216,12 @@ function IndexPage() {
         className="w-full bg-fixed min-h-screen py-32"
         style={{ backgroundImage: `url(${bgPurpleStrokes})` }}
       >
-        <section className="container mx-auto text-white px-8 lg:px-0">
+        <section id="pricing" className="container mx-auto text-white px-8 lg:px-0">
           <p className="py-8 font-bold leading-tight text-xl">
-            Planes y precios
+            <Trans>Planes y precios</Trans>
           </p>
           <h2 className="font-bold text-white text-2xl lg:text-4xl pb-8">
-            Selecciona el plan que necesitas para tu empresa.
+            <Trans>Selecciona el plan que necesitas para tu empresa.</Trans>
           </h2>
           <PaymentsPlans />
         </section>
@@ -200,10 +230,10 @@ function IndexPage() {
       <div className="w-full bg-fixed py-16 bg-darkBlue">
         <section className="container mx-auto text-white px-8 lg:px-0">
           <p className="py-8 font-bold leading-tight text-xl" id="contact">
-            Contacto
+            <Trans>Contacto</Trans>
           </p>
           <h2 className="font-bold text-white text-2xl lg:text-4xl pb-16">
-            ¿En qué te podemos ayudar?
+            <Trans>¿En qué te podemos ayudar?</Trans>
           </h2>
           <ContactForm />
         </section>

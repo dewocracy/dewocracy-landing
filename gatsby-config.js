@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: `DeWocracy`,
     description: `Democratizando el trabajo desde cualquier lugar.`,
-    author: `@taylorbryant`,
+    author: `@de_wocracy`,
     linkedin: "https://www.linkedin.com/company/dewocracy/",
     twitter: "https://twitter.com/de_wocracy",
     medium: "https://medium.com/dewocracy",
@@ -15,6 +15,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-fontawesome-css`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -39,7 +41,24 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-fontawesome-css`,
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        path: `${__dirname}/src/locales`,
+        languages: [`en`, `es`, `ca`],
+        defaultLanguage: `en`,
+        siteUrl: "https://dewocracy.com",
+
+        // you can pass any i18next options
+        // pass following options to allow message content as a key
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false, // not needed for react as it escapes by default
+          },
+          keySeparator: false,
+          nsSeparator: false,
+        },
+      },
+    },
   ],
 };
