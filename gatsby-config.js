@@ -1,7 +1,7 @@
 const resolveConfig = require("tailwindcss/resolveConfig");
 const tailwindConfig = require("./tailwind.config.js");
-
 const fullConfig = resolveConfig(tailwindConfig);
+const path = require('path');
 
 const {
   NODE_ENV,
@@ -29,6 +29,22 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-fontawesome-css`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: 'gatsby-background-image-es5',
+      options: {
+        // For Tailwind
+        specialChars: '/:',
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
