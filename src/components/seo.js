@@ -1,9 +1,10 @@
 import { useStaticQuery, graphql } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import { Helmet } from "gatsby-plugin-react-i18next";
+import { Helmet, useTranslation } from "gatsby-plugin-react-i18next";
 
 function SEO({ description, lang, meta, keywords, title }) {
+  const { t } = useTranslation();
   const { site } = useStaticQuery(graphql`
     query DefaultSEOQuery {
       site {
@@ -16,7 +17,7 @@ function SEO({ description, lang, meta, keywords, title }) {
     }
   `);
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = t(description || site.siteMetadata.description);
 
   return (
     <Helmet
@@ -30,7 +31,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:title`,
-          content: title !== "Home" ? title : site.siteMetadata.title,
+          content: t(title),
         },
         {
           property: `og:description`,
@@ -50,7 +51,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: t(title),
         },
         {
           name: `twitter:description`,
@@ -61,17 +62,12 @@ function SEO({ description, lang, meta, keywords, title }) {
           keywords.length > 0
             ? {
                 name: `keywords`,
-                content: keywords.join(`, `),
+                content: keywords.map(t).join(`, `),
               }
             : []
         )
         .concat(meta)}
-      title={title}
-      titleTemplate={
-        title === "Home"
-          ? site.siteMetadata.title
-          : `%s | ${site.siteMetadata.title}`
-      }
+      title={t(title)}
     >
       <link
         href="https://fonts.googleapis.com/css?family=Inter"

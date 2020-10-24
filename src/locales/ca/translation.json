@@ -24,7 +24,6 @@
   "Selecciona el plan que necesitas para tu empresa.": "Selecciona el pla que necesites per a la teva empresa.",
   "Contacto": "Contacte",
   "¿En qué te podemos ayudar?": "En què et podem ajudar?",
-  "1 administrador": "1 administrador",
   "Hasta 3 usuarios": "Fins a 5 usuaris",
   "Plataforma de empresa": "Plataforma d'empresa",
   "App para los trabajadores": "App per als treballadors",
@@ -39,7 +38,6 @@
   "Business": "Business",
   "Descúbrelo": "Descobreix-ho",
   "¡Gracias por contactar con nostros! Te responderemos lo antes possible.": "Gràcies per contactar amb nosaltres! Et respondrem tan aviat com sigui possible.",
-  "Volver al inicio": "Tornar a l'inici",
   "Página no encontrada.": "Pàgina no trobada.",
   "Volver al inicio": "Tornar a l'inici",
   "Semestral - hasta un 28% de ahorro": "Semestral - Fins a un 28% d'estalvi",
@@ -52,5 +50,13 @@
   "Enviar": "Enviar",
   "ca": "Català",
   "es": "Español",
-  "en": "English"
+  "en": "English",
+  "Administradores ilimitados": "Administradors il·limitats",
+  "Inicio": "Inici",
+  "DeWocracy - Teletrabajo | Trabaja desde cualquier lugar": "DeWocracy - Teletraball | Treballa des de qualsevol lloc",
+  "DeWocracy ofrece soluciones para el teletrabajo y el desarrollo de una estrategia de oficina híbrida. Gestiona el trabajo remoto, controla la ocupación de tu oficina, reduce costes e incrementa la flexibilidad de tu empresa sin disminuir la productividad.": "DeWocracy ofereix solucions per al teletraball i el desenvolupament d'una estratègia d'oficina híbrida. Gestiona el treball remot, controla l'ocupació de l'oficina, redueix costos i incrementa la flexibilitat de la teva empresa sense disminuir la productivitat.",
+  "teletrabajo": "teletraball",
+  "trabajo en remoto": "treball en remot",
+  "oficina": "oficina",
+  "opcupación": "opcupació"
 }
