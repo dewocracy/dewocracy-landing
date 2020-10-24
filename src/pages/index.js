@@ -57,7 +57,7 @@ function IndexPage() {
             <figure className="w-auto lg:w-200 lg:pt-24">
               <Zoom>
                 <Img
-                  className="w-full h-full"
+                  className="w-200"
                   fluid={data.mockup1.childImageSharp.fluid}
                   alt="DeWocracy admin dashboard & mobile app"
                 />
@@ -85,7 +85,7 @@ function IndexPage() {
               <div>
                 <Img
                   className="w-12 h-12"
-                  fluid={data.feat1.childImageSharp.fixed}
+                  fixed={data.feat1.childImageSharp.fixed}
                   alt=""
                 />
                 <h3 className="text-xl font-bold py-2">
@@ -101,7 +101,7 @@ function IndexPage() {
               <div>
                 <Img
                   className="w-12 h-12"
-                  fluid={data.feat6.childImageSharp.fixed}
+                  fixed={data.feat6.childImageSharp.fixed}
                   alt=""
                 />
                 <h3 className="text-xl font-bold py-2">
@@ -118,7 +118,7 @@ function IndexPage() {
               <div>
                 <Img
                   className="w-12 h-12"
-                  fluid={data.feat3.childImageSharp.fixed}
+                  fixed={data.feat3.childImageSharp.fixed}
                   alt=""
                 />
                 <h3 className="text-xl font-bold py-2">
@@ -135,7 +135,7 @@ function IndexPage() {
               <div>
                 <Img
                   className="w-12 h-12"
-                  fluid={data.feat2.childImageSharp.fixed}
+                  fixed={data.feat2.childImageSharp.fixed}
                   alt=""
                 />
                 <h3 className="text-xl font-bold py-2">
@@ -151,7 +151,7 @@ function IndexPage() {
               <div>
                 <Img
                   className="w-12 h-12"
-                  fluid={data.feat5.childImageSharp.fixed}
+                  fixed={data.feat5.childImageSharp.fixed}
                   alt=""
                 />
                 <h3 className="text-xl font-bold py-2">
@@ -168,7 +168,7 @@ function IndexPage() {
               <div>
                 <Img
                   className="w-12 h-12"
-                  fluid={data.feat4.childImageSharp.fixed}
+                  fixed={data.feat4.childImageSharp.fixed}
                   alt=""
                 />
                 <h3 className="text-xl font-bold py-2">
@@ -187,8 +187,8 @@ function IndexPage() {
               <figure className="w-auto lg:w-200">
                 <Zoom>
                   <Img
-                    className="w-full h-full"
-                    fluid={data.mockup3.childImageSharp.fluid}
+                      className="w-200"
+                      fluid={data.mockup3.childImageSharp.fluid}
                     alt="DeWocracy admin dashboard & mobile app"
                   />
                 </Zoom>
@@ -228,8 +228,8 @@ function IndexPage() {
             <figure className="w-200 w-auto lg:w-200">
               <Zoom>
                 <Img
-                  className="w-full h-full"
-                  fluid={data.mockup2.childImageSharp.fluid}
+                    className="w-200"
+                    fluid={data.mockup2.childImageSharp.fluid}
                   alt="DeWocracy admin dashboard & mobile app"
                 />
               </Zoom>
@@ -240,7 +240,7 @@ function IndexPage() {
 
       <BackgroundImage
         Tag="div"
-        className="w-full bg-fixed bg-cover min-h-screen"
+        className="w-full bg-fixed bg-cover min-h-screen py-32"
         fluid={data.bgStripes.childImageSharp.fluid}
         backgroundColor={`#334afd`}
       >
@@ -279,15 +279,13 @@ export const query = graphql`
   query {
     bgStripes: file(relativePath: { eq: "bg-purple-strokes.jpg" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 1920) {
+        fluid(maxWidth: 1920, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
     mockup1: file(relativePath: { eq: "dewocracy-app-mockup-1.png" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
         fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
@@ -295,8 +293,6 @@ export const query = graphql`
     }
     mockup2: file(relativePath: { eq: "dewocracy-app-mockup-2.png" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
         fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
@@ -304,8 +300,6 @@ export const query = graphql`
     }
     mockup3: file(relativePath: { eq: "dewocracy-app-mockup-3.png" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
         fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
@@ -313,8 +307,6 @@ export const query = graphql`
     }
     feat1: file(relativePath: { eq: "dewocracy-feat-1.png" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
         fixed(width: 60) {
           ...GatsbyImageSharpFixed_withWebp_noBase64
         }
@@ -322,8 +314,6 @@ export const query = graphql`
     }
     feat2: file(relativePath: { eq: "dewocracy-feat-2.png" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
         fixed(width: 60) {
           ...GatsbyImageSharpFixed_withWebp_noBase64
         }
@@ -331,8 +321,6 @@ export const query = graphql`
     }
     feat3: file(relativePath: { eq: "dewocracy-feat-3.png" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
         fixed(width: 60) {
           ...GatsbyImageSharpFixed_withWebp_noBase64
         }
@@ -340,8 +328,6 @@ export const query = graphql`
     }
     feat4: file(relativePath: { eq: "dewocracy-feat-4.png" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
         fixed(width: 60) {
           ...GatsbyImageSharpFixed_withWebp_noBase64
         }
@@ -349,8 +335,6 @@ export const query = graphql`
     }
     feat5: file(relativePath: { eq: "dewocracy-feat-5.png" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
         fixed(width: 60) {
           ...GatsbyImageSharpFixed_withWebp_noBase64
         }
@@ -358,8 +342,6 @@ export const query = graphql`
     }
     feat6: file(relativePath: { eq: "dewocracy-feat-6.png" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
         fixed(width: 60) {
           ...GatsbyImageSharpFixed_withWebp_noBase64
         }
