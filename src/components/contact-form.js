@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { navigate } from "gatsby-link";
-import {Trans, useTranslation} from "gatsby-plugin-react-i18next";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 
 function encode(data) {
   return Object.keys(data)
@@ -10,7 +10,7 @@ function encode(data) {
 
 export const ContactForm = () => {
   const [state, setState] = useState({});
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });

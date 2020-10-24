@@ -1,10 +1,10 @@
 import { useStaticQuery, graphql } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import {Helmet, useTranslation} from "gatsby-plugin-react-i18next";
+import { Helmet, useTranslation } from "gatsby-plugin-react-i18next";
 
 function SEO({ description, lang, meta, keywords, title }) {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   const { site } = useStaticQuery(graphql`
     query DefaultSEOQuery {
       site {

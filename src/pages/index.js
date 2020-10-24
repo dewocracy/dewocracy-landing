@@ -20,7 +20,16 @@ import { Trans } from "gatsby-plugin-react-i18next";
 function IndexPage() {
   return (
     <Layout>
-      <SEO title="DeWocracy - Teletrabajo | Trabaja desde cualquier lugar" keywords={['DeWocracy', 'teletrabajo', 'oficina', 'opcupación', 'trabajo en remoto']}/>
+      <SEO
+        title="DeWocracy - Teletrabajo | Trabaja desde cualquier lugar"
+        keywords={[
+          "DeWocracy",
+          "teletrabajo",
+          "oficina",
+          "opcupación",
+          "trabajo en remoto",
+        ]}
+      />
       <div
         className="w-full bg-fixed bg-cover min-h-screen"
         style={{ backgroundImage: `url(${bgPurpleStrokes})` }}
@@ -142,7 +151,9 @@ function IndexPage() {
                 </h3>
                 <p className="text-opacity-75">
                   <Trans>
-                    Monitoriza en tiempo real desde dónde trabajan tus equipos. Obtiene los datos necesarios para el desarrollo de una estrategia híbrida de trabajo en oficina y remoto.
+                    Monitoriza en tiempo real desde dónde trabajan tus equipos.
+                    Obtiene los datos necesarios para el desarrollo de una
+                    estrategia híbrida de trabajo en oficina y remoto.
                   </Trans>
                 </p>
               </div>
@@ -216,7 +227,10 @@ function IndexPage() {
         className="w-full bg-fixed bg-cover min-h-screen py-32"
         style={{ backgroundImage: `url(${bgPurpleStrokes})` }}
       >
-        <section id="pricing" className="container mx-auto text-white px-8 lg:px-0">
+        <section
+          id="pricing"
+          className="container mx-auto text-white px-8 lg:px-0"
+        >
           <p className="py-8 font-bold leading-tight text-xl">
             <Trans>Planes y precios</Trans>
           </p>

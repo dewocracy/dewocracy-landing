@@ -25,9 +25,10 @@ export const PaymentsPlans = () => {
   const [plan, setPlan] = useState("biannual");
   const { t } = useTranslation();
   const { startup, business } = useMemo(() => plans[plan], [plan]);
-  const changePlan = useCallback(() =>
-    setPlan(plan === "biannual" ? "monthly" : "biannual")
-  , [plan]);
+  const changePlan = useCallback(
+    () => setPlan(plan === "biannual" ? "monthly" : "biannual"),
+    [plan]
+  );
   return (
     <Fragment>
       <div className="grid justify-center">
@@ -53,10 +54,14 @@ export const PaymentsPlans = () => {
       <div className="grid lg:grid-cols-3 gap-8 justify-center">
         <div className="grid rounded-lg bg-white p-8 md:p-10 lg:p-12 max-w-md gap-y-8">
           <div>
-            <p className="text-lightBlue text-2xl md:text-4xl font-bold"><Trans>Free</Trans></p>
+            <p className="text-lightBlue text-2xl md:text-4xl font-bold">
+              <Trans>Free</Trans>
+            </p>
             <p className="text-lightBlue text-2xl md:text-4xl">
               <span className="font-bold">{getCurrencyText(0)}</span>
-              <span className="text-sm"><Trans> Mes / Usuario</Trans></span>
+              <span className="text-sm">
+                <Trans> Mes / Usuario</Trans>
+              </span>
             </p>
           </div>
           <ol className="text-black text-sm md:text-md xl:text-lg ">
@@ -99,7 +104,9 @@ export const PaymentsPlans = () => {
             </p>
             <p className="text-purple text-2xl md:text-4xl">
               <span className="font-bold">{startup}</span>
-              <span className="text-sm"><Trans> Mes / Usuario</Trans></span>
+              <span className="text-sm">
+                <Trans> Mes / Usuario</Trans>
+              </span>
             </p>
           </div>
           <ol className="text-black text-sm md:text-md xl:text-lg">
