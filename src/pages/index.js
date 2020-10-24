@@ -1,6 +1,4 @@
 import React from "react";
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -55,13 +53,11 @@ function IndexPage() {
           </div>
           <div>
             <figure className="w-auto lg:w-200 lg:pt-24">
-              <Zoom>
-                <Img
-                  className="w-200"
-                  fluid={data.mockup1.childImageSharp.fluid}
-                  alt="DeWocracy admin dashboard & mobile app"
-                />
-              </Zoom>
+              <Img
+                className="w-full h-full"
+                fluid={data.mockup1.childImageSharp.fluid}
+                alt="DeWocracy admin dashboard & mobile app"
+              />
             </figure>
           </div>
         </section>
@@ -185,13 +181,11 @@ function IndexPage() {
             </div>
             <div>
               <figure className="w-auto lg:w-200">
-                <Zoom>
-                  <Img
-                      className="w-200"
-                      fluid={data.mockup3.childImageSharp.fluid}
-                    alt="DeWocracy admin dashboard & mobile app"
-                  />
-                </Zoom>
+                <Img
+                  className="w-full h-full"
+                  fluid={data.mockup3.childImageSharp.fluid}
+                  alt="DeWocracy admin dashboard & mobile app"
+                />
               </figure>
             </div>
           </div>
@@ -226,13 +220,11 @@ function IndexPage() {
           </div>
           <div>
             <figure className="w-200 w-auto lg:w-200">
-              <Zoom>
-                <Img
-                    className="w-200"
-                    fluid={data.mockup2.childImageSharp.fluid}
-                  alt="DeWocracy admin dashboard & mobile app"
-                />
-              </Zoom>
+              <Img
+                className="w-full h-full"
+                fluid={data.mockup2.childImageSharp.fluid}
+                alt="DeWocracy admin dashboard & mobile app"
+              />
             </figure>
           </div>
         </section>
