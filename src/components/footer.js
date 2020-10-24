@@ -46,11 +46,7 @@ export const Footer = () => {
       <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4  justify-center lg:justify-between md:gap-y-8">
         <div className="flex md:justify-center">
           <a href="/" title="DeWocracy home">
-            <Img
-                className="w-56"
-                fluid={dwBlue.childImageSharp.fluid}
-                alt=""
-            />
+            <Img className="w-56" fluid={dwBlue.childImageSharp.fluid} alt="" />
           </a>
         </div>
         <div className="flex justify-center">
@@ -60,14 +56,14 @@ export const Footer = () => {
             title="Download DeWocracy app from the apple store"
           >
             <Img
-                className="w-40"
-                fluid={downloadApple.childImageSharp.fluid}
-                alt=""
+              className="w-40"
+              fluid={downloadApple.childImageSharp.fluid}
+              alt=""
             />
           </a>
           <a href="#contact" title="Download DeWocracy app from the play store">
             <Img
-                className="w-40"
+              className="w-40"
               fluid={downloadPlay.childImageSharp.fluid}
               alt=""
             />

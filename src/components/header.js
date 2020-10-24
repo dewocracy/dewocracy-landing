@@ -14,8 +14,8 @@ function Header() {
       <header className="grid grid-cols-3 md:flex items-center justify-center md:justify-between content-start pl-0 md:px-8 py-4 md:py-6 w-screen bg-white h-18 shadow-xl">
         <div className="pl-4">
           <button
-              aria-expanded={isExpanded}
-              aria-controls="nav-menu-ex-1"
+            aria-expanded={isExpanded}
+            aria-controls="nav-menu-ex-1"
             className="items-center block px-3 py-2 border border-lightBlue border-opacity-25 rounded w-10 md:hidden"
             onClick={() => toggleExpansion(!isExpanded)}
           >
@@ -23,7 +23,7 @@ function Header() {
             <FontAwesomeIcon icon={faBars} className="text-primary" />
           </button>
           <nav
-              id="nav-menu-ex-1"
+            id="nav-menu-ex-1"
             className={`${
               isExpanded ? `block` : `hidden`
             } md:items-center w-full md:w-auto text-primary`}
