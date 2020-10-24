@@ -3,8 +3,20 @@ const tailwindConfig = require("./tailwind.config.js");
 
 const fullConfig = resolveConfig(tailwindConfig);
 
+const {
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = 'https://www.example.com',
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV
+} = process.env;
+
+const isNetlifyProduction = NETLIFY_ENV === 'production';
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
+
+
 module.exports = {
   siteMetadata: {
+    siteUrl,
     title: `DeWocracy`,
     description: `DeWocracy ofrece soluciones para el teletrabajo y el desarrollo de una estrategia de oficina híbrida. Gestiona el trabajo remoto, controla la ocupación de tu oficina, reduce costes e incrementa la flexibilidad de tu empresa sin disminuir la productividad.`,
     author: `@de_wocracy`,
@@ -60,5 +72,26 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        resolveEnv: () => NETLIFY_ENV,
+        env: {
+          production: {
+            policy: [{ userAgent: '*' }]
+          },
+          'branch-deploy': {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+            sitemap: null,
+            host: null
+          },
+          'deploy-preview': {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+            sitemap: null,
+            host: null
+          }
+        }
+      }
+    }
   ],
 };
