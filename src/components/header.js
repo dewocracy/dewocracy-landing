@@ -53,11 +53,9 @@ function Header() {
               </nav>
           </div>
           <Link to="/" className="md:order-first flex justify-center">
-          <h1 className={`flex items-center no-underline ${isExpanded ? `hidden` : `block`}`}>
-            <figure>
+            <figure className={`flex items-center no-underline ${isExpanded ? `hidden` : `block`}`}>
               <img width="150px" alt="DeWocracy logo" src={dewocracyLogo} />
             </figure>
-          </h1>
         </Link>
           <ul className="hidden md:inline-flex flex justify-center md:justify-end gap-4 text-primary text-sm">
             {languages.map((lng) => (

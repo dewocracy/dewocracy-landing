@@ -20,7 +20,7 @@ import { Trans } from "gatsby-plugin-react-i18next";
 function IndexPage() {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="DeWocracy - Teletrabajo | Trabaja desde cualquier lugar" keywords={['DeWocracy', 'teletrabajo', 'oficina', 'opcupación', 'trabajo en remoto']}/>
       <div
         className="w-full bg-fixed bg-cover min-h-screen"
         style={{ backgroundImage: `url(${bgPurpleStrokes})` }}
