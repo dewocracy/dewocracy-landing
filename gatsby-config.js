@@ -1,10 +1,21 @@
 const resolveConfig = require("tailwindcss/resolveConfig");
 const tailwindConfig = require("./tailwind.config.js");
-
 const fullConfig = resolveConfig(tailwindConfig);
+const path = require("path");
+
+const {
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = "https://www.example.com",
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV,
+} = process.env;
+
+const isNetlifyProduction = NETLIFY_ENV === "production";
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 module.exports = {
   siteMetadata: {
+    siteUrl,
     title: `DeWocracy`,
     description: `DeWocracy ofrece soluciones para el teletrabajo y el desarrollo de una estrategia de oficina híbrida. Gestiona el trabajo remoto, controla la ocupación de tu oficina, reduce costes e incrementa la flexibilidad de tu empresa sin disminuir la productividad.`,
     author: `@de_wocracy`,
@@ -18,6 +29,22 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-fontawesome-css`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: "gatsby-background-image-es5",
+      options: {
+        // For Tailwind
+        specialChars: "/:",
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `DeWocracy`,
@@ -27,6 +54,20 @@ module.exports = {
         theme_color: fullConfig.theme.colors.primary,
         display: `minimal-ui`,
         icon: `src/images/dw-blue.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Inter",
+              variants: ["300", "400", "500", "700"],
+              subsets: ["latin"],
+            },
+          ],
+        },
       },
     },
     {
@@ -57,6 +98,27 @@ module.exports = {
           },
           keySeparator: false,
           nsSeparator: false,
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        resolveEnv: () => NETLIFY_ENV,
+        env: {
+          production: {
+            policy: [{ userAgent: "*" }],
+          },
+          "branch-deploy": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+            sitemap: null,
+            host: null,
+          },
+          "deploy-preview": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+            sitemap: null,
+            host: null,
+          },
         },
       },
     },

@@ -9,6 +9,7 @@ function SEO({ description, lang, meta, keywords, title }) {
     query DefaultSEOQuery {
       site {
         siteMetadata {
+          siteUrl
           title
           description
           author
@@ -46,6 +47,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `summary`,
         },
         {
+          name: `twitter:site`,
+          content: site.siteMetadata.author,
+        },
+        {
           name: `twitter:creator`,
           content: site.siteMetadata.author,
         },
@@ -69,10 +74,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         .concat(meta)}
       title={t(title)}
     >
-      <link
-        href="https://fonts.googleapis.com/css?family=Inter"
-        rel="stylesheet"
-      />
+      <link rel="canonical" href={site.siteMetadata.siteUrl} />
     </Helmet>
   );
 }

@@ -1,23 +1,16 @@
 import React from "react";
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import bgPurpleStrokes from "../images/bg-purple-strokes.jpg";
-import mockup1 from "../images/dewocracy-app-mockup-1.png";
-import mockup2 from "../images/dewocracy-app-mockup-2.png";
-import mockup3 from "../images/dewocracy-app-mockup-3.png";
-import feat1 from "../images/dewocracy-feat-1.png";
-import feat2 from "../images/dewocracy-feat-2.png";
-import feat3 from "../images/dewocracy-feat-3.png";
-import feat4 from "../images/dewocracy-feat-4.png";
-import feat5 from "../images/dewocracy-feat-5.png";
-import feat6 from "../images/dewocracy-feat-6.png";
+
 import { PaymentsPlans } from "../components/payments-plans";
 import { ContactForm } from "../components/contact-form";
 import { Trans } from "gatsby-plugin-react-i18next";
+import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
+import BackgroundImage from "gatsby-background-image-es5";
 
 function IndexPage() {
+  const data = useStaticQuery(query);
   return (
     <Layout>
       <SEO
@@ -30,9 +23,11 @@ function IndexPage() {
           "trabajo en remoto",
         ]}
       />
-      <div
+      <BackgroundImage
+        Tag="div"
         className="w-full bg-fixed bg-cover min-h-screen"
-        style={{ backgroundImage: `url(${bgPurpleStrokes})` }}
+        fluid={data.bgStripes.childImageSharp.fluid}
+        backgroundColor={`#334afd`}
       >
         <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center gap-32">
           <div className="grid content-center px-8 lg:px-0">
@@ -58,16 +53,15 @@ function IndexPage() {
           </div>
           <div>
             <figure className="w-auto lg:w-200 lg:pt-24">
-              <Zoom>
-                <img
-                  src={mockup1}
-                  alt="DeWocracy admin dashboard & mobile app"
-                />
-              </Zoom>
+              <Img
+                className="w-full h-full"
+                fluid={data.mockup1.childImageSharp.fluid}
+                alt="DeWocracy admin dashboard & mobile app"
+              />
             </figure>
           </div>
         </section>
-      </div>
+      </BackgroundImage>
 
       <div className="w-full bg-fixed min-h-screen bg-darkBlue py-16 lg:py-32">
         <section className="container mx-auto text-white px-8 lg:px-0">
@@ -85,9 +79,11 @@ function IndexPage() {
           <div className="grid content-center grid grid-cols-1 lg:grid-cols-2 content-center gap-32">
             <div className="grid content-center grid grid-cols-1 sm:grid-cols-2 content-center gap-x-8 gap-y-24">
               <div>
-                <figure className="w-48">
-                  <img src={feat1} alt="DeWocracy feature 1" width="60" />
-                </figure>
+                <Img
+                  className="w-12 h-12"
+                  fixed={data.feat1.childImageSharp.fixed}
+                  alt=""
+                />
                 <h3 className="text-xl font-bold py-2">
                   <Trans>Límites de ocupación</Trans>
                 </h3>
@@ -99,9 +95,11 @@ function IndexPage() {
                 </p>
               </div>
               <div>
-                <figure className="w-48">
-                  <img src={feat6} alt="DeWocracy feature 1" width="60" />
-                </figure>
+                <Img
+                  className="w-12 h-12"
+                  fixed={data.feat6.childImageSharp.fixed}
+                  alt=""
+                />
                 <h3 className="text-xl font-bold py-2">
                   <Trans>Control horario</Trans>
                 </h3>
@@ -114,9 +112,11 @@ function IndexPage() {
                 </p>
               </div>
               <div>
-                <figure className="w-48">
-                  <img src={feat3} alt="DeWocracy feature 1" width="60" />
-                </figure>
+                <Img
+                  className="w-12 h-12"
+                  fixed={data.feat3.childImageSharp.fixed}
+                  alt=""
+                />
                 <h3 className="text-xl font-bold py-2">
                   <Trans>Gestión de equipos</Trans>
                 </h3>
@@ -129,9 +129,11 @@ function IndexPage() {
                 </p>
               </div>
               <div>
-                <figure className="w-48">
-                  <img src={feat2} alt="DeWocracy feature" width="60" />
-                </figure>
+                <Img
+                  className="w-12 h-12"
+                  fixed={data.feat2.childImageSharp.fixed}
+                  alt=""
+                />
                 <h3 className="text-xl font-bold py-2">
                   <Trans>Control de costes</Trans>
                 </h3>
@@ -143,9 +145,11 @@ function IndexPage() {
                 </p>
               </div>
               <div>
-                <figure className="w-48">
-                  <img src={feat5} alt="DeWocracy feature" width="60" />
-                </figure>
+                <Img
+                  className="w-12 h-12"
+                  fixed={data.feat5.childImageSharp.fixed}
+                  alt=""
+                />
                 <h3 className="text-xl font-bold py-2">
                   <Trans>Espacios de trabajo</Trans>
                 </h3>
@@ -158,9 +162,11 @@ function IndexPage() {
                 </p>
               </div>
               <div>
-                <figure className="w-48">
-                  <img src={feat4} alt="DeWocracy feature" width="60" />
-                </figure>
+                <Img
+                  className="w-12 h-12"
+                  fixed={data.feat4.childImageSharp.fixed}
+                  alt=""
+                />
                 <h3 className="text-xl font-bold py-2">
                   <Trans>Gestión de vacaciones</Trans>
                 </h3>
@@ -175,9 +181,11 @@ function IndexPage() {
             </div>
             <div>
               <figure className="w-auto lg:w-200">
-                <Zoom>
-                  <img src={mockup3} alt="DeWocracy Admin Dashboard" />
-                </Zoom>
+                <Img
+                  className="w-full h-full"
+                  fluid={data.mockup3.childImageSharp.fluid}
+                  alt="DeWocracy admin dashboard & mobile app"
+                />
               </figure>
             </div>
           </div>
@@ -212,20 +220,21 @@ function IndexPage() {
           </div>
           <div>
             <figure className="w-200 w-auto lg:w-200">
-              <Zoom>
-                <img
-                  src={mockup2}
-                  alt="DeWocracy admin dashboard & mobile app"
-                />
-              </Zoom>
+              <Img
+                className="w-full h-full"
+                fluid={data.mockup2.childImageSharp.fluid}
+                alt="DeWocracy admin dashboard & mobile app"
+              />
             </figure>
           </div>
         </section>
       </div>
 
-      <div
+      <BackgroundImage
+        Tag="div"
         className="w-full bg-fixed bg-cover min-h-screen py-32"
-        style={{ backgroundImage: `url(${bgPurpleStrokes})` }}
+        fluid={data.bgStripes.childImageSharp.fluid}
+        backgroundColor={`#334afd`}
       >
         <section
           id="pricing"
@@ -239,7 +248,7 @@ function IndexPage() {
           </h2>
           <PaymentsPlans />
         </section>
-      </div>
+      </BackgroundImage>
 
       <div className="w-full bg-fixed py-16 bg-darkBlue">
         <section className="container mx-auto text-white px-8 lg:px-0">
@@ -257,3 +266,78 @@ function IndexPage() {
 }
 
 export default IndexPage;
+
+export const query = graphql`
+  query {
+    bgStripes: file(relativePath: { eq: "bg-purple-strokes.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    mockup1: file(relativePath: { eq: "dewocracy-app-mockup-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    mockup2: file(relativePath: { eq: "dewocracy-app-mockup-2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    mockup3: file(relativePath: { eq: "dewocracy-app-mockup-3.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    feat1: file(relativePath: { eq: "dewocracy-feat-1.png" }) {
+      childImageSharp {
+        fixed(width: 60) {
+          ...GatsbyImageSharpFixed_withWebp_noBase64
+        }
+      }
+    }
+    feat2: file(relativePath: { eq: "dewocracy-feat-2.png" }) {
+      childImageSharp {
+        fixed(width: 60) {
+          ...GatsbyImageSharpFixed_withWebp_noBase64
+        }
+      }
+    }
+    feat3: file(relativePath: { eq: "dewocracy-feat-3.png" }) {
+      childImageSharp {
+        fixed(width: 60) {
+          ...GatsbyImageSharpFixed_withWebp_noBase64
+        }
+      }
+    }
+    feat4: file(relativePath: { eq: "dewocracy-feat-4.png" }) {
+      childImageSharp {
+        fixed(width: 60) {
+          ...GatsbyImageSharpFixed_withWebp_noBase64
+        }
+      }
+    }
+    feat5: file(relativePath: { eq: "dewocracy-feat-5.png" }) {
+      childImageSharp {
+        fixed(width: 60) {
+          ...GatsbyImageSharpFixed_withWebp_noBase64
+        }
+      }
+    }
+    feat6: file(relativePath: { eq: "dewocracy-feat-6.png" }) {
+      childImageSharp {
+        fixed(width: 60) {
+          ...GatsbyImageSharpFixed_withWebp_noBase64
+        }
+      }
+    }
+  }
+`;

@@ -52,6 +52,7 @@ export const ContactForm = () => {
             <Trans>Nombre:</Trans>
           </label>
           <input
+            id="name"
             type="text"
             name="name"
             required
@@ -65,6 +66,7 @@ export const ContactForm = () => {
             <Trans>Email:</Trans>
           </label>
           <input
+            id="email"
             type="email"
             name="email"
             required
@@ -74,10 +76,11 @@ export const ContactForm = () => {
           />
         </div>
         <div className="grid gap-4 w-1/2">
-          <label htmlFor="email" className="font-bold pr-4">
+          <label htmlFor="company" className="font-bold pr-4">
             <Trans>Empresa:</Trans>
           </label>
           <input
+            id="company"
             type="text"
             name="company"
             required
@@ -92,6 +95,7 @@ export const ContactForm = () => {
             <Trans>Mensaje:</Trans>
           </label>
           <textarea
+            id="message"
             className="h-40 rounded-sm text-black p-2 md:m-0"
             required
             maxLength="500"
@@ -101,6 +105,7 @@ export const ContactForm = () => {
         </div>
         <div className="flex justify-center">
           <button
+            aria-label="Send"
             type="submit"
             className="btn text-greyBlue cursor-pointer w-full md:w-auto "
           >

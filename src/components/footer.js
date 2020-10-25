@@ -1,11 +1,9 @@
-import dwBlue from "../images/dewocracy-blue.png";
-import downloadApple from "../images/download-apple-store.png";
-import downloadPlay from "../images/download-play-store.png";
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 
 export const Footer = () => {
-  const { site } = useStaticQuery(graphql`
+  const { site, dwBlue, downloadApple, downloadPlay } = useStaticQuery(graphql`
     query FooterQuery {
       site {
         siteMetadata {
@@ -14,37 +12,60 @@ export const Footer = () => {
           medium
         }
       }
+      dwBlue: file(relativePath: { eq: "dewocracy-blue.png" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fluid(maxWidth: 150) {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
+          }
+        }
+      }
+      downloadApple: file(relativePath: { eq: "download-apple-store.png" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fluid(maxWidth: 150) {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
+          }
+        }
+      }
+      downloadPlay: file(relativePath: { eq: "download-play-store.png" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fluid(maxWidth: 152) {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
+          }
+        }
+      }
     }
   `);
   return (
     <footer className="w-full bg-fixed py-16 px-8 md:px-0">
-      <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4  justify-center lg:justify-between">
-        <div className="flex justify-center">
+      <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4  justify-center lg:justify-between md:gap-y-8">
+        <div className="flex md:justify-center">
           <a href="/" title="DeWocracy home">
-            <img
-              width="200px"
-              src={dwBlue}
-              alt="DeWocracy admin dashboard & mobile app"
-            />
+            <Img className="w-56" fluid={dwBlue.childImageSharp.fluid} alt="" />
           </a>
         </div>
-        <div className="flex items-end">
+        <div className="flex justify-center">
           <a
             className="pr-4"
             href="#contact"
             title="Download DeWocracy app from the apple store"
           >
-            <img
-              width="150px"
-              src={downloadApple}
-              alt="DeWocracy admin dashboard & mobile app"
+            <Img
+              className="w-40"
+              fluid={downloadApple.childImageSharp.fluid}
+              alt=""
             />
           </a>
           <a href="#contact" title="Download DeWocracy app from the play store">
-            <img
-              width="152x"
-              src={downloadPlay}
-              alt="DeWocracy admin dashboard & mobile app"
+            <Img
+              className="w-40"
+              fluid={downloadPlay.childImageSharp.fluid}
+              alt=""
             />
           </a>
         </div>
