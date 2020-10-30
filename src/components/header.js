@@ -13,8 +13,8 @@ function Header() {
         childImageSharp {
           # Specify the image processing specifications right in the query.
           # Makes it trivial to update as your page's design changes.
-          fluid(maxWidth: 150, quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
+          fixed(width: 150, quality: 90) {
+            ...GatsbyImageSharpFixed_withWebp_noBase64
           }
         }
       }
@@ -89,8 +89,8 @@ function Header() {
             }`}
           >
             <Img
-              className="w-40"
-              fluid={dwBlue.childImageSharp.fluid}
+              width="150px"
+              fixed={dwBlue.childImageSharp.fixed}
               alt="DeWocracy logo"
             />
           </figure>

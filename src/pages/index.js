@@ -278,21 +278,21 @@ export const query = graphql`
     }
     mockup1: file(relativePath: { eq: "dewocracy-app-mockup-1.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1200, quality: 90) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
     mockup2: file(relativePath: { eq: "dewocracy-app-mockup-2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1200, quality: 90) {
+        fluid(maxWidth: 900, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
     mockup3: file(relativePath: { eq: "dewocracy-app-mockup-3.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1200, quality: 90) {
+        fluid(maxWidth: 900, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }

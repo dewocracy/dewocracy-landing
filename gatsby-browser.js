@@ -15,14 +15,16 @@ class ScrollToTop {
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
+    const scrollContainer = document.getElementById("scroll-top-container");
+    if (!scrollContainer) {
+      return;
+    }
     if (scroll > 300) {
-      document.getElementById("scroll-top-container").classList.add("block");
-      document
-        .getElementById("scroll-top-container")
-        .classList.remove("hidden");
+      scrollContainer.classList.add("block");
+      scrollContainer.classList.remove("hidden");
     } else {
-      document.getElementById("scroll-top-container").classList.add("hidden");
-      document.getElementById("scroll-top-container").classList.remove("block");
+      scrollContainer.classList.add("hidden");
+      scrollContainer.classList.remove("block");
     }
   }
 
