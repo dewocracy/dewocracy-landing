@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
 import {
   faApple,
   faGoogle,
@@ -10,24 +9,16 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import dwBlue from './../images/dewocracy-blue.svg';
 
 export const Footer = () => {
-  const { site, dwBlue } = useStaticQuery(graphql`
+  const { site } = useStaticQuery(graphql`
     query FooterQuery {
       site {
         siteMetadata {
           linkedin
           twitter
           medium
-        }
-      }
-      dwBlue: file(relativePath: { eq: "dewocracy-blue.png" }) {
-        childImageSharp {
-          # Specify the image processing specifications right in the query.
-          # Makes it trivial to update as your page's design changes.
-          fixed(width: 250, quality: 90) {
-            ...GatsbyImageSharpFixed_withWebp_noBase64
-          }
         }
       }
     }
@@ -37,7 +28,7 @@ export const Footer = () => {
       <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4 justify-center lg:justify-between md:gap-y-8">
         <div className="flex justify-center lg:justify-start lg:items-end">
           <a href="/" title="DeWocracy home">
-            <Img width="250px" fixed={dwBlue.childImageSharp.fixed} alt="" />
+            <img width="250px" src={dwBlue} alt="" />
           </a>
         </div>
         <div className="grid justify-center gap-y-4 text-primary  text-center">
