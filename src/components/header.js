@@ -3,23 +3,9 @@ import React from "react";
 import Headroom from "react-headroom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import dwBlue from './../images/dewocracy-blue.svg';
 
 function Header() {
-  const { dwBlue } = useStaticQuery(graphql`
-    query {
-      dwBlue: file(relativePath: { eq: "dewocracy-blue.png" }) {
-        childImageSharp {
-          # Specify the image processing specifications right in the query.
-          # Makes it trivial to update as your page's design changes.
-          fluid(maxWidth: 150) {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
-          }
-        }
-      }
-    }
-  `);
   const [isExpanded, toggleExpansion] = React.useState(false);
   const { languages, language, originalPath } = useI18next();
   const { t } = useTranslation();
@@ -88,9 +74,10 @@ function Header() {
               isExpanded ? `hidden` : `block`
             }`}
           >
-            <Img
-              className="w-40"
-              fluid={dwBlue.childImageSharp.fluid}
+            <img
+              width="150px"
+              height="60px"
+              src={dwBlue}
               alt="DeWocracy logo"
             />
           </figure>
