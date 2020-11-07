@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import { Layout } from "../components/layout";
+import { SEO } from "../components/seo";
 
 import { PaymentsPlans } from "../components/payments-plans";
 import { ContactForm } from "../components/contact-form";
@@ -25,7 +25,7 @@ function IndexPage() {
       />
       <BackgroundImage
         Tag="div"
-        className="w-full bg-fixed bg-cover min-h-screen"
+        className="w-full md:bg-fixed bg-cover min-h-screen"
         fluid={data.bgStripes.childImageSharp.fluid}
         backgroundColor={`#334afd`}
       >
@@ -63,7 +63,7 @@ function IndexPage() {
         </section>
       </BackgroundImage>
 
-      <div className="w-full bg-fixed min-h-screen bg-darkBlue py-16 lg:py-32">
+      <div className="w-full min-h-screen bg-darkBlue py-16 lg:py-32">
         <section className="container mx-auto text-white px-8 lg:px-0">
           <div className="lg:w-1/2">
             <p className="py-8 text-teal font-bold leading-tight text-xl">
@@ -192,7 +192,7 @@ function IndexPage() {
         </section>
       </div>
 
-      <div className="w-full bg-fixed min-h-screen py-16 lg:py-32">
+      <div className="w-full min-h-screen py-16 lg:py-32">
         <section className="container mx-auto text-darkBlue grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center px-8 lg:px-0">
           <div className="grid content-center">
             <div>
@@ -232,7 +232,7 @@ function IndexPage() {
 
       <BackgroundImage
         Tag="div"
-        className="w-full bg-fixed bg-cover min-h-screen py-32"
+        className="w-full md:bg-fixed bg-cover min-h-screen py-32"
         fluid={data.bgStripes.childImageSharp.fluid}
         backgroundColor={`#334afd`}
       >
@@ -250,7 +250,7 @@ function IndexPage() {
         </section>
       </BackgroundImage>
 
-      <div className="w-full bg-fixed py-16 bg-darkBlue">
+      <div className="w-full py-16 bg-darkBlue">
         <section className="container mx-auto text-white px-8 lg:px-0">
           <p className="py-8 font-bold leading-tight text-xl" id="contact">
             <Trans>Contacto</Trans>

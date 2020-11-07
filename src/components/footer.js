@@ -9,7 +9,8 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import dwBlue from './../images/dewocracy-blue.svg';
+import dwBlue from "./../images/dewocracy-blue.svg";
+import { OutboundLink } from "gatsby-plugin-amplitude-analytics";
 
 export const Footer = () => {
   const { site } = useStaticQuery(graphql`
@@ -24,7 +25,7 @@ export const Footer = () => {
     }
   `);
   return (
-    <footer className="w-full bg-fixed py-10 px-8 md:px-0">
+    <footer className="w-full py-10 px-8 md:px-0">
       <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4 justify-center lg:justify-between md:gap-y-8">
         <div className="flex justify-center lg:justify-start lg:items-end">
           <a href="/" title="DeWocracy home">
@@ -58,7 +59,7 @@ export const Footer = () => {
         </div>
         <div className="grid justify-items-center lg:justify-items-end lg:items-end my-10 lg:my-0">
           <p className="text-primary font-bold text-right flex justify-between w-64">
-            <a
+            <OutboundLink
               href={site.siteMetadata.linkedin}
               rel="noreferrer noopener"
               target="_blank"
@@ -69,8 +70,8 @@ export const Footer = () => {
                 className="text-primary"
                 size="2x"
               />
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink
               href={site.siteMetadata.twitter}
               rel="noreferrer noopener"
               target="_blank"
@@ -81,8 +82,8 @@ export const Footer = () => {
                 className="text-primary"
                 size="2x"
               />
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink
               href={site.siteMetadata.medium}
               rel="noreferrer noopener"
               target="_blank"
@@ -93,8 +94,8 @@ export const Footer = () => {
                 className="text-primary"
                 size="2x"
               />
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink
               href="https://wa.me/message/NULJD4OWUB3CA1"
               rel="noreferrer noopener"
               target="_blank"
@@ -105,7 +106,7 @@ export const Footer = () => {
                 className="text-primary"
                 size="2x"
               />
-            </a>
+            </OutboundLink>
           </p>
         </div>
       </section>
