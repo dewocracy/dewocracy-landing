@@ -1,18 +1,17 @@
 import * as React from "react";
 import { BarPropTypes, ResponsiveBar } from "@nivo/bar";
-import {theme} from "../../tailwind.config";
 
 export const SavingsGraph = ({ data }) => {
   return (
     <ResponsiveBar
       data={data}
-      keys={["Technological inversion", "Supplies costs", "Rent costs"]}
+      keys={["Supplies costs","DW costs", "Rent costs"]}
       indexBy="costType"
       margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
       padding={0.1}
       valueScale={{ type: "linear" }}
       indexScale={{ type: "band", round: true }}
-      colors={[theme.colors.teal, theme.colors.primary, theme.colors.purple]}
+      colors={['#b5fdfd', '#ffbebe', '#c6bcff']}
       borderColor={{ from: "color", modifiers: [["darker", 1.6]] }}
       axisTop={null}
       axisRight={null}
@@ -43,6 +42,21 @@ export const SavingsGraph = ({ data }) => {
           ],
         },
       ]}
+      tooltip={({ id, value, color }) => (
+          <strong style={{ color }}>
+            {id}: {value.toLocaleString(undefined, {
+            style: "currency",
+            currency: "EUR",
+          })}
+          </strong>
+      )}
+      theme={{
+        tooltip: {
+          container: {
+            background: '#333',
+          },
+        },
+      }}
       animate={true}
       motionStiffness={90}
       motionDamping={15}

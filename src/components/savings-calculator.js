@@ -159,12 +159,12 @@ export const SavingsCalculator = () => {
 
   // Debug :D
   // console.log({employees, officeSize, target, officeSizeWithDW, rentCostPerMonth, rentCostPerMonthWithDW, suppliesCost, suppliesCostWithDW, techInvestment, monthlySavings, annualSavings, savingsPercentage });
-
+  const showData = !!(employees && officeSize && target);
   return (
     <Fragment>
-      <div className="grid grid-cols-2 gap-x-4">
-        <div className="grid justify-center">
-          <div className="inline mt-4">
+      <div className="md:grid grid-cols-2 gap-x-4">
+        <div className="grid justify-center mt-10">
+          <div className="flex justify-between mt-6 items-center">
             <label htmlFor="employees" className="font-bold pr-4">
               <Trans>Empleados:</Trans>
             </label>
@@ -175,7 +175,7 @@ export const SavingsCalculator = () => {
               name="employees"
               required
               placeholder="Empleados"
-              className="rounded-sm text-black p-2 h-10 w-20"
+              className="rounded-sm text-black p-2 h-10 w-20 border border-grey"
               onChange={handleEmployeesChange}
               value={employees}
             />
@@ -186,7 +186,7 @@ export const SavingsCalculator = () => {
             max={1000}
             onChange={handleEmployeesChange}
           />
-          <div className="inline mt-4">
+          <div className="flex justify-between mt-6 items-center">
             <label htmlFor="employees" className="font-bold pr-4">
                 <Trans>m<sup>2</sup> oficina:</Trans>
             </label>
@@ -196,7 +196,7 @@ export const SavingsCalculator = () => {
               name="sizeOffice"
               required
               placeholder="m2 oficina"
-              className="rounded-sm text-black p-2 h-10 w-20"
+              className="rounded-sm text-black p-2 h-10 w-20 border border-grey"
               onChange={handleSizeOfficeChange}
               value={officeSize}
               max={10000}
@@ -208,7 +208,7 @@ export const SavingsCalculator = () => {
             max={10000}
             onChange={handleSizeOfficeChange}
           />
-          <div className="inline mt-4">
+          <div className="flex justify-between mt-6 items-center">
             <label htmlFor="target" className="font-bold pr-4">
               <Trans>Proporción de teletrabajo objetivo (%):</Trans>
             </label>
@@ -217,7 +217,7 @@ export const SavingsCalculator = () => {
               type="number"
               name="target"
               required
-              className="rounded-sm text-black p-2 h-10 w-20"
+              className="rounded-sm text-black p-2 h-10 w-20 border border-grey"
               onChange={handleTargetChange}
               value={target}
             />
@@ -228,7 +228,7 @@ export const SavingsCalculator = () => {
             max={100}
             onChange={handleTargetChange}
           />
-          <div className="mt-4">
+          {showData ? <div className="mt-4">
             <p className="my-4">Te ahorrarías...</p>
             <div className="font-bold mt-2">
               {isNaN(monthlySavings)
@@ -254,22 +254,22 @@ export const SavingsCalculator = () => {
                     maximumFractionDigits: 2,
                   })} de ahorro`}
             </p>
-          </div>
+          </div> : <></>}
         </div>
         <div className="w-full h-full">
-          {employees && officeSize && target ? (
+          {showData ? (
             <SavingsGraph
               data={[
                 {
                   costType: "Current costs",
-                  "Technological inversion": 0,
                   "Supplies costs": suppliesCost,
+                  "Technological inversion": 0,
                   "Rent costs": rentCostPerMonth,
                 },
                 {
                   costType: "With DeWocracy",
-                  "Technological inversion": techInvestment,
                   "Supplies costs": suppliesCostWithDW,
+                  "DW costs": techInvestment,
                   "Rent costs": rentCostPerMonthWithDW,
                 },
               ]}
