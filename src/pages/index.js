@@ -8,6 +8,7 @@ import { Trans } from "gatsby-plugin-react-i18next";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import BackgroundImage from "gatsby-background-image-es5";
+import {SavingsCalculator} from "../components/savings-calculator";
 
 function IndexPage() {
   const data = useStaticQuery(query);
@@ -249,6 +250,18 @@ function IndexPage() {
           <PaymentsPlans />
         </section>
       </BackgroundImage>
+
+      <div className="w-full bg-fixed min-h-screen py-16 lg:py-32">
+        <section className="container mx-auto text-darkBlue px-8 lg:px-0">
+          <p className="py-8 font-bold leading-tight text-xl">
+            <Trans>Calculadora de ahorro</Trans>
+          </p>
+          <h2 className="font-bold text-2xl lg:text-4xl pb-8">
+            <Trans>¿Cuánto podrías ahorrar implementando el teletrabajo con DeWocracy?</Trans>
+          </h2>
+          <SavingsCalculator />
+        </section>
+      </div>
 
       <div className="w-full bg-fixed py-16 bg-darkBlue">
         <section className="container mx-auto text-white px-8 lg:px-0">
