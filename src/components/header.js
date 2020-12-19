@@ -3,7 +3,7 @@ import React from "react";
 import Headroom from "react-headroom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import dwBlue from './../images/dewocracy-blue.svg';
+import dwBlue from "./../images/dewocracy-blue.svg";
 
 function Header() {
   const [isExpanded, toggleExpansion] = React.useState(false);

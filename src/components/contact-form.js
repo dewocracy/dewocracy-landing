@@ -46,9 +46,9 @@ export const ContactForm = () => {
           Don’t fill this out if you are a human: <input name="bot-field" />
         </label>
       </p>
-      <div className="w-1/2 grid gap-4">
-        <div className="grid gap-4 w-1/2">
-          <label htmlFor="name" className="font-bold pr-4">
+      <div className="grid lg:grid-cols-3 gap-10">
+          <div className="grid">
+          <label htmlFor="name" className="font-bold pr-4 pb-4">
             <Trans>Nombre:</Trans>
           </label>
           <input
@@ -57,12 +57,12 @@ export const ContactForm = () => {
             name="name"
             required
             placeholder="Gustav Mahler"
-            className="rounded-sm text-black p-2 h-10"
+            className="rounded-lg text-black py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-white"
             onChange={handleChange}
           />
-        </div>
-        <div className="grid gap-4 w-1/2">
-          <label htmlFor="email" className="font-bold pr-4">
+          </div>
+          <div className="grid">
+          <label htmlFor="email" className="font-bold pr-4 pb-4">
             <Trans>Email:</Trans>
           </label>
           <input
@@ -71,12 +71,12 @@ export const ContactForm = () => {
             name="email"
             required
             placeholder="name@domain.com"
-            className="rounded-sm text-black p-2 h-10"
+            className="rounded-lg text-black py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-white"
             onChange={handleChange}
           />
-        </div>
-        <div className="grid gap-4 w-1/2">
-          <label htmlFor="company" className="font-bold pr-4">
+          </div>
+          <div className="grid">
+          <label htmlFor="company" className="font-bold pr-4 pb-4">
             <Trans>Empresa:</Trans>
           </label>
           <input
@@ -85,18 +85,19 @@ export const ContactForm = () => {
             name="company"
             required
             placeholder={t("Empresa")}
-            className="rounded-sm text-black p-2 h-10"
+            className="rounded-lg text-black py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-white"
             onChange={handleChange}
           />
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 justify-center mt-md:mr-16 mt-4 gap-y-4">
+        <div className="grid grid-cols-1 justify-center mt-md:mr-16 mt-10 gap-y-4">
           <label htmlFor="message" className="font-bold">
             <Trans>Mensaje:</Trans>
           </label>
           <textarea
             id="message"
-            className="h-40 rounded-sm text-black p-2 md:m-0"
+            className="h-40 p-2 rounded-lg text-black py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-white"
             required
             maxLength="500"
             name="message"
@@ -107,11 +108,10 @@ export const ContactForm = () => {
           <button
             aria-label="Send"
             type="submit"
-            className="btn text-greyBlue cursor-pointer w-full md:w-auto "
+            className="btn text-primary cursor-pointer w-full md:w-auto mt-10"
           >
-            <Trans>Enviar</Trans>
+            <Trans>Send message</Trans>
           </button>
-        </div>
       </div>
     </form>
   );

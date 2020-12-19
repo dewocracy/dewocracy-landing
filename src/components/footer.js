@@ -9,7 +9,7 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import dwBlue from './../images/dewocracy-blue.svg';
+import dwBlue from "./../images/dewocracy-blue.svg";
 
 export const Footer = () => {
   const { site } = useStaticQuery(graphql`

@@ -1,7 +1,9 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, {Fragment, useCallback, useEffect, useState} from "react";
 import { Trans } from "gatsby-plugin-react-i18next";
 import { SavingsGraph } from "./savings-graph";
 import { useDebounce } from "../hooks/use-debounce";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const AVG_PRICE_METER_PER_MONTH = 28;
 
@@ -83,12 +85,12 @@ export const SavingsCalculator = () => {
   useEffect(() => {
     const result = AVG_PRICE_METER_PER_MONTH * officeSize;
     setRentCostPerMonth(Number(result.toFixed(2)));
-  }, [employeesSignal]);
+  }, [officeSizeSignal]);
 
   useEffect(() => {
     const result = AVG_PRICE_METER_PER_MONTH * officeSizeWithDW;
     setRentCostPerMonthWithDW(Number(result.toFixed(2)));
-  }, [employeesSignal, officeSizeWithDW]);
+  }, [officeSizeWithDW]);
 
   useEffect(() => {
     const result =
@@ -97,7 +99,7 @@ export const SavingsCalculator = () => {
       MONTHLY_COST.HEATING * officeSize +
       MONTHLY_COST.WATTER * officeSize;
     setSuppliesCost(Number(result.toFixed(2)));
-  }, [employeesSignal]);
+  }, [officeSizeSignal]);
 
   useEffect(() => {
     const result =
@@ -138,35 +140,47 @@ export const SavingsCalculator = () => {
     setSavingsPercentage(monthlySavings / (rentCostPerMonth + suppliesCost));
   }, [monthlySavings, rentCostPerMonth, suppliesCost]);
 
-  const handleEmployeesChange = (e) => {
+  const handleEmployeesChange = useCallback((e) => {
     if (!Number(e.target.value)) {
       return setEmployees("");
     }
     setEmployees(Number(e.target.value));
-  };
-  const handleSizeOfficeChange = (e) => {
+  }, []);
+  const handleSizeOfficeChange = useCallback((e) => {
     if (!Number(e.target.value)) {
       return setOfficeSize("");
     }
     setOfficeSize(Number(e.target.value));
-  };
-  const handleTargetChange = (e) => {
+  }, []);
+  const handleTargetChange = useCallback((e) => {
     if (!Number(e.target.value)) {
       return setTarget("");
     }
     setTarget(Number(e.target.value));
-  };
+  }, []);
 
   // Debug :D
-  // console.log({employees, officeSize, target, officeSizeWithDW, rentCostPerMonth, rentCostPerMonthWithDW, suppliesCost, suppliesCostWithDW, techInvestment, monthlySavings, annualSavings, savingsPercentage });
+  // console.log({
+  //   employees,
+  //   officeSize,
+  //   target,
+  //   officeSizeWithDW,
+  //   rentCostPerMonth,
+  //   rentCostPerMonthWithDW,
+  //   suppliesCost,
+  //   suppliesCostWithDW,
+  //   techInvestment,
+  //   monthlySavings,
+  //   annualSavings,
+  //   savingsPercentage,
+  // });
   const showData = !!(employees && officeSize && target);
   return (
     <Fragment>
       <div className="md:grid grid-cols-2 gap-x-4">
         <div className="grid justify-center mt-10">
-          <div className="flex justify-between mt-6 items-center">
-            <label htmlFor="employees" className="font-bold pr-4">
-              <Trans>Empleados:</Trans>
+            <label htmlFor="employees" className="font-bold pr-4 pb-4">
+              <Trans>Número de empleados:</Trans>
             </label>
             <input
               id="employees"
@@ -175,41 +189,27 @@ export const SavingsCalculator = () => {
               name="employees"
               required
               placeholder="Empleados"
-              className="rounded-sm text-black p-2 h-10 w-20 border border-grey"
+              className="rounded-lg text-black py-6 px-4 h-10 w-2/3 border border-grey"
               onChange={handleEmployeesChange}
               value={employees}
             />
-          </div>
-          <input
-            type="range"
-            value={employees || 0}
-            max={1000}
-            onChange={handleEmployeesChange}
-          />
-          <div className="flex justify-between mt-6 items-center">
-            <label htmlFor="employees" className="font-bold pr-4">
-                <Trans>m<sup>2</sup> oficina:</Trans>
+            <label htmlFor="employees" className="font-bold pr-4 pt-6 pb-4">
+              <Trans>
+                Tamaño de oficina (m<sup>2</sup>):
+              </Trans>
             </label>
-            <input
+              <input
               id="sizeOffice"
               type="number"
               name="sizeOffice"
               required
               placeholder="m2 oficina"
-              className="rounded-sm text-black p-2 h-10 w-20 border border-grey"
+              className="rounded-lg text-black py-6 px-4 h-10 w-2/3 border border-grey"
               onChange={handleSizeOfficeChange}
               value={officeSize}
               max={10000}
             />
-          </div>
-          <input
-            type="range"
-            value={officeSize || 0}
-            max={10000}
-            onChange={handleSizeOfficeChange}
-          />
-          <div className="flex justify-between mt-6 items-center">
-            <label htmlFor="target" className="font-bold pr-4">
+            <label htmlFor="target" className="font-bold pr-4 pt-6 pb-4">
               <Trans>Proporción de teletrabajo objetivo (%):</Trans>
             </label>
             <input
@@ -217,67 +217,77 @@ export const SavingsCalculator = () => {
               type="number"
               name="target"
               required
-              className="rounded-sm text-black p-2 h-10 w-20 border border-grey"
+              className="rounded-lg text-black py-6 px-4 h-10 w-2/3 border border-grey"
               onChange={handleTargetChange}
               value={target}
             />
-          </div>
-          <input
-            type="range"
-            value={target || 0}
-            max={100}
-            onChange={handleTargetChange}
-          />
-          {showData ? <div className="mt-4">
-            <p className="my-4">Te ahorrarías...</p>
-            <div className="font-bold mt-2">
-              {isNaN(monthlySavings)
-                ? "-"
-                : `${monthlySavings.toLocaleString(undefined, {
-                    style: "currency",
-                    currency: "EUR",
-                  })} mensuales`}
-            </div>
-            <p className="font-bold mt-2">
-              {isNaN(annualSavings)
-                ? "-"
-                : `${annualSavings.toLocaleString(undefined, {
-                    style: "currency",
-                    currency: "EUR",
-                  })} anuales`}{" "}
-            </p>
-            <p className="font-bold mt-2">
-              {isNaN(savingsPercentage)
-                ? "-"
-                : `${savingsPercentage.toLocaleString(undefined, {
-                    style: "percent",
-                    maximumFractionDigits: 2,
-                  })} de ahorro`}
-            </p>
-          </div> : <></>}
         </div>
         <div className="w-full h-full">
-          {showData ? (
-            <SavingsGraph
-              data={[
-                {
-                  costType: "Current costs",
-                  "Supplies costs": suppliesCost,
-                  "Technological inversion": 0,
-                  "Rent costs": rentCostPerMonth,
-                },
-                {
-                  costType: "With DeWocracy",
-                  "Supplies costs": suppliesCostWithDW,
-                  "DW costs": techInvestment,
-                  "Rent costs": rentCostPerMonthWithDW,
-                },
-              ]}
-            />
-          ) : (
-            <></>
-          )}
+          <SavingsGraph
+            data={[
+              {
+                costType: "Current costs",
+                "Supplies costs": !isNaN(suppliesCost) ? suppliesCost : 0,
+                "Rent costs": !isNaN(rentCostPerMonth) ? rentCostPerMonth : 0,
+              },
+              {
+                costType: "With DeWocracy",
+                "Supplies costs": !isNaN(suppliesCostWithDW)
+                  ? suppliesCostWithDW
+                  : 0,
+                "Rent costs": !isNaN(rentCostPerMonthWithDW)
+                  ? rentCostPerMonthWithDW
+                  : 0,
+                "DW costs": !isNaN(techInvestment) ? techInvestment : 0,
+              },
+            ]}
+          />
         </div>
+      </div>
+      <div className="mt-10 h-40 text-center">
+        {showData ? (
+            <>
+              <p className="my-4">Te ahorrarías...</p>
+              <div className="mt-2 text-2xl">
+                <FontAwesomeIcon
+                    icon={faCheck}
+                    className="text-lightBlue mr-4 animate-bounce"
+                />
+                {isNaN(monthlySavings)
+                    ? "-"
+                    : `${monthlySavings.toLocaleString(undefined, {
+                      style: "currency",
+                      currency: "EUR",
+                    })} mensuales`}
+              </div>
+              <p className="mt-2 text-2xl">
+                <FontAwesomeIcon
+                    icon={faCheck}
+                    className="text-lightBlue mr-4 animate-bounce"
+                />
+                {isNaN(annualSavings)
+                    ? "-"
+                    : `${annualSavings.toLocaleString(undefined, {
+                      style: "currency",
+                      currency: "EUR",
+                    })} anuales`}{" "}
+              </p>
+              <p className="mt-2 text-2xl">
+                <FontAwesomeIcon
+                    icon={faCheck}
+                    className="text-lightBlue mr-4 animate-bounce"
+                />
+                {isNaN(savingsPercentage)
+                    ? "-"
+                    : `${savingsPercentage.toLocaleString(undefined, {
+                      style: "percent",
+                      maximumFractionDigits: 2,
+                    })} de ahorro`}
+              </p>
+            </>
+        ) : (
+            <></>
+        )}
       </div>
     </Fragment>
   );

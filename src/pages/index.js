@@ -8,7 +8,8 @@ import { Trans } from "gatsby-plugin-react-i18next";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import BackgroundImage from "gatsby-background-image-es5";
-import {SavingsCalculator} from "../components/savings-calculator";
+import { SavingsCalculator } from "../components/savings-calculator";
+import {theme} from "../../tailwind.config";
 
 function IndexPage() {
   const data = useStaticQuery(query);
@@ -28,7 +29,7 @@ function IndexPage() {
         Tag="div"
         className="w-full bg-fixed bg-cover min-h-screen"
         fluid={data.bgStripes.childImageSharp.fluid}
-        backgroundColor={`#334afd`}
+        backgroundColor={theme.colors.primary}
       >
         <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center gap-32">
           <div className="grid content-center px-8 lg:px-0">
@@ -44,10 +45,10 @@ function IndexPage() {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <a className="btn mt-6" href="#contact">
-                  <Trans>Descargar iOS</Trans>
+                  <Trans>Free sign up</Trans>
                 </a>
-                <a className="btn mt-6" href="#contact">
-                  <Trans>Descargar Android</Trans>
+                <a className="btn mt-6 bg-transparent text-white border-white border" href="#contact">
+                  <Trans>Request demo</Trans>
                 </a>
               </div>
             </div>
@@ -63,6 +64,17 @@ function IndexPage() {
           </div>
         </section>
       </BackgroundImage>
+
+      <div className="w-full bg-fixed min-h-screen py-16 lg:py-32">
+        <section className="container mx-auto text-darkBlue px-8 lg:px-0">
+          <h2 className="font-bold text-2xl lg:text-4xl pb-8 text-center">
+            <Trans>
+              ¿Cuánto podrías ahorrar adoptando una estrategia híbrida de trabajo remoto y presencial?
+            </Trans>
+          </h2>
+          <SavingsCalculator />
+        </section>
+      </div>
 
       <div className="w-full bg-fixed min-h-screen bg-darkBlue py-16 lg:py-32">
         <section className="container mx-auto text-white px-8 lg:px-0">
@@ -193,87 +205,66 @@ function IndexPage() {
         </section>
       </div>
 
-      <div className="w-full bg-fixed min-h-screen py-16 lg:py-32">
-        <section className="container mx-auto text-darkBlue grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center px-8 lg:px-0">
-          <div className="grid content-center">
-            <div>
-              <p className="text-primary font-bold text-xl">
-                <Trans>Aplicación para empleados</Trans>
-              </p>
-              <h2 className="text-2xl lg:text-4xl font-bold leading-tight l:text-justify pb-8">
-                <Trans>
-                  Interacción en tiempo real entre el empleado y la empresa para
-                  reservar su espacio de oficina.
-                </Trans>
-              </h2>
-              <p className="text-greyBlue text-xl">
-                <Trans>
-                  A través de nuestra aplicación móvil, el empleado puede
-                  indicar en su calendario desde dónde trabajará y visualizar
-                  también la ubicación prevista de sus compañeros. Puede
-                  visualizar por semana, mes y año los lugares desde dónde ha
-                  trabajado, así como indicar las horas trabajadas mediante un
-                  sistema de control horario digitalizado cumpliendo con la
-                  legalidad vigente.
-                </Trans>
-              </p>
-            </div>
-          </div>
-          <div>
-            <figure className="w-200 w-auto lg:w-200">
-              <Img
-                className="w-full h-full"
-                fluid={data.mockup2.childImageSharp.fluid}
-                alt="DeWocracy admin dashboard & mobile app"
-              />
-            </figure>
-          </div>
-        </section>
-      </div>
+      {/*<div className="w-full bg-fixed min-h-screen py-16 lg:py-32">*/}
+      {/*  <section className="container mx-auto text-darkBlue grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center px-8 lg:px-0">*/}
+      {/*    <div className="grid content-center">*/}
+      {/*      <div>*/}
+      {/*        <p className="text-primary font-bold text-xl">*/}
+      {/*          <Trans>Aplicación para empleados</Trans>*/}
+      {/*        </p>*/}
+      {/*        <h2 className="text-2xl lg:text-4xl font-bold leading-tight l:text-justify pb-8">*/}
+      {/*          <Trans>*/}
+      {/*            Interacción en tiempo real entre el empleado y la empresa para*/}
+      {/*            reservar su espacio de oficina.*/}
+      {/*          </Trans>*/}
+      {/*        </h2>*/}
+      {/*        <p className="text-greyBlue text-xl">*/}
+      {/*          <Trans>*/}
+      {/*            A través de nuestra aplicación móvil, el empleado puede*/}
+      {/*            indicar en su calendario desde dónde trabajará y visualizar*/}
+      {/*            también la ubicación prevista de sus compañeros. Puede*/}
+      {/*            visualizar por semana, mes y año los lugares desde dónde ha*/}
+      {/*            trabajado, así como indicar las horas trabajadas mediante un*/}
+      {/*            sistema de control horario digitalizado cumpliendo con la*/}
+      {/*            legalidad vigente.*/}
+      {/*          </Trans>*/}
+      {/*        </p>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*    <div>*/}
+      {/*      <figure className="w-200 w-auto lg:w-200">*/}
+      {/*        <Img*/}
+      {/*          className="w-full h-full"*/}
+      {/*          fluid={data.mockup2.childImageSharp.fluid}*/}
+      {/*          alt="DeWocracy admin dashboard & mobile app"*/}
+      {/*        />*/}
+      {/*      </figure>*/}
+      {/*    </div>*/}
+      {/*  </section>*/}
+      {/*</div>*/}
 
-      <BackgroundImage
-        Tag="div"
-        className="w-full bg-fixed bg-cover min-h-screen py-32"
-        fluid={data.bgStripes.childImageSharp.fluid}
-        backgroundColor={`#334afd`}
-      >
-        <section
-          id="pricing"
-          className="container mx-auto text-white px-8 lg:px-0"
-        >
-          <p className="py-8 font-bold leading-tight text-xl">
-            <Trans>Planes y precios</Trans>
-          </p>
+      <div className="w-full bg-fixed min-h-screen bg-primary py-16 lg:py-32">
+        <section id="pricing" className="container mx-auto text-white px-8 lg:px-0">
           <h2 className="font-bold text-white text-2xl lg:text-4xl pb-8">
             <Trans>Selecciona el plan que necesitas para tu empresa.</Trans>
           </h2>
           <PaymentsPlans />
         </section>
-      </BackgroundImage>
-
-      <div className="w-full bg-fixed min-h-screen py-16 lg:py-32">
-        <section className="container mx-auto text-darkBlue px-8 lg:px-0">
-          <p className="py-8 font-bold leading-tight text-xl">
-            <Trans>Calculadora de ahorro</Trans>
-          </p>
-          <h2 className="font-bold text-2xl lg:text-4xl pb-8">
-            <Trans>¿Cuánto podrías ahorrar implementando el teletrabajo con DeWocracy?</Trans>
-          </h2>
-          <SavingsCalculator />
-        </section>
       </div>
 
-      <div className="w-full bg-fixed py-16 bg-darkBlue">
-        <section className="container mx-auto text-white px-8 lg:px-0">
-          <p className="py-8 font-bold leading-tight text-xl" id="contact">
-            <Trans>Contacto</Trans>
-          </p>
-          <h2 className="font-bold text-white text-2xl lg:text-4xl pb-16">
-            <Trans>¿En qué te podemos ayudar?</Trans>
+      <BackgroundImage
+          Tag="div"
+          className="w-full bg-fixed bg-cover min-h-screen py-10 flex"
+          fluid={data.bgStripes.childImageSharp.fluid}
+          backgroundColor={theme.colors.primary}
+      >
+        <section id="contact" className="container mx-auto text-white px-8 lg:px-0 xl:w-2/3 self-center">
+          <h2 className="font-bold text-white text-2xl lg:text-4xl pb-16 text-center">
+            <Trans>¿Do you need help?</Trans>
           </h2>
           <ContactForm />
         </section>
-      </div>
+      </BackgroundImage>
     </Layout>
   );
 }
