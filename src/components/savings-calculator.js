@@ -1,5 +1,5 @@
-import React, {Fragment, useCallback, useEffect, useState} from "react";
-import { Trans } from "gatsby-plugin-react-i18next";
+import React, { Fragment, useCallback, useEffect, useState } from "react";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import { SavingsGraph } from "./savings-graph";
 import { useDebounce } from "../hooks/use-debounce";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
@@ -56,6 +56,8 @@ const getDWCost = (employees) => {
 };
 
 export const SavingsCalculator = () => {
+  const { t } = useTranslation();
+
   const [employees, setEmployees, { signal: employeesSignal }] = useDebounce(
     DEFAULTS.EMPLOYEES
   );
@@ -179,48 +181,46 @@ export const SavingsCalculator = () => {
     <Fragment>
       <div className="md:grid grid-cols-2 gap-x-4">
         <div className="grid justify-center mt-10">
-            <label htmlFor="employees" className="font-bold pr-4 pb-4">
-              <Trans>Número de empleados:</Trans>
-            </label>
-            <input
-              id="employees"
-              type="number"
-              min={1}
-              name="employees"
-              required
-              placeholder="Empleados"
-              className="rounded-lg text-black py-6 px-4 h-10 w-2/3 border border-grey"
-              onChange={handleEmployeesChange}
-              value={employees}
-            />
-            <label htmlFor="employees" className="font-bold pr-4 pt-6 pb-4">
-              <Trans>
-                Tamaño de oficina (m<sup>2</sup>):
-              </Trans>
-            </label>
-              <input
-              id="sizeOffice"
-              type="number"
-              name="sizeOffice"
-              required
-              placeholder="m2 oficina"
-              className="rounded-lg text-black py-6 px-4 h-10 w-2/3 border border-grey"
-              onChange={handleSizeOfficeChange}
-              value={officeSize}
-              max={10000}
-            />
-            <label htmlFor="target" className="font-bold pr-4 pt-6 pb-4">
-              <Trans>Proporción de teletrabajo objetivo (%):</Trans>
-            </label>
-            <input
-              id="target"
-              type="number"
-              name="target"
-              required
-              className="rounded-lg text-black py-6 px-4 h-10 w-2/3 border border-grey"
-              onChange={handleTargetChange}
-              value={target}
-            />
+          <label htmlFor="employees" className="font-bold pr-4 pb-4">
+            <Trans>Number of employees:</Trans>
+          </label>
+          <input
+            id="employees"
+            type="number"
+            min={1}
+            name="employees"
+            required
+            placeholder={t("Employees")}
+            className="rounded-lg text-black py-6 px-4 h-10 w-2/3 border border-grey"
+            onChange={handleEmployeesChange}
+            value={employees}
+          />
+          <label htmlFor="employees" className="font-bold pr-4 pt-6 pb-4">
+            <Trans>Office size (sqm):</Trans>
+          </label>
+          <input
+            id="sizeOffice"
+            type="number"
+            name="sizeOffice"
+            required
+            placeholder={t("office square metres")}
+            className="rounded-lg text-black py-6 px-4 h-10 w-2/3 border border-grey"
+            onChange={handleSizeOfficeChange}
+            value={officeSize}
+            max={10000}
+          />
+          <label htmlFor="target" className="font-bold pr-4 pt-6 pb-4">
+            <Trans>Target remote work ratio (%):</Trans>
+          </label>
+          <input
+            id="target"
+            type="number"
+            name="target"
+            required
+            className="rounded-lg text-black py-6 px-4 h-10 w-2/3 border border-grey"
+            onChange={handleTargetChange}
+            value={target}
+          />
         </div>
         <div className="w-full h-full">
           <SavingsGraph
@@ -246,47 +246,47 @@ export const SavingsCalculator = () => {
       </div>
       <div className="mt-10 h-40 text-center">
         {showData ? (
-            <>
-              <p className="my-4">Te ahorrarías...</p>
-              <div className="mt-2 text-2xl">
-                <FontAwesomeIcon
-                    icon={faCheck}
-                    className="text-lightBlue mr-4 animate-bounce"
-                />
-                {isNaN(monthlySavings)
-                    ? "-"
-                    : `${monthlySavings.toLocaleString(undefined, {
-                      style: "currency",
-                      currency: "EUR",
-                    })} mensuales`}
-              </div>
-              <p className="mt-2 text-2xl">
-                <FontAwesomeIcon
-                    icon={faCheck}
-                    className="text-lightBlue mr-4 animate-bounce"
-                />
-                {isNaN(annualSavings)
-                    ? "-"
-                    : `${annualSavings.toLocaleString(undefined, {
-                      style: "currency",
-                      currency: "EUR",
-                    })} anuales`}{" "}
-              </p>
-              <p className="mt-2 text-2xl">
-                <FontAwesomeIcon
-                    icon={faCheck}
-                    className="text-lightBlue mr-4 animate-bounce"
-                />
-                {isNaN(savingsPercentage)
-                    ? "-"
-                    : `${savingsPercentage.toLocaleString(undefined, {
-                      style: "percent",
-                      maximumFractionDigits: 2,
-                    })} de ahorro`}
-              </p>
-            </>
+          <>
+            <p className="my-4">Te ahorrarías...</p>
+            <div className="mt-2 text-2xl">
+              <FontAwesomeIcon
+                icon={faCheck}
+                className="text-lightBlue mr-4 animate-bounce"
+              />
+              {isNaN(monthlySavings)
+                ? "-"
+                : `${monthlySavings.toLocaleString(undefined, {
+                    style: "currency",
+                    currency: "EUR",
+                  })} ${t("monthly")}`}
+            </div>
+            <p className="mt-2 text-2xl">
+              <FontAwesomeIcon
+                icon={faCheck}
+                className="text-lightBlue mr-4 animate-bounce"
+              />
+              {isNaN(annualSavings)
+                ? "-"
+                : `${annualSavings.toLocaleString(undefined, {
+                    style: "currency",
+                    currency: "EUR",
+                  })} ${t("yearly")}`}{" "}
+            </p>
+            <p className="mt-2 text-2xl">
+              <FontAwesomeIcon
+                icon={faCheck}
+                className="text-lightBlue mr-4 animate-bounce"
+              />
+              {isNaN(savingsPercentage)
+                ? "-"
+                : `${savingsPercentage.toLocaleString(undefined, {
+                    style: "percent",
+                    maximumFractionDigits: 2,
+                  })} ${t("of savings")}`}
+            </p>
+          </>
         ) : (
-            <></>
+          <></>
         )}
       </div>
     </Fragment>

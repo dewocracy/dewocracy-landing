@@ -5,30 +5,32 @@ export const SavingsGraph = ({ data }) => {
   return (
     <ResponsiveBar
       data={data}
-      keys={["Supplies costs", "Rent costs","DW costs"]}
+      keys={["Supplies costs", "Rent costs", "DW costs"]}
       indexBy="costType"
       margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
-      padding={0.50}
+      padding={0.5}
       valueScale={{ type: "linear" }}
       indexScale={{ type: "band", round: true }}
-      colors={["#78A5FF", "#2945FF","#ffbebe"]}
+      colors={["#78A5FF", "#2945FF", "#ffbebe"]}
       borderColor={{ from: "color", modifiers: [["darker", 1.6]] }}
       axisTop={null}
       axisRight={null}
       axisLeft={{
         tickSize: 0,
-        format: value =>
+        format: (value) =>
           `${Number(value).toLocaleString(undefined, {
-            notation: 'compact',
+            notation: "compact",
           })}`,
       }}
       axisBottom={{
         tickSize: 0,
         tickPadding: 20,
       }}
-      labelFormat={value => `${Number(value).toLocaleString(undefined, {
-        notation: 'compact',
-      })}`}
+      labelFormat={(value) =>
+        `${Number(value).toLocaleString(undefined, {
+          notation: "compact",
+        })}`
+      }
       labelSkipWidth={12}
       labelSkipHeight={12}
       labelTextColor={{ from: "color", modifiers: [["brighter", 2]] }}
@@ -66,7 +68,7 @@ export const SavingsGraph = ({ data }) => {
         </strong>
       )}
       theme={{
-        fontSize: '14px',
+        fontSize: "14px",
         tooltip: {
           container: {
             background: "#fff",
@@ -75,14 +77,14 @@ export const SavingsGraph = ({ data }) => {
         grid: {
           line: {
             stroke: "#eee",
-          }
+          },
         },
         labels: {
           text: {
-            fontWeight: 'bolder',
-            fontSize: '12px'
-          }
-        }
+            fontWeight: "bolder",
+            fontSize: "12px",
+          },
+        },
       }}
       animate={true}
       motionStiffness={90}

@@ -51,8 +51,8 @@ export const PaymentsPlans = () => {
           ))}
         </div>
       </div>
-      <div className="grid lg:grid-cols-3 gap-8 justify-center">
-        <div className="grid rounded-lg bg-white p-8 md:p-10 lg:p-12 max-w-md gap-y-8">
+      <div className="grid lg:grid-cols-3 gap-8 justify-center h-full">
+        <div className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8 mt-16">
           <div>
             <p className="text-primary text-2xl md:text-4xl font-bold">
               <Trans>Free</Trans>
@@ -91,17 +91,19 @@ export const PaymentsPlans = () => {
             </li>
           </ol>
           <a
-            className="btn bg-primary text-white w-full block"
+            className="btn bg-primary text-white w-full block h-12"
             href="#contact"
           >
             <Trans>Pruébalo gratis</Trans>
           </a>
         </div>
-        <div className="grid rounded-lg bg-white p-8 md:p-10 lg:p-12 max-w-md gap-y-8">
+        <div className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8">
           <div>
-            <span className="btn bg-transparent border border-primary p-2 uppercase mt-2">
-              <Trans>Most popular</Trans>
-            </span>
+            <div className="text-center">
+              <span className="btn bg-transparent border border-primary p-1 uppercase px-10 text-sm">
+                <Trans>Most popular</Trans>
+              </span>
+            </div>
             <p className="text-primary text-2xl md:text-4xl font-bold mt-10">
               <Trans>Startup</Trans>
             </p>
@@ -138,11 +140,14 @@ export const PaymentsPlans = () => {
               <Trans>Análisis de competencia</Trans>
             </li>
           </ol>
-          <a className="btn bg-primary text-white w-full block" href="#contact">
+          <a
+            className="btn bg-primary text-white w-full block h-12"
+            href="#contact"
+          >
             <Trans>Empieza ahora</Trans>
           </a>
         </div>
-        <div className="grid rounded-lg bg-white p-8 md:p-10 lg:p-12 max-w-md gap-y-8">
+        <div className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8 mt-16">
           <div>
             <p className="text-primary text-2xl md:text-4xl font-bold">
               <Trans>Business</Trans>
@@ -185,7 +190,10 @@ export const PaymentsPlans = () => {
               <Trans>Análisis de competencia</Trans>
             </li>
           </ol>
-          <a className="btn bg-primary text-white w-full block h-20" href="#contact">
+          <a
+            className="btn bg-primary text-white w-full block h-12"
+            href="#contact"
+          >
             <Trans>Descúbrelo</Trans>
           </a>
         </div>

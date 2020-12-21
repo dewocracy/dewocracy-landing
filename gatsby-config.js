@@ -16,7 +16,6 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 module.exports = {
   flags: {
     FAST_REFRESH: true,
-    FAST_DEV: true,
   },
   siteMetadata: {
     siteUrl,

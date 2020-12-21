@@ -16,14 +16,17 @@ class ScrollToTop {
       document.body.scrollTop ||
       0;
     const scrollContainer = document.getElementById("scroll-top-container");
+    const header = document.getElementById("header");
     if (!scrollContainer) {
       return;
     }
     if (scroll > 300) {
       scrollContainer.classList.add("block");
+      header.classList.add("h-10", "shadow-xl");
       scrollContainer.classList.remove("hidden");
     } else {
-      scrollContainer.classList.add("hidden");
+      header.classList.remove("h-10");
+      scrollContainer.classList.add("hidden", "shadow-xl");
       scrollContainer.classList.remove("block");
     }
   }

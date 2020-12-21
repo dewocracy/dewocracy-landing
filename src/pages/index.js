@@ -9,7 +9,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import BackgroundImage from "gatsby-background-image-es5";
 import { SavingsCalculator } from "../components/savings-calculator";
-import {theme} from "../../tailwind.config";
+import { theme } from "../../tailwind.config";
 
 function IndexPage() {
   const data = useStaticQuery(query);
@@ -27,34 +27,40 @@ function IndexPage() {
       />
       <BackgroundImage
         Tag="div"
-        className="w-full bg-fixed bg-cover min-h-screen"
+        className="w-full bg-fixed bg-cover"
         fluid={data.bgStripes.childImageSharp.fluid}
         backgroundColor={theme.colors.primary}
       >
-        <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center gap-32">
+        <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-3 content-center min-h-screen py-10">
           <div className="grid content-center px-8 lg:px-0">
-            <div className="mt-24 lg:mt-0">
-              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-none pb-4">
-                <Trans>Democratizando el trabajo desde cualquier lugar.</Trans>
+            <div className="md:mt-24 lg:mt-0">
+              <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight pb-4">
+                <Trans>
+                  Implement a hybrid remote work strategy in your company.
+                </Trans>
               </h1>
               <p className="font-bold text-xl">
                 <Trans>
-                  Gestiona de manera fácil y centralizada la ocupación en tu
-                  oficina.
+                  Save thousands of euros by replacing square meters for
+                  technology adopting a hybrid strategy of remote and office
+                  work.
                 </Trans>
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 mt-6 md:mt-0">
                 <a className="btn mt-6" href="#contact">
                   <Trans>Free sign up</Trans>
                 </a>
-                <a className="btn mt-6 bg-transparent text-white border-white border" href="#contact">
+                <a
+                  className="btn mt-6 bg-transparent text-white border-white border"
+                  href="#contact"
+                >
                   <Trans>Request demo</Trans>
                 </a>
               </div>
             </div>
           </div>
-          <div>
-            <figure className="w-auto lg:w-200 lg:pt-24">
+          <div className="col-span-2">
+            <figure className="w-auto mt-24 lg:mt-0">
               <Img
                 className="w-full h-full"
                 fluid={data.mockup1.childImageSharp.fluid}
@@ -68,9 +74,7 @@ function IndexPage() {
       <div className="w-full bg-fixed min-h-screen py-16 lg:py-32">
         <section className="container mx-auto text-darkBlue px-8 lg:px-0">
           <h2 className="font-bold text-2xl lg:text-4xl pb-8 text-center">
-            <Trans>
-              ¿Cuánto podrías ahorrar adoptando una estrategia híbrida de trabajo remoto y presencial?
-            </Trans>
+            <Trans>¿Cuánto podría ahorrar tu empresa con DeWocracy?</Trans>
           </h2>
           <SavingsCalculator />
         </section>
@@ -89,8 +93,8 @@ function IndexPage() {
               </Trans>
             </h2>
           </div>
-          <div className="grid content-center grid grid-cols-1 lg:grid-cols-2 content-center gap-32">
-            <div className="grid content-center grid grid-cols-1 sm:grid-cols-2 content-center gap-x-8 gap-y-24">
+          <div className="grid grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid grid-cols-1 sm:grid-cols-2 gap-8">
               <div>
                 <Img
                   className="w-12 h-12"
@@ -193,7 +197,7 @@ function IndexPage() {
               </div>
             </div>
             <div>
-              <figure className="w-auto lg:w-200">
+              <figure className="w-auto">
                 <Img
                   className="w-full h-full"
                   fluid={data.mockup3.childImageSharp.fluid}
@@ -205,46 +209,49 @@ function IndexPage() {
         </section>
       </div>
 
-      {/*<div className="w-full bg-fixed min-h-screen py-16 lg:py-32">*/}
-      {/*  <section className="container mx-auto text-darkBlue grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center px-8 lg:px-0">*/}
-      {/*    <div className="grid content-center">*/}
-      {/*      <div>*/}
-      {/*        <p className="text-primary font-bold text-xl">*/}
-      {/*          <Trans>Aplicación para empleados</Trans>*/}
-      {/*        </p>*/}
-      {/*        <h2 className="text-2xl lg:text-4xl font-bold leading-tight l:text-justify pb-8">*/}
-      {/*          <Trans>*/}
-      {/*            Interacción en tiempo real entre el empleado y la empresa para*/}
-      {/*            reservar su espacio de oficina.*/}
-      {/*          </Trans>*/}
-      {/*        </h2>*/}
-      {/*        <p className="text-greyBlue text-xl">*/}
-      {/*          <Trans>*/}
-      {/*            A través de nuestra aplicación móvil, el empleado puede*/}
-      {/*            indicar en su calendario desde dónde trabajará y visualizar*/}
-      {/*            también la ubicación prevista de sus compañeros. Puede*/}
-      {/*            visualizar por semana, mes y año los lugares desde dónde ha*/}
-      {/*            trabajado, así como indicar las horas trabajadas mediante un*/}
-      {/*            sistema de control horario digitalizado cumpliendo con la*/}
-      {/*            legalidad vigente.*/}
-      {/*          </Trans>*/}
-      {/*        </p>*/}
-      {/*      </div>*/}
-      {/*    </div>*/}
-      {/*    <div>*/}
-      {/*      <figure className="w-200 w-auto lg:w-200">*/}
-      {/*        <Img*/}
-      {/*          className="w-full h-full"*/}
-      {/*          fluid={data.mockup2.childImageSharp.fluid}*/}
-      {/*          alt="DeWocracy admin dashboard & mobile app"*/}
-      {/*        />*/}
-      {/*      </figure>*/}
-      {/*    </div>*/}
-      {/*  </section>*/}
-      {/*</div>*/}
+      <div className="w-full bg-fixed min-h-screen py-16 lg:py-0">
+        <section className="container mx-auto text-darkBlue grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center px-8 lg:px-0">
+          <div className="grid content-center">
+            <div>
+              <p className="text-primary font-bold text-xl">
+                <Trans>Aplicación para empleados</Trans>
+              </p>
+              <h2 className="text-2xl lg:text-4xl font-bold leading-tight l:text-justify pb-8">
+                <Trans>
+                  Interacción en tiempo real entre el empleado y la empresa para
+                  reservar su espacio de oficina.
+                </Trans>
+              </h2>
+              <p className="text-greyBlue text-xl">
+                <Trans>
+                  A través de nuestra aplicación móvil, el empleado puede
+                  indicar en su calendario desde dónde trabajará y visualizar
+                  también la ubicación prevista de sus compañeros. Puede
+                  visualizar por semana, mes y año los lugares desde dónde ha
+                  trabajado, así como indicar las horas trabajadas mediante un
+                  sistema de control horario digitalizado cumpliendo con la
+                  legalidad vigente.
+                </Trans>
+              </p>
+            </div>
+          </div>
+          <div>
+            <figure className="w-auto">
+              <Img
+                className="w-full h-full"
+                fluid={data.mockup2.childImageSharp.fluid}
+                alt="DeWocracy admin dashboard & mobile app"
+              />
+            </figure>
+          </div>
+        </section>
+      </div>
 
       <div className="w-full bg-fixed min-h-screen bg-primary py-16 lg:py-32">
-        <section id="pricing" className="container mx-auto text-white px-8 lg:px-0">
+        <section
+          id="pricing"
+          className="container mx-auto text-white px-8 lg:px-0"
+        >
           <h2 className="font-bold text-white text-2xl lg:text-4xl pb-8">
             <Trans>Selecciona el plan que necesitas para tu empresa.</Trans>
           </h2>
@@ -253,12 +260,15 @@ function IndexPage() {
       </div>
 
       <BackgroundImage
-          Tag="div"
-          className="w-full bg-fixed bg-cover min-h-screen py-10 flex"
-          fluid={data.bgStripes.childImageSharp.fluid}
-          backgroundColor={theme.colors.primary}
+        Tag="div"
+        className="w-full bg-fixed bg-cover py-10 flex"
+        fluid={data.bgStripes.childImageSharp.fluid}
+        backgroundColor={theme.colors.primary}
       >
-        <section id="contact" className="container mx-auto text-white px-8 lg:px-0 xl:w-2/3 self-center">
+        <section
+          id="contact"
+          className="container mx-auto text-white px-8 lg:px-0 xl:w-2/3 self-center"
+        >
           <h2 className="font-bold text-white text-2xl lg:text-4xl pb-16 text-center">
             <Trans>¿Do you need help?</Trans>
           </h2>
