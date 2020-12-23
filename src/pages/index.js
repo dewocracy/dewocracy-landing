@@ -286,9 +286,9 @@ function IndexPage() {
 
         <section
           id="contact"
-          className="container mx-auto text-white xl:w-2/3 self-center"
+          className="container mx-auto text-white xl:w-2/3 self-center pt-16 lg:pt-32 "
         >
-          <h2 className="font-bold text-white text-2xl lg:text-4xl py-16 text-center">
+          <h2 className="font-bold text-white text-2xl lg:text-4xl text-center py-16">
             <Trans>Want to talk with us?</Trans>
           </h2>
           <p className="pb-5">
