@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import React, { Fragment, useCallback, useMemo, useState } from "react";
 import { useTranslation, Trans } from "gatsby-plugin-react-i18next";
+import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 const getCurrencyText = (value) =>
   Number(value).toLocaleString(undefined, {
     style: "currency",
@@ -51,10 +51,10 @@ export const PaymentsPlans = () => {
           ))}
         </div>
       </div>
-      <div className="grid lg:grid-cols-3 gap-8 justify-center h-full">
-        <div className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8 mt-16">
+      <div className="grid lg:grid-cols-3 gap-10 justify-center h-full">
+        <div className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8 my-4 lg:my-16">
           <div>
-            <p className="text-primary text-2xl md:text-4xl font-bold">
+            <p className="text-primary text-2xl md:text-4xl font-bold pb-4">
               <Trans>Free</Trans>
             </p>
             <p className="text-primary text-2xl md:text-4xl">
@@ -64,47 +64,81 @@ export const PaymentsPlans = () => {
               </span>
             </p>
           </div>
-          <ol className="text-black text-sm md:text-md xl:text-lg ">
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
+          <ol className="text-black grid gap-6">
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
               <Trans>1 administrador</Trans>
             </li>
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
               <Trans>Hasta 3 usuarios</Trans>
             </li>
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
               <Trans>Plataforma de empresa</Trans>
             </li>
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
               <Trans>App para los trabajadores</Trans>
             </li>
-            <li className="my-3 text-grey">
-              <FontAwesomeIcon icon={faCheck} className="mr-4" />
-              <Trans>Reporte semanal</Trans>
+            <li className="text-grey">
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="mr-4"
+              />
+              <Trans>
+                Propuesta de optimización de espacio y reducción de costes.
+              </Trans>
             </li>
-            <li className="my-3 text-grey">
-              <FontAwesomeIcon icon={faCheck} className="mr-4" />
-              <Trans>Análisis de competencia</Trans>
+            <li className="text-grey">
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="mr-4"
+              />
+              <Trans>Propuesta de modelo de trabajo ideal.</Trans>
+            </li>
+            <li className="text-grey">
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="mr-4"
+              />
+              <Trans>Acompañamiento en todo el proceso.</Trans>
             </li>
           </ol>
           <a
-            className="btn bg-primary text-white w-full block h-12"
+            className="btn bg-white border border-primary border-4 text-primary w-full block h-12"
             href="#contact"
           >
             <Trans>Pruébalo gratis</Trans>
           </a>
         </div>
-        <div className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8">
+        <div className="grid content-between rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8">
           <div>
-            <div className="text-center">
-              <span className="btn bg-transparent border border-primary p-1 uppercase px-10 text-sm">
-                <Trans>Most popular</Trans>
-              </span>
-            </div>
-            <p className="text-primary text-2xl md:text-4xl font-bold mt-10">
+            {/*<div className="text-center">*/}
+            {/*  <span className="btn bg-transparent border border-primary p-1 uppercase px-10 text-sm">*/}
+            {/*    <Trans>Most popular</Trans>*/}
+            {/*  </span>*/}
+            {/*</div>*/}
+            <p className="text-primary text-2xl md:text-4xl font-bold pb-4">
               <Trans>Startup</Trans>
             </p>
             <p className="text-primary text-2xl md:text-4xl">
@@ -114,30 +148,64 @@ export const PaymentsPlans = () => {
               </span>
             </p>
           </div>
-          <ol className="text-black text-sm md:text-md xl:text-lg">
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
+          <ol className="text-black grid gap-6">
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
               <Trans>1 administrador</Trans>
             </li>
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
               <Trans>Usuarios ilimitados</Trans>
             </li>
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
               <Trans>Plataforma de empresa</Trans>
             </li>
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
               <Trans>App para los trabajadores</Trans>
             </li>
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
-              <Trans>Reporte semanal</Trans>
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
+              <Trans>
+                Propuesta de optimización de espacio y reducción de costes.
+              </Trans>
             </li>
-            <li className="my-3 text-grey">
-              <FontAwesomeIcon icon={faCheck} className="mr-4" />
-              <Trans>Análisis de competencia</Trans>
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
+              <Trans>Propuesta de modelo de trabajo ideal.</Trans>
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
+              <Trans>Acompañamiento en todo el proceso.</Trans>
             </li>
           </ol>
           <a
@@ -147,9 +215,9 @@ export const PaymentsPlans = () => {
             <Trans>Empieza ahora</Trans>
           </a>
         </div>
-        <div className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8 mt-16">
+        <div className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8 my-4 lg:my-16">
           <div>
-            <p className="text-primary text-2xl md:text-4xl font-bold">
+            <p className="text-primary text-2xl md:text-4xl font-bold  pb-4">
               <Trans>Business</Trans>
             </p>
             <p className="text-primary text-2xl md:text-4xl">
@@ -159,39 +227,70 @@ export const PaymentsPlans = () => {
               </span>
             </p>
           </div>
-          <ol className="text-black text-sm md:text-md xl:text-lg">
-            <li className="my-3">
+          <ol className="text-black grid gap-6">
+            <li>
               <FontAwesomeIcon
-                icon={faCheck}
-                className="absolute text-lightBlue mr-4 leading-8"
+                icon={faCheckCircle}
+                size="lg"
+                className="absolute text-primary mr-4 leading-8"
               />
               <span className="ml-8 inline">
                 <Trans>Administradores ilimitados</Trans>
               </span>
             </li>
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
               <Trans>Usuarios ilimitados</Trans>
             </li>
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
               <Trans>Plataforma de empresa</Trans>
             </li>
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
               <Trans>App para los trabajadores</Trans>
             </li>
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
-              <Trans>Reporte semanal</Trans>
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
+              <Trans>
+                Propuesta de optimización de espacio y reducción de costes.
+              </Trans>
             </li>
-            <li className="my-3">
-              <FontAwesomeIcon icon={faCheck} className="text-lightBlue mr-4" />
-              <Trans>Análisis de competencia</Trans>
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
+              <Trans>Propuesta de modelo de trabajo ideal.</Trans>
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                size="lg"
+                className="text-primary mr-4"
+              />
+              <Trans>Acompañamiento en todo el proceso.</Trans>
             </li>
           </ol>
           <a
-            className="btn bg-primary text-white w-full block h-12"
+            className="btn bg-white border border-primary border-2 text-primary w-full block h-12"
             href="#contact"
           >
             <Trans>Descúbrelo</Trans>

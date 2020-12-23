@@ -46,7 +46,7 @@ function Header() {
             },
             {
               route: "#pricing",
-              title: t("Planes y precios"),
+              title: t("Pricing"),
             },
           ].map((link) => (
             <a
@@ -86,9 +86,18 @@ function Header() {
         </figure>
       </Link>
       <nav className="hidden md:inline-flex flex justify-center md:justify-end gap-4 text-primary text-sm">
-        <a className="block py-2 hover:underline" href="#pricing">
-          <Trans>Planes y precios</Trans>
+        <a
+          className="block py-2 hover:underline"
+          href="https://calendly.com/dewocracylabs/dewocracy-demo"
+        >
+          <Trans>Demo</Trans>
         </a>
+        <a className="block py-2 hover:underline" href="#pricing">
+          <Trans>Pricing</Trans>
+        </a>
+        <button className="btn bg-primary text-white py-2 mr-4" href="#contact">
+          <Trans>Free registration</Trans>
+        </button>
         <Dropdown title={t(language)} theme="navbar">
           {languages.map((lang, key) => (
             <Link

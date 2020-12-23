@@ -108,7 +108,7 @@ export const ContactForm = () => {
         <button
           aria-label="Send"
           type="submit"
-          className="btn text-primary cursor-pointer w-full md:w-auto mt-10"
+          className="btn text-white border border-4 border-white bg-transparent cursor-pointer w-full md:w-auto mt-10"
         >
           <Trans>Send message</Trans>
         </button>

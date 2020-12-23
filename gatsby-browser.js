@@ -2,19 +2,21 @@ require("./src/css/style.css");
 
 /** The SideBarBtns class credits: https://pakjiddat.netlify.app/posts/adding-scroll-to-top-button-to-gatsby-website */
 class ScrollToTop {
-  Initialize() {
-    window.addEventListener("scroll", this.ToggleButtons);
+  initialize() {
+    window.addEventListener("scroll", this.handleScroll);
     document
       .getElementById("scroll-top-container")
-      .addEventListener("click", this.ScrollToTop);
+      .addEventListener("click", this.scrollToTop);
   }
 
-  ToggleButtons() {
+  handleScroll() {
     const scroll =
       window.pageYOffset ||
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
+    let image = document.getElementById("arrow-loop-svg");
+    image.style.transform = "rotate(" + scroll / 8 + "deg)";
     const scrollContainer = document.getElementById("scroll-top-container");
     const header = document.getElementById("header");
     if (!scrollContainer) {
@@ -22,16 +24,16 @@ class ScrollToTop {
     }
     if (scroll > 300) {
       scrollContainer.classList.add("block");
-      header.classList.add("h-10", "shadow-xl");
+      header.classList.add("lg:h-10", "shadow-xl");
       scrollContainer.classList.remove("hidden");
     } else {
-      header.classList.remove("h-10");
+      header.classList.remove("lg:h-10");
       scrollContainer.classList.add("hidden", "shadow-xl");
       scrollContainer.classList.remove("block");
     }
   }
 
-  ScrollToTop() {
+  scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     window.pageYOffset = 0;
@@ -40,6 +42,6 @@ class ScrollToTop {
 
 exports.onRouteUpdate = () => {
   if (document.getElementById("scroll-top-container")) {
-    new ScrollToTop().Initialize();
+    new ScrollToTop().initialize();
   }
 };

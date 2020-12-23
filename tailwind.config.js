@@ -2,6 +2,15 @@
 module.exports = {
   purge: ["./src/**/*.js"],
   theme: {
+    container: {
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
+    },
     colors: {
       white: "#fff",
       black: "#000",
@@ -13,6 +22,7 @@ module.exports = {
       lightGrey: "#eee",
       teal: "#75dddd",
       purple: "#8d78ff",
+      success: "#19CB76",
       transparent: "transparent",
     },
     fontFamily: {
