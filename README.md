@@ -19,7 +19,7 @@ yarn dev
 
 ## Deployment
 
-Deployment powered by Netlify
+Deployment powered by Netlify.
 
 ## Resources
 
