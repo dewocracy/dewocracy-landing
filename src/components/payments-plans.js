@@ -65,7 +65,7 @@ export const PaymentsPlans = () => {
             </p>
           </div>
           <ol className="text-black grid gap-6">
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -73,7 +73,7 @@ export const PaymentsPlans = () => {
               />
               <Trans>1 administrador</Trans>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -81,7 +81,7 @@ export const PaymentsPlans = () => {
               />
               <Trans>Hasta 3 usuarios</Trans>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -89,7 +89,7 @@ export const PaymentsPlans = () => {
               />
               <Trans>Plataforma de empresa</Trans>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -97,7 +97,7 @@ export const PaymentsPlans = () => {
               />
               <Trans>App para los trabajadores</Trans>
             </li>
-            <li className="text-grey">
+            <li className="text-grey flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -107,7 +107,7 @@ export const PaymentsPlans = () => {
                 Propuesta de optimización de espacio y reducción de costes.
               </Trans>
             </li>
-            <li className="text-grey">
+            <li className="text-grey flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -115,7 +115,7 @@ export const PaymentsPlans = () => {
               />
               <Trans>Propuesta de modelo de trabajo ideal.</Trans>
             </li>
-            <li className="text-grey">
+            <li className="text-grey flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -149,7 +149,7 @@ export const PaymentsPlans = () => {
             </p>
           </div>
           <ol className="text-black grid gap-6">
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -157,7 +157,7 @@ export const PaymentsPlans = () => {
               />
               <Trans>1 administrador</Trans>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -165,7 +165,7 @@ export const PaymentsPlans = () => {
               />
               <Trans>Usuarios ilimitados</Trans>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -173,7 +173,7 @@ export const PaymentsPlans = () => {
               />
               <Trans>Plataforma de empresa</Trans>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -181,7 +181,7 @@ export const PaymentsPlans = () => {
               />
               <Trans>App para los trabajadores</Trans>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -191,7 +191,7 @@ export const PaymentsPlans = () => {
                 Propuesta de optimización de espacio y reducción de costes.
               </Trans>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -199,7 +199,7 @@ export const PaymentsPlans = () => {
               />
               <Trans>Propuesta de modelo de trabajo ideal.</Trans>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -228,7 +228,7 @@ export const PaymentsPlans = () => {
             </p>
           </div>
           <ol className="text-black grid gap-6">
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -238,7 +238,7 @@ export const PaymentsPlans = () => {
                 <Trans>Administradores ilimitados</Trans>
               </span>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -246,7 +246,7 @@ export const PaymentsPlans = () => {
               />
               <Trans>Usuarios ilimitados</Trans>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -254,7 +254,7 @@ export const PaymentsPlans = () => {
               />
               <Trans>Plataforma de empresa</Trans>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -262,17 +262,17 @@ export const PaymentsPlans = () => {
               />
               <Trans>App para los trabajadores</Trans>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>
+              <span><Trans>
                 Propuesta de optimización de espacio y reducción de costes.
-              </Trans>
+              </Trans></span>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -280,7 +280,7 @@ export const PaymentsPlans = () => {
               />
               <Trans>Propuesta de modelo de trabajo ideal.</Trans>
             </li>
-            <li>
+            <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
