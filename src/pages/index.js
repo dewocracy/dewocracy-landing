@@ -35,7 +35,7 @@ function IndexPage() {
         fluid={data.bgStripes.childImageSharp.fluid}
         backgroundColor={theme.colors.primary}
       >
-        <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-3 content-center min-h-screen py-10">
+        <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen py-10 lg:py-0">
           <div className="grid content-center px-8 lg:px-0">
             <div className="md:mt-24 lg:mt-0">
               <h1 className="text-4xl lg:text-5xl font-medium text-white leading-tight pb-4">
@@ -63,10 +63,10 @@ function IndexPage() {
               </div>
             </div>
           </div>
-          <div className="col-span-2">
+          <div className="">
             <figure className="w-auto mt-24 lg:mt-0">
               <Img
-                className="w-full h-full lg:transform scale-150 translate-x-60"
+                className="w-full h-full transform lg:scale-150 lg:translate-x-36 xl:translate-x-52 lg:translate-y-10"
                 fluid={data.mockup1.childImageSharp.fluid}
                 alt="DeWocracy admin dashboard & mobile app"
               />
@@ -286,7 +286,7 @@ function IndexPage() {
 
         <section
           id="contact"
-          className="container mx-auto text-white xl:w-2/3 self-center pt-16 lg:pt-32 "
+          className="container mx-auto text-white self-center pt-16 lg:pt-32 "
         >
           <h2 className="font-bold text-white text-2xl lg:text-4xl text-center py-16">
             <Trans>Want to talk with us?</Trans>
