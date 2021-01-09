@@ -185,7 +185,7 @@ export const SavingsCalculator = () => {
   return (
     <Fragment>
       <div className="md:grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-24 ">
-        <div className="grid content-start justify-center mt-10 shadow-xl rounded-lg p-10">
+        <div className="grid content-start justify-center md:mt-10 shadow-xl rounded-lg p-10">
           <label htmlFor="employees" className="font-bold pr-4 pb-4">
             <Trans>How many employees does your company have?</Trans>
           </label>
@@ -238,17 +238,17 @@ export const SavingsCalculator = () => {
             </a>
           </p>
         </div>
-        <div className="col-span-2 shadow-xl rounded-lg p-10">
-          <div className="w-full h-4/6">
+        <div className="col-span-2 shadow-xl rounded-lg p-y-10 lg:p-10">
+          <div className="w-full h-96 lg:h-4/6">
             <SavingsGraph
               data={[
                 {
-                  costType: "Current costs",
+                  costType: "Costs",
                   "Supplies costs": !isNaN(suppliesCost) ? suppliesCost : 0,
                   "Rent costs": !isNaN(rentCostPerMonth) ? rentCostPerMonth : 0,
                 },
                 {
-                  costType: "With DeWocracy",
+                  costType: "With DW",
                   "Supplies costs": !isNaN(suppliesCostWithDW)
                     ? suppliesCostWithDW
                     : 0,
@@ -263,9 +263,9 @@ export const SavingsCalculator = () => {
           <div className="mt-10 grid justify-center">
             {showData ? (
               <>
-                <p className="my-4">With DeWocracy you could save up to...</p>
-                <div className="w-auto">
-                  <div className="mt-2 text-2xl">
+                <p className="my-4"><Trans>With DeWocracy you could save up to...</Trans></p>
+                <div className="pb-10 w-auto">
+                  <div className="mt-2 text-lg lg:text-2xl">
                     <FontAwesomeIcon
                       icon={faCheckCircle}
                       className="text-success mr-4 animate-bounce"
@@ -280,7 +280,7 @@ export const SavingsCalculator = () => {
                     </span>
                     <Trans>monthly</Trans>
                   </div>
-                  <p className="mt-2 text-2xl">
+                  <p className="mt-2 text-lg lg:text-2xl">
                     <FontAwesomeIcon
                       icon={faCheckCircle}
                       className="text-success mr-4 animate-bounce"
@@ -295,7 +295,7 @@ export const SavingsCalculator = () => {
                     </span>
                     <Trans>yearly</Trans>
                   </p>
-                  <p className="mt-2 text-2xl">
+                  <p className="mt-2 text-lg lg:text-2xl">
                     <FontAwesomeIcon
                       icon={faCheckCircle}
                       className="text-success mr-4 animate-bounce"

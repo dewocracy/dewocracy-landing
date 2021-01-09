@@ -25,6 +25,7 @@ export const SavingsGraph = ({ data }) => {
       axisBottom={{
         tickSize: 0,
         tickPadding: 20,
+        tickRotation: 15,
       }}
       labelFormat={(value) =>
         `${Number(value).toLocaleString(undefined, {

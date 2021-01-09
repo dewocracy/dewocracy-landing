@@ -4,7 +4,7 @@ import {
   useTranslation,
   Trans,
 } from "gatsby-plugin-react-i18next";
-import React from "react";
+import React, {useCallback} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import dwBlue from "./../images/dewocracy-blue.svg";
@@ -14,6 +14,7 @@ function Header() {
   const [isExpanded, toggleExpansion] = React.useState(false);
   const { languages, language, originalPath } = useI18next();
   const { t } = useTranslation();
+  const handleClickSubmenu = useCallback(() => toggleExpansion(!isExpanded))
   return (
     <header
       id="header"
@@ -39,24 +40,19 @@ function Header() {
             isExpanded ? `block` : `hidden`
           } md:items-center w-full md:w-auto text-primary`}
         >
-          {[
-            {
-              route: "#contact",
-              title: t("Contacto"),
-            },
-            {
-              route: "#pricing",
-              title: t("Pricing"),
-            },
-          ].map((link) => (
-            <a
-              className="block mt-4 no-underline md:inline-block md:mt-0 md:ml-6"
-              key={link.title}
-              href={link.route}
-            >
-              {link.title}
-            </a>
-          ))}
+          <a
+              className="block pb-2 pt-4 hover:underline"
+              href="https://calendly.com/dewocracylabs/dewocracy-demo"
+              onClick={handleClickSubmenu}
+          >
+            <Trans>Demo</Trans>
+          </a>
+          <a className="block py-2 hover:underline" href="#pricing" onClick={handleClickSubmenu}>
+            <Trans>Pricing</Trans>
+          </a>
+          <a className="block py-2 hover:underline" href="#contact" onClick={handleClickSubmenu}>
+            <Trans>Free registration</Trans>
+          </a>
           <hr className="my-4 text-opacity-25 text-lightBlue" />
           <ul>
             {languages.map(

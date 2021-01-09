@@ -36,7 +36,7 @@ function IndexPage() {
         backgroundColor={theme.colors.primary}
       >
         <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen py-10 lg:py-0">
-          <div className="grid content-center px-8 lg:px-0">
+          <div className="grid content-center px-0 md:px-8 lg:px-0">
             <div className="md:mt-24 lg:mt-0">
               <h1 className="text-4xl lg:text-5xl font-medium text-white leading-tight pb-4">
                 <Trans>
@@ -64,7 +64,7 @@ function IndexPage() {
             </div>
           </div>
           <div className="">
-            <figure className="w-auto mt-24 lg:mt-0">
+            <figure className="w-auto mt-12 lg:mt-0">
               <Img
                 className="w-full h-full transform lg:scale-150 lg:translate-x-36 xl:translate-x-52 lg:translate-y-10"
                 fluid={data.mockup1.childImageSharp.fluid}
@@ -77,13 +77,13 @@ function IndexPage() {
 
       <div className="w-full  py-16 lg:py-32">
         <section className="container mx-auto">
-          <h2 className="font-medium text-2xl pb-8 text-center">
+          <h2 className="font-medium text-2xl pb-2 md:pb-8 text-center">
             <Trans>How much could your company save with DeWocracy?</Trans>
           </h2>
           <SavingsCalculator />
         </section>
         <section className="container mx-auto">
-          <div className="relative table">
+          <div className="relative md:table">
             <figure className="absolute top-56 -left-72">
               <img
                 id="arrow-loop-svg"
@@ -92,13 +92,13 @@ function IndexPage() {
                 width="550px"
               />
             </figure>
-            <h2 className="font-medium text-2xl pt-36 pb-10 text-center">
+            <h2 className="font-medium text-2xl pt-12 md:pt-36 pb-10">
               <Trans>
                 We help you in the transition towards a more flexible work model
                 and with less dependence on physical space.
               </Trans>
             </h2>
-            <div className="grid gap-10 lg:grid-cols-12 lg:w-9/12 float-right">
+            <div className="grid gap-y-4 lg:gap-10 lg:grid-cols-12 lg:w-9/12 float-right">
               <div className="bg-white p-6 shadow-lg rounded-lg flex justify-between items-center col-span-12 lg:col-span-10">
                 <div className="flex">
                   <div className="mr-4 text-primary">
@@ -111,12 +111,12 @@ function IndexPage() {
                 </div>
                 <div>
                   <h3 className="font-medium text-lg pb-4">
-                    Understand your needs
+                    <Trans>Understand your needs</Trans>
                   </h3>
                   <p>
-                    We give you the tools to understand the occupation of your
+                    <Trans>We give you the tools to understand the occupation of your
                     office, the preferences of your employees and the costs
-                    associated with your current office model.
+                      associated with your current office model.</Trans>
                   </p>
                 </div>
               </div>
@@ -125,17 +125,19 @@ function IndexPage() {
                   <div className="mr-4 text-primary">
                     <FontAwesomeIcon
                       icon={faSearch}
-                      className="text-primary mr-4"
+                      className="text-primary mr-2 lg:mr-4"
                       size="3x"
                     />
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-medium text-lg pb-4">Find your space</h3>
+                  <h3 className="font-medium text-lg pb-4"><Trans>Find your space</Trans></h3>
                   <p>
+                    <Trans>
                     Based on our analysis, we propose your ideal office space
                     and the model that best suits your needs (traditional
                     office, coworking, remote work).
+                    </Trans>
                   </p>
                 </div>
               </div>
@@ -151,13 +153,14 @@ function IndexPage() {
                 </div>
                 <div>
                   <h3 className="font-medium text-lg pb-4">
-                    Manage remote work
+                    <Trans>Manage remote work</Trans>
                   </h3>
                   <p>
+                    <Trans>
                     Implement your strategy using our booking, monitoring and
                     cost analysis system. Manage the administrative part of
                     remote work efficiently and evaluate the results to
-                    fine-tune your strategy.
+                    fine-tune your strategy.</Trans>
                   </p>
                 </div>
               </div>
@@ -166,7 +169,7 @@ function IndexPage() {
         </section>
         <section className="container mx-auto grid lg:grid-cols-2 pt-16 lg:pt-32">
           <div>
-            <figure className="w-auto mt-24 lg:mt-0">
+            <figure className="w-auto mt-12 lg:mt-0">
               <Img
                 className="w-full h-full"
                 fluid={data.mockup3.childImageSharp.fluid}
@@ -180,28 +183,28 @@ function IndexPage() {
             </h2>
             <div>
               <ul className="grid gap-6">
-                <li>
+                <li className="flex items-center">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     className="text-primary mr-4"
                   />
                   <Trans>Reservation of office space and remote work.</Trans>
                 </li>
-                <li>
+                <li className="flex items-center">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     className="text-primary mr-4"
                   />
                   <Trans>Digitized time control and vacation request.</Trans>
                 </li>
-                <li>
+                <li className="flex items-center">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     className="text-primary mr-4"
                   />
                   <Trans>Management of personalized workspaces.</Trans>
                 </li>
-                <li>
+                <li className="flex items-center">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     className="text-primary mr-4"
@@ -221,7 +224,7 @@ function IndexPage() {
             </h2>
             <div>
               <ul className="grid gap-6">
-                <li>
+                <li className="flex items-center">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     className="text-primary mr-4"
@@ -230,14 +233,14 @@ function IndexPage() {
                     Real-time monitoring of the remote work in the company.
                   </Trans>
                 </li>
-                <li>
+                <li className="flex items-center">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     className="text-primary mr-4"
                   />
                   <Trans>Analysis of the occupation space of the office.</Trans>
                 </li>
-                <li>
+                <li className="flex items-center">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     className="text-primary mr-4"
@@ -246,7 +249,7 @@ function IndexPage() {
                     Time control and administration of absences and vacations.
                   </Trans>
                 </li>
-                <li>
+                <li className="flex items-center">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     className="text-primary mr-4"
@@ -259,7 +262,7 @@ function IndexPage() {
             </div>
           </div>
           <div className="col-start-1 lg:col-start-auto row-start-1 lg:row-start-auto">
-            <figure className="w-auto mt-24 lg:mt-0">
+            <figure className="w-auto mt-12 lg:mt-0">
               <Img
                 className="w-full h-full"
                 fluid={data.mockup2.childImageSharp.fluid}
