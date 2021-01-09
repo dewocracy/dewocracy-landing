@@ -95,7 +95,7 @@ function Header() {
         <a className="block py-2 hover:underline" href="#pricing">
           <Trans>Pricing</Trans>
         </a>
-        <a className="btn bg-primary text-white py-2 mr-4" href="#contact">
+        <a className="btn bg-primary text-white py-2 mr-4 leading-4" href="#contact">
           <Trans>Free registration</Trans>
         </a>
         <Dropdown title={t(language)} theme="navbar">
