@@ -4,7 +4,7 @@ import {
   useTranslation,
   Trans,
 } from "gatsby-plugin-react-i18next";
-import React, {useCallback} from "react";
+import React, { useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import dwBlue from "./../images/dewocracy-blue.svg";
@@ -14,7 +14,7 @@ function Header() {
   const [isExpanded, toggleExpansion] = React.useState(false);
   const { languages, language, originalPath } = useI18next();
   const { t } = useTranslation();
-  const handleClickSubmenu = useCallback(() => toggleExpansion(!isExpanded))
+  const handleClickSubmenu = useCallback(() => toggleExpansion(!isExpanded));
   return (
     <header
       id="header"
@@ -41,16 +41,24 @@ function Header() {
           } md:items-center w-full md:w-auto text-primary`}
         >
           <a
-              className="block pb-2 pt-4 hover:underline"
-              href="https://calendly.com/dewocracylabs/dewocracy-demo"
-              onClick={handleClickSubmenu}
+            className="block pb-2 pt-4 hover:underline"
+            href="https://calendly.com/dewocracylabs/dewocracy-demo"
+            onClick={handleClickSubmenu}
           >
             <Trans>Demo</Trans>
           </a>
-          <a className="block py-2 hover:underline" href="#pricing" onClick={handleClickSubmenu}>
+          <a
+            className="block py-2 hover:underline"
+            href="#pricing"
+            onClick={handleClickSubmenu}
+          >
             <Trans>Pricing</Trans>
           </a>
-          <a className="block py-2 hover:underline" href="#contact" onClick={handleClickSubmenu}>
+          <a
+            className="block py-2 hover:underline"
+            href="#contact"
+            onClick={handleClickSubmenu}
+          >
             <Trans>Free registration</Trans>
           </a>
           <hr className="my-4 text-opacity-25 text-lightBlue" />
@@ -91,7 +99,10 @@ function Header() {
         <a className="block py-2 hover:underline" href="#pricing">
           <Trans>Pricing</Trans>
         </a>
-        <a className="btn bg-primary text-white py-2 mr-4 leading-4" href="#contact">
+        <a
+          className="btn bg-primary text-white py-2 mr-4 leading-4"
+          href="#contact"
+        >
           <Trans>Free registration</Trans>
         </a>
         <Dropdown title={t(language)} theme="navbar">

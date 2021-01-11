@@ -263,7 +263,9 @@ export const SavingsCalculator = () => {
           <div className="mt-10 grid justify-center">
             {showData ? (
               <>
-                <p className="my-4"><Trans>With DeWocracy you could save up to...</Trans></p>
+                <p className="my-4">
+                  <Trans>With DeWocracy you could save up to...</Trans>
+                </p>
                 <div className="pb-10 w-auto">
                   <div className="mt-2 text-lg lg:text-2xl">
                     <FontAwesomeIcon

@@ -84,7 +84,7 @@ function IndexPage() {
         </section>
         <section className="container mx-auto">
           <div className="relative md:table">
-            <figure className="absolute top-56 -left-72">
+            <figure className="absolute top-96 lg:top-56 -left-72">
               <img
                 id="arrow-loop-svg"
                 src={arrowLoopSvg}
@@ -99,7 +99,7 @@ function IndexPage() {
               </Trans>
             </h2>
             <div className="grid gap-y-4 lg:gap-10 lg:grid-cols-12 lg:w-9/12 float-right">
-              <div className="bg-white p-6 shadow-lg rounded-lg flex justify-between items-center col-span-12 lg:col-span-10">
+              <div className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center col-span-12 lg:col-span-10">
                 <div className="flex">
                   <div className="mr-4 text-primary">
                     <FontAwesomeIcon
@@ -114,13 +114,15 @@ function IndexPage() {
                     <Trans>Understand your needs</Trans>
                   </h3>
                   <p>
-                    <Trans>We give you the tools to understand the occupation of your
-                    office, the preferences of your employees and the costs
-                      associated with your current office model.</Trans>
+                    <Trans>
+                      We give you the tools to understand the occupation of your
+                      office, the preferences of your employees and the costs
+                      associated with your current office model.
+                    </Trans>
                   </p>
                 </div>
               </div>
-              <div className="bg-white p-6 shadow-lg rounded-lg flex justify-between items-center lg:col-start-2 col-span-12 lg:col-span-10">
+              <div className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center lg:col-start-2 col-span-12 lg:col-span-10">
                 <div className="flex">
                   <div className="mr-4 text-primary">
                     <FontAwesomeIcon
@@ -131,17 +133,19 @@ function IndexPage() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-medium text-lg pb-4"><Trans>Find your space</Trans></h3>
+                  <h3 className="font-medium text-lg pb-4">
+                    <Trans>Find your space</Trans>
+                  </h3>
                   <p>
                     <Trans>
-                    Based on our analysis, we propose your ideal office space
-                    and the model that best suits your needs (traditional
-                    office, coworking, remote work).
+                      Based on our analysis, we propose your ideal office space
+                      and the model that best suits your needs (traditional
+                      office, coworking, remote work).
                     </Trans>
                   </p>
                 </div>
               </div>
-              <div className="bg-white p-6 shadow-lg rounded-lg flex justify-between items-center col-span-12 lg:col-span-10">
+              <div className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center col-span-12 lg:col-span-10">
                 <div className="flex">
                   <div className="mr-4 text-primary">
                     <FontAwesomeIcon
@@ -157,10 +161,11 @@ function IndexPage() {
                   </h3>
                   <p>
                     <Trans>
-                    Implement your strategy using our booking, monitoring and
-                    cost analysis system. Manage the administrative part of
-                    remote work efficiently and evaluate the results to
-                    fine-tune your strategy.</Trans>
+                      Implement your strategy using our booking, monitoring and
+                      cost analysis system. Manage the administrative part of
+                      remote work efficiently and evaluate the results to
+                      fine-tune your strategy.
+                    </Trans>
                   </p>
                 </div>
               </div>

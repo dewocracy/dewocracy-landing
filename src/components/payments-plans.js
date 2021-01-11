@@ -32,7 +32,7 @@ export const PaymentsPlans = () => {
   return (
     <Fragment>
       <div className="grid justify-center">
-        <div className="grid md:grid-cols-2 gap-x-12 lg:gap-x-24 mb-8">
+        <div className="grid md:grid-cols-2 gap-y-4 gap-x-12 lg:gap-x-24 mb-8">
           {Object.entries(plans).map(([key, { text }]) => (
             <Fragment key={key}>
               {key === plan ? (
@@ -268,9 +268,11 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <span><Trans>
-                Propuesta de optimización de espacio y reducción de costes.
-              </Trans></span>
+              <span>
+                <Trans>
+                  Propuesta de optimización de espacio y reducción de costes.
+                </Trans>
+              </span>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon

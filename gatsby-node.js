@@ -6,10 +6,10 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
         rules: [
           {
             test: /react-spring/,
-            sideEffects: true
-          }
-        ]
-      }
-    })
+            sideEffects: true,
+          },
+        ],
+      },
+    });
   }
-}
+};

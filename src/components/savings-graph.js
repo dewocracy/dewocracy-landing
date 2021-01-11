@@ -18,7 +18,7 @@ export const SavingsGraph = ({ data }) => {
       axisLeft={{
         tickSize: 0,
         format: (value) =>
-          `${Number(value).toLocaleString('en-GB', {
+          `${Number(value).toLocaleString("en-GB", {
             notation: "compact",
           })}`,
       }}
@@ -28,7 +28,7 @@ export const SavingsGraph = ({ data }) => {
         tickRotation: 15,
       }}
       labelFormat={(value) =>
-        `${Number(value).toLocaleString('en-GB', {
+        `${Number(value).toLocaleString("en-GB", {
           notation: "compact",
         })}`
       }
@@ -62,7 +62,7 @@ export const SavingsGraph = ({ data }) => {
       tooltip={({ id, value, color }) => (
         <strong style={{ color }}>
           {id}:{" "}
-          {value.toLocaleString('en-GB', {
+          {value.toLocaleString("en-GB", {
             style: "currency",
             currency: "EUR",
           })}
