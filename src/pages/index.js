@@ -63,7 +63,7 @@ function IndexPage() {
               </div>
             </div>
           </div>
-          <div className="">
+          <div data-sal="slide-left" data-sal-delay="500">
             <figure className="w-auto mt-12 lg:mt-0">
               <Img
                 className="w-full h-full transform lg:scale-150 lg:translate-x-36 xl:translate-x-52 lg:translate-y-10"
@@ -99,7 +99,12 @@ function IndexPage() {
               </Trans>
             </h2>
             <div className="grid gap-y-4 lg:gap-10 lg:grid-cols-12 lg:w-9/12 float-right">
-              <div className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center col-span-12 lg:col-span-10">
+              <div
+                data-sal="flip-up"
+                data-sal-delay="500"
+                data-sal-easing="ease"
+                className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center col-span-12 lg:col-span-10"
+              >
                 <div className="flex">
                   <div className="mr-4 text-primary">
                     <FontAwesomeIcon
@@ -122,7 +127,12 @@ function IndexPage() {
                   </p>
                 </div>
               </div>
-              <div className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center lg:col-start-2 col-span-12 lg:col-span-10">
+              <div
+                data-sal="flip-up"
+                data-sal-delay="500"
+                data-sal-easing="ease"
+                className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center lg:col-start-2 col-span-12 lg:col-span-10"
+              >
                 <div className="flex">
                   <div className="mr-4 text-primary">
                     <FontAwesomeIcon
@@ -145,7 +155,12 @@ function IndexPage() {
                   </p>
                 </div>
               </div>
-              <div className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center col-span-12 lg:col-span-10">
+              <div
+                data-sal="flip-up"
+                data-sal-delay="500"
+                data-sal-easing="ease"
+                className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center col-span-12 lg:col-span-10"
+              >
                 <div className="flex">
                   <div className="mr-4 text-primary">
                     <FontAwesomeIcon
@@ -173,7 +188,7 @@ function IndexPage() {
           </div>
         </section>
         <section className="container mx-auto grid lg:grid-cols-2 pt-16 lg:pt-32">
-          <div>
+          <div data-sal="slide-right" data-sal-easing="ease">
             <figure className="w-auto mt-12 lg:mt-0">
               <Img
                 className="w-full h-full"
@@ -182,7 +197,11 @@ function IndexPage() {
               />
             </figure>
           </div>
-          <div className="grid justify-center content-start">
+          <div
+            data-sal="slide-left"
+            data-sal-easing="ease"
+            className="grid justify-center content-start"
+          >
             <h2 className="font-medium text-2xl py-10 pb-5 text-center">
               <Trans>Web app for the company</Trans>
             </h2>
@@ -223,7 +242,10 @@ function IndexPage() {
           </div>
         </section>
         <section className="container mx-auto grid flex-col-reverse lg:grid-cols-2 pt-16 lg:pt-16">
-          <div className="grid justify-center content-center">
+          <div
+            data-sal="slide-right"
+            className="grid justify-center content-center"
+          >
             <h2 className="font-medium text-2xl py-10 pb-5 text-center">
               <Trans>Mobile app for the employee</Trans>
             </h2>
@@ -266,7 +288,10 @@ function IndexPage() {
               </ul>
             </div>
           </div>
-          <div className="col-start-1 lg:col-start-auto row-start-1 lg:row-start-auto">
+          <div
+            data-sal="slide-left"
+            className="col-start-1 lg:col-start-auto row-start-1 lg:row-start-auto"
+          >
             <figure className="w-auto mt-12 lg:mt-0">
               <Img
                 className="w-full h-full"

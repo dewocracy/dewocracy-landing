@@ -52,7 +52,11 @@ export const PaymentsPlans = () => {
         </div>
       </div>
       <div className="grid lg:grid-cols-3 gap-10 justify-center h-full">
-        <div className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8 my-4 lg:my-16">
+        <div
+          data-sal="zoom-in"
+          data-sal-easing="ease"
+          className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8 my-4 lg:my-16"
+        >
           <div>
             <p className="text-primary text-2xl md:text-4xl font-bold pb-4">
               <Trans>Free</Trans>
@@ -131,7 +135,11 @@ export const PaymentsPlans = () => {
             <Trans>Pruébalo gratis</Trans>
           </a>
         </div>
-        <div className="grid content-between rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8">
+        <div
+          data-sal="zoom-in"
+          data-sal-easing="ease"
+          className="grid content-between rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8"
+        >
           <div>
             {/*<div className="text-center">*/}
             {/*  <span className="btn bg-transparent border border-primary p-1 uppercase px-10 text-sm">*/}
@@ -215,7 +223,11 @@ export const PaymentsPlans = () => {
             <Trans>Empieza ahora</Trans>
           </a>
         </div>
-        <div className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8 my-4 lg:my-16">
+        <div
+          data-sal="zoom-in"
+          data-sal-easing="ease"
+          className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8 my-4 lg:my-16"
+        >
           <div>
             <p className="text-primary text-2xl md:text-4xl font-bold  pb-4">
               <Trans>Business</Trans>

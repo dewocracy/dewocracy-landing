@@ -125,5 +125,11 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+        threshold: 0.7, // Percentage of an element's area that needs to be visible to launch animation
+      },
+    },
   ],
 };

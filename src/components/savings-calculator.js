@@ -238,7 +238,11 @@ export const SavingsCalculator = () => {
             </a>
           </p>
         </div>
-        <div className="col-span-2 shadow-xl rounded-lg p-y-10 lg:p-10">
+        <div
+          data-sal="slide-bottom"
+          data-sal-easing="easeInQuad"
+          className="col-span-2 shadow-xl rounded-lg p-y-10 lg:p-10"
+        >
           <div className="w-full h-96 lg:h-4/6">
             <SavingsGraph
               data={[
