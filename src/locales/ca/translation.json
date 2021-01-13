@@ -70,5 +70,17 @@
   "Message:": "Mensaje",
   "Send message": "Enviar mensaje",
   "Access web app (company)": "Acceder a la web app (empresa)",
-  "Download mobile app (employee)": "Descargar app móvil (empleado)"
+  "Download mobile app (employee)": "Descargar app móvil (empleado)",
+  "Employees": "Employees",
+  "office square metres": "office square metres",
+  "Page not found.": "No hem pogut trobar la pàgina.",
+  "Back to home": "Tornar al inici",
+  "Thanks for containing us! We will get in touch with you shortly.": "¡Gràcies per contactar amb nosaltres! Et respondrem el mes aviat possible.",
+  "Download from": "Descarrega de",
+  "DeWocracy - Remote Work | Work from anywhere": "DeWocracy - teletreball | Treballa des de qualsevol lloc",
+  "DeWocracy offers remote work solutions for a hybrid office strategy. Manage your company's human capital, control the office occupancy rate, lower costs and increase flexibility without compromising productivity.": "DeWocracy ofereix solucions per al teletreball i el desenvolupament d'una estratègia d'oficina híbrida. Gestiona el treball remot, controla l'ocupació de l'oficina, redueix costos i incrementa la flexibilitat de la teva empresa sense disminuir la productivitat.",
+  "remote work": "treball en remot",
+  "teleworking": "teletreball",
+  "work office": "oficina",
+  "occupancy": "opcupació"
 }

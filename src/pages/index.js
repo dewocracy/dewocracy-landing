@@ -19,16 +19,7 @@ function IndexPage() {
   const data = useStaticQuery(query);
   return (
     <Layout>
-      <SEO
-        title="DeWocracy - Teletrabajo | Trabaja desde cualquier lugar"
-        keywords={[
-          "DeWocracy",
-          "teletrabajo",
-          "oficina",
-          "opcupación",
-          "trabajo en remoto",
-        ]}
-      />
+      <SEO title="DeWocracy - Remote Work | Work from anywhere" />
       <BackgroundImage
         Tag="div"
         className="w-full bg-fixed bg-cover"
@@ -333,9 +324,9 @@ function IndexPage() {
               request a video call
             </a>
             , contact us at info@dewocracy.com or send us a message via the
-            contact form below.{'":"'}Puedes agendar una videollamada a la hora que
-            más te convenga, contactarnos a info@dewocracy.com o escribirnos en
-            el formulario de contacto.
+            contact form below.{'":"'}Puedes agendar una videollamada a la hora
+            que más te convenga, contactarnos a info@dewocracy.com o escribirnos
+            en el formulario de contacto.
           </p>
           <ContactForm />
         </section>

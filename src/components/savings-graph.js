@@ -1,9 +1,9 @@
 import * as React from "react";
 import { BarPropTypes, ResponsiveBar } from "@nivo/bar";
-import {useTranslation} from "gatsby-plugin-react-i18next";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 export const SavingsGraph = ({ data }) => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <ResponsiveBar
       data={data}

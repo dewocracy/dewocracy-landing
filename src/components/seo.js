@@ -81,15 +81,7 @@ function SEO({ description, lang, meta, keywords, title }) {
 
 SEO.defaultProps = {
   lang: `en`,
-  keywords: [
-    `dewocracy`,
-    `office space`,
-    `office`,
-    `remote work`,
-    `remote working`,
-    `savings in office`,
-    `optimize office space`,
-  ],
+  keywords: [`dewocracy`, `work office`, `remote work`, `teleworking`],
   meta: [],
 };
 

@@ -11,14 +11,14 @@ function NotFoundPage() {
       <div className="w-full bg-fixed min-h-screen bg-darkBlue py-32">
         <section className="container mx-auto text-white px-8 md:px-0">
           <p>
-            <Trans>Página no encontrada.</Trans>
+            <Trans>Page not found.</Trans>
           </p>
           <p className="mt-16">
             <a
               href="/"
               className="btn text-greyBlue cursor-pointer w-full md:w-auto"
             >
-              <Trans>Volver al inicio</Trans>
+              <Trans>Back to home</Trans>
             </a>
           </p>
         </section>
