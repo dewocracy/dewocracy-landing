@@ -316,17 +316,14 @@ function IndexPage() {
             <Trans>Interested? Contact us!</Trans>
           </h2>
           <p className="pb-5">
-            You can{" "}
+            <Trans>You can{" "}
             <a
               href="https://calendly.com/dewocracylabs/dewocracy-demo"
               className="underline"
             >
               request a video call
-            </a>
-            , contact us at info@dewocracy.com or send us a message via the
-            contact form below.{'":"'}Puedes agendar una videollamada a la hora
-            que más te convenga, contactarnos a info@dewocracy.com o escribirnos
-            en el formulario de contacto.
+            </a>{' '}at your convenience, contact us at info@dewocracy.com or send us a message via the contact form below.
+            </Trans>
           </p>
           <ContactForm />
         </section>

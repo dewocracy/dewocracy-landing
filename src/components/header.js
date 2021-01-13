@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import dwBlue from "./../images/dewocracy-blue.svg";
 import { Dropdown } from "./dropdown";
+import {faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 
 function Header() {
   const [isExpanded, toggleExpansion] = React.useState(false);
@@ -61,6 +62,19 @@ function Header() {
           >
             <Trans>Free registration</Trans>
           </a>
+          <a
+              href="https://wa.me/message/NULJD4OWUB3CA1"
+              rel="noreferrer noopener"
+              target="_blank"
+              title="Whatsapp"
+              className="block py-2"
+          >
+            <FontAwesomeIcon
+                icon={faWhatsapp}
+                className="text-primary"
+                size="2x"
+            />
+          </a>
           <hr className="my-4 text-opacity-25 text-lightBlue" />
           <ul>
             {languages.map(
@@ -91,16 +105,28 @@ function Header() {
       </Link>
       <nav className="hidden md:inline-flex flex justify-center md:justify-end gap-4 text-primary text-sm">
         <a
-          className="block py-2 hover:underline"
+          className="block p-2 hover:underline"
           href="https://calendly.com/dewocracylabs/dewocracy-demo"
         >
           <Trans>Demo</Trans>
         </a>
-        <a className="block py-2 hover:underline" href="#pricing">
+        <a className="block p-2 hover:underline" href="#pricing">
           <Trans>Pricing</Trans>
         </a>
         <a
-          className="btn bg-primary text-white py-2 mr-4 leading-4"
+            href="https://wa.me/message/NULJD4OWUB3CA1"
+            rel="noreferrer noopener"
+            target="_blank"
+            title="Whatsapp"
+            className="block mt-2 px-2"
+        >
+          <FontAwesomeIcon
+              icon={faWhatsapp}
+              className="text-primary text-2xl"
+          />
+        </a>
+        <a
+          className="btn bg-primary text-white py-2 mx-6 leading-4"
           href="#contact"
         >
           <Trans>Free registration</Trans>
@@ -110,7 +136,7 @@ function Header() {
             <Link
               key={key}
               to={originalPath}
-              className="block px-4 py-2 hover:underline"
+              className="block p-4 pl-6 hover:underline"
               role="menuitem"
               language={lang}
             >
