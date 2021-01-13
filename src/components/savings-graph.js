@@ -1,11 +1,13 @@
 import * as React from "react";
 import { BarPropTypes, ResponsiveBar } from "@nivo/bar";
+import {useTranslation} from "gatsby-plugin-react-i18next";
 
 export const SavingsGraph = ({ data }) => {
+  const {t} = useTranslation();
   return (
     <ResponsiveBar
       data={data}
-      keys={["Supplies costs", "Rent costs", "DW costs"]}
+      keys={[t("Utilities"), t("Rent"), t("DW cost")]}
       indexBy="costType"
       margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
       padding={0.5}

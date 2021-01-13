@@ -121,7 +121,7 @@ function IndexPage() {
                   <p>
                     <Trans>
                       We give you the tools to measure office occupancy,
-                      understand employees' preferences, and analize costs
+                      understand employees{"'"} preferences, and analize costs
                       derived from your current workplace strategy.
                     </Trans>
                   </p>
@@ -333,7 +333,7 @@ function IndexPage() {
               request a video call
             </a>
             , contact us at info@dewocracy.com or send us a message via the
-            contact form below.":"Puedes agendar una videollamada a la hora que
+            contact form below.{'":"'}Puedes agendar una videollamada a la hora que
             más te convenga, contactarnos a info@dewocracy.com o escribirnos en
             el formulario de contacto.
           </p>
