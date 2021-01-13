@@ -39,26 +39,24 @@ function IndexPage() {
           <div className="grid content-center px-0 md:px-8 lg:px-0">
             <div className="md:mt-24 lg:mt-0">
               <h1 className="text-4xl lg:text-5xl font-medium text-white leading-tight pb-4">
-                <Trans>
-                  Implement a hybrid remote work strategy in your company.
-                </Trans>
+                <Trans>Implement flexible remote work in your company</Trans>
               </h1>
               <p className="text-xl py-4">
                 <Trans>
-                  Save thousands of euros by replacing square meters for
-                  technology adopting a hybrid strategy of remote and office
+                  Save thousands of euros optimizing your real estate footprint
+                  by switching to a hybrid strategy of in-office and remote
                   work.
                 </Trans>
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 mt-6 md:mt-0">
                 <a className="btn mt-6" href="#contact">
-                  <Trans>Free sign up</Trans>
+                  <Trans>Sign up for free</Trans>
                 </a>
                 <a
                   className="btn mt-6 bg-transparent text-white border-white border"
                   href="https://calendly.com/dewocracylabs/dewocracy-demo"
                 >
-                  <Trans>Request demo</Trans>
+                  <Trans>Request a demo</Trans>
                 </a>
               </div>
             </div>
@@ -94,8 +92,10 @@ function IndexPage() {
             </figure>
             <h2 className="font-medium text-2xl pt-12 md:pt-36 pb-10">
               <Trans>
-                We help you in the transition towards a more flexible work model
-                and with less dependence on physical space.
+                We help you transition to a more flexible workplace strategy
+                that is less dependant on physical space. From idea to
+                execution, we support you throughout all the stages of the
+                process.
               </Trans>
             </h2>
             <div className="grid gap-y-4 lg:gap-10 lg:grid-cols-12 lg:w-9/12 float-right">
@@ -120,9 +120,9 @@ function IndexPage() {
                   </h3>
                   <p>
                     <Trans>
-                      We give you the tools to understand the occupation of your
-                      office, the preferences of your employees and the costs
-                      associated with your current office model.
+                      We give you the tools to measure office occupancy,
+                      understand employees' preferences, and analize costs
+                      derived from your current workplace strategy.
                     </Trans>
                   </p>
                 </div>
@@ -148,9 +148,10 @@ function IndexPage() {
                   </h3>
                   <p>
                     <Trans>
-                      Based on our analysis, we propose your ideal office space
-                      and the model that best suits your needs (traditional
-                      office, coworking, remote work).
+                      We use the data gathered to make an office space
+                      optimization proposal and find out your ideal workplace
+                      strategy (traditional office, flexible office, hybrid work
+                      or remote work).
                     </Trans>
                   </p>
                 </div>
@@ -177,9 +178,9 @@ function IndexPage() {
                   <p>
                     <Trans>
                       Implement your strategy using our booking, monitoring and
-                      cost analysis system. Manage the administrative part of
-                      remote work efficiently and evaluate the results to
-                      fine-tune your strategy.
+                      cost analysis system. Manage the admin side of remote work
+                      efficiently and assess your results to fine-tune your
+                      strategy.
                     </Trans>
                   </p>
                 </div>
@@ -212,21 +213,24 @@ function IndexPage() {
                     icon={faCheckCircle}
                     className="text-primary mr-4"
                   />
-                  <Trans>Reservation of office space and remote work.</Trans>
+                  <Trans>
+                    Real-time monitoring of your company{"'"}s remote/in-office
+                    work breakdown.
+                  </Trans>
                 </li>
                 <li className="flex items-center">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     className="text-primary mr-4"
                   />
-                  <Trans>Digitized time control and vacation request.</Trans>
+                  <Trans>Office occupancy rate analysis.</Trans>
                 </li>
                 <li className="flex items-center">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     className="text-primary mr-4"
                   />
-                  <Trans>Management of personalized workspaces.</Trans>
+                  <Trans>Unused space cost.</Trans>
                 </li>
                 <li className="flex items-center">
                   <FontAwesomeIcon
@@ -234,7 +238,7 @@ function IndexPage() {
                     className="text-primary mr-4"
                   />
                   <Trans>
-                    Historical telework statistics and hours worked.
+                    Digital clock-in, absence and holidays management.
                   </Trans>
                 </li>
               </ul>
@@ -256,25 +260,14 @@ function IndexPage() {
                     icon={faCheckCircle}
                     className="text-primary mr-4"
                   />
-                  <Trans>
-                    Real-time monitoring of the remote work in the company.
-                  </Trans>
+                  <Trans>Office and remote work booking.</Trans>
                 </li>
                 <li className="flex items-center">
                   <FontAwesomeIcon
                     icon={faCheckCircle}
                     className="text-primary mr-4"
                   />
-                  <Trans>Analysis of the occupation space of the office.</Trans>
-                </li>
-                <li className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faCheckCircle}
-                    className="text-primary mr-4"
-                  />
-                  <Trans>
-                    Time control and administration of absences and vacations.
-                  </Trans>
+                  <Trans>Management of custom work spaces.</Trans>
                 </li>
                 <li className="flex items-center">
                   <FontAwesomeIcon
@@ -282,8 +275,15 @@ function IndexPage() {
                     className="text-primary mr-4"
                   />
                   <Trans>
-                    Quantification of the cost associated with unused space.
+                    Digital clock-in, absences and holidays request.
                   </Trans>
+                </li>
+                <li className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="text-primary mr-4"
+                  />
+                  <Trans>Historical data of workplace habits.</Trans>
                 </li>
               </ul>
             </div>
@@ -312,7 +312,7 @@ function IndexPage() {
       >
         <section className="container mx-auto text-white lg:px-32">
           <h2 className="font-medium text-white text-2xl pb-8">
-            <Trans>Selecciona el plan que necesitas para tu empresa.</Trans>
+            <Trans>Choose a plan for your company.</Trans>
           </h2>
           <PaymentsPlans />
         </section>
@@ -322,18 +322,20 @@ function IndexPage() {
           className="container mx-auto text-white self-center pt-16 lg:pt-32 "
         >
           <h2 className="font-bold text-white text-2xl lg:text-4xl text-center py-16">
-            <Trans>Want to talk with us?</Trans>
+            <Trans>Interested? Contact us!</Trans>
           </h2>
           <p className="pb-5">
-            Puedes{" "}
+            You can{" "}
             <a
               href="https://calendly.com/dewocracylabs/dewocracy-demo"
               className="underline"
             >
-              agendar una videollamada
-            </a>{" "}
-            a la hora que mejor te vaya, contactarnos a info@dewocracy.com o
-            escribirnos en el formulario de contacto.
+              request a video call
+            </a>
+            , contact us at info@dewocracy.com or send us a message via the
+            contact form below.":"Puedes agendar una videollamada a la hora que
+            más te convenga, contactarnos a info@dewocracy.com o escribirnos en
+            el formulario de contacto.
           </p>
           <ContactForm />
         </section>

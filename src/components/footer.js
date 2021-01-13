@@ -32,7 +32,9 @@ export const Footer = () => {
           </a>
         </div>
         <div className="grid justify-center gap-y-4 text-primary  text-center">
-          <p>Download from</p>
+          <p>
+            <Trans>Download from</Trans>
+          </p>
           <div className="flex content-center">
             <a
               className="pr-4 grid content-center grid-x-4 justify-center"

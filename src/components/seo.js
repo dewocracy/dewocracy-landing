@@ -83,9 +83,12 @@ SEO.defaultProps = {
   lang: `en`,
   keywords: [
     `dewocracy`,
-    `espacio oficina`,
-    `oficina`,
-    `optimizar espacio oficina`,
+    `office space`,
+    `office`,
+    `remote work`,
+    `remote working`,
+    `savings in office`,
+    `optimize office space`,
   ],
   meta: [],
 };

@@ -201,7 +201,10 @@ export const SavingsCalculator = () => {
             value={employees}
           />
           <label htmlFor="employees" className="font-bold pr-4 pt-10 pb-4">
-            <Trans>What is the total area of your office? (sqm):</Trans>
+            <Trans>
+              How many square meters of office space do you currently have?
+              (sqm)
+            </Trans>
           </label>
           <input
             id="sizeOffice"
@@ -216,7 +219,8 @@ export const SavingsCalculator = () => {
           />
           <label htmlFor="target" className="font-bold pr-4 pt-10 pb-4">
             <Trans>
-              How many remote days a week do you want to implement? (%):
+              What{"'"}s the percentage of remote work you would like to
+              implement? (%)
             </Trans>
           </label>
           <input
@@ -229,7 +233,7 @@ export const SavingsCalculator = () => {
             value={target}
           />
           <p className="text-center pt-10">
-            <Trans>How do we calculate that?</Trans>
+            <Trans>How do we calculate it?</Trans>
             <br />
           </p>
           <p className="text-center pt-4">
@@ -247,19 +251,19 @@ export const SavingsCalculator = () => {
             <SavingsGraph
               data={[
                 {
-                  costType: "Costs",
-                  "Supplies costs": !isNaN(suppliesCost) ? suppliesCost : 0,
-                  "Rent costs": !isNaN(rentCostPerMonth) ? rentCostPerMonth : 0,
+                  costType: t("Now"),
+                  [t("Utilities")]: !isNaN(suppliesCost) ? suppliesCost : 0,
+                  [t("Rent")]: !isNaN(rentCostPerMonth) ? rentCostPerMonth : 0,
                 },
                 {
-                  costType: "With DW",
-                  "Supplies costs": !isNaN(suppliesCostWithDW)
+                  costType: t("With DW"),
+                  [t("Utilities")]: !isNaN(suppliesCostWithDW)
                     ? suppliesCostWithDW
                     : 0,
-                  "Rent costs": !isNaN(rentCostPerMonthWithDW)
+                  [t("Rent")]: !isNaN(rentCostPerMonthWithDW)
                     ? rentCostPerMonthWithDW
                     : 0,
-                  "DW costs": !isNaN(techInvestment) ? techInvestment : 0,
+                  [t("DW cost")]: !isNaN(techInvestment) ? techInvestment : 0,
                 },
               ]}
             />
@@ -299,7 +303,7 @@ export const SavingsCalculator = () => {
                             currency: "EUR",
                           })} `}
                     </span>
-                    <Trans>yearly</Trans>
+                    <Trans>annually</Trans>
                   </p>
                   <p className="mt-2 text-lg lg:text-2xl">
                     <FontAwesomeIcon
@@ -314,7 +318,7 @@ export const SavingsCalculator = () => {
                             maximumFractionDigits: 2,
                           })} `}
                     </span>
-                    <Trans>of savings</Trans>
+                    <Trans>saving</Trans>
                   </p>
                 </div>
               </>

@@ -49,14 +49,14 @@ export const ContactForm = () => {
       <div className="grid lg:grid-cols-3 gap-10">
         <div className="grid">
           <label htmlFor="name" className="font-bold pr-4 pb-4">
-            <Trans>Nombre:</Trans>
+            <Trans>Name:</Trans>
           </label>
           <input
             id="name"
             type="text"
             name="name"
             required
-            placeholder="Gustav Mahler"
+            placeholder="Mike Wazowski"
             className="rounded-lg text-black py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-white"
             onChange={handleChange}
           />
@@ -70,21 +70,21 @@ export const ContactForm = () => {
             type="email"
             name="email"
             required
-            placeholder="name@domain.com"
+            placeholder={t("michaelwazowski@monstersinc.com")}
             className="rounded-lg text-black py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-white"
             onChange={handleChange}
           />
         </div>
         <div className="grid">
           <label htmlFor="company" className="font-bold pr-4 pb-4">
-            <Trans>Empresa:</Trans>
+            <Trans>Company:</Trans>
           </label>
           <input
             id="company"
             type="text"
             name="company"
             required
-            placeholder={t("Empresa")}
+            placeholder={t("Monsters, Inc.")}
             className="rounded-lg text-black py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-white"
             onChange={handleChange}
           />
@@ -93,7 +93,7 @@ export const ContactForm = () => {
 
       <div className="grid grid-cols-1 justify-center mt-md:mr-16 mt-10 gap-y-4">
         <label htmlFor="message" className="font-bold">
-          <Trans>Mensaje:</Trans>
+          <Trans>Message:</Trans>
         </label>
         <textarea
           id="message"

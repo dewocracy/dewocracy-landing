@@ -10,12 +10,12 @@ const getCurrencyText = (value) =>
 
 const plans = {
   biannual: {
-    text: "Semestral - hasta un 28% de ahorro",
+    text: "Seminnual - up to 28% discount",
     startup: getCurrencyText(3),
     business: getCurrencyText(5),
   },
   monthly: {
-    text: "Mensual",
+    text: "Monthly",
     startup: getCurrencyText(4),
     business: getCurrencyText(7),
   },
@@ -75,7 +75,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>1 administrador</Trans>
+              <Trans>1 administrator.</Trans>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -83,7 +83,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>Hasta 3 usuarios</Trans>
+              <Trans>Up to 5 users.</Trans>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -91,7 +91,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>Plataforma de empresa</Trans>
+              <Trans>Web app for the company.</Trans>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -99,7 +99,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>App para los trabajadores</Trans>
+              <Trans>Mobile app for the employees.</Trans>
             </li>
             <li className="text-grey flex items-center">
               <FontAwesomeIcon
@@ -107,9 +107,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="mr-4"
               />
-              <Trans>
-                Propuesta de optimización de espacio y reducción de costes.
-              </Trans>
+              <Trans>Optimum workspace and cost cutting proposal.</Trans>
             </li>
             <li className="text-grey flex items-center">
               <FontAwesomeIcon
@@ -117,7 +115,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="mr-4"
               />
-              <Trans>Propuesta de modelo de trabajo ideal.</Trans>
+              <Trans>Ideal remote work strategy proposal.</Trans>
             </li>
             <li className="text-grey flex items-center">
               <FontAwesomeIcon
@@ -125,14 +123,14 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="mr-4"
               />
-              <Trans>Acompañamiento en todo el proceso.</Trans>
+              <Trans>Guidance throughout the entire process.</Trans>
             </li>
           </ol>
           <a
             className="btn bg-white border border-primary border-4 text-primary w-full block h-12"
             href="#contact"
           >
-            <Trans>Pruébalo gratis</Trans>
+            <Trans>Start for free</Trans>
           </a>
         </div>
         <div
@@ -143,7 +141,7 @@ export const PaymentsPlans = () => {
           <div>
             {/*<div className="text-center">*/}
             {/*  <span className="btn bg-transparent border border-primary p-1 uppercase px-10 text-sm">*/}
-            {/*    <Trans>Most popular</Trans>*/}
+            {/*    <Trans>Popular</Trans>*/}
             {/*  </span>*/}
             {/*</div>*/}
             <p className="text-primary text-2xl md:text-4xl font-bold pb-4">
@@ -163,7 +161,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>1 administrador</Trans>
+              <Trans>1 administrator.</Trans>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -171,7 +169,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>Usuarios ilimitados</Trans>
+              <Trans>Unlimited users.</Trans>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -179,7 +177,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>Plataforma de empresa</Trans>
+              <Trans>Web app for the company.</Trans>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -187,7 +185,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>App para los trabajadores</Trans>
+              <Trans>Mobile app for the employees.</Trans>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -195,9 +193,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>
-                Propuesta de optimización de espacio y reducción de costes.
-              </Trans>
+              <Trans>Optimum workspace and cost cutting proposal.</Trans>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -205,7 +201,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>Propuesta de modelo de trabajo ideal.</Trans>
+              <Trans>Ideal remote work strategy proposal.</Trans>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -213,14 +209,14 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>Acompañamiento en todo el proceso.</Trans>
+              <Trans>Guidance throughout the entire process.</Trans>
             </li>
           </ol>
           <a
             className="btn bg-primary text-white w-full block h-12"
             href="#contact"
           >
-            <Trans>Empieza ahora</Trans>
+            <Trans>Start now</Trans>
           </a>
         </div>
         <div
@@ -247,7 +243,7 @@ export const PaymentsPlans = () => {
                 className="absolute text-primary mr-4 leading-8"
               />
               <span className="ml-8 inline">
-                <Trans>Administradores ilimitados</Trans>
+                <Trans>Unlimited administrators.</Trans>
               </span>
             </li>
             <li className="flex items-center">
@@ -256,7 +252,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>Usuarios ilimitados</Trans>
+              <Trans>Unlimited users.</Trans>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -264,7 +260,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>Plataforma de empresa</Trans>
+              <Trans>Web app for the company.</Trans>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -272,7 +268,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>App para los trabajadores</Trans>
+              <Trans>Mobile app for the employees.</Trans>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -281,9 +277,7 @@ export const PaymentsPlans = () => {
                 className="text-primary mr-4"
               />
               <span>
-                <Trans>
-                  Propuesta de optimización de espacio y reducción de costes.
-                </Trans>
+                <Trans>Optimum workspace and cost cutting proposal.</Trans>
               </span>
             </li>
             <li className="flex items-center">
@@ -292,7 +286,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>Propuesta de modelo de trabajo ideal.</Trans>
+              <Trans>Ideal remote work strategy proposal.</Trans>
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -300,14 +294,14 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              <Trans>Acompañamiento en todo el proceso.</Trans>
+              <Trans>Guidance throughout the entire process.</Trans>
             </li>
           </ol>
           <a
             className="btn bg-white border border-primary border-2 text-primary w-full block h-12"
             href="#contact"
           >
-            <Trans>Descúbrelo</Trans>
+            <Trans>Explore</Trans>
           </a>
         </div>
       </div>
