@@ -321,8 +321,8 @@ function IndexPage() {
               href="https://calendly.com/dewocracylabs/dewocracy-demo"
               className="underline"
             >
-              <Trans>request a video call</Trans>{" "}
-            </a>
+              <Trans>request a video call</Trans>
+            </a>{" "}
             <Trans>
               at your convenience, contact us at info@dewocracy.com or send us a
               message via the contact form below.
