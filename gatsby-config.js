@@ -20,7 +20,7 @@ module.exports = {
   siteMetadata: {
     siteUrl,
     title: `DeWocracy`,
-    description: `DeWocracy ofrece soluciones para el teletrabajo y el desarrollo de una estrategia de oficina híbrida. Gestiona el trabajo remoto, controla la ocupación de tu oficina, reduce costes e incrementa la flexibilidad de tu empresa sin disminuir la productividad.`,
+    description: `DeWocracy offers remote work solutions for a hybrid office strategy. Manage your company's human capital, control the office occupancy rate, lower costs and increase flexibility without compromising productivity.`,
     author: `@de_wocracy`,
     linkedin: "https://www.linkedin.com/company/dewocracy/",
     twitter: "https://twitter.com/de_wocracy",
