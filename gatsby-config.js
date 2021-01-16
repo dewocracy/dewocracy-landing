@@ -25,7 +25,7 @@ module.exports = {
     linkedin: "https://www.linkedin.com/company/dewocracy/",
     twitter: "https://twitter.com/de_wocracy",
     medium: "https://medium.com/dewocracy",
-    image: "src/images/dw-blue.png",
+    image: "src/images/banner-dw.png",
   },
   plugins: [
     `gatsby-plugin-eslint`,

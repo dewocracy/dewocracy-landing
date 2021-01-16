@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import { Helmet, useTranslation } from "gatsby-plugin-react-i18next";
-
+import image from '../images/banner-dw.png'
 function SEO({ description, lang, meta, keywords, title }) {
   const { t } = useTranslation();
   const { site } = useStaticQuery(graphql`
@@ -29,10 +29,6 @@ function SEO({ description, lang, meta, keywords, title }) {
         {
           name: `description`,
           content: metaDescription,
-        },
-        {
-          property: `og:image`,
-          content: site.siteMetadata.image,
         },
         {
           property: `og:title`,
@@ -78,6 +74,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         .concat(meta)}
       title={t(title)}
     >
+      <meta property="og:image" content={image}  />
       <link rel="canonical" href={site.siteMetadata.siteUrl} />
     </Helmet>
   );
