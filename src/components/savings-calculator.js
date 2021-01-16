@@ -238,7 +238,7 @@ export const SavingsCalculator = () => {
           </p>
           <p className="text-center pt-4">
             <a href="#contact" className="text-primary underline">
-              Contact us
+              <Trans>Contact us</Trans>
             </a>
           </p>
         </div>

@@ -64,7 +64,8 @@ export const PaymentsPlans = () => {
             <p className="text-primary text-2xl md:text-4xl">
               <span className="font-bold">{getCurrencyText(0)}</span>
               <span className="text-sm">
-                <Trans> Mes / Usuario</Trans>
+                {" "}
+                <Trans>Month / User</Trans>
               </span>
             </p>
           </div>
@@ -150,7 +151,8 @@ export const PaymentsPlans = () => {
             <p className="text-primary text-2xl md:text-4xl">
               <span className="font-bold">{startup}</span>
               <span className="text-sm">
-                <Trans> Mes / Usuario</Trans>
+                {" "}
+                <Trans>Month / User</Trans>
               </span>
             </p>
           </div>
@@ -231,7 +233,8 @@ export const PaymentsPlans = () => {
             <p className="text-primary text-2xl md:text-4xl">
               <span className="font-bold">{business}</span>
               <span className="text-sm">
-                <Trans> Mes / Usuario</Trans>
+                {" "}
+                <Trans>Month / User</Trans>
               </span>
             </p>
           </div>
