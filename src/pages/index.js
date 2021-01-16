@@ -57,7 +57,7 @@ function IndexPage() {
               <Img
                 className="w-full h-full transform lg:scale-150 lg:translate-x-36 xl:translate-x-52 lg:translate-y-10"
                 fluid={data.mockup1.childImageSharp.fluid}
-                alt="DeWocracy admin dashboard & mobile app"
+                alt=""
               />
             </figure>
           </div>
@@ -79,6 +79,7 @@ function IndexPage() {
                 src={arrowLoopSvg}
                 alt=""
                 width="550px"
+                height="550px"
               />
             </figure>
             <h2 className="font-medium text-2xl pt-12 md:pt-36 pb-10">
@@ -185,7 +186,7 @@ function IndexPage() {
               <Img
                 className="w-full h-full"
                 fluid={data.mockup3.childImageSharp.fluid}
-                alt="DeWocracy admin dashboard"
+                alt=""
               />
             </figure>
           </div>
@@ -287,7 +288,7 @@ function IndexPage() {
               <Img
                 className="w-full h-full"
                 fluid={data.mockup2.childImageSharp.fluid}
-                alt="DeWocracy mobile app screenshots"
+                alt=""
               />
             </figure>
           </div>

@@ -31,6 +31,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: image,
+        },
+        {
           property: `og:title`,
           content: t(title),
         },
@@ -74,7 +78,6 @@ function SEO({ description, lang, meta, keywords, title }) {
         .concat(meta)}
       title={t(title)}
     >
-      <meta property="og:image" content={image}  />
       <link rel="canonical" href={site.siteMetadata.siteUrl} />
     </Helmet>
   );

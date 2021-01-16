@@ -29,7 +29,7 @@ export const Footer = () => {
       <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4 justify-center lg:justify-between md:gap-y-8">
         <div className="flex justify-center lg:justify-start lg:items-end">
           <a href="/" title="DeWocracy home">
-            <img width="250px" src={dwBlue} alt="" />
+            <img width="250px" height="250px" src={dwBlue} alt="" />
           </a>
         </div>
         <div className="grid justify-center gap-y-4 text-primary  text-center">

@@ -200,7 +200,7 @@ export const SavingsCalculator = () => {
             onChange={handleEmployeesChange}
             value={employees}
           />
-          <label htmlFor="employees" className="font-bold pr-4 pt-10 pb-4">
+          <label htmlFor="sizeOffice" className="font-bold pr-4 pt-10 pb-4">
             <Trans>
               How many square meters of office space do you currently have?
               (sqm)
