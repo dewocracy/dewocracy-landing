@@ -25,6 +25,7 @@
     "gatsby-plugin-robots-txt": "^1.5.3",
     "gatsby-plugin-scroll-reveal": "0.0.7",
     "gatsby-plugin-sharp": "^2.11.1",
+    "gatsby-plugin-sitemap": "^2.10.0",
     "gatsby-plugin-webfonts": "^1.1.4",
     "gatsby-source-filesystem": "^2.8.0",
     "gatsby-transformer-sharp": "^2.9.0",

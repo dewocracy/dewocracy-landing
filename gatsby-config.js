@@ -132,5 +132,11 @@ module.exports = {
         threshold: 0.5, // Percentage of an element's area that needs to be visible to launch animation
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`*/contact-thanks`],
+      }
+    }
   ],
 };
