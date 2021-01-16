@@ -57,7 +57,7 @@ export const ContactForm = () => {
             name="name"
             required
             placeholder="Mike Wazowski"
-            className="rounded-lg text-black py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-white"
+            className="rounded-lg py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-lightGrey text-white"
             onChange={handleChange}
           />
         </div>
@@ -71,7 +71,7 @@ export const ContactForm = () => {
             name="email"
             required
             placeholder={t("michaelwazowski@monstersinc.com")}
-            className="rounded-lg text-black py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-white"
+            className="rounded-lg py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-lightGrey text-white"
             onChange={handleChange}
           />
         </div>
@@ -85,7 +85,7 @@ export const ContactForm = () => {
             name="company"
             required
             placeholder={t("Monsters, Inc.")}
-            className="rounded-lg text-black py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-white"
+            className="rounded-lg py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-lightGrey text-white"
             onChange={handleChange}
           />
         </div>
@@ -97,7 +97,7 @@ export const ContactForm = () => {
         </label>
         <textarea
           id="message"
-          className="h-40 p-2 rounded-lg text-black py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-white"
+          className="h-40 p-2 rounded-lg py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-lightGrey text-white"
           required
           maxLength="500"
           name="message"
