@@ -30,7 +30,7 @@ function IndexPage() {
           <div className="grid content-center px-0 md:px-8 lg:px-0">
             <div className="md:mt-24 lg:mt-0">
               <h1 className="text-4xl lg:text-5xl font-medium text-white leading-tight pb-4">
-                <Trans>Implement flexible remote work in your company</Trans>
+                <Trans>Implement flexible remote work in your company.</Trans>
               </h1>
               <p className="text-xl py-4">
                 <Trans>
@@ -316,13 +316,16 @@ function IndexPage() {
             <Trans>Interested? Contact us!</Trans>
           </h2>
           <p className="pb-5">
-            <Trans>You can{" "}
+            <Trans>You can</Trans>{" "}
             <a
               href="https://calendly.com/dewocracylabs/dewocracy-demo"
               className="underline"
             >
-              request a video call
-            </a>{' '}at your convenience, contact us at info@dewocracy.com or send us a message via the contact form below.
+              <Trans>request a video call</Trans>
+            </a>{" "}
+            <Trans>
+              at your convenience, contact us at info@dewocracy.com or send us a
+              message via the contact form below.
             </Trans>
           </p>
           <ContactForm />

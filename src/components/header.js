@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import dwBlue from "./../images/dewocracy-blue.svg";
 import { Dropdown } from "./dropdown";
-import {faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 function Header() {
   const [isExpanded, toggleExpansion] = React.useState(false);
@@ -60,19 +60,19 @@ function Header() {
             href="#contact"
             onClick={handleClickSubmenu}
           >
-            <Trans>Free registration</Trans>
+            <Trans>Sign up for free</Trans>
           </a>
           <a
-              href="https://wa.me/message/NULJD4OWUB3CA1"
-              rel="noreferrer noopener"
-              target="_blank"
-              title="Whatsapp"
-              className="block py-2"
+            href="https://wa.me/message/NULJD4OWUB3CA1"
+            rel="noreferrer noopener"
+            target="_blank"
+            title="Whatsapp"
+            className="block py-2"
           >
             <FontAwesomeIcon
-                icon={faWhatsapp}
-                className="text-primary"
-                size="2x"
+              icon={faWhatsapp}
+              className="text-primary"
+              size="2x"
             />
           </a>
           <hr className="my-4 text-opacity-25 text-lightBlue" />
@@ -114,29 +114,31 @@ function Header() {
           <Trans>Pricing</Trans>
         </a>
         <a
-            href="https://wa.me/message/NULJD4OWUB3CA1"
-            rel="noreferrer noopener"
-            target="_blank"
-            title="Whatsapp"
-            className="block mt-2 px-2"
+          href="https://wa.me/message/NULJD4OWUB3CA1"
+          rel="noreferrer noopener"
+          target="_blank"
+          title="Whatsapp"
+          className="block mt-2 px-2"
         >
           <FontAwesomeIcon
-              icon={faWhatsapp}
-              className="text-primary text-2xl"
+            icon={faWhatsapp}
+            className="text-primary text-2xl"
           />
         </a>
         <a
           className="btn bg-primary text-white py-2 mx-6 leading-4"
           href="#contact"
         >
-          <Trans>Free registration</Trans>
+          <Trans>Sign up for free</Trans>
         </a>
         <Dropdown title={t(language)} theme="navbar">
           {languages.map((lang, key) => (
             <Link
               key={key}
               to={originalPath}
-              className="block p-4 pl-6 hover:underline"
+              className={`block p-4 pl-6 hover:underline ${
+                lang === language ? "underline" : ""
+              }`}
               role="menuitem"
               language={lang}
             >

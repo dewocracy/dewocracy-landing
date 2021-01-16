@@ -14,9 +14,9 @@ const isNetlifyProduction = NETLIFY_ENV === "production";
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 module.exports = {
-  flags: {
-    FAST_REFRESH: true,
-  },
+  // flags: {
+  //   FAST_REFRESH: true,
+  // },
   siteMetadata: {
     siteUrl,
     title: `DeWocracy`,
@@ -128,7 +128,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
-        threshold: 0.7, // Percentage of an element's area that needs to be visible to launch animation
+        threshold: 0.5, // Percentage of an element's area that needs to be visible to launch animation
       },
     },
   ],
