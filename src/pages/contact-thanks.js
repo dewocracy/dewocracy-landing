@@ -12,8 +12,7 @@ function ContactPage() {
         <section className="container mx-auto text-white px-8 md:px-0">
           <p>
             <Trans>
-              ¡Gracias por contactar con nostros! Te responderemos lo antes
-              possible.
+              Thanks for containing us! We will get in touch with you shortly.
             </Trans>
           </p>
           <p className="mt-16">
@@ -21,7 +20,7 @@ function ContactPage() {
               href="/"
               className="btn text-greyBlue cursor-pointer w-full md:w-auto"
             >
-              <Trans>Volver al inicio</Trans>
+              <Trans>Back to home</Trans>
             </a>
           </p>
         </section>

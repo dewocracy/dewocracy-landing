@@ -8,222 +8,287 @@ import { Trans } from "gatsby-plugin-react-i18next";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import BackgroundImage from "gatsby-background-image-es5";
+import { SavingsCalculator } from "../components/savings-calculator";
+import { theme } from "../../tailwind.config";
+import { faChartBar, faCheckCircle } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPeopleArrows, faSearch } from "@fortawesome/free-solid-svg-icons";
+import arrowLoopSvg from "./../images/arrow-loop.svg";
 
 function IndexPage() {
   const data = useStaticQuery(query);
   return (
     <Layout>
-      <SEO
-        title="DeWocracy - Teletrabajo | Trabaja desde cualquier lugar"
-        keywords={[
-          "DeWocracy",
-          "teletrabajo",
-          "oficina",
-          "opcupación",
-          "trabajo en remoto",
-        ]}
-      />
+      <SEO title="DeWocracy - Remote Work | Work from anywhere" />
       <BackgroundImage
         Tag="div"
-        className="w-full bg-fixed bg-cover min-h-screen"
+        className="w-full bg-fixed bg-cover"
         fluid={data.bgStripes.childImageSharp.fluid}
-        backgroundColor={`#334afd`}
+        backgroundColor={theme.colors.primary}
       >
-        <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center gap-32">
-          <div className="grid content-center px-8 lg:px-0">
-            <div className="mt-24 lg:mt-0">
-              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-none pb-4">
-                <Trans>Democratizando el trabajo desde cualquier lugar.</Trans>
+        <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen py-10 lg:py-0">
+          <div className="grid content-center px-0 md:px-8 lg:px-0">
+            <div className="md:mt-24 lg:mt-0">
+              <h1 className="text-4xl lg:text-5xl font-medium text-white leading-tight pb-4">
+                <Trans>Implement flexible remote work in your company.</Trans>
               </h1>
-              <p className="font-bold text-xl">
+              <p className="text-xl py-4">
                 <Trans>
-                  Gestiona de manera fácil y centralizada la ocupación en tu
-                  oficina.
+                  Save thousands of euros optimizing your real estate footprint
+                  by switching to a hybrid strategy of in-office and remote
+                  work.
                 </Trans>
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 mt-6 md:mt-0">
                 <a className="btn mt-6" href="#contact">
-                  <Trans>Descargar iOS</Trans>
+                  <Trans>Sign up for free</Trans>
                 </a>
-                <a className="btn mt-6" href="#contact">
-                  <Trans>Descargar Android</Trans>
+                <a
+                  className="btn mt-6 bg-transparent text-white border-white border"
+                  href="https://calendly.com/dewocracylabs/dewocracy-demo"
+                >
+                  <Trans>Request a demo</Trans>
                 </a>
               </div>
             </div>
           </div>
-          <div>
-            <figure className="w-auto lg:w-200 lg:pt-24">
+          <div data-sal="slide-left" data-sal-delay="500">
+            <figure className="w-auto mt-12 lg:mt-0">
               <Img
-                className="w-full h-full"
+                className="w-full h-full transform lg:scale-150 lg:translate-x-36 xl:translate-x-52 lg:translate-y-10"
                 fluid={data.mockup1.childImageSharp.fluid}
-                alt="DeWocracy admin dashboard & mobile app"
+                alt=""
               />
             </figure>
           </div>
         </section>
       </BackgroundImage>
 
-      <div className="w-full bg-fixed min-h-screen bg-darkBlue py-16 lg:py-32">
-        <section className="container mx-auto text-white px-8 lg:px-0">
-          <div className="lg:w-1/2">
-            <p className="py-8 text-teal font-bold leading-tight text-xl">
-              <Trans>Plataforma para la empresa</Trans>
-            </p>
-            <h2 className="font-bold text-white text-2xl lg:text-4xl pb-20">
+      <div className="w-full  py-16 lg:py-32">
+        <section className="container mx-auto">
+          <h2 className="font-medium text-2xl pb-2 md:pb-8 text-center">
+            <Trans>How much could your company save with DeWocracy?</Trans>
+          </h2>
+          <SavingsCalculator />
+        </section>
+        <section className="container mx-auto">
+          <div className="relative md:table">
+            <figure className="absolute top-96 lg:top-56 -left-72">
+              <img
+                id="arrow-loop-svg"
+                src={arrowLoopSvg}
+                alt=""
+                width="550px"
+                height="550px"
+              />
+            </figure>
+            <h2 className="font-medium text-2xl pt-12 md:pt-36 pb-10">
               <Trans>
-                Gestiona de forma dinámica la ocupación en tu oficina y desde
-                dónde trabajan tus empleados.
+                We help you transition to a more flexible workplace strategy
+                that is less dependant on physical space. From idea to
+                execution, we support you throughout all the stages of the
+                process.
               </Trans>
             </h2>
-          </div>
-          <div className="grid content-center grid grid-cols-1 lg:grid-cols-2 content-center gap-32">
-            <div className="grid content-center grid grid-cols-1 sm:grid-cols-2 content-center gap-x-8 gap-y-24">
-              <div>
-                <Img
-                  className="w-12 h-12"
-                  fixed={data.feat1.childImageSharp.fixed}
-                  alt=""
-                />
-                <h3 className="text-xl font-bold py-2">
-                  <Trans>Límites de ocupación</Trans>
-                </h3>
-                <p className="text-opacity-75">
-                  <Trans>
-                    Añade límites de ocupación en la oficina consiguiendo una
-                    distancia de seguridad óptima para tus trabajadores.
-                  </Trans>
-                </p>
+            <div className="grid gap-y-4 lg:gap-10 lg:grid-cols-12 lg:w-9/12 float-right">
+              <div
+                data-sal="flip-up"
+                data-sal-delay="500"
+                data-sal-easing="ease"
+                className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center col-span-12 lg:col-span-10"
+              >
+                <div className="flex">
+                  <div className="mr-4 text-primary">
+                    <FontAwesomeIcon
+                      icon={faChartBar}
+                      className="text-primary mr-4"
+                      size="3x"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="font-medium text-lg pb-4">
+                    <Trans>Understand your needs</Trans>
+                  </h3>
+                  <p>
+                    <Trans>
+                      We give you the tools to measure office occupancy,
+                      understand employees{"'"} preferences, and analize costs
+                      derived from your current workplace strategy.
+                    </Trans>
+                  </p>
+                </div>
               </div>
-              <div>
-                <Img
-                  className="w-12 h-12"
-                  fixed={data.feat6.childImageSharp.fixed}
-                  alt=""
-                />
-                <h3 className="text-xl font-bold py-2">
-                  <Trans>Control horario</Trans>
-                </h3>
-                <p className="text-opacity-75">
-                  <Trans>
-                    Control horario y fichaje de acuerdo con la legalidad y
-                    adaptado al teletrabajo. Visualiza las horas trabajadas de
-                    tus empleados y equipos.
-                  </Trans>
-                </p>
+              <div
+                data-sal="flip-up"
+                data-sal-delay="500"
+                data-sal-easing="ease"
+                className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center lg:col-start-2 col-span-12 lg:col-span-10"
+              >
+                <div className="flex">
+                  <div className="mr-4 text-primary">
+                    <FontAwesomeIcon
+                      icon={faSearch}
+                      className="text-primary mr-2 lg:mr-4"
+                      size="3x"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="font-medium text-lg pb-4">
+                    <Trans>Find your space</Trans>
+                  </h3>
+                  <p>
+                    <Trans>
+                      We use the data gathered to make an office space
+                      optimization proposal and find out your ideal workplace
+                      strategy (traditional office, flexible office, hybrid work
+                      or remote work).
+                    </Trans>
+                  </p>
+                </div>
               </div>
-              <div>
-                <Img
-                  className="w-12 h-12"
-                  fixed={data.feat3.childImageSharp.fixed}
-                  alt=""
-                />
-                <h3 className="text-xl font-bold py-2">
-                  <Trans>Gestión de equipos</Trans>
-                </h3>
-                <p className="text-opacity-75">
-                  <Trans>
-                    Organiza a tus empleados en equipos de trabajo. Gestiona la
-                    ocupación teniendo en cuenta aquellos empleados que
-                    intractúan entre sí con más frecuencia.
-                  </Trans>
-                </p>
+              <div
+                data-sal="flip-up"
+                data-sal-delay="500"
+                data-sal-easing="ease"
+                className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center col-span-12 lg:col-span-10"
+              >
+                <div className="flex">
+                  <div className="mr-4 text-primary">
+                    <FontAwesomeIcon
+                      icon={faPeopleArrows}
+                      className="text-primary mr-4"
+                      size="3x"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="font-medium text-lg pb-4">
+                    <Trans>Manage remote work</Trans>
+                  </h3>
+                  <p>
+                    <Trans>
+                      Implement your strategy using our booking, monitoring and
+                      cost analysis system. Manage the admin side of remote work
+                      efficiently and assess your results to fine-tune your
+                      strategy.
+                    </Trans>
+                  </p>
+                </div>
               </div>
-              <div>
-                <Img
-                  className="w-12 h-12"
-                  fixed={data.feat2.childImageSharp.fixed}
-                  alt=""
-                />
-                <h3 className="text-xl font-bold py-2">
-                  <Trans>Control de costes</Trans>
-                </h3>
-                <p className="text-opacity-75">
-                  <Trans>
-                    Entiende el impacto económico que supone tener equipos
-                    trabajando remotamente. Analiza costes y vías de ahorro.
-                  </Trans>
-                </p>
-              </div>
-              <div>
-                <Img
-                  className="w-12 h-12"
-                  fixed={data.feat5.childImageSharp.fixed}
-                  alt=""
-                />
-                <h3 className="text-xl font-bold py-2">
-                  <Trans>Espacios de trabajo</Trans>
-                </h3>
-                <p className="text-opacity-75">
-                  <Trans>
-                    Monitoriza en tiempo real desde dónde trabajan tus equipos.
-                    Obtiene los datos necesarios para el desarrollo de una
-                    estrategia híbrida de trabajo en oficina y remoto.
-                  </Trans>
-                </p>
-              </div>
-              <div>
-                <Img
-                  className="w-12 h-12"
-                  fixed={data.feat4.childImageSharp.fixed}
-                  alt=""
-                />
-                <h3 className="text-xl font-bold py-2">
-                  <Trans>Gestión de vacaciones</Trans>
-                </h3>
-                <p className="text-opacity-75">
-                  <Trans>
-                    Administra la gestión de vacaciones, ausencias y bajas de
-                    forma centralizada. Digitaliza la experiencia y elimina
-                    procesos ineficientes.
-                  </Trans>
-                </p>
-              </div>
-            </div>
-            <div>
-              <figure className="w-auto lg:w-200">
-                <Img
-                  className="w-full h-full"
-                  fluid={data.mockup3.childImageSharp.fluid}
-                  alt="DeWocracy admin dashboard & mobile app"
-                />
-              </figure>
             </div>
           </div>
         </section>
-      </div>
-
-      <div className="w-full bg-fixed min-h-screen py-16 lg:py-32">
-        <section className="container mx-auto text-darkBlue grid grid-cols-1 lg:grid-cols-2 min-h-screen content-center px-8 lg:px-0">
-          <div className="grid content-center">
+        <section className="container mx-auto grid lg:grid-cols-2 pt-16 lg:pt-32">
+          <div data-sal="slide-right" data-sal-easing="ease">
+            <figure className="w-auto mt-12 lg:mt-0">
+              <Img
+                className="w-full h-full"
+                fluid={data.mockup3.childImageSharp.fluid}
+                alt=""
+              />
+            </figure>
+          </div>
+          <div
+            data-sal="slide-left"
+            data-sal-easing="ease"
+            className="grid justify-center content-start"
+          >
+            <h2 className="font-medium text-2xl py-10 pb-5 text-center">
+              <Trans>Web app for the company</Trans>
+            </h2>
             <div>
-              <p className="text-primary font-bold text-xl">
-                <Trans>Aplicación para empleados</Trans>
-              </p>
-              <h2 className="text-2xl lg:text-4xl font-bold leading-tight l:text-justify pb-8">
-                <Trans>
-                  Interacción en tiempo real entre el empleado y la empresa para
-                  reservar su espacio de oficina.
-                </Trans>
-              </h2>
-              <p className="text-greyBlue text-xl">
-                <Trans>
-                  A través de nuestra aplicación móvil, el empleado puede
-                  indicar en su calendario desde dónde trabajará y visualizar
-                  también la ubicación prevista de sus compañeros. Puede
-                  visualizar por semana, mes y año los lugares desde dónde ha
-                  trabajado, así como indicar las horas trabajadas mediante un
-                  sistema de control horario digitalizado cumpliendo con la
-                  legalidad vigente.
-                </Trans>
-              </p>
+              <ul className="grid gap-6">
+                <li className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="text-primary mr-4"
+                  />
+                  <Trans>
+                    Real-time monitoring of your company{"'"}s remote/in-office
+                    work breakdown.
+                  </Trans>
+                </li>
+                <li className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="text-primary mr-4"
+                  />
+                  <Trans>Office occupancy rate analysis.</Trans>
+                </li>
+                <li className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="text-primary mr-4"
+                  />
+                  <Trans>Unused space cost.</Trans>
+                </li>
+                <li className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="text-primary mr-4"
+                  />
+                  <Trans>
+                    Digital clock-in, absence and holidays management.
+                  </Trans>
+                </li>
+              </ul>
             </div>
           </div>
-          <div>
-            <figure className="w-200 w-auto lg:w-200">
+        </section>
+        <section className="container mx-auto grid flex-col-reverse lg:grid-cols-2 pt-16 lg:pt-16">
+          <div
+            data-sal="slide-right"
+            className="grid justify-center content-center"
+          >
+            <h2 className="font-medium text-2xl py-10 pb-5 text-center">
+              <Trans>Mobile app for the employee</Trans>
+            </h2>
+            <div>
+              <ul className="grid gap-6">
+                <li className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="text-primary mr-4"
+                  />
+                  <Trans>Office and remote work booking.</Trans>
+                </li>
+                <li className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="text-primary mr-4"
+                  />
+                  <Trans>Management of custom work spaces.</Trans>
+                </li>
+                <li className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="text-primary mr-4"
+                  />
+                  <Trans>
+                    Digital clock-in, absences and holidays request.
+                  </Trans>
+                </li>
+                <li className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="text-primary mr-4"
+                  />
+                  <Trans>Historical data of workplace habits.</Trans>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            data-sal="slide-left"
+            className="col-start-1 lg:col-start-auto row-start-1 lg:row-start-auto"
+          >
+            <figure className="w-auto mt-12 lg:mt-0">
               <Img
                 className="w-full h-full"
                 fluid={data.mockup2.childImageSharp.fluid}
-                alt="DeWocracy admin dashboard & mobile app"
+                alt=""
               />
             </figure>
           </div>
@@ -231,36 +296,42 @@ function IndexPage() {
       </div>
 
       <BackgroundImage
+        id="pricing"
         Tag="div"
-        className="w-full bg-fixed bg-cover min-h-screen py-32"
+        className="w-full bg-fixed bg-cover py-10"
         fluid={data.bgStripes.childImageSharp.fluid}
-        backgroundColor={`#334afd`}
+        backgroundColor={theme.colors.primary}
       >
-        <section
-          id="pricing"
-          className="container mx-auto text-white px-8 lg:px-0"
-        >
-          <p className="py-8 font-bold leading-tight text-xl">
-            <Trans>Planes y precios</Trans>
-          </p>
-          <h2 className="font-bold text-white text-2xl lg:text-4xl pb-8">
-            <Trans>Selecciona el plan que necesitas para tu empresa.</Trans>
+        <section className="container mx-auto text-white lg:px-32">
+          <h2 className="font-medium text-white text-2xl pb-8">
+            <Trans>Choose a plan for your company.</Trans>
           </h2>
           <PaymentsPlans />
         </section>
-      </BackgroundImage>
 
-      <div className="w-full bg-fixed py-16 bg-darkBlue">
-        <section className="container mx-auto text-white px-8 lg:px-0">
-          <p className="py-8 font-bold leading-tight text-xl" id="contact">
-            <Trans>Contacto</Trans>
-          </p>
-          <h2 className="font-bold text-white text-2xl lg:text-4xl pb-16">
-            <Trans>¿En qué te podemos ayudar?</Trans>
+        <section
+          id="contact"
+          className="container mx-auto text-white self-center pt-16 lg:pt-32 "
+        >
+          <h2 className="font-bold text-white text-2xl lg:text-4xl text-center py-16">
+            <Trans>Interested? Contact us!</Trans>
           </h2>
+          <p className="pb-5">
+            <Trans>You can</Trans>{" "}
+            <a
+              href="https://calendly.com/dewocracylabs/dewocracy-demo"
+              className="underline"
+            >
+              <Trans>request a video call</Trans>
+            </a>{" "}
+            <Trans>
+              at your convenience, contact us at info@dewocracy.com or send us a
+              message via the contact form below.
+            </Trans>
+          </p>
           <ContactForm />
         </section>
-      </div>
+      </BackgroundImage>
     </Layout>
   );
 }
@@ -294,48 +365,6 @@ export const query = graphql`
       childImageSharp {
         fluid(maxWidth: 900, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
-    feat1: file(relativePath: { eq: "dewocracy-feat-1.png" }) {
-      childImageSharp {
-        fixed(width: 60) {
-          ...GatsbyImageSharpFixed_withWebp_noBase64
-        }
-      }
-    }
-    feat2: file(relativePath: { eq: "dewocracy-feat-2.png" }) {
-      childImageSharp {
-        fixed(width: 60) {
-          ...GatsbyImageSharpFixed_withWebp_noBase64
-        }
-      }
-    }
-    feat3: file(relativePath: { eq: "dewocracy-feat-3.png" }) {
-      childImageSharp {
-        fixed(width: 60) {
-          ...GatsbyImageSharpFixed_withWebp_noBase64
-        }
-      }
-    }
-    feat4: file(relativePath: { eq: "dewocracy-feat-4.png" }) {
-      childImageSharp {
-        fixed(width: 60) {
-          ...GatsbyImageSharpFixed_withWebp_noBase64
-        }
-      }
-    }
-    feat5: file(relativePath: { eq: "dewocracy-feat-5.png" }) {
-      childImageSharp {
-        fixed(width: 60) {
-          ...GatsbyImageSharpFixed_withWebp_noBase64
-        }
-      }
-    }
-    feat6: file(relativePath: { eq: "dewocracy-feat-6.png" }) {
-      childImageSharp {
-        fixed(width: 60) {
-          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
     }

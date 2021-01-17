@@ -46,23 +46,23 @@ export const ContactForm = () => {
           Don’t fill this out if you are a human: <input name="bot-field" />
         </label>
       </p>
-      <div className="w-1/2 grid gap-4">
-        <div className="grid gap-4 w-1/2">
-          <label htmlFor="name" className="font-bold pr-4">
-            <Trans>Nombre:</Trans>
+      <div className="grid lg:grid-cols-3 gap-10">
+        <div className="grid">
+          <label htmlFor="name" className="font-bold pr-4 pb-4">
+            <Trans>Name:</Trans>
           </label>
           <input
             id="name"
             type="text"
             name="name"
             required
-            placeholder="Gustav Mahler"
-            className="rounded-sm text-black p-2 h-10"
+            placeholder="Mike Wazowski"
+            className="rounded-lg py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-lightGrey text-white"
             onChange={handleChange}
           />
         </div>
-        <div className="grid gap-4 w-1/2">
-          <label htmlFor="email" className="font-bold pr-4">
+        <div className="grid">
+          <label htmlFor="email" className="font-bold pr-4 pb-4">
             <Trans>Email:</Trans>
           </label>
           <input
@@ -70,48 +70,48 @@ export const ContactForm = () => {
             type="email"
             name="email"
             required
-            placeholder="name@domain.com"
-            className="rounded-sm text-black p-2 h-10"
+            placeholder={t("michaelwazowski@monstersinc.com")}
+            className="rounded-lg py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-lightGrey text-white"
             onChange={handleChange}
           />
         </div>
-        <div className="grid gap-4 w-1/2">
-          <label htmlFor="company" className="font-bold pr-4">
-            <Trans>Empresa:</Trans>
+        <div className="grid">
+          <label htmlFor="company" className="font-bold pr-4 pb-4">
+            <Trans>Company:</Trans>
           </label>
           <input
             id="company"
             type="text"
             name="company"
             required
-            placeholder={t("Empresa")}
-            className="rounded-sm text-black p-2 h-10"
+            placeholder={t("Monsters, Inc.")}
+            className="rounded-lg py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-lightGrey text-white"
             onChange={handleChange}
           />
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 justify-center mt-md:mr-16 mt-4 gap-y-4">
-          <label htmlFor="message" className="font-bold">
-            <Trans>Mensaje:</Trans>
-          </label>
-          <textarea
-            id="message"
-            className="h-40 rounded-sm text-black p-2 md:m-0"
-            required
-            maxLength="500"
-            name="message"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex justify-center">
-          <button
-            aria-label="Send"
-            type="submit"
-            className="btn text-greyBlue cursor-pointer w-full md:w-auto "
-          >
-            <Trans>Enviar</Trans>
-          </button>
-        </div>
+      <div className="grid grid-cols-1 justify-center mt-md:mr-16 mt-10 gap-y-4">
+        <label htmlFor="message" className="font-bold">
+          <Trans>Message:</Trans>
+        </label>
+        <textarea
+          id="message"
+          className="h-40 p-2 rounded-lg py-6 px-4 h-10 border border-grey bg-white bg-opacity-25 placeholder-lightGrey text-white"
+          required
+          maxLength="500"
+          name="message"
+          onChange={handleChange}
+        />
+      </div>
+      <div className="flex justify-center">
+        <button
+          aria-label="Send"
+          type="submit"
+          className="btn text-white border border-4 border-white bg-transparent cursor-pointer w-full md:w-auto mt-10"
+        >
+          <Trans>Send message</Trans>
+        </button>
       </div>
     </form>
   );

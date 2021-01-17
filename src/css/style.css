@@ -15,10 +15,10 @@
 
 @layer components {
   .btn {
-    @apply bg-white text-center text-primary text-sm py-4 rounded-full px-10 font-bold transform leading-none;
+    @apply bg-white text-center text-primary text-sm py-4 rounded-full px-10 font-bold transform leading-none cursor-pointer;
   }
   .btn:hover {
-    @apply -translate-y-1 duration-700 shadow-2xl;
+    @apply -translate-y-1 duration-700 shadow-lg;
   }
   .scroll-top-container {
     @apply z-50 fixed p-4 rounded-full bg-grey bg-opacity-50 mb-4 mr-8 cursor-pointer opacity-75 transition-opacity duration-500;
