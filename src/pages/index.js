@@ -47,7 +47,7 @@ function IndexPage() {
                   className="btn mt-6 bg-transparent text-white border-white border"
                   href="https://calendly.com/dewocracylabs/dewocracy-demo"
                 >
-                  <Trans>Request a demo</Trans>
+                  <Trans>Request demo</Trans>
                 </a>
               </div>
             </div>
