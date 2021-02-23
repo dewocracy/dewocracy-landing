@@ -1,19 +1,33 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import {
-  faApple,
-  faGoogle,
   faLinkedinIn,
   faMedium,
   faTwitter,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import appleStoreEn from "./../images/apple-store-en.svg";
+import appleStoreEs from "./../images/apple-store-es.svg";
 import dwBlue from "./../images/dewocracy-blue.svg";
-import { Trans } from "gatsby-plugin-react-i18next";
+import {Trans, useI18next} from "gatsby-plugin-react-i18next";
+import Img from "gatsby-image";
+
+const googleStoreI18n = {
+  en: 'googlePlayEn',
+  es: 'googlePlayEs',
+  ca: 'googlePlayCa',
+}
+
+const appleStoreI18n = {
+  en: appleStoreEn,
+  es: appleStoreEs,
+  ca: appleStoreEn,
+}
 
 export const Footer = () => {
-  const { site } = useStaticQuery(graphql`
+  const { language } = useI18next();
+  const { site, ...data } = useStaticQuery(graphql`
     query FooterQuery {
       site {
         siteMetadata {
@@ -22,8 +36,31 @@ export const Footer = () => {
           medium
         }
       }
+      googlePlayCa: file(relativePath: { eq: "google-play-ca.png" }) {
+        childImageSharp {
+          fixed(height: 60, quality: 90) {
+            ...GatsbyImageSharpFixed_withWebp_noBase64
+          }
+        }
+      }
+      googlePlayEs: file(relativePath: { eq: "google-play-es.png" }) {
+        childImageSharp {
+          fixed(height: 60, quality: 90) {
+            ...GatsbyImageSharpFixed_withWebp_noBase64
+          }
+        }
+      }
+      googlePlayEn: file(relativePath: { eq: "google-play-en.png" }) {
+        childImageSharp {
+          fixed(height: 60, quality: 90) {
+            ...GatsbyImageSharpFixed_withWebp_noBase64
+          }
+        }
+      }
     }
   `);
+
+  console.log(data)
   return (
     <footer className="w-full bg-fixed py-10 px-8 md:px-0">
       <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4 justify-center lg:justify-between md:gap-y-8">
@@ -42,20 +79,18 @@ export const Footer = () => {
               href="#contact"
               title="Download DeWocracy app from the apple store"
             >
-              <span>
-                <FontAwesomeIcon icon={faApple} size="2x" />
-              </span>
-              <span>App Store</span>
+              <img width="auto" height="40px" src={appleStoreI18n[language]} alt="" />
             </a>
             <a
               href="#contact"
               title="Download DeWocracy app from the play store"
               className="grid content-center justify-center align-center"
             >
-              <span>
-                <FontAwesomeIcon icon={faGoogle} size="2x" />
-              </span>
-              <span>Google Play</span>
+              <Img
+                  fixed={data[googleStoreI18n[language]].childImageSharp.fixed}
+                  height="60px"
+                  alt=""
+              />
             </a>
           </div>
         </div>
