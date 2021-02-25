@@ -7,6 +7,10 @@
 @layer base {
   * {
     scroll-behavior: smooth;
+    @apply leading-normal;
+  }
+  a {
+    @apply underline;
   }
 }
 
@@ -37,6 +41,18 @@
     @apply animate-pulse;
   }
   .scroll-top-container:motion-safe {
-    @appply animate-fadeIn;
+    @apply animate-fadeIn;
+  }
+  .legal h1 {
+    @apply py-4 font-bold text-2xl;
+  }
+  .legal h2 {
+    @apply py-3 font-bold text-xl;
+  }
+  .legal p {
+    @apply py-2;
+  }
+  .legal ul {
+    @apply my-4 pl-3 list-inside list-disc;
   }
 }

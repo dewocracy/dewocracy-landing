@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import dwBlue from "./../images/dewocracy-blue.svg";
-import { Trans } from "gatsby-plugin-react-i18next";
+import { Trans, Link } from "gatsby-plugin-react-i18next";
 
 export const Footer = () => {
   const { site } = useStaticQuery(graphql`
@@ -111,6 +111,25 @@ export const Footer = () => {
             </a>
           </p>
         </div>
+      </section>
+      <section className="lg:pt-10 lg:pr-36">
+        <ul className="flex justify-center lg:justify-end text-xs gap-4 lg:gap-10">
+          <li className="text-primary hover:underline">
+            <Link to="/terms-and-conditions">
+              <Trans>Terms of service</Trans>
+            </Link>
+          </li>
+          <li className="text-primary hover:underline">
+            <Link to="/legal-notice">
+              <Trans>Legal notice</Trans>
+            </Link>
+          </li>
+          <li className="text-primary hover:underline">
+            <Link to="/privacy-policy">
+              <Trans>Privacy policy</Trans>
+            </Link>
+          </li>
+        </ul>
       </section>
     </footer>
   );
