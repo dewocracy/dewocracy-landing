@@ -50,12 +50,23 @@
     @apply py-2;
   }
   .legal ul {
-    @apply my-4 pl-3 list-outside list-disc;
+    @apply my-4 list-outside;
+  }
+  .legal ul {
+    @apply list-disc pl-3;
   }
   .legal li {
     @apply py-1;
   }
   .legal a {
     @apply underline;
+  }
+  .legal table,
+  th,
+  td {
+    @apply border p-3;
+  }
+  .legal th {
+    @apply bg-lightGrey;
   }
 }
