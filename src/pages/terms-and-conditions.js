@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Link } from "gatsby-plugin-react-i18next";
 
-function ContactPage() {
+function TermsAndConditions() {
   return (
     <Layout>
       <SEO title="Condiciones de uso" />
@@ -342,4 +342,4 @@ function ContactPage() {
   );
 }
 
-export default ContactPage;
+export default TermsAndConditions;

@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Link } from "gatsby-plugin-react-i18next";
 
-function ContactPage() {
+function PrivacyPolicy() {
   return (
     <Layout>
       <SEO title="Política de Privacidad" />
@@ -236,7 +236,7 @@ function ContactPage() {
           <p>
             Asimismo, el Usuario tendrá derecho a presentar una reclamación ante
             la Agencia Española de Protección de Datos (
-            <a href="www.aepd.com">www.aepd.com</a>) si considera que se
+            <a href="https://www.aepd.com">www.aepd.com</a>) si considera que se
             vulneran los derechos anteriormente expuestos en la presente
             Política de Privacidad o si considera que el tratamiento de datos
             personales que le conciernen infringe la normativa aplicable.
@@ -655,4 +655,4 @@ function ContactPage() {
   );
 }
 
-export default ContactPage;
+export default PrivacyPolicy;
