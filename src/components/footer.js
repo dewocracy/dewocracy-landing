@@ -89,7 +89,7 @@ export const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="grid justify-items-center lg:justify-items-end lg:items-end my-10 lg:my-0">
+        <div className="grid justify-items-center lg:justify-items-end items-center  my-4 lg:my-0">
           <p className="text-primary font-bold text-right flex justify-between w-64">
             <a
               href={site.siteMetadata.linkedin}
