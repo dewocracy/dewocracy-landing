@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import appleStoreEn from "./../images/apple-store-en.svg";
 import appleStoreEs from "./../images/apple-store-es.svg";
 import dwBlue from "./../images/dewocracy-blue.svg";
-import {Trans, useI18next} from "gatsby-plugin-react-i18next";
+import {useI18next} from "gatsby-plugin-react-i18next";
 import Img from "gatsby-image";
 
 const googleStoreI18n = {
@@ -70,9 +70,6 @@ export const Footer = () => {
           </a>
         </div>
         <div className="grid justify-center gap-y-4 text-primary  text-center">
-          <p>
-            <Trans>Download from</Trans>
-          </p>
           <div className="flex content-center">
             <a
               className="pr-4 grid content-center grid-x-4 justify-center"
