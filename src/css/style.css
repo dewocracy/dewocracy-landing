@@ -9,9 +9,6 @@
     scroll-behavior: smooth;
     @apply leading-normal;
   }
-  a {
-    @apply underline;
-  }
 }
 
 @layer components {
@@ -53,6 +50,12 @@
     @apply py-2;
   }
   .legal ul {
-    @apply my-4 pl-3 list-inside list-disc;
+    @apply my-4 pl-3 list-outside list-disc;
+  }
+  .legal li {
+    @apply py-1;
+  }
+  .legal a {
+    @apply underline;
   }
 }

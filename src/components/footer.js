@@ -129,6 +129,11 @@ export const Footer = () => {
               <Trans>Privacy policy</Trans>
             </Link>
           </li>
+          <li className="text-primary hover:underline">
+            <Link to="/cookies-policy">
+              <Trans>Cookies policy</Trans>
+            </Link>
+          </li>
         </ul>
       </section>
     </footer>
