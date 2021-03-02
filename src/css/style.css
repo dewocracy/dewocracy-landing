@@ -7,6 +7,7 @@
 @layer base {
   * {
     scroll-behavior: smooth;
+    @apply leading-normal;
   }
 }
 
@@ -37,6 +38,35 @@
     @apply animate-pulse;
   }
   .scroll-top-container:motion-safe {
-    @appply animate-fadeIn;
+    @apply animate-fadeIn;
+  }
+  .legal h1 {
+    @apply py-4 font-bold text-2xl;
+  }
+  .legal h2 {
+    @apply py-3 font-bold text-xl;
+  }
+  .legal p {
+    @apply py-2;
+  }
+  .legal ul {
+    @apply my-4 list-outside;
+  }
+  .legal ul {
+    @apply list-disc pl-3;
+  }
+  .legal li {
+    @apply py-1;
+  }
+  .legal a {
+    @apply underline;
+  }
+  .legal table,
+  th,
+  td {
+    @apply border p-3;
+  }
+  .legal th {
+    @apply bg-lightGrey;
   }
 }

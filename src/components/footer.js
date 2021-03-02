@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import appleStoreEn from "./../images/apple-store-en.svg";
 import appleStoreEs from "./../images/apple-store-es.svg";
 import dwBlue from "./../images/dewocracy-blue.svg";
-import {useI18next} from "gatsby-plugin-react-i18next";
+import {useI18next, Link, Trans} from "gatsby-plugin-react-i18next";
 import Img from "gatsby-image";
 
 const googleStoreI18n = {
@@ -59,8 +59,6 @@ export const Footer = () => {
       }
     }
   `);
-
-  console.log(data)
   return (
     <footer className="w-full bg-fixed py-10 px-8 md:px-0">
       <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4 justify-center lg:justify-between md:gap-y-8">
@@ -91,7 +89,7 @@ export const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="grid justify-items-center lg:justify-items-end lg:items-end my-10 lg:my-0">
+        <div className="grid justify-items-center lg:justify-items-end items-center  my-4 lg:my-0">
           <p className="text-primary font-bold text-right flex justify-between w-64">
             <a
               href={site.siteMetadata.linkedin}
@@ -143,6 +141,30 @@ export const Footer = () => {
             </a>
           </p>
         </div>
+      </section>
+      <section className="lg:pt-10 lg:pr-36">
+        <ul className="flex justify-center lg:justify-end text-xs gap-4 lg:gap-10">
+          <li className="text-primary hover:underline">
+            <Link to="/terms-and-conditions">
+              <Trans>Terms of service</Trans>
+            </Link>
+          </li>
+          <li className="text-primary hover:underline">
+            <Link to="/legal-notice">
+              <Trans>Legal notice</Trans>
+            </Link>
+          </li>
+          <li className="text-primary hover:underline">
+            <Link to="/privacy-policy">
+              <Trans>Privacy policy</Trans>
+            </Link>
+          </li>
+          <li className="text-primary hover:underline">
+            <Link to="/cookies-policy">
+              <Trans>Cookies policy</Trans>
+            </Link>
+          </li>
+        </ul>
       </section>
     </footer>
   );
