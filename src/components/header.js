@@ -57,7 +57,7 @@ function Header() {
           </a>
           <a
             className="block py-2 hover:underline"
-            href="#contact"
+            href="#pricing"
             onClick={handleClickSubmenu}
           >
             <Trans>Sign up for free</Trans>
@@ -127,7 +127,7 @@ function Header() {
         </a>
         <a
           className="btn bg-primary text-white py-2 mx-6 leading-4"
-          href="#contact"
+          href="#pricing"
         >
           <Trans>Sign up for free</Trans>
         </a>
