@@ -56,8 +56,15 @@ function Header() {
             <Trans>Pricing</Trans>
           </a>
           <a
+              className="block py-2 hover:underline"
+              href="https://app.dewocracy.com/"
+              onClick={handleClickSubmenu}
+          >
+            <Trans>Access</Trans>
+          </a>
+          <a
             className="block py-2 hover:underline"
-            href="#contact"
+            href="https://app.dewocracy.com/register/free"
             onClick={handleClickSubmenu}
           >
             <Trans>Sign up for free</Trans>
@@ -110,6 +117,12 @@ function Header() {
         >
           <Trans>Demo</Trans>
         </a>
+        <a
+            className="block py-2 hover:underline"
+            href="https://app.dewocracy.com/"
+        >
+          <Trans>Access</Trans>
+        </a>
         <a className="block p-2 hover:underline" href="#pricing">
           <Trans>Pricing</Trans>
         </a>
@@ -127,7 +140,7 @@ function Header() {
         </a>
         <a
           className="btn bg-primary text-white py-2 mx-6 leading-4"
-          href="#contact"
+          href="https://app.dewocracy.com/register/free"
         >
           <Trans>Sign up for free</Trans>
         </a>

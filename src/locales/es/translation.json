@@ -85,8 +85,9 @@
   "teleworking": "teletrabajo",
   "work office": "oficina",
   "occupancy": "opcupación",
-  "Terms of service":  "Términos y condiciones",
+  "Terms of service": "Términos y condiciones",
   "Legal notice": "Aviso legal",
-  "Privacy policy":  "Política de privacidad",
-  "Cookies policy": "Política de privacidad"
+  "Privacy policy": "Política de privacidad",
+  "Cookies policy": "Política de cookies",
+  "Access": "Acceder"
 }

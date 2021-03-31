@@ -129,7 +129,7 @@ export const PaymentsPlans = () => {
           </ol>
           <a
             className="btn bg-white border border-primary border-4 text-primary w-full block h-12"
-            href="#contact"
+            href="https://app.dewocracy.com/register/free"
           >
             <Trans>Start for free</Trans>
           </a>

@@ -40,7 +40,7 @@ function IndexPage() {
                 </Trans>
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 mt-6 md:mt-0">
-                <a className="btn mt-6" href="#contact">
+                <a className="btn mt-6" href="#pricing">
                   <Trans>Sign up for free</Trans>
                 </a>
                 <a
