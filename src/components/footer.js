@@ -10,9 +10,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import appleStoreEn from "./../images/apple-store-en.svg";
 import appleStoreEs from "./../images/apple-store-es.svg";
 import dwBlue from "./../images/dewocracy-blue.svg";
-import {useI18next, Link, Trans} from "gatsby-plugin-react-i18next";
+import { useI18next, Link, Trans } from "gatsby-plugin-react-i18next";
 import Img from "gatsby-image";
-
+import { OutboundLink } from "gatsby-plugin-amplitude-analytics";
 const googleStoreI18n = {
   en: 'googlePlayEn',
   es: 'googlePlayEs',
@@ -82,16 +82,16 @@ export const Footer = () => {
               className="grid content-center justify-center align-center"
             >
               <Img
-                  fixed={data[googleStoreI18n[language]].childImageSharp.fixed}
-                  height="60px"
-                  alt=""
+                fixed={data[googleStoreI18n[language]].childImageSharp.fixed}
+                height="60px"
+                alt=""
               />
             </a>
           </div>
         </div>
         <div className="grid justify-items-center lg:justify-items-end items-center  my-4 lg:my-0">
           <p className="text-primary font-bold text-right flex justify-between w-64">
-            <a
+            <OutboundLink
               href={site.siteMetadata.linkedin}
               rel="noreferrer noopener"
               target="_blank"
@@ -102,8 +102,8 @@ export const Footer = () => {
                 className="text-primary"
                 size="2x"
               />
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink
               href={site.siteMetadata.twitter}
               rel="noreferrer noopener"
               target="_blank"
@@ -114,8 +114,8 @@ export const Footer = () => {
                 className="text-primary"
                 size="2x"
               />
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink
               href={site.siteMetadata.medium}
               rel="noreferrer noopener"
               target="_blank"
@@ -126,8 +126,8 @@ export const Footer = () => {
                 className="text-primary"
                 size="2x"
               />
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink
               href="https://wa.me/message/NULJD4OWUB3CA1"
               rel="noreferrer noopener"
               target="_blank"
@@ -138,7 +138,7 @@ export const Footer = () => {
                 className="text-primary"
                 size="2x"
               />
-            </a>
+            </OutboundLink>
           </p>
         </div>
       </section>

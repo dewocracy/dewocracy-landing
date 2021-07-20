@@ -132,6 +132,29 @@ module.exports = {
         threshold: 0.5, // Percentage of an element's area that needs to be visible to launch animation
       },
     },
+
+    {
+      resolve: `gatsby-plugin-amplitude-analytics`,
+      options: {
+        // Specify the API key for your Amplitude Project (required)
+        apiKey: isNetlifyProduction ? process.env.AMPLITUDE_API_KEY : undefined,
+        // Prevents loading Amplitude and logging events if visitors have "Do Not Track" enabled (optional)
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths (optional)
+        exclude: ["/preview/**"],
+        // Amplitude JS SDK configuration options (optional) https://developers.amplitude.com/docs/advanced-settings
+        amplitudeConfig: {
+          includeReferrer: true,
+          // We will initialize once accepting the cookies
+          deferInitialization: true,
+        },
+        // Specify NODE_ENVs in which the plugin should be loaded (optional)
+        environments: ["production"],
+      },
+    },
+
+
+
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
