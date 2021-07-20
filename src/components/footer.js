@@ -12,7 +12,7 @@ import appleStoreEs from "./../images/apple-store-es.svg";
 import dwBlue from "./../images/dewocracy-blue.svg";
 import { useI18next, Link, Trans } from "gatsby-plugin-react-i18next";
 import Img from "gatsby-image";
-import { OutboundLink } from "gatsby-plugin-amplitude-analytics";
+import { OutboundLink } from "../utils/OutboundLink";
 const googleStoreI18n = {
   en: 'googlePlayEn',
   es: 'googlePlayEs',

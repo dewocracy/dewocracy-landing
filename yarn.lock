@@ -6662,13 +6662,12 @@ gatsby-page-utils@^0.9.1:
     lodash "^4.17.20"
     micromatch "^4.0.2"
 
-gatsby-plugin-amplitude-analytics@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-amplitude-analytics/-/gatsby-plugin-amplitude-analytics-3.2.0.tgz#e43e1ece9a51e559abc3560c205501d10468c8a9"
-  integrity sha512-8221ADi4h67NZwAI+j3StnhOvthN/ETBFoFPWHkRuhQfzOB8FOaQeH31PN6IUYCs7HaGRI50CwNS3CBXq1Qq3A==
+gatsby-plugin-amplitude@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-amplitude/-/gatsby-plugin-amplitude-0.1.0.tgz#1320f92c3147abd1ebec9fa5cb05a95827460c57"
+  integrity sha512-Nfer5zmq8E0TpQrk+PhYRyCsIPjZhEsU6L+SzmZ10ghaXP94/6UY4oyZ49Q0AGSQOHg//iHHd0AWHgMeN9ML4A==
   dependencies:
-    "@babel/runtime" "^7.0.0"
-
+    babel-runtime "^6.26.0"
 
 gatsby-plugin-eslint@2.0.8:
   version "2.0.8"
