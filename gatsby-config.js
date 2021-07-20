@@ -145,7 +145,7 @@ module.exports = {
           includeReferrer: true,
         },
         // Specify NODE_ENVs in which the plugin should be loaded (optional)
-        environments: ["production"],
+        // environments: ["production"],
       },
     },
 
