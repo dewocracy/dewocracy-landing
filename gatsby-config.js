@@ -108,6 +108,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
+        host: "https://dewocracy.com",
+        sitemap: "https://dewocracy.com/sitemap.xml",
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
@@ -115,13 +117,9 @@ module.exports = {
           },
           "branch-deploy": {
             policy: [{ userAgent: "*", disallow: ["/"] }],
-            sitemap: null,
-            host: null,
           },
           "deploy-preview": {
             policy: [{ userAgent: "*", disallow: ["/"] }],
-            sitemap: null,
-            host: null,
           },
         },
       },
