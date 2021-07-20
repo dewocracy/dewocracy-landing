@@ -135,7 +135,9 @@ module.exports = {
       resolve: `gatsby-plugin-amplitude-analytics`,
       options: {
         // Specify the API key for your Amplitude Project (required)
-        apiKey: isNetlifyProduction ? process.env.AMPLITUDE_API_KEY : undefined,
+        // apiKey: isNetlifyProduction ? process.env.AMPLITUDE_API_KEY : undefined,
+        apiKey: isNetlifyProduction ? process.env.AMPLITUDE_API_KEY : "123",
+
         // Prevents loading Amplitude and logging events if visitors have "Do Not Track" enabled (optional)
         respectDNT: true,
         // Avoids sending pageview hits from custom paths (optional)
