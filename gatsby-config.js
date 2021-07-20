@@ -143,8 +143,6 @@ module.exports = {
         // Amplitude JS SDK configuration options (optional) https://developers.amplitude.com/docs/advanced-settings
         amplitudeConfig: {
           includeReferrer: true,
-          // We will initialize once accepting the cookies
-          deferInitialization: true,
         },
         // Specify NODE_ENVs in which the plugin should be loaded (optional)
         environments: ["production"],
