@@ -71,5 +71,5 @@
   }
 }
 a#CybotCookiebotDialogPoweredbyCybot {
-  display: none;
+  display: none !important;
 }
