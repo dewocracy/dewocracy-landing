@@ -78,5 +78,5 @@ a#CybotCookiebotDialogPoweredbyCybot, #CybotCookiebotDialogDetailFooter {
 }
 /*! Remove default Styling on Focus */
 #CybotCookiebotDialog :focus-visible {
-    outline: none;
+    outline: none !important;
 }
