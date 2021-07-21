@@ -134,7 +134,7 @@ module.exports = {
       resolve: 'gatsby-plugin-amplitude',
       options: {
         apiKey: process.env.AMPLITUDE_API_KEY,
-        enableOnDevMode: true // if 'false', will be fired on NODE_ENV=production only
+        enableOnDevMode: false // if 'false', will be fired on NODE_ENV=production only
       },
     },
     {
