@@ -4,13 +4,12 @@ const fullConfig = resolveConfig(tailwindConfig);
 const path = require("path");
 
 const {
-  NODE_ENV,
   URL: NETLIFY_SITE_URL = "https://www.example.com",
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
-  CONTEXT: NETLIFY_ENV = NODE_ENV,
+  CONTEXT,
 } = process.env;
 
-const isNetlifyProduction = NETLIFY_ENV === "production";
+const isNetlifyProduction = CONTEXT === "production";
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 const plugins = [
@@ -96,7 +95,7 @@ const plugins = [
     options: {
       host: "https://dewocracy.com",
       sitemap: "https://dewocracy.com/sitemap.xml",
-      resolveEnv: () => NETLIFY_ENV,
+      resolveEnv: () => CONTEXT,
       env: {
         production: {
           policy: [{ userAgent: "*" }],
