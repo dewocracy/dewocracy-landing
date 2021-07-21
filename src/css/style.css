@@ -70,7 +70,6 @@
     @apply bg-lightGrey;
   }
 }
-
-#CybotCookiebotDialogPoweredbyCybot {
+a#CybotCookiebotDialogPoweredbyCybot {
   display: none;
 }
