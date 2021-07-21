@@ -24,7 +24,6 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <script id="CookieDeclaration" src={`https://consent.cookiebot.com/${domainGroupId}/cd.js`} type="text/javascript" async></script>
       </body>
     </html>
   )
