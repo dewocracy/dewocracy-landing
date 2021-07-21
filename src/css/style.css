@@ -70,6 +70,10 @@
     @apply bg-lightGrey;
   }
 }
-a#CybotCookiebotDialogPoweredbyCybot {
+
+
+/*! Remove Cookiebot backlinks */
+a#CybotCookiebotDialogPoweredbyCybot, #CybotCookiebotDialogDetailFooter {
   display: none !important;
 }
+
