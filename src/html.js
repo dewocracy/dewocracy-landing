@@ -3,8 +3,7 @@ import PropTypes from "prop-types"
 
 export default function HTML(props) {
 
-  const domainGroupId = process.env.COOKIEBOT_GROUP_ID
-  console.log(domainGroupId)
+  const domainGroupId = process.env.GATSBY_COOKIEBOT_GROUP_ID
   return (
     <html {...props.htmlAttributes}>
       <head>
