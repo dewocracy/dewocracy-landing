@@ -10,7 +10,6 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import dwBlue from "./../images/dewocracy-blue.svg";
 import { Dropdown } from "./dropdown";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import CookieBot from "react-cookiebot";
 
 
 function Header() {
@@ -18,7 +17,6 @@ function Header() {
   const { languages, language, originalPath } = useI18next();
   const { t } = useTranslation();
   const handleClickSubmenu = useCallback(() => toggleExpansion(!isExpanded));
-  const domainGroupId = process.env.COOKIEBOT_GROUP_ID
 
   return (
     <header
@@ -26,7 +24,6 @@ function Header() {
       className="grid grid-cols-3 md:flex items-center justify-center md:justify-between content-start pl-0 md:px-8 py-4
        md:py-6 w-screen bg-white h-18 sticky top-0 z-50 transition"
     >
-      {typeof window !== 'undefined' && <CookieBot domainGroupId={domainGroupId} />}
 
       <div className="pl-4">
         <button

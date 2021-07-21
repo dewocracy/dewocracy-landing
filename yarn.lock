@@ -11898,14 +11898,6 @@ rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-cookiebot@^1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/react-cookiebot/-/react-cookiebot-1.0.10.tgz#0b320910bd3122e8e0f443ae8806c83c26a5fc93"
-  integrity sha512-Lac65Jp0irOdWUo569SNFoiYuf5SA8jKhQimNYV8YKywr/VD7ExT7UT1HjTtGt+ecKbfctwLqsl7ULCohz7zBg==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
-    prop-types "^15.7.2"
-
 react-dev-utils@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"
