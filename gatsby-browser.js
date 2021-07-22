@@ -49,30 +49,29 @@ class ScrollToTop {
   }
 }
 
-const isNetlifyProduction = process.env.CONTEXT === "production";
 const checkForAmplitudeEvent = () => {
 
 
-  if (isNetlifyProduction) {
-    if (
-      location &&
-      typeof amplitudeExcludePaths !== `undefined` && amplitudeExcludePaths.some(rx => rx.test(location.pathname))
-    ) {
-      return;
-    }
-
-    const language = localStorage.getItem("gatsby-i18next-language")
-
-    const eventProperties = {
-      href: location.href,
-      host: location.host,
-      language,
-      location: location ? location.pathname + location.search + location.hash : undefined
-    }
-    if (window.amplitude) {
-      window.amplitude.getInstance().logEvent(amplitudeEventTypes.pageView, eventProperties)
-    }
+  if (
+    location &&
+    typeof amplitudeExcludePaths !== `undefined` && amplitudeExcludePaths.some(rx => rx.test(location.pathname))
+  ) {
+    return;
   }
+
+  const language = localStorage.getItem("gatsby-i18next-language")
+
+  const eventProperties = {
+    href: location.href,
+    host: location.host,
+    language,
+    location: location ? location.pathname + location.search + location.hash : undefined
+  }
+  if (window.amplitude) {
+    console.log({ eventProperties })
+    window.amplitude.getInstance().logEvent(amplitudeEventTypes.pageView, eventProperties)
+  }
+
 }
 
 exports.onRouteUpdate = () => {
