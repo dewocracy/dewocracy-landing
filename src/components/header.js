@@ -10,6 +10,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import dwBlue from "./../images/dewocracy-blue.svg";
 import { Dropdown } from "./dropdown";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { OutboundLink } from "../utils/OutboundLink";
 
 
 function Header() {
@@ -43,13 +44,13 @@ function Header() {
           className={`${isExpanded ? `block` : `hidden`
             } md:items-center w-full md:w-auto text-primary`}
         >
-          <a
+          <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
             className="block pb-2 pt-4 hover:underline"
             href="https://calendly.com/dewocracylabs/dewocracy-demo"
             onClick={handleClickSubmenu}
           >
             <Trans>Demo</Trans>
-          </a>
+          </OutboundLink>
           <a
             className="block py-2 hover:underline"
             href="#pricing"
@@ -71,7 +72,8 @@ function Header() {
           >
             <Trans>Sign up for free</Trans>
           </a>
-          <a
+          <OutboundLink
+            eventProperties={{ location: "top navbar", device: "mobile" }}
             href="https://wa.me/message/NULJD4OWUB3CA1"
             rel="noreferrer noopener"
             target="_blank"
@@ -83,7 +85,7 @@ function Header() {
               className="text-primary"
               size="2x"
             />
-          </a>
+          </OutboundLink>
           <hr className="my-4 text-opacity-25 text-lightBlue" />
           <ul>
             {languages.map(
@@ -112,12 +114,13 @@ function Header() {
         </figure>
       </Link>
       <nav className="hidden md:inline-flex flex justify-center md:justify-end gap-4 text-primary text-sm">
-        <a
+        <OutboundLink
+          eventProperties={{ location: "top navbar" }}
           className="block p-2 hover:underline"
           href="https://calendly.com/dewocracylabs/dewocracy-demo"
         >
           <Trans>Demo</Trans>
-        </a>
+        </OutboundLink>
         <a
           className="block py-2 hover:underline"
           href="https://app.dewocracy.com/"
@@ -127,7 +130,9 @@ function Header() {
         <a className="block p-2 hover:underline" href="#pricing">
           <Trans>Pricing</Trans>
         </a>
-        <a
+        <OutboundLink
+          eventProperties={{ location: "top navbar" }}
+
           href="https://wa.me/message/NULJD4OWUB3CA1"
           rel="noreferrer noopener"
           target="_blank"
@@ -138,7 +143,7 @@ function Header() {
             icon={faWhatsapp}
             className="text-primary text-2xl"
           />
-        </a>
+        </OutboundLink>
         <a
           className="btn bg-primary text-white py-2 mx-6 leading-4"
           href="https://app.dewocracy.com/register/free"

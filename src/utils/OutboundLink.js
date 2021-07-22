@@ -1,10 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const amplitudeEventTypes = {
-  outboundLinkClick: "${{}).outboundLinkClick || 'outbound link click'}",
-  pageView: "${({}).pageView || 'page view'}"
-};
+import { amplitudeEventTypes } from "./AmplitudeHelper"
 
 const OutboundLink = React.forwardRef(({ eventType, eventProperties, ...props }, ref) => {
   return (
