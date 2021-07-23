@@ -1,19 +1,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const amplitudeEventTypes = {
-  outboundLinkClick: "${{}).outboundLinkClick || 'outbound link click'}",
-  pageView: "${({}).pageView || 'page view'}"
-};
+import { amplitudeEventTypes } from "./AmplitudeHelper"
 
 const OutboundLink = React.forwardRef(({ eventType, eventProperties, ...props }, ref) => {
+
   return (
     <a
       {...props}
       ref={ref}
       onClick={e => {
         const amplitudeEventType = eventType || amplitudeEventTypes.outboundLinkClick;
-        const amplitudeEventProperties = Object.assign({ href: props.href }, eventProperties);
+        const amplitudeEventProperties = Object.assign({ href: props.href, language: localStorage.getItem("gatsby-i18next-language") }, eventProperties);
 
         if (typeof props.onClick === `function`) {
           props.onClick()

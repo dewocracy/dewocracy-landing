@@ -3,14 +3,23 @@ const tailwindConfig = require("./tailwind.config.js");
 const fullConfig = resolveConfig(tailwindConfig);
 const path = require("path");
 
+require('dotenv').config({
+  path: `.env`
+});
 const {
   URL: NETLIFY_SITE_URL = "https://www.example.com",
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT,
+  GATSBY_PROD_AMPLITUDE_API_KEY: PROD_AMPLITUDE_API_KEY,
+  GATSBY_DEV_AMPLITUDE_API_KEY: DEV_AMPLITUDE_API_KEY
 } = process.env;
 
 const isNetlifyProduction = CONTEXT === "production";
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
+
+const AMPLITUDE_API_KEY = isNetlifyProduction ? PROD_AMPLITUDE_API_KEY : DEV_AMPLITUDE_API_KEY
+
+console.log({ AMPLITUDE_API_KEY })
 
 const plugins = [
   `gatsby-plugin-eslint`,
@@ -122,16 +131,15 @@ const plugins = [
       exclude: [`*/contact-thanks/`],
     },
   },
-]
-
-if (isNetlifyProduction) {
-  plugins.push({
+  {
     resolve: 'gatsby-plugin-amplitude',
     options: {
-      apiKey: process.env.AMPLITUDE_API_KEY,
+      apiKey: AMPLITUDE_API_KEY,
+      enableOnDevMode: true
     },
-  })
-}
+  }
+]
+
 
 
 

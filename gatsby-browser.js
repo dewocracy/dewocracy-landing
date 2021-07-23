@@ -1,5 +1,14 @@
 require("./src/css/style.css");
 
+// eslint-disable-next-line no-unused-vars
+const amplitudeEventTypes = {
+  outboundLinkClick: 'outbound link click',
+  pageView: 'page view'
+}
+
+// eslint-disable-next-line no-unused-vars
+const amplitudeExcludePaths = []
+
 /** The SideBarBtns class credits: https://pakjiddat.netlify.app/posts/adding-scroll-to-top-button-to-gatsby-website */
 class ScrollToTop {
   initialize() {
@@ -40,8 +49,34 @@ class ScrollToTop {
   }
 }
 
+const checkForAmplitudeEvent = () => {
+
+
+  if (
+    location &&
+    typeof amplitudeExcludePaths !== `undefined` && amplitudeExcludePaths.some(rx => rx.test(location.pathname))
+  ) {
+    return;
+  }
+
+  const language = localStorage.getItem("gatsby-i18next-language")
+
+  const eventProperties = {
+    href: location.href,
+    host: location.host,
+    language,
+    location: location ? location.pathname + location.search + location.hash : undefined
+  }
+  if (window.amplitude) {
+    console.log({ eventProperties })
+    window.amplitude.getInstance().logEvent(amplitudeEventTypes.pageView, eventProperties)
+  }
+
+}
+
 exports.onRouteUpdate = () => {
   if (document.getElementById("scroll-top-container")) {
     new ScrollToTop().initialize();
   }
+  checkForAmplitudeEvent()
 };

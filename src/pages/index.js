@@ -14,6 +14,7 @@ import { faChartBar, faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPeopleArrows, faSearch } from "@fortawesome/free-solid-svg-icons";
 import arrowLoopSvg from "./../images/arrow-loop.svg";
+import { OutboundLink } from "../utils/OutboundLink";
 
 function IndexPage() {
   const data = useStaticQuery(query);
@@ -43,12 +44,13 @@ function IndexPage() {
                 <a className="btn mt-6" href="#pricing">
                   <Trans>Sign up for free</Trans>
                 </a>
-                <a
+                <OutboundLink
+                  eventProperties={{ location: "home button" }}
                   className="btn mt-6 bg-transparent text-white border-white border"
                   href="https://calendly.com/dewocracylabs/dewocracy-demo"
                 >
                   <Trans>Request demo</Trans>
-                </a>
+                </OutboundLink>
               </div>
             </div>
           </div>

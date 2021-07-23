@@ -128,6 +128,8 @@ export const Footer = () => {
               />
             </OutboundLink>
             <OutboundLink
+              eventProperties={{ location: "footer" }}
+
               href="https://wa.me/message/NULJD4OWUB3CA1"
               rel="noreferrer noopener"
               target="_blank"
