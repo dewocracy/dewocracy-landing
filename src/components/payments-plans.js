@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Fragment, useCallback, useMemo, useState } from "react";
 import { useTranslation, Trans } from "gatsby-plugin-react-i18next";
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
+import { OutboundLink } from "../utils/OutboundLink";
 const getCurrencyText = (value) =>
   Number(value).toLocaleString(undefined, {
     style: "currency",
@@ -127,12 +128,14 @@ export const PaymentsPlans = () => {
               <Trans>Guidance throughout the entire process.</Trans>
             </li>
           </ol>
-          <a
+          <OutboundLink
+            eventType="signup" eventProperties={{ plan: "free", location: "plan listing" }}
+
             className="btn bg-white border border-primary border-4 text-primary w-full block h-12"
             href="https://app.dewocracy.com/register/free"
           >
             <Trans>Start for free</Trans>
-          </a>
+          </OutboundLink>
         </div>
         <div
           data-sal="zoom-in"
@@ -214,12 +217,15 @@ export const PaymentsPlans = () => {
               <Trans>Guidance throughout the entire process.</Trans>
             </li>
           </ol>
-          <a
+          <OutboundLink
+            eventType="signup"
+            eventProperties={{ plan: "startup", location: "plan listing" }}
+
             className="btn bg-primary text-white w-full block h-12"
             href="#contact"
           >
             <Trans>Start now</Trans>
-          </a>
+          </OutboundLink>
         </div>
         <div
           data-sal="zoom-in"
@@ -300,12 +306,14 @@ export const PaymentsPlans = () => {
               <Trans>Guidance throughout the entire process.</Trans>
             </li>
           </ol>
-          <a
+          <OutboundLink
+            eventType="signup"
+            eventProperties={{ plan: "business", location: "plan listing" }}
             className="btn bg-white border border-primary border-2 text-primary w-full block h-12"
             href="#contact"
           >
             <Trans>Explore</Trans>
-          </a>
+          </OutboundLink>
         </div>
       </div>
     </Fragment>
