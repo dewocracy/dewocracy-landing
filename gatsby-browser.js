@@ -68,7 +68,6 @@ const checkForAmplitudeEvent = () => {
     location: location ? location.pathname + location.search + location.hash : undefined
   }
   if (window.amplitude) {
-    console.log({ eventProperties })
     window.amplitude.getInstance().logEvent(amplitudeEventTypes.pageView, eventProperties)
   }
 
