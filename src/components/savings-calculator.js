@@ -4,6 +4,8 @@ import { SavingsGraph } from "./savings-graph";
 import { useDebounce } from "../hooks/use-debounce";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
+import { logEvent } from "../utils/AmplitudeHelper";
+import { OutboundLink } from "../utils/OutboundLink";
 
 const AVG_PRICE_METER_PER_MONTH = 28;
 
@@ -119,8 +121,8 @@ export const SavingsCalculator = () => {
   useEffect(() => {
     setMonthlySavings(
       rentCostPerMonth +
-        suppliesCost -
-        (rentCostPerMonthWithDW + suppliesCostWithDW + techInvestment)
+      suppliesCost -
+      (rentCostPerMonthWithDW + suppliesCostWithDW + techInvestment)
     );
   }, [
     rentCostPerMonth,
@@ -147,12 +149,24 @@ export const SavingsCalculator = () => {
       return setEmployees("");
     }
     setEmployees(Number(e.target.value));
+
+    logEvent("editedCalculator", {
+      action: "changed number Employees",
+      value: e.target.value,
+    })
+
+
   }, []);
   const handleSizeOfficeChange = useCallback((e) => {
     if (!Number(e.target.value)) {
       return setOfficeSize("");
     }
     setOfficeSize(Number(e.target.value));
+    logEvent("editedCalculator", {
+      action: "changed office space ",
+      value: e.target.value,
+    })
+
   }, []);
 
   const handleTargetChange = useCallback((e) => {
@@ -164,6 +178,11 @@ export const SavingsCalculator = () => {
       return setTarget(90);
     }
     setTarget(newValue);
+    logEvent("editedCalculator", {
+      action: "changed target remote ",
+      value: e.target.value,
+    })
+
   }, []);
 
   // Debug :D
@@ -237,9 +256,11 @@ export const SavingsCalculator = () => {
             <br />
           </p>
           <p className="text-center pt-4">
-            <a href="#contact" className="text-primary underline">
+            <OutboundLink
+              eventType={"accessed contact form"} eventProperties={{ location: "plans" }}
+              href="#contact" className="text-primary underline">
               <Trans>Contact us</Trans>
-            </a>
+            </OutboundLink>
           </p>
         </div>
         <div
@@ -284,9 +305,9 @@ export const SavingsCalculator = () => {
                       {isNaN(monthlySavings)
                         ? "-"
                         : `${monthlySavings.toLocaleString(undefined, {
-                            style: "currency",
-                            currency: "EUR",
-                          })} `}
+                          style: "currency",
+                          currency: "EUR",
+                        })} `}
                     </span>
                     <Trans>monthly</Trans>
                   </div>
@@ -299,9 +320,9 @@ export const SavingsCalculator = () => {
                       {isNaN(annualSavings)
                         ? "-"
                         : `${annualSavings.toLocaleString(undefined, {
-                            style: "currency",
-                            currency: "EUR",
-                          })} `}
+                          style: "currency",
+                          currency: "EUR",
+                        })} `}
                     </span>
                     <Trans>annually</Trans>
                   </p>
@@ -314,9 +335,9 @@ export const SavingsCalculator = () => {
                       {isNaN(savingsPercentage)
                         ? "-"
                         : `${savingsPercentage.toLocaleString(undefined, {
-                            style: "percent",
-                            maximumFractionDigits: 2,
-                          })} `}
+                          style: "percent",
+                          maximumFractionDigits: 2,
+                        })} `}
                     </span>
                     <Trans>saving</Trans>
                   </p>
