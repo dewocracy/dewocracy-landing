@@ -51,27 +51,28 @@ function Header() {
           >
             <Trans>Demo</Trans>
           </OutboundLink>
-          <a
+          <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
             className="block py-2 hover:underline"
             href="#pricing"
             onClick={handleClickSubmenu}
           >
             <Trans>Pricing</Trans>
-          </a>
-          <a
+          </OutboundLink>
+          <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
             className="block py-2 hover:underline"
             href="https://app.dewocracy.com/"
             onClick={handleClickSubmenu}
           >
             <Trans>Access</Trans>
-          </a>
-          <a
+          </OutboundLink>
+          <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
+
             className="block py-2 hover:underline"
             href="https://app.dewocracy.com/register/free"
             onClick={handleClickSubmenu}
           >
             <Trans>Sign up for free</Trans>
-          </a>
+          </OutboundLink>
           <OutboundLink
             eventProperties={{ location: "top navbar", device: "mobile" }}
             href="https://wa.me/message/NULJD4OWUB3CA1"
@@ -121,17 +122,19 @@ function Header() {
         >
           <Trans>Demo</Trans>
         </OutboundLink>
-        <a
+        <OutboundLink eventType="accessApp"
+          eventProperties={{ location: "top navbar" }}
           className="block py-2 hover:underline"
           href="https://app.dewocracy.com/"
         >
           <Trans>Access</Trans>
-        </a>
-        <a className="block p-2 hover:underline" href="#pricing">
-          <Trans>Pricing</Trans>
-        </a>
+        </OutboundLink>
         <OutboundLink
           eventProperties={{ location: "top navbar" }}
+          className="block p-2 hover:underline" href="#pricing">
+          <Trans>Pricing</Trans>
+        </OutboundLink>
+        <OutboundLink eventType="signup" eventProperties={{ location: "top navbar" }}
 
           href="https://wa.me/message/NULJD4OWUB3CA1"
           rel="noreferrer noopener"
@@ -144,12 +147,14 @@ function Header() {
             className="text-primary text-2xl"
           />
         </OutboundLink>
-        <a
+        <OutboundLink
+          eventType="signup" eventProperties={{ plan: "free", location: "top navbar" }}
+
           className="btn bg-primary text-white py-2 mx-6 leading-4"
           href="https://app.dewocracy.com/register/free"
         >
           <Trans>Sign up for free</Trans>
-        </a>
+        </OutboundLink>
         <Dropdown title={t(language)} theme="navbar">
           {languages.map((lang, key) => (
             <Link

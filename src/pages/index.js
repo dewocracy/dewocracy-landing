@@ -41,9 +41,13 @@ function IndexPage() {
                 </Trans>
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 mt-6 md:mt-0">
-                <a className="btn mt-6" href="#pricing">
+
+                <OutboundLink
+                  eventType="signup" eventProperties={{ plan: "free", location: "home button" }}
+
+                  className="btn mt-6" href="#pricing">
                   <Trans>Sign up for free</Trans>
-                </a>
+                </OutboundLink>
                 <OutboundLink
                   eventProperties={{ location: "home button" }}
                   className="btn mt-6 bg-transparent text-white border-white border"
@@ -320,12 +324,13 @@ function IndexPage() {
           </h2>
           <p className="pb-5">
             <Trans>You can</Trans>{" "}
-            <a
+            <OutboundLink eventProperties={{ location: "form description" }}
+
               href="https://calendly.com/dewocracylabs/dewocracy-demo"
               className="underline"
             >
               <Trans>request a video call</Trans>
-            </a>{" "}
+            </OutboundLink>{" "}
             <Trans>
               at your convenience, contact us at info@dewocracy.com or send us a
               message via the contact form below.

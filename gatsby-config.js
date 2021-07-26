@@ -19,8 +19,6 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 const AMPLITUDE_API_KEY = isNetlifyProduction ? PROD_AMPLITUDE_API_KEY : DEV_AMPLITUDE_API_KEY
 
-console.log({ AMPLITUDE_API_KEY })
-
 const plugins = [
   `gatsby-plugin-eslint`,
   `gatsby-plugin-react-helmet`,
