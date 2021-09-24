@@ -1,4 +1,20 @@
 {
+
+  "navigation" : {
+    "access" : "Accedir",
+    "resources": "Recursos",
+    "pricing": "Preus",
+    "sign_up": "Registra't gratis",
+    "calculator": "Calculadora",
+
+    "ca": "CAT",
+    "en": "EN",
+    "es": "ES"
+
+
+  },
+
+
   "404": {
     "not_found": "No hem pogut trobar la pàgina.",
     "back_to_home": "Tornar al inici"
@@ -90,14 +106,9 @@
     "description_reports": "Analiza la ocupación, el uso del espacio y los costes asociados. Obtén detalles a nivel de plantilla e individuo para asegurar el cumplimiento de la ley del teletrabajo. ",
 
     "more_about_reports": "Más detalles sobre analíticas y reportes",
-    "Demo": "Demo",
-    "Pricing": "Preus",
-    "Resources": "Recursos",
-    "en": "ENG",
-    "ca": "CAT",
-    "es": "ESP",
-    "implement_flexible_remote_work": "Implementa el teletreball flexible a la teva empresa.",
-    "Save thousands of euros": "Estalvia milers d'euros optimitzant el teu espai d'oficina mitjançant una estratègia híbrida de treball remot i presencial.",
+
+    "implement_flexible_remote_work": "Implementa el teletreball flexible a la teva oficina.",
+    "Save thousands of euros": "és la primera eina exclusivament dissenyada per a gestionar una estratègiahíbrida de treball remot i presencial.",
     "Sign up for free": "Registra't gratis",
     "Request demo": "Demanar demo",
     "How much could your company save with DeWocracy?": "¿Quant podria estalviar la teva empresa amb DeWocracy?",
