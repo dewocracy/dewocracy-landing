@@ -43,31 +43,10 @@ export const Footer = () => {
           </a>
         </div>
         <div className="grid justify-center gap-y-4 text-primary  text-center">
-          <div className="flex content-center">
-            <a
-              className="pr-4 grid content-center grid-x-4 justify-center"
-              href="#contact"
-              title="Download DeWocracy app from the apple store"
-            >
-              <Image className="object-cover	"
-                width="120px" height="40px" src={appleStoreI18n[locale]} alt="" />
-            </a>
-            <a
-              href="#contact"
-              title="Download DeWocracy app from the play store"
-              className="grid content-center justify-center align-center"
-            >
-              <Image src={googleStoreI18n[locale]}
-                height="80px"
-                width="150px"
-                className="object-contain	"
-                alt="Playstore Logo"
-              />
-            </a>
-          </div>
+
         </div>
         <div className="grid justify-items-center lg:justify-items-end items-center  my-4 lg:my-0">
-          <p className="text-primary font-bold text-right flex justify-between w-64">
+          <p className="text-primary font-bold text-right flex justify-between w-64 mr-4">
             <OutboundLink
               href="//www.linkedin.com/company/dewocracy/"
               rel="noreferrer noopener"
@@ -120,8 +99,34 @@ export const Footer = () => {
             </OutboundLink>
           </p>
         </div>
+        <div></div>
+        <div></div>
+        <div className="grid justify-items-end">
+          <div className="flex" >
+            <a
+              className="pr-4 grid content-center grid-x-4 justify-center"
+              href="#contact"
+              title="Download DeWocracy app from the apple store"
+            >
+              <Image className="object-cover	"
+                width="120px" height="40px" src={appleStoreI18n[locale]} alt="" />
+            </a>
+            <a
+              href="#contact"
+              title="Download DeWocracy app from the play store"
+              className="grid content-center justify-center align-center"
+            >
+              <Image src={googleStoreI18n[locale]}
+                height="80px"
+                width="150px"
+                className="object-contain	"
+                alt="Playstore Logo"
+              />
+            </a>
+          </div>
+        </div>
       </section>
-      <section className="lg:pt-10 lg:pr-20">
+      <section className="lg:pt-10 lg:pr-28">
         <ul className="flex justify-center lg:justify-end text-md gap-4 lg:gap-10">
           <li className="hover:text-primary-800">
             <Link href="/terms-and-conditions"><a>{t('Terms of service')}</a></Link>
