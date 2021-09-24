@@ -1,16 +1,102 @@
 {
   "404": {
-    "PAGE_NOT_FOUND": "No hem pogut trobar la pàgina."
+    "not_found": "No hem pogut trobar la pàgina.",
+    "back_to_home": "Tornar al inici"
+
+  },
+
+  "payment_plans": {
+    "title": "Selecciona el plan para tu empresa",
+
+    "free_plan_title": "Free",
+    "business_plan_title" : "Business",
+    "explore": "Explora",
+    "start_free" : "Empieza gratis",
+    "guidance": "Acompañamiento en todo el proceso.",
+    "half_yearly_cost": "Semestral - hasta un 28% de ahorro",
+    "monthly_cost": "Mensual",
+    "free_cost": "Free",
+    "per_month": "Mes / Usuario",
+    "single_admin": "1 administrador.",
+    "up_to_5_users": "Hasta 5 usuarios.",
+    "app_for_company": "Plataforma para la empresa.",
+    "app_for_employees": "App para los empleados.",
+    "cost_proposal": "Propuesta de optimización de espacio y reducción de costes.",
+    "remote_work_proposal": "Propuesta de modelo de trabajo ideal.",
+    "unlimited_users": "Usuarios ilimitados.",
+    "unlimited_administrators": "Administradores ilimitados."
+
+  },
+
+  "contact_form": {
+    "title": "¿Te interesa? ¡Contáctanos!",
+    "videocall_link": "agendar una videollamada",
+    "description" : "Puedes {link} a la hora que más te convenga, contactarnos a info@dewocracy.com o escribirnos en el formulario de contacto.",
+    "company_label" : "Empresa",
+    "submit_button": "Enviar mensaje",
+    "name_label": "Nombre",
+    "email_label": "Email",
+    "message": "",
+    "email_placeholder": "michaelwazowski@monstruos-sa.com",
+    "company_placeholder": "Monstruos, S.A.",
+    "thanks": "Thanks for contacting us! We will get in touch with you shortly",
+    "back_to_home": "Tornar al inici"
+
+  },
+
+  "Calculator": {
+    "title": "¿Cuánto podría ahorrar tu empresa con DeWocracy?",
+    "employees_text": "¿Cuántos empleados tiene tu empresa?",
+    "employess_placeholder": "",
+    "square_meters_text": "¿Cuántos empleados tiene tu empresa?",
+    "square_meters_placeholder": "¿Cuántos empleados tiene tu empresa?",
+
+    "percentage_text": "¿Cuántos empleados tiene tu empresa?",
+    "calculation": "¿Cuántos empleados tiene tu empresa?",
+    "button_contact": "Contáctanos",
+    "cost_type_now": "Now",
+    "cost_type_dewocracy": "With DW",
+    "label_rent": "Alquiler",
+    "label_utilities": "Suministros",
+    "label_dewocracy_cost": "Coste de DW",
+    "label_now": "Ahora",
+    "label_with_dw": "Con DW",
+    "saving_with_dw": "Con DeWocracy podrías ahorrar hasta...",
+    "monthly": "al mes",
+    "annually": "al año",
+    "saving": "de ahorro"
   },
 
   "Default": {
+    "title_hotdesking": "Hot desking, más fácil que nunca",
+    "description_hotdesking": "Reserva de escritorios de forma intuitiva a través de un mapa interactivo de tu oficina.",
+
+    "more_about_hotdesking": "Quiero saber más sobre el hot desking",
+    "hotdesking_button": "Empieza ahora",
+
+    "title_neighbourhoods": "Organiza la oficina y las personas",
+    "description_neighbourhoods": "Crea vecindarios asignando grupos de escritorios a equipos o personas. Activa y desactiva escritorios según necesidad.",
+
+    "more_about_neighbourhoods": "Cuéntame más sobre vecindarios y equipos",
+    "neighbourhoods_button": "Empieza ahora",
+
+    "title_manage": "Gestiona el teletrabajo de forma eficiente ",
+    "description_manage": "Establece límites de ocuación y teletrabajo. Gestiona el aforo y la presencialidad con un calendario dinámico de espacios.",
+
+    "more_about_manage": "Quiero saber más sobre la gestión del teletrabajo",
+    "manage_button": "Regístrate gratis",
+
+    "title_reports": "La información es poder... Y dinero",
+    "description_reports": "Analiza la ocupación, el uso del espacio y los costes asociados. Obtén detalles a nivel de plantilla e individuo para asegurar el cumplimiento de la ley del teletrabajo. ",
+
+    "more_about_reports": "Más detalles sobre analíticas y reportes",
     "Demo": "Demo",
     "Pricing": "Preus",
     "Resources": "Recursos",
     "en": "ENG",
     "ca": "CAT",
     "es": "ESP",
-    "Implement_flexible_remote_work": "Implementa el teletreball flexible a la teva empresa.",
+    "implement_flexible_remote_work": "Implementa el teletreball flexible a la teva empresa.",
     "Save thousands of euros": "Estalvia milers d'euros optimitzant el teu espai d'oficina mitjançant una estratègia híbrida de treball remot i presencial.",
     "Sign up for free": "Registra't gratis",
     "Request demo": "Demanar demo",

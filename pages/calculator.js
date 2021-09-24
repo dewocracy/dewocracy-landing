@@ -1,0 +1,41 @@
+/* eslint-disable no-unused-vars */
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { SavingsCalculator } from "../components/savings-calculator";
+
+import { useTranslations } from 'next-intl';
+
+
+
+function Calculator() {
+    const t = useTranslations("Calculator");
+
+    return (
+        <Layout>
+            <SEO title="DeWocracy - Remote Work | Work from anywhere" />
+            <div className="w-full py-16 ">
+                <section className="container bg-purple-800 rounded-2xl  mx-auto mr-3 ">
+                    <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-24 text-center">
+                        {t('title')}
+                    </h2>
+                    <SavingsCalculator />
+
+
+
+
+
+                </section>
+            </div>
+        </Layout>)
+}
+
+export function getStaticProps({ locale }) {
+    return {
+        props: {
+            messages: require(`../locales/${locale}.json`),
+        },
+    };
+}
+
+export default Calculator;

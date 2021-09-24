@@ -6,25 +6,27 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 function NotFoundPage() {
-  const t = useTranslations("Default");
+  const t = useTranslations("404");
 
   return (
     <Layout>
       <SEO title="404: Not found" />
-      <div className="w-full bg-fixed min-h-screen bg-darkBlue py-32">
-        <section className="container mx-auto text-white px-8 md:px-0">
-          <p>
-            {t('PAGE_NOT_FOUND')}
-          </p>
+      <div className="w-full bg-fixed min-h-screen  py-32">
+        <section className=" container mx-auto text-primary-800 px-8 md:px-0">
+          <h1 className="text-center font-bold text-4xl">
+            {t('not_found')}
+          </h1>
+          <div className="flex justify-center">
           <p className="mt-16">
             <Link href="/"><a
 
-              className="btn text-greyBlue cursor-pointer w-full md:w-auto"
+                className="shadow-2xl  bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline "
             >
-              {t('Back to home')}
+                {t('back_to_home')}
             </a>
             </Link>
           </p>
+          </div>
         </section>
       </div>
     </Layout>

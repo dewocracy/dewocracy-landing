@@ -6,28 +6,40 @@ import { useTranslations } from 'next-intl';
 
 function ContactPage() {
 
-  const t = useTranslations("Default");
+  const t = useTranslations("contact_form");
 
   return (
     <Layout>
       <SEO title="Thanks for contacting us!" />
-      <div className="w-full bg-fixed min-h-screen bg-darkBlue py-32">
-        <section className="container mx-auto text-white px-8 md:px-0">
-          <p>
-            {t('Thanks for containing us! We will get in touch with you shortly')}
+      <div className="w-full bg-fixed min-h-screen  py-32">
+        <section className="container mx-auto  px-8 md:px-0">
+          <div className="flex justify-center">
+            <p className="max-w-xl text-center text-primary-800 text-3xl font-bold">
+              {t('thanks')}
           </p>
-          <p className="mt-16">
+
+          </div>
+          <div className="flex  text-primary-800 text-2xl justify-center mt-16">
+
             <a
               href="/"
-              className="btn text-greyBlue cursor-pointer w-full md:w-auto"
+              className="shadow-2xl  bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline "
             >
-              {t('Back to home')}
+              {t('back_to_home')}
             </a>
-          </p>
+          </div>
         </section>
       </div>
     </Layout>
   );
+}
+
+export function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: require(`../locales/${locale}.json`),
+    },
+  };
 }
 
 export default ContactPage;

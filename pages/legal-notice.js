@@ -8,8 +8,8 @@ function LegalNotice() {
   return (
     <Layout>
       <SEO title="Aviso Legal" />
-      <div className="w-full bg-fixed min-h-screen bg-darkBlue py-16">
-        <section className="rounded shadow-xl bg-white container mx-auto px-8 py-12 legal">
+      <div className="w-full bg-fixed min-h-screen  py-16">
+        <section className="rounded  bg-white container mx-auto px-8 py-12 legal">
           <h1>Aviso Legal</h1>
           <h2>1. Sobre nosotros</h2>
           <p>
@@ -30,14 +30,14 @@ function LegalNotice() {
           <p>Cualquier uso de un vínculo o acceso a una página web ajena a DeWocracy es realizado bajo tu voluntad y riesgo exclusivo, DeWocracy no recomienda ni garantiza ninguna información obtenida a través de un vínculo ajeno al Sitio Web y/o Plataforma ni se responsabiliza de ninguna pérdida, reclamación o perjuicio derivada del uso o mal uso de un vínculo, o de la información obtenida a través de él, incluyendo otros vínculos o webs, de la interrupción en el servicio o en el acceso, o del uso  o mal uso de un vínculo, tanto al conectar al portal web cómo al acceder a la información de otras webs desde el mismo portal web.
           </p>
           <h2>4. Privacidad</h2>
-          <p>Te informamos de que todos los datos suministrados a DeWocracy tratarán con confidencialidad y responsabilidad por parte de DeWocracy de conformidad con la <Link to="/privacy-policy">Política de Privacidad</Link>.
+          <p>Te informamos de que todos los datos suministrados a DeWocracy tratarán con confidencialidad y responsabilidad por parte de DeWocracy de conformidad con la <Link href="/privacy-policy">Política de Privacidad</Link>.
           </p>
           <h2>5. Cookies
           </h2>
           <p>La información sobre el uso de las cookies en nuestro Sitio Web y Plataforma se encuentra disponible en la <Link href="/privacy-policy">Política de Cookies</Link>.
           </p>
 <h2>6. Modificaciones</h2>
-          <p>Cuando se modifiquen los Textos Legales (es decir, <Link to="/legal-notice">Aviso Legal</Link>, <Link to="/terms-and-conditions">Términos y Condiciones</Link>, <Link to="/privacy-policy">Política de Privacidad</Link> y <Link to="/cookies-policy">Política de Cookies</Link>), DeWocracy te notificará para que los cambios sean aceptados, con lo cual será aplicable el nuevo texto.
+          <p>Cuando se modifiquen los Textos Legales (es decir, <Link href="/legal-notice">Aviso Legal</Link>, <Link href="/terms-and-conditions">Términos y Condiciones</Link>, <Link href="/privacy-policy">Política de Privacidad</Link> y <Link href="/cookies-policy">Política de Cookies</Link>), DeWocracy te notificará para que los cambios sean aceptados, con lo cual será aplicable el nuevo texto.
           </p>
           <p>DeWocracy se reserva el derecho de enmendar los mencionados Textos Legales en la medida en que dichas modificaciones sean resultado de mejoras realizadas en los Servicios proporcionados por DeWocracy, cambios de naturaleza jurídica o cambios debidos a exigencias técnicas.
           </p>
@@ -48,6 +48,14 @@ function LegalNotice() {
       </div>
     </Layout>
   );
+}
+
+export function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: require(`../locales/${locale}.json`),
+    },
+  };
 }
 
 export default LegalNotice;

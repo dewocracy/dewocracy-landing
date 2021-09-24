@@ -1,16 +1,33 @@
 import React, { useState } from "react";
 import { useTranslations } from 'next-intl';
+import { OutboundLink } from "../utils/OutboundLink";
 
 
 export const ContactForm = () => {
   const [state, setState] = useState({});
-  const t = useTranslations("Default");
+  const t = useTranslations("contact_form");
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
   return (
+    <>
+      <h2 className="font-bold text-primary-800 text-2xl lg:text-6xl text-center py-16 lg:pt-24">
+        {t('title')}
+      </h2>
+      <p className="pb-5 text-center text-primary-800">
+        {t.rich('description', {
+          link: <OutboundLink eventProperties={{ location: "form description" }} href="https://calendly.com/dewocracylabs/dewocracy-demo" className="font-bold">
+            {t('videocall_link')}
+          </OutboundLink>
+        })}
+
+
+
+
+
+      </p>
     <form
       name="contact"
       method="POST"
@@ -29,7 +46,7 @@ export const ContactForm = () => {
       <div className="grid lg:grid-cols-3 gap-10">
         <div className="grid">
           <label htmlFor="name" className="font-bold pr-4 pb-4">
-            {t('Name:')}
+              {t('name_label')}
           </label>
           <input
             id="name"
@@ -43,28 +60,28 @@ export const ContactForm = () => {
         </div>
         <div className="grid">
           <label htmlFor="email" className="font-bold pr-4 pb-4">
-            {t('Email:')}
+              {t('email_label')}
           </label>
           <input
             id="email"
             type="email"
             name="email"
             required
-            placeholder={t("FORM_SAMPLE_EMAIL")}
+              placeholder={t("email_placeholder")}
             className="rounded-lg py-6 px-4 h-10  bg-white bg-opacity-25 placeholder-primary-800 placeholder-opacity-30"
             onChange={handleChange}
           />
         </div>
         <div className="grid">
           <label htmlFor="company" className="font-bold pr-4 pb-4">
-            {t('Company:')}
+              {t('company_label')}
           </label>
           <input
             id="company"
             type="text"
             name="company"
             required
-            placeholder={t("FORM_SAMPLE_COMPANY")}
+              placeholder={t("company_placeholder")}
             className="rounded-lg py-6 px-4 h-10  bg-white bg-opacity-25 placeholder-primary-800 placeholder-opacity-30"
             onChange={handleChange}
           />
@@ -73,7 +90,7 @@ export const ContactForm = () => {
 
       <div className="grid grid-cols-1 justify-center mt-md:mr-16 mt-10 gap-y-4">
         <label htmlFor="message" className="font-bold">
-          {t('Message:')}
+            {t('message')}
         </label>
         <textarea
           id="message"
@@ -90,9 +107,10 @@ export const ContactForm = () => {
           type="submit"
           className="shadow-2xl  h-16 bg-primary-800 hover:bg-primary-400 text-white px-6   text-2xl  transition-colors duration-150  rounded-lg focus:shadow-outlinet cursor-pointer w-full md:w-auto my-10"
         >
-          {t('Send message')}
+            {t('submit_button')}
         </button>
       </div>
     </form>
+    </>
   );
 };

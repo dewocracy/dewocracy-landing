@@ -1,6 +1,65 @@
 {
   "404": {
-    "PAGE_NOT_FOUND": "No hem pogut trobar la pàgina."
+    "not_found": "No hem pogut trobar la pàgina."
+  },
+
+  "payment_plans": {
+    "title": "Selecciona el plan para tu empresa",
+
+    "free_plan_title": "Free",
+    "business_plan_title" : "Business",
+    "explore": "Explora",
+    "start_free" : "Empieza gratis",
+    "guidance": "Acompañamiento en todo el proceso.",
+    "half_yearly_cost": "Semestral - hasta un 28% de ahorro",
+    "monthly_cost": "Mensual",
+    "free_cost": "Free",
+    "per_month": "Mes / Usuario",
+    "single_admin": "1 administrador.",
+    "up_to_5_users": "Hasta 5 usuarios.",
+    "app_for_company": "Plataforma para la empresa.",
+    "app_for_employees": "App para los empleados.",
+    "cost_proposal": "Propuesta de optimización de espacio y reducción de costes.",
+    "remote_work_proposal": "Propuesta de modelo de trabajo ideal.",
+    "unlimited_users": "Usuarios ilimitados.",
+    "unlimited_administrators": "Administradores ilimitados."
+
+  },
+
+  "contact_form": {
+    "title": "¿Te interesa? ¡Contáctanos!",
+    "videocall_link": "agendar una videollamada",
+    "description" : "Puedes {link} a la hora que más te convenga, contactarnos a info@dewocracy.com o escribirnos en el formulario de contacto.",
+    "company_label" : "Empresa",
+    "submit_button": "Enviar mensaje",
+    "name_label": "Nombre",
+    "email_label": "Email",
+    "message": "",
+    "email_placeholder": "michaelwazowski@monstruos-sa.com",
+    "company_placeholder": "Monstruos, S.A."
+  },
+
+  "Calculator": {
+    "title": "¿Cuánto podría ahorrar tu empresa con DeWocracy?",
+    "employees_text": "¿Cuántos empleados tiene tu empresa?",
+    "employess_placeholder": "",
+    "square_meters_text": "¿Cuántos empleados tiene tu empresa?",
+    "square_meters_placeholder": "¿Cuántos empleados tiene tu empresa?",
+
+    "percentage_text": "¿Cuántos empleados tiene tu empresa?",
+    "calculation": "¿Cuántos empleados tiene tu empresa?",
+    "button_contact": "Contáctanos",
+    "cost_type_now": "Now",
+    "cost_type_dewocracy": "With DW",
+    "label_rent": "Alquiler",
+    "label_utilities": "Suministros",
+    "label_dewocracy_cost": "Coste de DW",
+    "label_now": "Ahora",
+    "label_with_dw": "Con DW",
+    "saving_with_dw": "Con DeWocracy podrías ahorrar hasta...",
+    "monthly": "al mes",
+    "annually": "al año",
+    "saving": "de ahorro"
   },
 
   "Default": {
@@ -69,37 +128,9 @@
     "Management of custom work spaces.": "Gestión de espacios de trabajo personalizados.",
     "Digital clock-in, absences and holidays request.": "Control horario digitalizado y petición de vacaciones.",
     "Historical data of workplace habits.": "Datos históricos personales de teletrabajo.",
-    "CHOOSE_A_PLAN": "Selecciona el plan para tu empresa",
-    "Seminnual - up to 28% discount": "Semestral - hasta un 28% de ahorro",
-    "Monthly": "Mensual",
-    "Free": "Free",
-    "Month / User": "Mes / Usuario",
-    "1 administrator.": "1 administrador.",
-    "Up to 5 users.": "Hasta 5 usuarios.",
-    "Web app for the company.": "Plataforma para la empresa.",
-    "Mobile app for the employees.": "App para los empleados.",
-    "Optimum workspace and cost cutting proposal.": "Propuesta de optimización de espacio y reducción de costes.",
-    "Ideal remote work strategy proposal.": "Propuesta de modelo de trabajo ideal.",
-    "Guidance throughout the entire process.": "Acompañamiento en todo el proceso.",
-    "Startup": "Startup",
+
     "Popular": "Popular",
-    "Unlimited users.": "Usuarios ilimitados.",
-    "Business": "Business",
-    "Unlimited administrators.": "Administradores ilimitados.",
-    "Start for free": "Empieza gratis",
-    "Start now": "Empieza ahora",
-    "Explore": "Explora",
-    "Interested? Contact us!": "¿Te interesa? ¡Contáctanos!",
-    "You can": "Puedes",
-    "request a video call": "agendar una videollamada",
-    "CONTACT_FORM_TEXT_2": "a la hora que más te convenga, contactarnos a info@dewocracy.com o escribirnos en el formulario de contacto.",
-    "Name:": "Nombre:",
-    "Email:": "Email:",
-    "michaelwazowski@monstersinc.com": "michaelwazowski@monstruos-sa.com",
-    "Company:": "Empresa:",
-    "Monsters, Inc.": "Monstruos, S.A.",
-    "Message:": "Mensaje",
-    "Send message": "Enviar mensaje",
+
     "Access web app (company)": "Acceder a la web app (empresa)",
     "Download mobile app (employee)": "Descargar app móvil (empleado/a)",
     "Employees": "Empleados",

@@ -11,12 +11,12 @@ const getCurrencyText = (value) =>
 
 const plans = {
   biannual: {
-    text: "Seminnual - up to 28% discount",
+    text: "half_yearly_cost",
     startup: getCurrencyText(3),
     business: getCurrencyText(5),
   },
   monthly: {
-    text: "Monthly",
+    text: "monthly_cost",
     startup: getCurrencyText(4),
     business: getCurrencyText(7),
   },
@@ -24,7 +24,7 @@ const plans = {
 
 export const PaymentsPlans = () => {
   const [plan, setPlan] = useState("biannual");
-  const t = useTranslations("Default");
+  const t = useTranslations("payment_plans");
   const { business } = useMemo(() => plans[plan], [plan]);
   const changePlan = useCallback(
     () => setPlan(plan === "biannual" ? "monthly" : "biannual"),
@@ -32,6 +32,9 @@ export const PaymentsPlans = () => {
   );
   return (
     <Fragment>
+      <h2 className="font-medium text-center pt-24 font-bold text-5xl pb-24">
+        {t('title')}
+      </h2>
       <div className="grid  justify-center">
         <div className="grid md:grid-cols-2 gap-y-4 gap-x-12 lg:gap-x-24 mb-8">
           {Object.entries(plans).map(([key, { text }]) => (
@@ -56,17 +59,17 @@ export const PaymentsPlans = () => {
         <div
           data-sal="zoom-in"
           data-sal-easing="ease"
-          className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8 my-4 lg:my-16"
+          className="grid rounded-lg bg-white p-8 md:p-10 max-w-xl gap-y-8 my-4 lg:my-16"
         >
           <div>
             <p className="text-primary-800 text-2xl md:text-4xl font-bold pb-4">
-              {t('Free')}
+              {t('free_plan_title')}
             </p>
             <p className="text-primary text-2xl md:text-4xl">
               <span className="font-bold">{getCurrencyText(0)}</span>
               <span className="text-sm">
                 {" "}
-                {t('Month / User')}
+                {t('per_month')}
               </span>
             </p>
           </div>
@@ -77,7 +80,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              {t('1 administrator.')}
+              {t('single_admin')}
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -85,7 +88,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              {t('Up to 5 users.')}
+              {t('up_to_5_users')}
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -93,7 +96,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              {t('Web app for the company.')}
+              {t('app_for_company')}
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -101,7 +104,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-              {t('Mobile app for the employees.')}
+              {t('app_for_employees')}
             </li>
             <li className="text-grey flex items-center">
               <FontAwesomeIcon
@@ -109,7 +112,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="mr-4"
               />
-              {t('Optimum workspace and cost cutting proposal.')}
+              {t('cost_proposal')}
             </li>
             <li className="text-grey flex items-center">
               <FontAwesomeIcon
@@ -117,7 +120,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="mr-4"
               />
-              {t('Ideal remote work strategy proposal.')}
+              {t('remote_work_proposal')}
             </li>
             <li className="text-grey flex items-center">
               <FontAwesomeIcon
@@ -125,7 +128,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="mr-4"
               />
-              {t('Guidance throughout the entire process.')}
+              {t('guidance')}
             </li>
           </ol>
           <OutboundLink
@@ -134,29 +137,23 @@ export const PaymentsPlans = () => {
             className="shadow-2xl  h-16 bg-primary-800 hover:bg-primary-400 text-white px-6 pt-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline"
             href="https://app.dewocracy.com/register/free"
           >
-            {t('Start for free')}
+            {t('start_free')}
           </OutboundLink>
         </div>
         <div
           data-sal="zoom-in"
           data-sal-easing="ease"
-          className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8 my-4 lg:my-16"
-        >
-
-        <div
-          data-sal="zoom-in"
-          data-sal-easing="ease"
-          className="grid rounded-lg bg-white p-8 md:p-10 max-w-md gap-y-8 my-4 lg:my-16"
+          className="grid rounded-lg bg-white p-8 md:p-10 max-w-xl gap-y-8 my-4 lg:my-16"
         >
           <div>
             <p className="text-primary text-2xl md:text-4xl font-bold  pb-4">
-                {t('Business')}
+              {t('business_plan_title')}
             </p>
             <p className="text-primary text-2xl md:text-4xl">
               <span className="font-bold">{business}</span>
               <span className="text-sm">
                 {" "}
-                  {t('Month / User')}
+                {t('per_month')}
               </span>
             </p>
           </div>
@@ -168,7 +165,7 @@ export const PaymentsPlans = () => {
                 className="absolute text-primary mr-4 leading-8"
               />
               <span className="ml-8 inline">
-                  {t('Unlimited administrators.')}
+                {t('unlimited_administrators')}
               </span>
             </li>
             <li className="flex items-center">
@@ -177,7 +174,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-                {t('Unlimited users.')}
+              {t('unlimited_users')}
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -185,7 +182,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-                {t('Web app for the company.')}
+              {t('app_for_company')}
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -193,7 +190,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-                {t('Mobile app for the employees.')}
+              {t('app_for_employees')}
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -202,7 +199,7 @@ export const PaymentsPlans = () => {
                 className="text-primary mr-4"
               />
               <span>
-                  {t('Optimum workspace and cost cutting proposal.')}
+                {t('cost_proposal')}
               </span>
             </li>
             <li className="flex items-center">
@@ -211,7 +208,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-                {t('Ideal remote work strategy proposal.')}
+              {t('remote_work_proposal')}
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
@@ -219,7 +216,7 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="text-primary mr-4"
               />
-                {t('Guidance throughout the entire process.')}
+              {t('guidance')}
             </li>
           </ol>
           <OutboundLink
@@ -228,9 +225,8 @@ export const PaymentsPlans = () => {
               className="shadow-2xl  h-16 bg-primary-800 hover:bg-primary-400 text-white px-6 pt-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline"
             href="#contact"
           >
-              {t('Explore')}
+            {t('explore')}
           </OutboundLink>
-        </div>
         </div>
       </div>
     </Fragment>

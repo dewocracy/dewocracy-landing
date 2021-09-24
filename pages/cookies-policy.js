@@ -8,10 +8,10 @@ function CookiesPolicy() {
   return (
     <Layout>
       <SEO title="Política de Cookies" />
-      <div className="w-full bg-fixed min-h-screen bg-darkBlue py-16">
-        <section className="rounded shadow-xl bg-white container mx-auto px-8 py-12 legal">
-          <h1>Política de Cookies</h1>
-          <h2>1. Introducción</h2>
+      <div className="w-full bg-fixed min-h-screen  pb-16">
+        <section className="rounded bg-white container mx-auto px-8 py-12 legal">
+          <h1 className="text-5xl font-bold mb-12">Política de Cookies</h1>
+          <h2 className="text-2xl  font-bold my-4">1. Introducción</h2>
           <p>
             Esta Política de Cookies contiene información clara y explícita
             sobre las tecnologías de seguimiento que se usan el sitio web
@@ -20,9 +20,8 @@ function CookiesPolicy() {
             mercantil española DEWOCRACY LABS, S.L. (en adelante, <span className="font-bold">“DeWocracy”</span>),
             así como tus derechos como usuario (en adelante, el <span className="font-bold">“Usuario”</span>) al
           </p>
-          <p>Esta Política de Cookies forma parte de nuestra <Link href="/privacy-policy">Política de Privacidad</Link>, así como de nuestro <Link to="/legal-notice">Aviso Legal</Link> y <Link href="/terms-and-conditions">Términos de Uso</Link>.</p>
+          <p>Esta Política de Cookies forma parte de nuestra <Link href="/privacy-policy">Política de Privacidad</Link>, así como de nuestro <Link href="/legal-notice">Aviso Legal</Link> y <Link href="/terms-and-conditions">Términos de Uso</Link>.</p>
 
-          <h2>1. Introducción</h2>
           <p>
             Nuestro Sitio Web y/o Plataforma utilizan cookies para gestionar el uso del mismo por parte del Usuario y para comprender cómo las personas utilizan el mismo y poder así facilitar información sobre nuestros servicios de forma más personalizada al Usuario.
           </p>
@@ -30,11 +29,11 @@ function CookiesPolicy() {
           </p>
           <p>La presente Política de Cookies describe qué información recogen esas cookies, cómo las usamos y por qué las utilizamos. También indicamos cómo el Usuario puede restringir o bloquear las cookies para que no se descarguen automáticamente en su dispositivo informático. Sin embargo, esto podría repercutir en ciertos elementos de la funcionalidad del Sitio Web y la Plataforma respecto a la configuración y presentación en pantalla más personalizada al Usuario tal y como más abajo se detallará.
           </p>
-          <h2>2. ¿Qué son las Cookies?</h2>
+          <h2 className="text-2xl  font-bold my-4">2. ¿Qué son las Cookies?</h2>
           <p>
             Se trata de pequeños ficheros de datos que se descargan en el dispositivo del Usuario al acceder al Sitio Web y/o Plataforma. Las cookies permiten a Dewocracy almacenar y recuperar información sobre los hábitos de navegación del Usuario o de su dispositivo y, dependiendo de la información que contengan y de la forma en que utilice su equipo, se pueden utilizar para reconocer al Usuario.
           </p>
-          <h2>3. ¿Qué tipo de cookies utiliza el Sitio Web?</h2>
+          <h2 className="text-2xl  font-bold my-4">3. ¿Qué tipo de cookies utiliza el Sitio Web?</h2>
           <p>Las cookies que se utilizan en el Sitio Web y Plataforma pertenecen a las siguientes categorías:
           </p>
           <ul>
@@ -56,9 +55,9 @@ function CookiesPolicy() {
           </ul>
           <p>En la tabla del apartado siguiente, mostramos las particulares cookies que se utilizan en el Sitio Web, informando de su nombre, el tipo, el titular, la finalidad para la cual se utiliza, las categorías de datos recogidas por cada cookie y cuándo expira.
           </p>
-          <table>
-            <thead>
-            <tr>
+          <table className=" border border-gray-200 table-auto text-left">
+            <thead className=" border border-gray-200">
+              <tr  >
               <th>TIPO</th>
               <th>TITULAR</th>
               <th>
@@ -68,8 +67,8 @@ function CookiesPolicy() {
               <th>DURACIÓN</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
+            <tbody className=" border border-gray-200">
+              <tr className=" border border-gray-200">
               <td>Cookie analítica</td>
               <td>Amplitude Inc.</td>
               <td>Distinguir a los usuarios y analizar su comportamiento en el sitio web.</td>
@@ -77,7 +76,8 @@ function CookiesPolicy() {
             </tr>
             </tbody>
           </table>
-          <h2>5. Bloqueo o eliminación de cookies</h2>
+
+          <h2 className="text-2xl  font-bold my-4">5. Bloqueo o eliminación de cookies</h2>
           <p>Si el Usuario desea borrar de su navegador las cookies registradas por nuestro Sitio Web y/o Plataforma, en general, deberá ir al menú Preferencias o Configuración del navegador y buscar la sección Privacidad. A modo de ejemplo, el Usuario puede seguir las siguientes instrucciones:
           </p>
           <ul>
@@ -87,16 +87,24 @@ function CookiesPolicy() {
             <li><a href="https://support.google.com/chrome/answer/95647?hl=en">Google Chrome
             </a></li>
           </ul>
-          <h2>6. Contacto</h2>
+          <h2 className="text-2xl  font-bold my-4">6. Contacto</h2>
           <p>En caso de cualquier duda sobre nuestras cookies, el Usuario podrá ponerse en contacto con nosotros por correo electrónico a info@dewocracy.com, así como a la dirección indicada en el <Link href="/legal-notice">Aviso Legal</Link>, en cuyo caso trataremos sus datos para contestar a su petición o consulta según se detalla en nuestra <Link href="/privacy-policy">Política de Privacidad</Link>.
           </p>
-          <p>
+          <p className="mt-4">
             <span className="font-bold">Fecha de actualización</span>: 25 de febrero de 2021
           </p>
         </section>
       </div>
     </Layout>
   );
+}
+
+export function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: require(`../locales/${locale}.json`),
+    },
+  };
 }
 
 export default CookiesPolicy;

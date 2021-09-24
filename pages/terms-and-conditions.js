@@ -8,14 +8,14 @@ function TermsAndConditions() {
   return (
     <Layout>
       <SEO title="Condiciones de uso" />
-      <div className="w-full bg-fixed min-h-screen bg-darkBlue py-16">
-        <section className="rounded shadow-xl bg-white container mx-auto px-8 py-12 legal">
+      <div className="w-full bg-fixed min-h-screen  py-16">
+        <section className="rounded  bg-white container mx-auto px-8 py-12 legal">
           <h1>Condiciones de uso</h1>
           <h2>1. Introducción</h2>
           <p>
             El presente documento incluye las condiciones de uso (
             <span className="font-bold">“Condiciones de Uso”</span>) del sitio
-            web <Link to="/">www.dewocracy.com</Link> (
+            web <Link href="/">www.dewocracy.com</Link> (
             <span className="font-bold">“Sitio Web”</span>) y de la plataforma (
             <span className="font-bold">“Plataforma”</span>) titularidad de
             DeWocracy LABS, S.L.(<span className="font-bold">“DeWocracy”</span>{" "}
@@ -27,9 +27,9 @@ function TermsAndConditions() {
             DeWocracy (<span className="font-bold">“Servicios”</span>) a través
             del Sitio Web y de la Plataforma. Al contratar los Servicios de
             DeWocracy, aceptas las presentes Condiciones de Uso, el{" "}
-            <Link to="/legal-notice">Aviso Legal</Link>, la{" "}
-            <Link to="/privacy-policy">Política de Privacidad</Link> y la{" "}
-            <Link to="/legal-notice">Política de Cookies</Link> (
+            <Link href="/legal-notice">Aviso Legal</Link>, la{" "}
+            <Link href="/privacy-policy">Política de Privacidad</Link> y la{" "}
+            <Link href="/legal-notice">Política de Cookies</Link> (
             <span className="font-bold">“Textos Legales”</span>). En caso de no
             ser así, deberás cesar el uso del Sitio Web y de la Plataforma
             inmediatamente.
@@ -74,7 +74,7 @@ function TermsAndConditions() {
             a tu cuenta y la cual deberás reestablecer inmediatamente para
             garantizar la seguridad de la cuenta. El tratamiento de los datos
             personales facilitados durante el registro se realizará conforme a
-            nuestra <Link to="/privacy-policy">Política de Privacidad</Link>.
+            nuestra <Link href="/privacy-policy">Política de Privacidad</Link>.
           </p>
           <h2>4. Precio y pago</h2>
           <p>
@@ -340,6 +340,14 @@ function TermsAndConditions() {
       </div>
     </Layout>
   );
+}
+
+export function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: require(`../locales/${locale}.json`),
+    },
+  };
 }
 
 export default TermsAndConditions;

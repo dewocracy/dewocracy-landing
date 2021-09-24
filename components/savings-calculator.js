@@ -58,7 +58,7 @@ const getDWCost = (employees) => {
 };
 
 export const SavingsCalculator = () => {
-  const t = useTranslations("Default");
+  const t = useTranslations("Calculator");
 
   const [employees, setEmployees, { signal: employeesSignal }] = useDebounce(
     DEFAULTS.EMPLOYEES
@@ -206,7 +206,7 @@ export const SavingsCalculator = () => {
       <div className="md:grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-24 ">
         <div className="grid text-primary-800 content-start justify-center md:mt-10   p-10">
           <label htmlFor="employees" className="font-bold pr-4 pb-4 text-2xl text-center">
-            {t('How many employees does your company have?')}
+            {t('employees_text')}
           </label>
           <input
             id="employees"
@@ -220,21 +220,21 @@ export const SavingsCalculator = () => {
             value={employees}
           />
           <label htmlFor="sizeOffice" className="font-bold pr-4 pt-10 pb-4 text-2xl text-center">
-            {t('How many square meters')}
+            {t('square_meters_text')}
           </label>
           <input
             id="sizeOffice"
             type="number"
             name="sizeOffice"
             required
-            placeholder={t("office square metres")}
+            placeholder={t("square_meters_placeholder")}
             className="rounded-lg text-black py-6 px-4 mb-8 h-10 w-full text-center "
             onChange={handleSizeOfficeChange}
             value={officeSize}
             max={10000}
           />
           <label htmlFor="target" className="font-bold pr-4 pt-10 pb-4 text-2xl text-center">
-            {t('What is the percentage')}
+            {t('percentage_text')}
           </label>
           <input
             id="target"
@@ -246,14 +246,14 @@ export const SavingsCalculator = () => {
             value={target}
           />
           <p className="text-center text-2xl font-bold text-primary-800 pt-10">
-            {t('How do we calculate it?')}
+            {t('calculation')}
             <br />
           </p>
           <p className="text-center pt-12">
             <OutboundLink
               eventType={"accessed contact form"} eventProperties={{ location: "plans" }}
               href="#contact" className="shadow-2xl   bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-xl  transition-colors duration-150  rounded-lg focus:shadow-outline">
-              {t('Contact us')}
+              {t('button_contact')}
             </OutboundLink>
           </p>
         </div>
@@ -266,19 +266,19 @@ export const SavingsCalculator = () => {
             <SavingsGraph
               data={[
                 {
-                  costType: t("Now"),
-                  [t("Utilities")]: !isNaN(suppliesCost) ? suppliesCost : 0,
-                  [t("Rent")]: !isNaN(rentCostPerMonth) ? rentCostPerMonth : 0,
+                  costType: t("label_now"),
+                  [t("label_utilities")]: !isNaN(suppliesCost) ? suppliesCost : 0,
+                  [t("label_rent")]: !isNaN(rentCostPerMonth) ? rentCostPerMonth : 0,
                 },
                 {
-                  costType: t("With DW"),
-                  [t("Utilities")]: !isNaN(suppliesCostWithDW)
+                  costType: t("label_with_dw"),
+                  [t("label_utilities")]: !isNaN(suppliesCostWithDW)
                     ? suppliesCostWithDW
                     : 0,
-                  [t("Rent")]: !isNaN(rentCostPerMonthWithDW)
+                  [t("label_rent")]: !isNaN(rentCostPerMonthWithDW)
                     ? rentCostPerMonthWithDW
                     : 0,
-                  [t("DW cost")]: !isNaN(techInvestment) ? techInvestment : 0,
+                  [t("label_dewocracy_cost")]: !isNaN(techInvestment) ? techInvestment : 0,
                 },
               ]}
             />
@@ -287,7 +287,7 @@ export const SavingsCalculator = () => {
             {showData ? (
               <>
                 <p className="my-4 font-bold text-2xl">
-                  {t('With DeWocracy you could save up to...')}
+                  {t('saving_with_dw')}
                 </p>
                 <div className="pb-10 w-auto">
                   <div className="mt-2 text-lg lg:text-2xl">

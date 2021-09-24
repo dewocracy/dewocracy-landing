@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -6,13 +5,8 @@ import Link from 'next/link'
 
 import { PaymentsPlans } from "../components/payments-plans";
 import { ContactForm } from "../components/contact-form";
-import { SavingsCalculator } from "../components/savings-calculator";
-import { faChartBar, faCheckCircle } from "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPeopleArrows, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { OutboundLink } from "../utils/OutboundLink";
 import { useTranslations } from 'next-intl';
-import Image from 'next/image'
 
 function IndexPage() {
   const t = useTranslations("Default");
@@ -61,12 +55,6 @@ function IndexPage() {
 
       <div className="w-full py-16 lg:py-32">
         <section className="container  mx-auto mr-3 ">
-          {/*<h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-24 text-center">
-            {t('How much could your company save with DeWocracy?')}
-          </h2>
-          <SavingsCalculator />
-
-          */}
           <div className="flex">
             <div className="w-3/5 flex flex-col pr-8">
               <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-24 text-left">
@@ -141,12 +129,6 @@ function IndexPage() {
         </section>
 
         <section className="container  mx-auto mr-3 mt-36 ">
-          {/*<h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-24 text-center">
-            {t('How much could your company save with DeWocracy?')}
-          </h2>
-          <SavingsCalculator />
-
-          */}
           <div className="flex">
             <div className="w-3/5 flex flex-col pr-8">
               <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-24 text-left">
@@ -184,12 +166,6 @@ function IndexPage() {
         </section>
 
         <section className="container  mx-auto mr-3 mt-36 ">
-          {/*<h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-24 text-center">
-            {t('How much could your company save with DeWocracy?')}
-          </h2>
-          <SavingsCalculator />
-
-          */}
           <div className=" flex flex-col pr-8">
             <h2 className="font-bold text-primary-800	 text-4xl pb-2 md:pb-8 pt-24 text-center">
               {t('title_reports')}
@@ -219,215 +195,16 @@ function IndexPage() {
         </section>
 
 
-        {/*<section className="container mx-auto">
-          <div className="relative md:table">
-            <figure className="absolute top-96 lg:top-56 -left-72">
-              <Image
-                id="arrow-loop-svg"
-                src="/images/arrow-loop.lsv"
-                alt="Arrow Loop"
-                width="550px"
-                height="550px"
-              />
-            </figure>
-            <h2 className="font-medium text-2xl pt-12 md:pt-36 pb-10">
-              {t('We help you transition')}
-            </h2>
-            <div className="grid gap-y-4 lg:gap-10 lg:grid-cols-12 lg:w-9/12 float-right">
-              <div
-                data-sal="flip-up"
-                data-sal-delay="500"
-                data-sal-easing="ease"
-                className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center col-span-12 lg:col-span-10"
-              >
-                <div className="flex">
-                  <div className="mr-4 text-primary">
-                    <FontAwesomeIcon
-                      icon={faChartBar}
-                      className="text-primary mr-4"
-                      size="3x"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-medium text-lg pb-4">
-                    {t('Understand your needs')}
-                  </h3>
-                  <p>
-                    {t('We give you the tools')}
-                  </p>
-                </div>
-              </div>
-              <div
-                data-sal="flip-up"
-                data-sal-delay="500"
-                data-sal-easing="ease"
-                className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center lg:col-start-2 col-span-12 lg:col-span-10"
-              >
-                <div className="flex">
-                  <div className="mr-4 text-primary">
-                    <FontAwesomeIcon
-                      icon={faSearch}
-                      className="text-primary mr-2 lg:mr-4"
-                      size="3x"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-medium text-lg pb-4">
-                    {t('Find your space')}
-                  </h3>
-                  <p>
-                    {t('We use the data')}
-                  </p>
-                </div>
-              </div>
-              <div
-                data-sal="flip-up"
-                data-sal-delay="500"
-                data-sal-easing="ease"
-                className="bg-white bg-opacity-70 z-10 p-6 shadow-lg rounded-lg flex justify-between items-center col-span-12 lg:col-span-10"
-              >
-                <div className="flex">
-                  <div className="mr-4 text-primary">
-                    <FontAwesomeIcon
-                      icon={faPeopleArrows}
-                      className="text-primary mr-4"
-                      size="3x"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-medium text-lg pb-4">
-                    {t('Manage remote work')}
-                  </h3>
-                  <p>
-                    {t('Implement your strategy')}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="container mx-auto grid lg:grid-cols-2 pt-16 lg:pt-32">
-          <div data-sal="slide-right" data-sal-easing="ease">
-            <figure className="w-auto mt-12 lg:mt-0">
 
-            </figure>
-          </div>
-          <div
-            data-sal="slide-left"
-            data-sal-easing="ease"
-            className="grid justify-center content-start"
-          >
-            <h2 className="font-medium text-2xl py-10 pb-5 text-center">
-              {t('Web app for the company')}
-            </h2>
-            <div>
-              <ul className="grid gap-6">
-                <li className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faCheckCircle}
-                    className="text-primary mr-4"
-                  />
-                  {t('Real-time monitoring of your companys remote/in-office work breakdown.')}
-                </li>
-                <li className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faCheckCircle}
-                    className="text-primary mr-4"
-                  />
-                  {t('Office occupancy rate analysis.')}
-                </li>
-                <li className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faCheckCircle}
-                    className="text-primary mr-4"
-                  />
-                  {t('Unused space cost.')}
-                </li>
-                <li className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faCheckCircle}
-                    className="text-primary mr-4"
-                  />
-                  {t('Digital clock-in, absence and holidays management.')}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section className="container mx-auto grid flex-col-reverse lg:grid-cols-2 pt-16 lg:pt-16">
-          <div
-            data-sal="slide-right"
-            className="grid justify-center content-center"
-          >
-            <h2 className="font-medium text-2xl py-10 pb-5 text-center">
-              {t('Mobile app for the employee')}
-            </h2>
-            <div>
-              <ul className="grid gap-6">
-                <li className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faCheckCircle}
-                    className="text-primary mr-4"
-                  />
-                  {t('Office and remote work booking.')}
-                </li>
-                <li className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faCheckCircle}
-                    className="text-primary mr-4"
-                  />
-                  {t('Management of custom work spaces.')}
-                </li>
-                <li className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faCheckCircle}
-                    className="text-primary mr-4"
-                  />
-                  {t('Digital clock-in, absences and holidays request.')}
-                </li>
-                <li className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faCheckCircle}
-                    className="text-primary mr-4"
-                  />
-                  {t('Historical data of workplace habits.')}
-                </li>
-              </ul>
-            </div>
-          </div>
-
-        </section> */}
       </div>
 
 
-      <section className="container   mr-3 text-primary-800  bg-purple-800 mx-auto shadow-2xl rounded-2xl lg:px-32">
-        <h2 className="font-medium text-center pt-24 font-bold text-5xl pb-24">
-          {t('CHOOSE_A_PLAN')}
-        </h2>
+      <section id="pricing" className="container pb-12  mr-3 text-primary-800  bg-purple-800 mx-auto shadow-2xl rounded-2xl lg:px-32">
+
         <PaymentsPlans />
       </section>
 
-      <section
-        id="contact"
-        className="container bg-yellow-100 mt-32 mb-20 mr-6 text-primary-800 shadow-2xl  rounded-2xl  self-center pt-24"
-      >
-        <h2 className="font-bold text-primary-800 text-2xl lg:text-6xl text-center py-16 lg:pt-24">
-          {t('Interested? Contact us!')}
-        </h2>
-        <p className="pb-5 text-center text-primary-800">
-          {t('You can')}{" "}
-          <OutboundLink eventProperties={{ location: "form description" }}
-
-            href="https://calendly.com/dewocracylabs/dewocracy-demo"
-            className="font-bold"
-          >
-            {t('request a video call')}
-          </OutboundLink>{" "}
-          {t('CONTACT_FORM_TEXT_2')}
-        </p>
+      <section id="contact" className="container bg-yellow-100 mt-32 mb-20 mr-6 text-primary-800 shadow-2xl  rounded-2xl  self-center pt-24">
         <ContactForm />
       </section>
     </Layout>
