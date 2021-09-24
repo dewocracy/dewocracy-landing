@@ -13,7 +13,7 @@ export const ContactForm = () => {
 
   return (
     <>
-      <h2 className="font-bold text-primary-800 text-2xl lg:text-6xl text-center py-16 lg:pt-24">
+      <h2 className="font-bold text-primary-800 text-2xl md:text-4xl lg:text-6xl text-center py-16 lg:pt-24">
         {t('title')}
       </h2>
       <p key="description" className="pb-5 text-center text-primary-800">

@@ -40,12 +40,12 @@ export const PaymentsPlans = () => {
           {Object.entries(plans).map(([key, { text }]) => (
             <Fragment key={key}>
               {key === plan ? (
-                <p className="btn h-16 px-8 pt-4 text-white bg-primary-800 font-bold text-lg rounded-lg  text-center">
+                <p className="btn  px-8 py-4 inline-flex items-center	 text-white bg-primary-800 font-bold text-lg rounded-lg  ">
                   {t(text)}
                 </p>
               ) : (
                 <button
-                    className="btn h-16 px-8  text-white shadow-2xl text-lg text-white text-primary-800 rounded-lg  bg-white"
+                    className="btn  px-8 py-4 inline-flex items-center	  text-white shadow-2xl text-lg font-bold text-white text-primary-800 rounded-lg  bg-white"
                   onClick={changePlan}
                 >
                   {t(text)}

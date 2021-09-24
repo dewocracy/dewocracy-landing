@@ -35,11 +35,11 @@ export const Footer = () => {
 
 
   return (
-    <footer className="w-full bg-purple-800 rounded-2xl mt-16 bg-fixed py-10 px-8 md:px-0">
+    <footer className="lg:w-full bg-purple-800 rounded-2xl mt-16 bg-fixed py-10 px-8 md:px-4">
       <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4 justify-center lg:justify-between md:gap-y-8">
         <div className="flex justify-center lg:justify-start lg:items-end">
           <a href="/" title="DeWocracy home">
-            <img width="120px" height="120px" src="/images/dw-blue.png" alt="" />
+            <img className="rounded-2xl" width="120px" height="120px" src="/images/dw-blue.png" alt="" />
           </a>
         </div>
         <div className="grid justify-center gap-y-4 text-primary  text-center">

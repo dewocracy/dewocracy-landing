@@ -98,10 +98,10 @@ function Header() {
         aria-label="Go to home"
       ><a>
         <figure
-            className={`flex items-center text-black hover:text-primary-400 transition-colors duration-150 ${isExpanded ? `hidden` : `block`
+            className={`w-32 md:w-40	 flex items-center text-black hover:text-primary-400 transition-colors duration-150 ${isExpanded ? `hidden` : `block`
             }`}
         >
-            <img width="150px" height="150px" src="/images/dw-blue.png" alt="DeWocracy logo" />
+            <img src="/images/dw-blue.png" alt="DeWocracy logo" />
         </figure>
         </a>
       </Link>
@@ -114,7 +114,7 @@ function Header() {
         <ResourceDropdown title={t('resources')} theme="navbar">
           <div className="flex flex-col p-2 mr-4">
 
-            <Link href="/"
+            <Link href="/calculator"
               key="Calculator"
               className={`  block p-4 pl-6 mb-4 hover:underline 
                 }`}
@@ -148,7 +148,7 @@ function Header() {
         </OutboundLink>
         <OutboundLink
           eventType="signup" eventProperties={{ plan: "free", location: "top navbar" }}
-          className="shadow-2xl  h-16 bg-primary-800 hover:bg-primary-400 text-white px-6 pt-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline "
+          className="shadow-2xl  h-16 bg-primary-800 hover:bg-primary-400 text-white px-6 pt-1 lg:pt-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline "
 
           href="https://app.dewocracy.com/register/free"
         >

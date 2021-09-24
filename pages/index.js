@@ -15,7 +15,7 @@ function IndexPage() {
     <Layout>
       <SEO title="DeWocracy - Remote Work | Work from anywhere" />
       <div style={{ backgroundImage: "url('/images/background.png')" }}
-        className="w-full bg-yellow-100 bg-no-repeat	bg-cover	  rounded-2xl"
+        className="lg:w-full bg-yellow-100 bg-no-repeat	bg-cover mx-4 lg:mx-0	  rounded-2xl"
 
 
       >
@@ -33,12 +33,12 @@ function IndexPage() {
                 <OutboundLink
                   eventType="signup" eventProperties={{ plan: "free", location: "home button" }}
 
-                  className="shadow-2xl  h-16 hover:bg-primary-800  hover:text-white bg-white text-primary-800 px-6 pt-4 font-semibold  text-xl  transition-colors duration-150  rounded-lg focus:shadow-outline" href="#pricing">
+                  className="shadow-2xl mt-2 md:mt-0  h-16 hover:bg-primary-800  hover:text-white bg-white text-primary-800 px-6 pt-4 font-semibold  text-xl  transition-colors duration-150  rounded-lg focus:shadow-outline" href="#pricing">
                   {t('Sign up for free')}
                 </OutboundLink>
                 <OutboundLink
                   eventProperties={{ location: "home button" }}
-                  className="shadow-2xl  h-16 hover:bg-primary-400 font-semibold	 bg-primary-800 text-white px-6 pt-4  text-xl  transition-colors duration-150  rounded-lg focus:shadow-outline"
+                  className="shadow-2xl sm:ml-4 md:ml-0 mt-2 md:mt-0  h-16 hover:bg-primary-400 font-semibold	 bg-primary-800 text-white px-6 pt-4  text-xl  transition-colors duration-150  rounded-lg focus:shadow-outline"
                   href="https://calendly.com/dewocracylabs/dewocracy-demo"
                 >
                   {t('Request demo')}
@@ -55,9 +55,9 @@ function IndexPage() {
 
       <div className="w-full py-16 lg:py-32">
         <section className="container  mx-auto mr-3 ">
-          <div className="flex">
-            <div className="w-3/5 flex flex-col pr-8">
-              <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-24 text-left">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-3/5 flex flex-col md:pr-8">
+              <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-12 lg:pt-24 text-left">
                 {t('title_hotdesking')}
               </h2>
 
@@ -73,14 +73,14 @@ function IndexPage() {
                 </Link>
               </div>
               <div className="mt-12">
-                <Link href="/" >
+                <Link href="https://calendly.com/dewocracylabs/dewocracy-demo" >
                   <a className="shadow-2xl mt-4    bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline ">
                     {t('hotdesking_button')}
                   </a>
                 </Link>
               </div>
             </div>
-            <div className="w-2/5 ml-20">
+            <div className="mt-8 md:mt-0 md:w-2/5 ml-2 lg:ml-20">
               <img
                 src="/images/desk_booking_home.png"
               />
@@ -91,15 +91,15 @@ function IndexPage() {
         </section>
         <section className="container  mx-auto mr-3 mt-24">
 
-          <div className="flex">
-            <div className="w-2/5">
+          <div className="flex flex-col-reverse md:flex-row">
+            <div className="md:w-2/5">
               <img
                 src="/images/remote_office_home.png"
 
               />
             </div>
-            <div className="ml-32 mt-12 w-3/5 flex flex-col pr-8">
-              <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-8 text-left">
+            <div className="md:ml-12 lg:ml-32 mt-12 md:w-3/5 flex flex-col pr-8">
+              <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 lg:pt-8 text-left">
                 {t('title_neighbourhoods')}
               </h2>
 
@@ -129,9 +129,9 @@ function IndexPage() {
         </section>
 
         <section className="container  mx-auto mr-3 mt-36 ">
-          <div className="flex">
-            <div className="w-3/5 flex flex-col pr-8">
-              <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-24 text-left">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-3/5 flex flex-col pr-8">
+              <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-4 lg:pt-24 text-left">
                 {t('title_manage')}
               </h2>
 
@@ -154,7 +154,7 @@ function IndexPage() {
                 </Link>
               </div>
             </div>
-            <div className="w-3/5 ml-10  ">
+            <div className="mt-12 md:mt-0md:w-3/5 ml-2 lg:ml-10  ">
               <img
                 src="/images/manage_home.png"
 
@@ -199,12 +199,12 @@ function IndexPage() {
       </div>
 
 
-      <section id="pricing" className="container pb-12  mr-3 text-primary-800  bg-purple-800 mx-auto shadow-2xl rounded-2xl lg:px-32">
+      <section id="pricing" className="container pb-12  lg:mr-3 text-primary-800  bg-purple-800 mx-auto shadow-2xl rounded-2xl lg:px-32">
 
         <PaymentsPlans />
       </section>
 
-      <section id="contact" className="container bg-yellow-100 mt-32 mb-20 mr-6 text-primary-800 shadow-2xl  rounded-2xl  self-center pt-24">
+      <section id="contact" className=" md:ml-4 md:ml-12 lg:ml-0 container bg-yellow-100 mt-32 mb-20 lg:mr-3 text-primary-800 md:shadow-2xl  md:rounded-2xl  self-center pt-24">
         <ContactForm />
       </section>
     </Layout>
