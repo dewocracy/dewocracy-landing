@@ -8,11 +8,11 @@ import { OutboundLink } from "../utils/OutboundLink";
 import { useTranslations } from 'next-intl';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-
+import { ResourceDropdown } from "./resourcesDropdown"
 
 function Header() {
   const [isExpanded, toggleExpansion] = React.useState(false);
-  const t = useTranslations("Default")
+  const t = useTranslations("navigation")
   const { locale, locales } = useRouter()
 
   const handleClickSubmenu = useCallback(() => toggleExpansion(!isExpanded));
@@ -42,26 +42,20 @@ function Header() {
           className={`${isExpanded ? `block` : `hidden`
             } md:items-center w-full md:w-auto text-primary`}
         >
-          <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
-            className="block pb-2 pt-4 hover:underline"
-            href="https://calendly.com/dewocracylabs/dewocracy-demo"
-            onClick={handleClickSubmenu}
-          >
-            {t('Demo')}
-          </OutboundLink>
+
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
             className="block py-2 hover:underline"
             href="#pricing"
             onClick={handleClickSubmenu}
           >
-            {t('Pricing')}
+            {t('pricing')}
           </OutboundLink>
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
             className="block py-2 hover:underline"
             href="https://app.dewocracy.com/"
             onClick={handleClickSubmenu}
           >
-            {t('Access')}
+            {t('access')}
           </OutboundLink>
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
 
@@ -69,7 +63,7 @@ function Header() {
             href="https://app.dewocracy.com/register/free"
             onClick={handleClickSubmenu}
           >
-            {t('Sign up for free')}
+            {t('sign_up')}
           </OutboundLink>
           <OutboundLink
             eventProperties={{ location: "top navbar", device: "mobile" }}
@@ -114,23 +108,31 @@ function Header() {
       <nav className="hidden md:inline-flex flex justify-center md:justify-end gap-4 text-primary text-sm">
         <OutboundLink
           eventProperties={{ location: "top navbar" }}
-          className="block mt-2 text-xl font-medium	 p-2 px-6 text-black hover:text-primary-400 transition-colors duration-150"
-          href="https://calendly.com/dewocracylabs/dewocracy-demo"
-        >
-          {t('Demo')}
+          className="block mt-2 font-medium 	 text-xl p-2 px-6 text-black hover:text-primary-400 transition-colors duration-150" href="#pricing">
+          {t('pricing')}
         </OutboundLink>
+        <ResourceDropdown title={t('resources')} theme="navbar">
+          <div className="flex flex-col p-2 mr-4">
+
+            <Link href="/"
+              key="Calculator"
+              className={`  block p-4 pl-6 mb-4 hover:underline 
+                }`}
+              role="menuitem"
+            ><a className={`mt-1  hover:text-primary-400`}>{t('calculator')}</a>
+            </Link>
+
+          </div>
+        </ResourceDropdown>
+
         <OutboundLink eventType="accessApp"
           eventProperties={{ location: "top navbar" }}
           className=" text-xl mt-2 block py-2 font-medium	 text-black hover:text-primary-400 transition-colors duration-150"
           href="https://app.dewocracy.com/"
         >
-          {t('Access')}
+          {t('access')}
         </OutboundLink>
-        <OutboundLink
-          eventProperties={{ location: "top navbar" }}
-          className="block mt-2 font-medium 	 text-xl p-2 px-6 text-black hover:text-primary-400 transition-colors duration-150" href="#pricing">
-          {t('Pricing')}
-        </OutboundLink>
+
         <OutboundLink eventType="signup" eventProperties={{ location: "top navbar" }}
 
           href="https://wa.me/message/NULJD4OWUB3CA1"
@@ -150,10 +152,10 @@ function Header() {
 
           href="https://app.dewocracy.com/register/free"
         >
-          {t('Sign up for free')}
+          {t('sign_up')}
         </OutboundLink>
-        <Dropdown title={t(locale)} theme="navbar">
-          <div className="flex flex-col p-2 mt">
+        <Dropdown isLocaleDropDown={true} title={t(locale)} theme="navbar">
+          <div className="flex flex-col p-2">
             {locales.map((lng, key) => (
               <Link href="/"
               key={key}
