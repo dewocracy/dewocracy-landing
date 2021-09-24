@@ -1,6 +1,8 @@
 {
   "404": {
-    "not_found": "No hem pogut trobar la pàgina."
+    "not_found": "No hem pogut trobar la pàgina.",
+    "back_to_home": "Tornar al inici"
+
   },
 
   "payment_plans": {
@@ -36,13 +38,15 @@
     "email_label": "Email",
     "message": "",
     "email_placeholder": "michaelwazowski@monstruos-sa.com",
-    "company_placeholder": "Monstruos, S.A."
+    "company_placeholder": "Monstruos, S.A.",
+    "thanks": "Thanks for contacting us! We will get in touch with you shortly",
+    "back_to_home": "Tornar al inici"
   },
 
   "Calculator": {
     "title": "¿Cuánto podría ahorrar tu empresa con DeWocracy?",
     "employees_text": "¿Cuántos empleados tiene tu empresa?",
-    "employess_placeholder": "",
+    "employees_placeholder": "Empleados",
     "square_meters_text": "¿Cuántos empleados tiene tu empresa?",
     "square_meters_placeholder": "¿Cuántos empleados tiene tu empresa?",
 

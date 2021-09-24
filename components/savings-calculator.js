@@ -214,7 +214,7 @@ export const SavingsCalculator = () => {
             min={1}
             name="employees"
             required
-            placeholder={t("Employees")}
+            placeholder={t("employees_placeholder")}
             className="rounded-lg text-black py-6 px-4 h-10 mb-8 w-full text-center bg-opacity-25 "
             onChange={handleEmployeesChange}
             value={employees}
