@@ -3,5 +3,7 @@ module.exports = {
         locales: ['en', 'es', 'ca'],
         defaultLocale: 'es',
     },
+    distDir: 'build',
+
 }
 
