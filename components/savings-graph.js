@@ -1,9 +1,9 @@
 import * as React from "react";
 import { BarPropTypes, ResponsiveBar } from "@nivo/bar";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslations } from 'next-intl';
 
 export const SavingsGraph = ({ data }) => {
-  const { t } = useTranslation();
+  const t = useTranslations("Default");
   return (
     <ResponsiveBar
       data={data}
@@ -13,8 +13,7 @@ export const SavingsGraph = ({ data }) => {
       padding={0.5}
       valueScale={{ type: "linear" }}
       indexScale={{ type: "band", round: true }}
-      colors={["#78A5FF", "#2945FF", "#ffbebe"]}
-      borderColor={{ from: "color", modifiers: [["darker", 1.6]] }}
+      colors={["#1e3a8a", "#00635D", "#E9D758"]}
       axisTop={null}
       axisRight={null}
       axisLeft={{
@@ -36,7 +35,7 @@ export const SavingsGraph = ({ data }) => {
       }
       labelSkipWidth={12}
       labelSkipHeight={12}
-      labelTextColor={{ from: "color", modifiers: [["brighter", 2]] }}
+      labelTextColor="white"
       legends={[
         {
           dataFrom: "keys",

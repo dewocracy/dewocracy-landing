@@ -1,5 +1,5 @@
 import React, { Fragment, useCallback, useEffect, useState } from "react";
-import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslations } from 'next-intl';
 import { SavingsGraph } from "./savings-graph";
 import { useDebounce } from "../hooks/use-debounce";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -58,7 +58,7 @@ const getDWCost = (employees) => {
 };
 
 export const SavingsCalculator = () => {
-  const { t } = useTranslation();
+  const t = useTranslations("Default");
 
   const [employees, setEmployees, { signal: employeesSignal }] = useDebounce(
     DEFAULTS.EMPLOYEES
@@ -204,9 +204,9 @@ export const SavingsCalculator = () => {
   return (
     <Fragment>
       <div className="md:grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-24 ">
-        <div className="grid content-start justify-center md:mt-10 shadow-xl rounded-lg p-10">
-          <label htmlFor="employees" className="font-bold pr-4 pb-4">
-            <Trans>How many employees does your company have?</Trans>
+        <div className="grid text-primary-800 content-start justify-center md:mt-10   p-10">
+          <label htmlFor="employees" className="font-bold pr-4 pb-4 text-2xl text-center">
+            {t('How many employees does your company have?')}
           </label>
           <input
             id="employees"
@@ -215,15 +215,12 @@ export const SavingsCalculator = () => {
             name="employees"
             required
             placeholder={t("Employees")}
-            className="rounded-lg text-black py-6 px-4 h-10 w-full text-center border border-grey"
+            className="rounded-lg text-black py-6 px-4 h-10 mb-8 w-full text-center bg-opacity-25 "
             onChange={handleEmployeesChange}
             value={employees}
           />
-          <label htmlFor="sizeOffice" className="font-bold pr-4 pt-10 pb-4">
-            <Trans>
-              How many square meters of office space do you currently have?
-              (sqm)
-            </Trans>
+          <label htmlFor="sizeOffice" className="font-bold pr-4 pt-10 pb-4 text-2xl text-center">
+            {t('How many square meters')}
           </label>
           <input
             id="sizeOffice"
@@ -231,42 +228,39 @@ export const SavingsCalculator = () => {
             name="sizeOffice"
             required
             placeholder={t("office square metres")}
-            className="rounded-lg text-black py-6 px-4 h-10 w-full text-center border border-grey"
+            className="rounded-lg text-black py-6 px-4 mb-8 h-10 w-full text-center "
             onChange={handleSizeOfficeChange}
             value={officeSize}
             max={10000}
           />
-          <label htmlFor="target" className="font-bold pr-4 pt-10 pb-4">
-            <Trans>
-              What{"'"}s the percentage of remote work you would like to
-              implement? (%)
-            </Trans>
+          <label htmlFor="target" className="font-bold pr-4 pt-10 pb-4 text-2xl text-center">
+            {t('What is the percentage')}
           </label>
           <input
             id="target"
             type="number"
             name="target"
             required
-            className="rounded-lg text-black py-6 px-4 h-10 w-full text-center border border-grey"
+            className="rounded-lg text-black py-6 mb-8 px-4 h-10 w-full text-center "
             onChange={handleTargetChange}
             value={target}
           />
-          <p className="text-center pt-10">
-            <Trans>How do we calculate it?</Trans>
+          <p className="text-center text-2xl font-bold text-primary-800 pt-10">
+            {t('How do we calculate it?')}
             <br />
           </p>
-          <p className="text-center pt-4">
+          <p className="text-center pt-12">
             <OutboundLink
               eventType={"accessed contact form"} eventProperties={{ location: "plans" }}
-              href="#contact" className="text-primary underline">
-              <Trans>Contact us</Trans>
+              href="#contact" className="shadow-2xl   bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-xl  transition-colors duration-150  rounded-lg focus:shadow-outline">
+              {t('Contact us')}
             </OutboundLink>
           </p>
         </div>
         <div
           data-sal="slide-bottom"
           data-sal-easing="easeInQuad"
-          className="col-span-2 shadow-xl rounded-lg p-y-10 lg:p-10"
+          className="col-span-2  rounded-lg p-y-10 lg:p-10"
         >
           <div className="w-full h-96 lg:h-4/6">
             <SavingsGraph
@@ -289,11 +283,11 @@ export const SavingsCalculator = () => {
               ]}
             />
           </div>
-          <div className="mt-10 grid justify-center">
+          <div className="mt-10 grid text-primary-800 justify-center">
             {showData ? (
               <>
-                <p className="my-4">
-                  <Trans>With DeWocracy you could save up to...</Trans>
+                <p className="my-4 font-bold text-2xl">
+                  {t('With DeWocracy you could save up to...')}
                 </p>
                 <div className="pb-10 w-auto">
                   <div className="mt-2 text-lg lg:text-2xl">
@@ -309,7 +303,7 @@ export const SavingsCalculator = () => {
                           currency: "EUR",
                         })} `}
                     </span>
-                    <Trans>monthly</Trans>
+                    {t('monthly')}
                   </div>
                   <p className="mt-2 text-lg lg:text-2xl">
                     <FontAwesomeIcon
@@ -324,7 +318,7 @@ export const SavingsCalculator = () => {
                           currency: "EUR",
                         })} `}
                     </span>
-                    <Trans>annually</Trans>
+                    {t('annually')}
                   </p>
                   <p className="mt-2 text-lg lg:text-2xl">
                     <FontAwesomeIcon
@@ -339,7 +333,7 @@ export const SavingsCalculator = () => {
                           maximumFractionDigits: 2,
                         })} `}
                     </span>
-                    <Trans>saving</Trans>
+                    {t('saving')}
                   </p>
                 </div>
               </>

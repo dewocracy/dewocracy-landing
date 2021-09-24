@@ -1,32 +1,30 @@
-import {
-  Link,
-  useI18next,
-  useTranslation,
-  Trans,
-} from "gatsby-plugin-react-i18next";
+
 import React, { useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import dwBlue from "./../images/dewocracy-blue.svg";
 import { Dropdown } from "./dropdown";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { OutboundLink } from "../utils/OutboundLink";
+import { useTranslations } from 'next-intl';
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 
 function Header() {
   const [isExpanded, toggleExpansion] = React.useState(false);
-  const { languages, language, originalPath } = useI18next();
-  const { t } = useTranslation();
+  const t = useTranslations("Default")
+  const { locale, locales } = useRouter()
+
   const handleClickSubmenu = useCallback(() => toggleExpansion(!isExpanded));
 
   return (
     <header
       id="header"
-      className="grid grid-cols-3 md:flex items-center justify-center md:justify-between content-start pl-0 md:px-8 py-4
-       md:py-6 w-screen bg-white h-18 sticky top-0 z-50 transition"
+      className="grid grid-cols-3 md:flex items-center justify-center md:justify-between content-start pl-0  py-4
+       md:py-6  bg-white h-18 sticky top-0 z-50 transition"
     >
 
-      <div className="pl-4">
+      <div className="pl-4 md:hidden ">
         <button
           aria-label="menu"
           aria-expanded={isExpanded}
@@ -49,21 +47,21 @@ function Header() {
             href="https://calendly.com/dewocracylabs/dewocracy-demo"
             onClick={handleClickSubmenu}
           >
-            <Trans>Demo</Trans>
+            {t('Demo')}
           </OutboundLink>
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
             className="block py-2 hover:underline"
             href="#pricing"
             onClick={handleClickSubmenu}
           >
-            <Trans>Pricing</Trans>
+            {t('Pricing')}
           </OutboundLink>
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
             className="block py-2 hover:underline"
             href="https://app.dewocracy.com/"
             onClick={handleClickSubmenu}
           >
-            <Trans>Access</Trans>
+            {t('Access')}
           </OutboundLink>
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
 
@@ -71,7 +69,7 @@ function Header() {
             href="https://app.dewocracy.com/register/free"
             onClick={handleClickSubmenu}
           >
-            <Trans>Sign up for free</Trans>
+            {t('Sign up for free')}
           </OutboundLink>
           <OutboundLink
             eventProperties={{ location: "top navbar", device: "mobile" }}
@@ -79,7 +77,7 @@ function Header() {
             rel="noreferrer noopener"
             target="_blank"
             title="Whatsapp"
-            className="block py-2"
+            className="block py-4"
           >
             <FontAwesomeIcon
               icon={faWhatsapp}
@@ -89,13 +87,11 @@ function Header() {
           </OutboundLink>
           <hr className="my-4 text-opacity-25 text-lightBlue" />
           <ul>
-            {languages.map(
+            {locales.map(
               (lng) =>
-                language !== lng && (
+                locale !== lng && (
                   <li key={lng} className="block mt-4 no-underline">
-                    <Link to={originalPath} language={lng}>
-                      {t(lng)}
-                    </Link>
+                    <Link href="/" locale={lng}><a>{t(lng)}</a></Link>
                   </li>
                 )
             )}
@@ -103,36 +99,37 @@ function Header() {
         </nav>
       </div>
       <Link
-        to="/"
-        className="md:order-first flex justify-center"
+        href="/"
+        className="md:order-first flex "
         aria-label="Go to home"
-      >
+      ><a>
         <figure
-          className={`flex items-center no-underline ${isExpanded ? `hidden` : `block`
+            className={`flex items-center text-black hover:text-primary-400 transition-colors duration-150 ${isExpanded ? `hidden` : `block`
             }`}
         >
-          <img width="150px" height="60px" src={dwBlue} alt="DeWocracy logo" />
+            <img width="150px" height="150px" src="/images/dw-blue.png" alt="DeWocracy logo" />
         </figure>
+        </a>
       </Link>
       <nav className="hidden md:inline-flex flex justify-center md:justify-end gap-4 text-primary text-sm">
         <OutboundLink
           eventProperties={{ location: "top navbar" }}
-          className="block p-2 hover:underline"
+          className="block mt-2 text-xl font-medium	 p-2 px-6 text-black hover:text-primary-400 transition-colors duration-150"
           href="https://calendly.com/dewocracylabs/dewocracy-demo"
         >
-          <Trans>Demo</Trans>
+          {t('Demo')}
         </OutboundLink>
         <OutboundLink eventType="accessApp"
           eventProperties={{ location: "top navbar" }}
-          className="block py-2 hover:underline"
+          className=" text-xl mt-2 block py-2 font-medium	 text-black hover:text-primary-400 transition-colors duration-150"
           href="https://app.dewocracy.com/"
         >
-          <Trans>Access</Trans>
+          {t('Access')}
         </OutboundLink>
         <OutboundLink
           eventProperties={{ location: "top navbar" }}
-          className="block p-2 hover:underline" href="#pricing">
-          <Trans>Pricing</Trans>
+          className="block mt-2 font-medium 	 text-xl p-2 px-6 text-black hover:text-primary-400 transition-colors duration-150" href="#pricing">
+          {t('Pricing')}
         </OutboundLink>
         <OutboundLink eventType="signup" eventProperties={{ location: "top navbar" }}
 
@@ -140,34 +137,34 @@ function Header() {
           rel="noreferrer noopener"
           target="_blank"
           title="Whatsapp"
-          className="block mt-1 px-2 text-2xl"
+          className="block mt-1 px-4 "
         >
           <FontAwesomeIcon
             icon={faWhatsapp}
-            className="text-primary text-2xl"
+            className="text-black  text-5xl 	 text-black hover:text-primary-400 transition-colors duration-150 text-4xl"
           />
         </OutboundLink>
         <OutboundLink
           eventType="signup" eventProperties={{ plan: "free", location: "top navbar" }}
+          className="shadow-2xl  h-16 bg-primary-800 hover:bg-primary-400 text-white px-6 pt-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline "
 
-          className="btn bg-primary text-white py-2 mx-6 leading-4"
           href="https://app.dewocracy.com/register/free"
         >
-          <Trans>Sign up for free</Trans>
+          {t('Sign up for free')}
         </OutboundLink>
-        <Dropdown title={t(language)} theme="navbar">
-          {languages.map((lang, key) => (
-            <Link
+        <Dropdown title={t(locale)} theme="navbar">
+          <div className="flex flex-col p-2 mt">
+            {locales.map((lng, key) => (
+              <Link href="/"
               key={key}
-              to={originalPath}
-              className={`block p-4 pl-6 hover:underline ${lang === language ? "underline" : ""
+                className={` uppercase block p-4 pl-6 mb-4 hover:underline ${lng === locale ? "underline" : ""
                 }`}
               role="menuitem"
-              language={lang}
-            >
-              {t(lang)}
+                locale={lng}
+              ><a className={` ${lng === locale ? "font-bold	" : ""} mt-1  hover:text-primary-400`}>{t(lng)}</a>
             </Link>
           ))}
+          </div>
         </Dropdown>
       </nav>
     </header>

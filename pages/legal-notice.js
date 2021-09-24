@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { Link } from "gatsby-plugin-react-i18next";
+import Link from "next/link";
 
 function LegalNotice() {
   return (
@@ -34,7 +34,7 @@ function LegalNotice() {
           </p>
           <h2>5. Cookies
           </h2>
-          <p>La información sobre el uso de las cookies en nuestro Sitio Web y Plataforma se encuentra disponible en la <Link to="/privacy-policy">Política de Cookies</Link>.
+          <p>La información sobre el uso de las cookies en nuestro Sitio Web y Plataforma se encuentra disponible en la <Link href="/privacy-policy">Política de Cookies</Link>.
           </p>
 <h2>6. Modificaciones</h2>
           <p>Cuando se modifiquen los Textos Legales (es decir, <Link to="/legal-notice">Aviso Legal</Link>, <Link to="/terms-and-conditions">Términos y Condiciones</Link>, <Link to="/privacy-policy">Política de Privacidad</Link> y <Link to="/cookies-policy">Política de Cookies</Link>), DeWocracy te notificará para que los cambios sean aceptados, con lo cual será aplicable el nuevo texto.

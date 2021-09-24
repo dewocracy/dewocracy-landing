@@ -1,12 +1,17 @@
 {
+  "404": {
+    "PAGE_NOT_FOUND": "No hem pogut trobar la pàgina."
+  },
+
+  "Default": {
   "Demo": "Demo",
   "Pricing": "Pricing",
   "Resources": "Resources",
   "en": "ENG",
   "es": "ESP",
   "ca": "CAT",
-  "Implement flexible remote work in your company.": "Implement flexible remote work in your company",
-  "Save thousands of euros optimizing your real estate footprint by switching to a hybrid strategy of in-office and remote work.": "Save thousands of euros optimizing your real estate footprint by switching to a hybrid strategy of in-office and remote work.",
+  "implement_flexible_remote_work": "Implement flexible remote work in your company",
+  "Save thousands of euros": "Save thousands of euros optimizing your real estate footprint by switching to a hybrid strategy of in-office and remote work.",
   "Sign up for free": "Sign up for free",
   "Request demo": "Request a demo",
   "How much could your company save with DeWocracy?": "How much could your company save with DeWocracy?",
@@ -41,7 +46,7 @@
   "Management of custom work spaces.": "Management of custom work spaces.",
   "Digital clock-in, absences and holidays request.": "Digital clock-in, absences and holidays request.",
   "Historical data of workplace habits.": "Historical data of workplace habits.",
-  "Choose a plan for your company.": "Choose a plan for your company.",
+  "CHOOSE_A_PLAN": "Choose a plan for your company.",
   "Seminnual - up to 28% discount": "Semiannual - up to 28% discount",
   "Monthly": "Monthly",
   "Free": "Free",
@@ -64,12 +69,12 @@
   "Interested? Contact us!": "Interested? Contact us!",
   "You can": "You can",
   "request a video call": "request a video call",
-  "at your convenience, contact us at info@dewocracy.com or send us a message via the contact form below.": "at your convenience, contact us at info@dewocracy.com or send us a message via the contact form below.",
-  "Name:": "Name:",
-  "Email:": "Email:",
-  "michaelwazowski@monstersinc.com": "michaelwazowski@monstersinc.com",
-  "Company:": "Company:",
-  "Monsters, Inc.": "Monsters, Inc.",
+  "CONTACT_FORM_TEXT_2": "at your convenience, contact us at info@dewocracy.com or send us a message via the contact form below.",
+  "Name:": "Name",
+  "Email:": "Email",
+  "FORM_SAMPLE_EMAIL": "michaelwazowski@monstersinc.com",
+  "Company:": "Company",
+  "FORM_SAMPLE_COMPANY": "Monsters, Inc.",
   "Message:": "Message",
   "Send message": "Send message",
   "Access web app (company)": "Access web app (company)",
@@ -90,4 +95,5 @@
   "Privacy policy": "Privacy policy",
   "Cookies policy": "Cookies policy",
   "Access": "Access"
+  }
 }

@@ -17,11 +17,11 @@ import { useCallback, useState } from "react";
 const themes = {
   default: {
     buttonClasses:
-      "inline-flex justify-center w-full rounded-md border border-grey shadow-sm px-4 py-2 bg-white text-sm font-medium hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500",
+      "uppercase inline-flex justify-center w-full rounded-md border border-grey shadow-sm px-4 py-2 bg-white text-sm font-medium hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500",
   },
   navbar: {
     buttonClasses:
-      "inline-flex justify-center w-full rounded-md px-4 py-2 text-sm text-primary hover:underline",
+      "uppercase text-lg text-greyBlue hover:text-primary-400  inline-flex justify-center w-full rounded-md px-4 py-2  text-primary ",
   },
 };
 export function Dropdown({ title, children, theme = "default" }) {
@@ -30,7 +30,7 @@ export function Dropdown({ title, children, theme = "default" }) {
     setIsOpen(!isOpen);
   }, [isOpen]);
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative mt-2 inline-block text-left">
       <div>
         <button
           type="button"
@@ -48,9 +48,9 @@ export function Dropdown({ title, children, theme = "default" }) {
       </div>
 
       {isOpen ? (
-        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+        <div className="uppercase text-lg origin-top-right absolute right-0 mt-4 w-36 rounded-md shadow-2xl bg-white ring-1 ring-black ring-opacity-5">
           <div
-            className="py-1"
+            className="pl-4 py-1"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="options-menu"

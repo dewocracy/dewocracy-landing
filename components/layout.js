@@ -9,12 +9,13 @@ function Layout({ children }) {
 
 
   return (
-    <div className="flex flex-col min-h-screen font-sans text-gray-900">
-      <ScrollArrow />
-      <Header />
-      <main className="overflow-x-hidden">{children}</main>
-      <Footer />
-
+    <div className="flex justify-center  min-h-screen font-sans text-gray-900	">
+      <div className="max-w-screen-2xl">
+        <ScrollArrow />
+        <Header />
+        <main className="overflow-x-hidden">{children}</main>
+        <Footer />
+      </div>
     </div>
   );
 }

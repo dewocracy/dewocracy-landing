@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { Link } from "gatsby-plugin-react-i18next";
+import Link from 'next/link'
 
 function CookiesPolicy() {
   return (
@@ -20,7 +20,7 @@ function CookiesPolicy() {
             mercantil española DEWOCRACY LABS, S.L. (en adelante, <span className="font-bold">“DeWocracy”</span>),
             así como tus derechos como usuario (en adelante, el <span className="font-bold">“Usuario”</span>) al
           </p>
-          <p>Esta Política de Cookies forma parte de nuestra <Link to="/privacy-policy">Política de Privacidad</Link>, así como de nuestro <Link to="/legal-notice">Aviso Legal</Link> y <Link to="/terms-and-conditions">Términos de Uso</Link>.</p>
+          <p>Esta Política de Cookies forma parte de nuestra <Link href="/privacy-policy">Política de Privacidad</Link>, así como de nuestro <Link to="/legal-notice">Aviso Legal</Link> y <Link href="/terms-and-conditions">Términos de Uso</Link>.</p>
 
           <h2>1. Introducción</h2>
           <p>
@@ -88,7 +88,7 @@ function CookiesPolicy() {
             </a></li>
           </ul>
           <h2>6. Contacto</h2>
-          <p>En caso de cualquier duda sobre nuestras cookies, el Usuario podrá ponerse en contacto con nosotros por correo electrónico a info@dewocracy.com, así como a la dirección indicada en el <Link to="/legal-notice">Aviso Legal</Link>, en cuyo caso trataremos sus datos para contestar a su petición o consulta según se detalla en nuestra <Link to="/privacy-policy">Política de Privacidad</Link>.
+          <p>En caso de cualquier duda sobre nuestras cookies, el Usuario podrá ponerse en contacto con nosotros por correo electrónico a info@dewocracy.com, así como a la dirección indicada en el <Link href="/legal-notice">Aviso Legal</Link>, en cuyo caso trataremos sus datos para contestar a su petición o consulta según se detalla en nuestra <Link href="/privacy-policy">Política de Privacidad</Link>.
           </p>
           <p>
             <span className="font-bold">Fecha de actualización</span>: 25 de febrero de 2021
