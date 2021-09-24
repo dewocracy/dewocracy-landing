@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { Link } from "gatsby-plugin-react-i18next";
+import Link from 'next/link'
 
 function PrivacyPolicy() {
   return (

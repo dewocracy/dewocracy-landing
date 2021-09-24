@@ -2,8 +2,12 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { useTranslations } from 'next-intl';
 
 function ContactPage() {
+
+  const t = useTranslations("Default");
+
   return (
     <Layout>
       <SEO title="Thanks for contacting us!" />

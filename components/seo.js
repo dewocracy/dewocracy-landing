@@ -1,14 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { useTranslations } from 'next-intl';
-function SEO({ description, lang, meta, keywords, title }) {
-  const t = useTranslations("Default");
+function SEO() {
 
-
-  const metaData = {}
-
-
-  const metaDescription = t(description);
 
   return (
     <> </>
