@@ -61,26 +61,28 @@
   },
 
   "Calculator": {
-    "title": "¿Cuánto podría ahorrar tu empresa con DeWocracy?",
-    "employees_text": "¿Cuántos empleados tiene tu empresa?",
+    "title": "Calculadora d'estalvi",
+
+    "sub_title": "¿Quant podria estalviar la teva empresa amb DeWocracy?"   ,
+    "employees_text": "¿Quant podria estalviar la teva empresa amb DeWocracy?",
     "employees_placeholder": "",
-    "square_meters_text": "¿Cuántos empleados tiene tu empresa?",
+    "square_meters_text": "Quants metres quadrats té la teva oficina actual? (m2)", 
     "square_meters_placeholder": "¿Cuántos empleados tiene tu empresa?",
 
-    "percentage_text": "¿Cuántos empleados tiene tu empresa?",
-    "calculation": "¿Cuántos empleados tiene tu empresa?",
-    "button_contact": "Contáctanos",
-    "cost_type_now": "Now",
-    "cost_type_dewocracy": "With DW",
-    "label_rent": "Alquiler",
-    "label_utilities": "Suministros",
+    "percentage_text": "Quin percentatge de teletreball voldries implementar? (%)",
+    "calculation": "¿Com ho calculem?",
+    "button_contact": "Contacta'ns",
+    "cost_type_now": "Ara",
+    "cost_type_dewocracy": "Cost DW",
+    "label_rent": "Lloguer",
+    "label_utilities": "Subministres",
     "label_dewocracy_cost": "Coste de DW",
-    "label_now": "Ahora",
-    "label_with_dw": "Con DW",
-    "saving_with_dw": "Con DeWocracy podrías ahorrar hasta...",
+    "label_now": "Ara",
+    "label_with_dw": "Amb DW",
+    "saving_with_dw": "Amb DeWocracy podries estalviar fins a...",
     "monthly": "al mes",
-    "annually": "al año",
-    "saving": "de ahorro"
+    "annually": "l'any",
+    "saving": "d'estalvi"
   },
 
   "Default": {

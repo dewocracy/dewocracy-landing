@@ -58,27 +58,28 @@
 
   "Calculator": {
     "title": "Savings calculator",
-    "sub_title": "¿Cuánto podría ahorrar tu empresa con DeWocracy?",
 
-    "employees_text": "¿Cuántos empleados tiene tu empresa?",
-    "employees_placeholder": "Empleados",
-    "square_meters_text": "¿Cuántos empleados tiene tu empresa?",
-    "square_meters_placeholder": "¿Cuántos empleados tiene tu empresa?",
+    "sub_title": "How much could your company save with DeWocracy?",
+    "employees_text": "How many employees does your company have?    ",
+    "employees_placeholder": "Employees",
+    "square_meters_text": "How many square meters of office space do you currently have? (sqm)",    
+    "square_meters_placeholder": "",
 
-    "percentage_text": "¿Cuántos empleados tiene tu empresa?",
-    "calculation": "¿Cuántos empleados tiene tu empresa?",
-    "button_contact": "Contáctanos",
+    "percentage_text": "What's the percentage of remote work you would like to implement? (%)",
+    "calculation": "How do we calculate it?",
+    "button_contact": "Contact us",
     "cost_type_now": "Now",
-    "cost_type_dewocracy": "With DW",
-    "label_rent": "Alquiler",
-    "label_utilities": "Suministros",
-    "label_dewocracy_cost": "Coste de DW",
-    "label_now": "Ahora",
-    "label_with_dw": "Con DW",
-    "saving_with_dw": "Con DeWocracy podrías ahorrar hasta...",
-    "monthly": "al mes",
-    "annually": "al año",
-    "saving": "de ahorro"
+    "cost_type_dewocracy": "DW cost",
+    "label_rent": "Rent",
+    "label_utilities": "Utilities",
+    "label_dewocracy_cost": "Cost DW",
+    "label_now": "Now",
+    "label_with_dw": "With DW",
+    "saving_with_dw": "With DeWocracy you could save up to...",
+    "monthly": "monthly",
+    "annually": "annually",
+    "saving": "saving"
+
   },
 
   "Default": {
