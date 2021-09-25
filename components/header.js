@@ -114,6 +114,12 @@ function Header() {
         <ResourceDropdown title={t('resources')} theme="navbar">
           <div className="flex flex-col p-2 mr-4">
 
+            <a rel="noreferrer noopener"
+              target="_blank"
+              href="//www.notion.so/DeWocracy-Help-50ccfd99c7ad4e6ea17a441a7a34ca9f"
+              className="mt-1  hover:text-primary-400">{t('help_page')}</a>
+
+
             <Link href="/calculator"
               key="Calculator"
               className={`  block p-4 pl-6 mb-4 hover:underline 
@@ -122,8 +128,23 @@ function Header() {
             ><a className={`mt-1  hover:text-primary-400`}>{t('calculator')}</a>
             </Link>
 
+            <a rel="noreferrer noopener"
+              target="_blank"
+
+              href="https://docs.google.com/spreadsheets/d/1QkhYLoNE2JAirZcBtYtTWsU-GZ7alpHrSMCPCsGar14/edit?usp=sharing"
+              className={`mt-1  hover:text-primary-400`}>{t('remotework_management_template')}</a>
+
+
+            <a rel="noreferrer noopener"
+              target="_blank"
+              href="https://survey.dewocracy.com/"
+              className="mt-1  hover:text-primary-400">{t('remotework_survey')}</a>
+
+
+
           </div>
         </ResourceDropdown>
+
 
         <OutboundLink eventType="accessApp"
           eventProperties={{ location: "top navbar" }}

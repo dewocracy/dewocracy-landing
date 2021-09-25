@@ -48,7 +48,7 @@ export function ResourceDropdown({ title, children, theme = "default" }) {
       </div>
 
       {isOpen ? (
-        <div className="min-w-xl text-xl origin-top-right absolute right-0 mt-4 pr-4 rounded-md shadow-2xl bg-white ring-1 ring-black ring-opacity-5">
+        <div className="w-60 text-xl origin-top-right absolute right-0 mt-4 pr-4 rounded-md shadow-2xl bg-white ring-1 ring-black ring-opacity-5">
           <div
             className="pl-4 py-1"
             role="menu"
