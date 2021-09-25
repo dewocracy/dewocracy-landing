@@ -199,12 +199,12 @@ function IndexPage() {
       </div>
 
 
-      <section id="pricing" className="container pb-12  lg:mr-3 text-primary-800  bg-purple-800 mx-auto shadow-2xl rounded-2xl lg:px-32">
+      <section id="pricing" className="container pb-12  lg:mr-3 text-primary-800  bg-purple-800 mx-auto  rounded-2xl lg:px-32">
 
         <PaymentsPlans />
       </section>
 
-      <section id="contact" className=" md:ml-4 md:ml-12 lg:ml-0 container bg-yellow-100 mt-32 mb-20 lg:mr-3 text-primary-800 md:shadow-2xl  md:rounded-2xl  self-center pt-24">
+      <section id="contact" className=" md:ml-4 md:ml-12 lg:ml-0 container bg-yellow-100 mt-32 mb-20 lg:mr-3 text-primary-800  md:rounded-2xl  self-center pt-24">
         <ContactForm />
       </section>
     </Layout>
