@@ -16,7 +16,7 @@ export const ContactForm = () => {
       <h2 className="font-bold text-primary-800 text-2xl md:text-4xl lg:text-6xl text-center py-16 lg:pt-24">
         {t('title')}
       </h2>
-      <p key="description" className="pb-5 text-center text-primary-800">
+      <p key="description" className="md:px-24 pb-5 mb-12 text-center text-2xl text-primary-800">
         {t.rich('description', {
           link: <OutboundLink eventProperties={{ location: "form description" }} href="https://calendly.com/dewocracylabs/dewocracy-demo" className="font-bold">
             {t('videocall_link')}
