@@ -5,13 +5,13 @@
     "resources": "Recursos",
     "pricing": "Preus",
     "sign_up": "Registra't gratis",
-    "calculator": "Calculadora",
-
+    "calculator": "Calculadora d'estalvi",
+    "help_page": " Pàgines d'ajuda",
+    "remotework_management_template": "Plantilla de gestió del teletreball",
+    "remotework_survey": "Qüestionari teletreball",
     "ca": "CAT",
     "en": "EN",
     "es": "ES"
-
-
   },
 
 
@@ -45,16 +45,16 @@
   },
 
   "contact_form": {
-    "title": "¿Te interesa? ¡Contáctanos!",
-    "videocall_link": "agendar una videollamada",
-    "description" : "Puedes {link} a la hora que más te convenga, contactarnos a info@dewocracy.com o escribirnos en el formulario de contacto.",
+    "title": "T'interessa? Contacta'ns!",
+    "videocall_link": "agendar una videotrucada",
+    "description" : "Pots {link}, contactar-nos a info@dewocracy.com o escriure'ns a través del formulari de contacte.",
     "company_label" : "Empresa",
-    "submit_button": "Enviar mensaje",
-    "name_label": "Nombre",
-    "email_label": "Email",
-    "message": "",
+    "submit_button": "Enviar missatge",
+    "name_label": "Nom",
+    "email_label": "Correu",
+    "message": "Missatge",
     "email_placeholder": "michaelwazowski@monstruos-sa.com",
-    "company_placeholder": "Monstruos, S.A.",
+    "company_placeholder": "Monstres, S.A.",
     "thanks": "Thanks for contacting us! We will get in touch with you shortly",
     "back_to_home": "Tornar al inici"
 
@@ -84,30 +84,31 @@
   },
 
   "Default": {
-    "title_hotdesking": "Hot desking, más fácil que nunca",
-    "description_hotdesking": "Reserva de escritorios de forma intuitiva a través de un mapa interactivo de tu oficina.",
+    "title_hotdesking": "Hot desking, més fàcil que mai",
+    "description_hotdesking": "Reserva d'escriptoris de forma intuitiva a través d'un mapa interactiu de la teva oficina.",
 
-    "more_about_hotdesking": "Quiero saber más sobre el hot desking",
-    "hotdesking_button": "Empieza ahora",
+    "more_about_hotdesking": "Vull saber-ne més sobre el hot desking",
+    "hotdesking_button": "Comença ara",
 
-    "title_neighbourhoods": "Organiza la oficina y las personas",
-    "description_neighbourhoods": "Crea vecindarios asignando grupos de escritorios a equipos o personas. Activa y desactiva escritorios según necesidad.",
+    "title_neighbourhoods": "Organitza la oficina i les persones",
+    "description_neighbourhoods": "Crea veïnats assignant grups d'escriptoris a equips o persones. Activa i desectiva escriptoris segons convingui.",
 
-    "more_about_neighbourhoods": "Cuéntame más sobre vecindarios y equipos",
-    "neighbourhoods_button": "Empieza ahora",
+    "more_about_neighbourhoods": "Dona'm més detalls sobre veïnats i equips",
+    "neighbourhoods_button": "Comença ara",
 
-    "title_manage": "Gestiona el teletrabajo de forma eficiente ",
-    "description_manage": "Establece límites de ocuación y teletrabajo. Gestiona el aforo y la presencialidad con un calendario dinámico de espacios.",
+    "title_manage": "Gestiona el teletreball de forma eficient",
+    "description_manage": "Estableix límits d'ocupació i teletreball. Gestiona l'aforament i la presencialitat amb un calendari dinàmic d'espais.",
 
-    "more_about_manage": "Quiero saber más sobre la gestión del teletrabajo",
-    "manage_button": "Regístrate gratis",
+    "more_about_manage": "Vull saber-ne més sobre la gestió del teletreball",
+    "manage_button": "Registra't gratis",
 
-    "title_reports": "La información es poder... Y dinero",
-    "description_reports": "Analiza la ocupación, el uso del espacio y los costes asociados. Obtén detalles a nivel de plantilla e individuo para asegurar el cumplimiento de la ley del teletrabajo. ",
+    "title_reports": "La informació és poder... I diners",
+    "description_reports": "Analitza la ocupació, l'ús de l'espai i els costos que s'en deriven. Obté detalls a nivell de plantilla i individu per a assegurar el compliment dela llei del teletreball.",
 
-    "more_about_reports": "Más detalles sobre analíticas y reportes",
+    "more_about_reports": "Més detalls sobre analítiques i informes",
 
     "implement_flexible_remote_work": "Implementa el teletreball flexible a la teva oficina.",
+   
     "Save thousands of euros": "és la primera eina exclusivament dissenyada per a gestionar una estratègiahíbrida de treball remot i presencial.",
     "Sign up for free": "Registra't gratis",
     "Request demo": "Demanar demo",
@@ -160,17 +161,7 @@
     "Start for free": "Comença gratis",
     "Start now": "Comença ara",
     "Explore": "Explora",
-    "Interested? Contact us!": "T'interessa? Contacta'ns!",
-    "You can": "Pots",
-    "request a video call": "agendar una videotrucada,",
-    "CONTACT_FORM_TEXT_2": "contactar-nos a info@dewocracy.com o escriure'ns a través del formulari de contacte.",
-    "Name:": "Nom:",
-    "Email:": "Correu:",
-    "FORM_SAMPLE_EMAIL": "michaelwazowski@monstersinc.com",
-    "Company:": "Empresa:",
-    "FORM_SAMPLE_COMPANY": "Monstres, S.A.",
-    "Message:": "Missatge",
-    "Send message": "Enviar missatge",
+
     "Access web app (company)": "Accedir a la web app (empresa)",
     "Download mobile app (employee)": "Descarregar app mòbil (treballador/a)",
     "Employees": "Employees",

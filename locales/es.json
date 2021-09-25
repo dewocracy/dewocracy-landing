@@ -12,12 +12,13 @@
     "resources": "Recursos",
     "pricing": "Precios",
     "sign_up": "Regístrate gratis",
-    "calculator": "Calculadora",
+    "calculator": "Calculadora de ahorro",
     "ca": "CAT",
     "en": "EN",
-    "es": "ES"
-
-
+    "es": "ES",
+    "help_page": "Páginas de ayuda",
+    "remotework_management_template": "Plantilla de gestión del teletrabajo",
+    "remotework_survey": "Cuestionario teletrabajo"
   },
 
   "payment_plans": {
