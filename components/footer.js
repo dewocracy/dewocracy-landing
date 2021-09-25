@@ -126,7 +126,7 @@ export const Footer = () => {
           </div>
         </div>
       </section>
-      <section className="lg:pt-10 lg:pr-28">
+      <section className="lg:pt-10 lg:pr-24">
         <ul className="flex justify-center lg:justify-end text-md gap-4 lg:gap-10">
           <li className="hover:text-primary-800">
             <Link href="/terms-and-conditions"><a>{t('Terms of service')}</a></Link>
