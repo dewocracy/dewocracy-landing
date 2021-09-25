@@ -15,7 +15,7 @@ function IndexPage() {
     <Layout>
       <SEO title="DeWocracy - Remote Work | Work from anywhere" />
       <div style={{ backgroundImage: "url('/images/background.png')" }}
-        className="lg:w-full bg-yellow-100 bg-no-repeat	bg-cover mx-4 lg:mx-0	  rounded-2xl"
+        className="lg:w-full bg-no-repeat	bg-cover mx-4 lg:mx-0	  rounded-2xl"
 
 
       >
