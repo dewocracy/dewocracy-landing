@@ -204,7 +204,7 @@ export const SavingsCalculator = () => {
   return (
     <Fragment>
       <div className="md:grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-24 ">
-        <div className="grid text-primary-800 content-start justify-center md:mt-10   p-10">
+        <div className="grid text-primary-800 content-start justify-center md:mt-10   xl:p-8">
           <label htmlFor="employees" className="font-bold pr-4 pb-4 text-2xl text-center">
             {t('employees_text')}
           </label>

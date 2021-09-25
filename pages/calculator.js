@@ -14,10 +14,12 @@ function Calculator() {
     return (
         <Layout>
             <SEO title="DeWocracy - Remote Work | Work from anywhere" />
+
+            <h1 className="font-bold text-primary-800 my-12	text-4xl text-center">{t('title')}</h1>
             <div className="w-full py-16 ">
-                <section className="container bg-purple-800 rounded-2xl  mx-auto mr-3 ">
-                    <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-24 text-center">
-                        {t('title')}
+                <section className="container pb-12 bg-purple-800 rounded-2xl  mx-auto mr-3 ">
+                    <h2 className="font-bold text-primary-800	text-3xl pb-2 md:pb-8 pt-24 text-center">
+                        {t('sub_title')}
                     </h2>
                     <SavingsCalculator />
 

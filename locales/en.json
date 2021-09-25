@@ -57,7 +57,9 @@
   },
 
   "Calculator": {
-    "title": "¿Cuánto podría ahorrar tu empresa con DeWocracy?",
+    "title": "Savings calculator",
+    "sub_title": "¿Cuánto podría ahorrar tu empresa con DeWocracy?",
+
     "employees_text": "¿Cuántos empleados tiene tu empresa?",
     "employees_placeholder": "Empleados",
     "square_meters_text": "¿Cuántos empleados tiene tu empresa?",
