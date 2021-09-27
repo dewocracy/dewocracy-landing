@@ -22,7 +22,7 @@ function IndexPage() {
         <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen py-10 lg:pb-40">
           <div className="grid content-center px-0 md:px-8 lg:px-0">
             <div className="md:mt-24 lg:mt-0">
-              <h1 className="text-4xl text-primary-800  lg:text-6xl font-medium font-bold leading-tight pb-4">
+              <h1 className="text-4xl text-primary-800  lg:text-6xl  font-bold leading-tight pb-4">
                 {t('implement_flexible_remote_work')}
               </h1>
               <p className="text-3xl text-primary-800 py-12">
@@ -140,7 +140,7 @@ function IndexPage() {
               </p>
 
               <div className="mt-4 text-xl  text-primary-800">
-                <Link href="/manage">
+                <Link href="/manage-remotework">
                   <a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
                     {t('more_about_manage')}
                   </a>
@@ -177,7 +177,7 @@ function IndexPage() {
               </p>
             </div>
             <div className="mt-8 mb-8 text-xl text-center  text-primary-800">
-              <Link href="/reports">
+              <Link href="/analytics">
                 <a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
                   {t('more_about_reports')}
                 </a>
@@ -204,7 +204,7 @@ function IndexPage() {
         <PaymentsPlans />
       </section>
 
-      <section id="contact" className=" md:ml-4 md:ml-12 lg:ml-0 container bg-yellow-100 mt-32 mb-20 lg:mr-3 text-primary-800  md:rounded-2xl  self-center pt-24">
+      <section id="contact" className="md:ml-12 lg:ml-0 container bg-yellow-100 mt-32 mb-20 lg:mr-3 text-primary-800  md:rounded-2xl  self-center pt-24">
         <ContactForm />
       </section>
     </Layout>
