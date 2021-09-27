@@ -21,7 +21,7 @@ const themes = {
   },
   navbar: {
     buttonClasses:
-      " text-xl hover:text-primary-400  inline-flex justify-center w-full rounded-md px-4 py-2  text-primary ",
+      " text-lg hover:text-primary-400  inline-flex justify-center w-full rounded-md px-4 py-2  text-primary ",
   },
 };
 export function ResourceDropdown({ title, children, theme = "default" }) {
@@ -30,7 +30,7 @@ export function ResourceDropdown({ title, children, theme = "default" }) {
     setIsOpen(!isOpen);
   }, [isOpen]);
   return (
-    <div className="relative mt-2 inline-block text-left mr-4">
+    <div className="relative mt-2 inline-block text-left">
       <div>
         <button
           type="button"
@@ -48,7 +48,7 @@ export function ResourceDropdown({ title, children, theme = "default" }) {
       </div>
 
       {isOpen ? (
-        <div className="w-60 text-xl origin-top-right absolute right-0 mt-4 pr-4 rounded-md shadow-2xl bg-white ring-1 ring-black ring-opacity-5">
+        <div className="w-60 text-lg origin-top-right absolute right-0 mt-4 pr-4 rounded-md shadow-2xl bg-white ring-1 ring-black ring-opacity-5">
           <div
             className="pl-4 py-1"
             role="menu"

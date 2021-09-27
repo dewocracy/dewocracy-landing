@@ -108,11 +108,11 @@ function Header() {
       <nav className="hidden md:inline-flex flex justify-center md:justify-end gap-4 text-primary text-sm">
         <OutboundLink
           eventProperties={{ location: "top navbar" }}
-          className="block mt-2 font-medium 	 text-xl p-2 px-6 text-black hover:text-primary-400 transition-colors duration-150" href="#pricing">
+          className="block mt-2 font-medium 	 text-lg p-2 px-2 text-black hover:text-primary-400 transition-colors duration-150" href="#pricing">
           {t('pricing')}
         </OutboundLink>
         <ResourceDropdown title={t('resources')} theme="navbar">
-          <div className="flex flex-col p-2 mr-4">
+          <div className="flex flex-col p-2 mr-2">
 
             <a rel="noreferrer noopener"
               target="_blank"
@@ -148,7 +148,7 @@ function Header() {
 
         <OutboundLink eventType="accessApp"
           eventProperties={{ location: "top navbar" }}
-          className=" text-xl mt-2 block py-2 font-medium	 text-black hover:text-primary-400 transition-colors duration-150"
+          className=" text-lg mt-2 block py-2 font-medium	 text-black hover:text-primary-400 transition-colors duration-150"
           href="https://app.dewocracy.com/"
         >
           {t('access')}
@@ -160,16 +160,16 @@ function Header() {
           rel="noreferrer noopener"
           target="_blank"
           title="Whatsapp"
-          className="block mt-1 px-4 "
+          className="block mt-3 px-4 "
         >
           <FontAwesomeIcon
             icon={faWhatsapp}
-            className="text-black  text-5xl 	 text-black hover:text-primary-400 transition-colors duration-150 text-4xl"
+            className="text-black  text-4xl 	 text-black hover:text-primary-400 transition-colors duration-150 text-4xl"
           />
         </OutboundLink>
         <OutboundLink
           eventType="signup" eventProperties={{ plan: "free", location: "top navbar" }}
-          className="shadow-2xl  h-16 bg-primary-800 hover:bg-primary-400 text-white px-6 pt-1 lg:pt-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline "
+          className="shadow-2xl  h-16 bg-primary-800 hover:bg-primary-400 text-white px-6 lg:pt-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline "
 
           href="https://app.dewocracy.com/register/free"
         >
