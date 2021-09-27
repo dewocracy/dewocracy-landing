@@ -19,9 +19,9 @@ function IndexPage() {
 
 
       >
-        <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen py-10 lg:pb-40">
+        <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen pl-10 pr-0 lg:pb-40">
           <div className="grid content-center px-0 md:px-8 lg:px-0">
-            <div className="md:mt-24 lg:mt-0">
+            <div className="md:mt-24 lg:mt-0 mb-36">
               <h1 className="text-4xl text-primary-800  lg:text-6xl  font-bold leading-tight pb-4">
                 {t('implement_flexible_remote_work')}
               </h1>
@@ -47,7 +47,8 @@ function IndexPage() {
             </div>
           </div>
           <div className="grid content-center px-0 md:px-8 lg:px-0">
-            <div className=" ml-20  ">
+            <div className="mt-80 w-200 max-w-3xl">
+              <img src="/images/home_mockup.png" alt="Screenshots of the Dewocracy Apps" />
             </div>
           </div>
         </section>
