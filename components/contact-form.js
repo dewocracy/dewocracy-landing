@@ -105,7 +105,7 @@ export const ContactForm = () => {
         <button
           aria-label="Send"
           type="submit"
-          className="shadow-2xl  h-16 bg-primary-800 hover:bg-primary-400 text-white px-6   text-2xl  transition-colors duration-150  rounded-lg focus:shadow-outlinet cursor-pointer w-full md:w-auto my-10"
+            className="shadow-2xl  h-16 bg-primary-800 hover:bg-primary-400 text-white px-6   text-xl  transition-colors duration-150  rounded-lg focus:shadow-outlinet cursor-pointer w-full md:w-auto my-10"
         >
             {t('submit_button')}
         </button>

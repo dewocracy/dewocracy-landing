@@ -65,9 +65,9 @@ function IndexPage() {
                 {t('description_hotdesking')}
               </p>
 
-              <div className="mt-4 text-xl font-semibold text-primary-800">
+              <div className="	mt-4 text-xl text-primary-800">
                 <Link href="/desk-booking">
-                  <a>
+                  <a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
                     {t('more_about_hotdesking')}
                   </a>
                 </Link>
@@ -107,16 +107,16 @@ function IndexPage() {
                 {t('description_neighbourhoods')}
               </p>
 
-              <div className="mt-4 font-semibold text-xl text-primary-800">
+              <div className="mt-4  text-xl text-primary-800">
                 <Link href="/neighbourhoods">
-                  <a>
+                  <a className="border-b-2 pb-1 hover:border-black leading-8	 	transition-all  ">
                     {t('more_about_neighbourhoods')}
                   </a>
                 </Link>
               </div>
               <div className="mt-12">
                 <Link href="/" >
-                  <a className="shadow-2xl mt-4    bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline ">
+                  <a className="shadow-2xl mt-4 bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline ">
                     {t('neighbourhoods_button')}
                   </a>
                 </Link>
@@ -139,9 +139,9 @@ function IndexPage() {
                 {t('description_manage')}
               </p>
 
-              <div className="mt-4 text-xl font-semibold text-primary-800">
+              <div className="mt-4 text-xl  text-primary-800">
                 <Link href="/manage">
-                  <a>
+                  <a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
                     {t('more_about_manage')}
                   </a>
                 </Link>
@@ -176,9 +176,9 @@ function IndexPage() {
                 {t('description_reports')}
               </p>
             </div>
-            <div className="mt-8 mb-8 text-xl text-center font-semibold text-primary-800">
+            <div className="mt-8 mb-8 text-xl text-center  text-primary-800">
               <Link href="/reports">
-                <a>
+                <a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
                   {t('more_about_reports')}
                 </a>
               </Link>

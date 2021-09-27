@@ -21,7 +21,7 @@ function Header() {
     <header
       id="header"
       className="grid grid-cols-3 md:flex items-center justify-center md:justify-between content-start pl-0  py-4
-       md:py-6  bg-white h-18 sticky top-0 z-50 transition"
+        bg-white h-18 sticky top-0 z-50 transition"
     >
 
       <div className="pl-4 md:hidden ">
