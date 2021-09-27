@@ -2,13 +2,10 @@
   "404": {
     "not_found": "No hem pogut trobar la pàgina.",
     "back_to_home": "Tornar al inici"
-
   },
 
-
-
-  "navigation" : {
-    "access" : "Acceder",
+  "navigation": {
+    "access": "Acceder",
     "resources": "Recursos",
     "pricing": "Precios",
     "sign_up": "Regístrate gratis",
@@ -25,9 +22,9 @@
     "title": "Selecciona el plan para tu empresa",
 
     "free_plan_title": "Free",
-    "business_plan_title" : "Business",
+    "business_plan_title": "Business",
     "explore": "Explora",
-    "start_free" : "Empieza gratis",
+    "start_free": "Empieza gratis",
     "guidance": "Acompañamiento en todo el proceso.",
     "half_yearly_cost": "Semestral - hasta un 28% de ahorro",
     "monthly_cost": "Mensual",
@@ -41,14 +38,13 @@
     "remote_work_proposal": "Propuesta de modelo de trabajo ideal.",
     "unlimited_users": "Usuarios ilimitados.",
     "unlimited_administrators": "Administradores ilimitados."
-
   },
 
   "contact_form": {
     "title": "¿Te interesa? ¡Contáctanos!",
     "videocall_link": "agendar una videollamada",
-    "description" : "Puedes {link} a la hora que más te convenga, contactarnos a info@dewocracy.com o escribirnos en el formulario de contacto.",
-    "company_label" : "Empresa",
+    "description": "Puedes {link} a la hora que más te convenga, contactarnos a info@dewocracy.com o escribirnos en el formulario de contacto.",
+    "company_label": "Empresa",
     "submit_button": "Enviar mensaje",
     "name_label": "Nombre",
     "email_label": "Email",
@@ -57,6 +53,15 @@
     "company_placeholder": "Monstruos, S.A.",
     "thanks": "Thanks for contacting us! We will get in touch with you shortly",
     "back_to_home": "Tornar al inici"
+  },
+
+  "desk_booking": {
+    "title": "Hot desking, más fácil que nunca",
+    "text_1": "Reserva de escritorios de forma intuitiva a través de un mapa interactivo de tu oficina.",
+    "text_2": "Crea vecindarios asignando grupos de escritorios a equipos o personas. Desactiva y activa escritorios según necesidad.",
+    "text_3": "Habla con un experto para empezar ahora y consultar precios.",
+    "button": "Empezar ahora",
+    "link_text": "Descubre más funcionalidades"
   },
 
   "Calculator": {
@@ -107,7 +112,6 @@
     "description_reports": "Analiza la ocupación, el uso del espacio y los costes asociados. Obtén detalles a nivel de plantilla e individuo para asegurar el cumplimiento de la ley del teletrabajo. ",
 
     "more_about_reports": "Más detalles sobre analíticas y reportes",
-
 
     "implement_flexible_remote_work": "Implementa el teletrabajo flexible en tu oficina.",
     "Save thousands of euros": "es la primera herramienta exclusivamente diseñada para gestionar tu estrategia híbrida de trabajo remoto y presencial. ",

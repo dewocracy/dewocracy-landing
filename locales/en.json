@@ -14,8 +14,8 @@
   },
 
   "404": {
-    "not_found": "No hem pogut trobar la pàgina.",
-    "back_to_home": "Tornar al inici"
+    "not_found": "We could not find the requested page.",
+    "back_to_home": "Back to Home"
   },
   "payment_plans": {
     "title": "Choose a plan for your company.",
@@ -42,7 +42,6 @@
   "contact_form": {
     "title": "Interested? Contact us!",
     "videocall_link": "request a video call ",
-  
 
     "description": "You can {link} at your convenience, contact us at info@dewocracy.com or send us a message via the contact form below.",
     "company_label": "Company",
@@ -55,14 +54,23 @@
     "thanks": "Thanks for contacting us! We will get in touch with you shortly",
     "back_to_home": "Back to Home"
   },
+  
 
+  "desk_booking": {
+    "title": "Hot desking, easier than ever",
+    "text_1": "Intuitive desk booking with interactive office maps.",
+    "text_2": "Create neighborhoods assigning groups of desks to teams or individuals. Activate and deactivate desks according to your needs.",
+    "text_3": "Speak with an expert to start now and know our prices.",
+    "button": "Start now",
+    "link_text": "Explore more features"
+  },
   "Calculator": {
     "title": "Savings calculator",
 
     "sub_title": "How much could your company save with DeWocracy?",
     "employees_text": "How many employees does your company have?    ",
     "employees_placeholder": "Employees",
-    "square_meters_text": "How many square meters of office space do you currently have? (sqm)",    
+    "square_meters_text": "How many square meters of office space do you currently have? (sqm)",
     "square_meters_placeholder": "",
 
     "percentage_text": "What's the percentage of remote work you would like to implement? (%)",
@@ -79,7 +87,6 @@
     "monthly": "monthly",
     "annually": "annually",
     "saving": "saving"
-
   },
 
   "Default": {
@@ -142,7 +149,6 @@
     "Management of custom work spaces.": "Management of custom work spaces.",
     "Digital clock-in, absences and holidays request.": "Digital clock-in, absences and holidays request.",
     "Historical data of workplace habits.": "Historical data of workplace habits.",
-
 
     "Access web app (company)": "Access web app (company)",
     "Download mobile app (employee)": "Download mobile app (employee)",

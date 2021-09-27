@@ -1,7 +1,6 @@
 {
-
-  "navigation" : {
-    "access" : "Accedir",
+  "navigation": {
+    "access": "Accedir",
     "resources": "Recursos",
     "pricing": "Preus",
     "sign_up": "Registra't gratis",
@@ -14,20 +13,18 @@
     "es": "ES"
   },
 
-
   "404": {
     "not_found": "No hem pogut trobar la pàgina.",
     "back_to_home": "Tornar al inici"
-
   },
 
   "payment_plans": {
     "title": "Selecciona el plan para tu empresa",
 
     "free_plan_title": "Free",
-    "business_plan_title" : "Business",
+    "business_plan_title": "Business",
     "explore": "Explora",
-    "start_free" : "Empieza gratis",
+    "start_free": "Empieza gratis",
     "guidance": "Acompañamiento en todo el proceso.",
     "half_yearly_cost": "Semestral - hasta un 28% de ahorro",
     "monthly_cost": "Mensual",
@@ -41,14 +38,13 @@
     "remote_work_proposal": "Propuesta de modelo de trabajo ideal.",
     "unlimited_users": "Usuarios ilimitados.",
     "unlimited_administrators": "Administradores ilimitados."
-
   },
 
   "contact_form": {
     "title": "T'interessa? Contacta'ns!",
     "videocall_link": "agendar una videotrucada",
-    "description" : "Pots {link}, contactar-nos a info@dewocracy.com o escriure'ns a través del formulari de contacte.",
-    "company_label" : "Empresa",
+    "description": "Pots {link}, contactar-nos a info@dewocracy.com o escriure'ns a través del formulari de contacte.",
+    "company_label": "Empresa",
     "submit_button": "Enviar missatge",
     "name_label": "Nom",
     "email_label": "Correu",
@@ -57,16 +53,15 @@
     "company_placeholder": "Monstres, S.A.",
     "thanks": "Thanks for contacting us! We will get in touch with you shortly",
     "back_to_home": "Tornar al inici"
-
   },
 
   "Calculator": {
     "title": "Calculadora d'estalvi",
 
-    "sub_title": "¿Quant podria estalviar la teva empresa amb DeWocracy?"   ,
+    "sub_title": "¿Quant podria estalviar la teva empresa amb DeWocracy?",
     "employees_text": "¿Quant podria estalviar la teva empresa amb DeWocracy?",
     "employees_placeholder": "",
-    "square_meters_text": "Quants metres quadrats té la teva oficina actual? (m2)", 
+    "square_meters_text": "Quants metres quadrats té la teva oficina actual? (m2)",
     "square_meters_placeholder": "¿Cuántos empleados tiene tu empresa?",
 
     "percentage_text": "Quin percentatge de teletreball voldries implementar? (%)",
@@ -83,6 +78,15 @@
     "monthly": "al mes",
     "annually": "l'any",
     "saving": "d'estalvi"
+  },
+
+  "desk_booking": {
+    "title": "Hot desking, més fàcil que mai",
+    "text_1": "Reserva d'escriptoris de forma intuitiva a través d'un mapa interactiu de la teva oficina.",
+    "text_2": "Crea veïnats assignant grups d'escriptoris a equips o persones. Desectiva i activa escriptoris segons convingui.",
+    "text_3": "Parla amb un expert per començar ara i consultar preus.",
+    "button": "Comença ara",
+    "link_text": "Descobreix més funcionalitats"
   },
 
   "Default": {
@@ -110,7 +114,7 @@
     "more_about_reports": "Més detalls sobre analítiques i informes",
 
     "implement_flexible_remote_work": "Implementa el teletreball flexible a la teva oficina.",
-   
+
     "Save thousands of euros": "és la primera eina exclusivament dissenyada per a gestionar una estratègiahíbrida de treball remot i presencial.",
     "Sign up for free": "Registra't gratis",
     "Request demo": "Demanar demo",
@@ -183,10 +187,4 @@
     "Cookies policy": "Política de cookies",
     "Access": "Accés"
   }
-
-
-
-
-
-  
 }
