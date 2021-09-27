@@ -54,7 +54,6 @@
     "thanks": "Thanks for contacting us! We will get in touch with you shortly",
     "back_to_home": "Back to Home"
   },
-  
 
   "desk_booking": {
     "title": "Hot desking, easier than ever",
@@ -64,6 +63,34 @@
     "button": "Start now",
     "link_text": "Explore more features"
   },
+
+  "neighbourhoods": {
+    "title": "Organize the office and your people",
+    "text_1": "Organize your office and use your space in an efficient and flexible way.",
+    "text_2": "Create neighborhoods assigning groups of desks to teams or individuals to facilitate team work and face-to-face interaction. Activate and deactivate desks to implement contingency measures derived from the pandemic.",
+    "text_3": "Speak with an expert to start now and know our prices.",
+    "button": "Start now",
+    "link_text": "Explore more features"
+  },
+
+  "manage_remotework": {
+    "title": "Manage remote work efficiently",
+    "text_1": "Give your workforce access to a workspace calendar linked to the admin's dashboard.",
+    "text_2": "Set occupancy and capacity limits so that no one is left without a desk in the office. Implement capacity restrictions as a pandemic contingency measure.",
+    "text_3": "Implement remote work limits to guarantee face-to-face interaction and implement your company workspace policies.",
+    "button": "Sign up for free",
+    "link_text": "Explore more features"
+  },
+
+  "analytics": {
+    "title": "Analytics and reports",
+    "text_1": "Analyze occupancy, space usage and costs associated to it. Gain insights on your workforce at a group and individual level to ensure compliance with remote work laws.",
+    "text_2": "With DeWocracy you can historically audit your workforce office attendance and remote work prevalence.",
+    "text_3": "Additionally, with the Pro Office plan you will have access to custom reports with the data you care about in .xls or .csv format.",
+    "button": "Start now",
+    "link_text": "Explore more features"
+  },
+
   "Calculator": {
     "title": "Savings calculator",
 

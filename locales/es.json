@@ -64,6 +64,33 @@
     "link_text": "Descubre más funcionalidades"
   },
 
+  "neighbourhoods": {
+    "title": "Organiza la oficina y las personas",
+    "text_1": "Organiza tu oficina para usar el espacio de forma eficiente y flexible.",
+    "text_2": "Crea vecindarios asignando grupos de escritorios a equipos o personas para facilitar el trabajo en equipo y la interacción cara a cara. Desactiva y activa escritorios e implementa las medidas necesarias derivadas de la pandemia.",
+    "text_3": "Habla con un experto para empezar ahora y consultar precios.",
+    "button": "Empezar ahora",
+    "link_text": "Descubre más funcionalidades"
+  },
+
+  "manage_remotework": {
+    "title": "Gestiona el teletrabajo de forma eficiente",
+    "text_1": "Facilita a tu plantilla un calendario de espacios de trabajo a vinculado al panel de administración. ",
+    "text_2": "Establece límites de ocuación y aforo para que nadie se quede sin sitio en la oficina y respetar las medidas sanitarias derivadas de la pandemia.",
+    "text_3": "Fija límites de teletrabajo para mantener un mínimo de presencialidad e implementar las políticas de trabajo de tu empresa.",
+    "button": "Regístrate gratis",
+    "link_text": "Descubre más funcionalidades"
+  },
+
+  "analytics": {
+    "title": "Analíticas y reportes",
+    "text_1": "Analiza la ocupación, el uso del espacio y los costes asociados. Obtén detalles a nivel de plantilla e individuo para asegurar el cumplimiento de la ley del teletrabajo.",
+    "text_2": "Con DeWocracy puedes auditar el histórico de presencialidad y cantidad de teletrabajo de tu plantilla.",
+    "text_3": "FAdemás, con el plan Oficina Pro tendrás acceso a reportes personalizados con los datos que te interesan en formato .xls o .csv.",
+    "button": "Empezar ahora",
+    "link_text": "Descubre más funcionalidades"
+  },
+
   "Calculator": {
     "title": "Calculadora de ahorro",
 
