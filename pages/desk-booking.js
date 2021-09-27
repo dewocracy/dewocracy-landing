@@ -8,7 +8,7 @@ import Link from "next/link";
 
 
 
-function Calculator() {
+function DeskBooking() {
     const t = useTranslations("desk_booking");
 
     return (
@@ -29,13 +29,7 @@ function Calculator() {
 
                     <p className="mb-4 max-w-xl text-center">  {t('text_3')}</p>
                 </div>
-                <div className="flex flex-col items-center lg:flex-row">
 
-                    <img className="object-contain	 max-w-lg h-auto" src="/images/desk-booking2.png" alt="Desk Booking Mobile " />
-                    <img className="object-contain	max-w-lg h-auto" src="/images/desk-booking1.png" alt="Desk Booking Dashbord" />
-
-
-                </div>
 
                 <div className="flex flex-col items-center">
 
@@ -48,6 +42,14 @@ function Calculator() {
                         </a>
 
                     </p>
+                </div>
+
+                <div className="flex flex-col items-center lg:flex-row">
+
+                    <img className="object-contain	 max-w-lg h-auto" src="/images/desk-booking2.png" alt="Desk Booking Mobile " />
+                    <img className="object-contain	max-w-lg h-auto" src="/images/desk-booking1.png" alt="Desk Booking Dashbord" />
+
+
                 </div>
                 <div className="flex flex-col items-center">
                     <Link href="/">
@@ -71,4 +73,4 @@ export function getStaticProps({ locale }) {
     };
 }
 
-export default Calculator;
+export default DeskBooking;
