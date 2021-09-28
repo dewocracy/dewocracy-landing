@@ -14,6 +14,7 @@ function Neighbourhoods() {
     return (
         <Layout>
             <SEO
+                description={t('text_1')}
                 title={`${t('title')} | DeWocracy - Flexible Remote Work"`}
 
             />

@@ -21,13 +21,12 @@ function SEO({ description, title, url, image }) {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:site_name" content={siteTitle} />
-      <meta property="twitter:card" content="summary" />
       <meta property="twitter:creator" content={author} />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="og:url" content={fullURL} />
       <meta property="og:image" content={fullImage} />
-
+      <meta name="twitter:card" content="summary_large_image" />
     </Head>
   );
 }
