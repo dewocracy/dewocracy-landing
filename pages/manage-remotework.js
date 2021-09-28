@@ -36,7 +36,7 @@ function Neighbourhoods() {
                     <p className="mt-8  mb-16">
                         <a href="https://app.dewocracy.com/register/free"
 
-                            className="shadow-2xl bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline "
+                            className="shadow-2xl bg-primary-400 hover:bg-primary-800 text-white text-lg  transition-colors duration-150  rounded-full py-4 px-16 focus:shadow-outline "
                         >
                             {t('button')}
                         </a>
