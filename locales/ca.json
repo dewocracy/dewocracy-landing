@@ -18,28 +18,40 @@
     "back_to_home": "Tornar al inici"
   },
 
-  "payment_plans": {
-    "title": "Selecciona el plan para tu empresa",
+  
 
-    "free_plan_title": "Free",
-    "business_plan_title": "Business",
-    "explore": "Explora",
-    "start_free": "Empieza gratis",
+
+
+
+
+
+
+
+
+  "payment_plans": {
+    "title": "Planes y precios",
+
+    "title_question": "Selecciona el plan para tu empresa",
+
+    "free_plan_title": "Oficina Básica",
+    "business_plan_title": "Officina Pro",
+    "explore": "Comença ara",
+    "start_free": "Registra't gratis",
     "guidance": "Acompañamiento en todo el proceso.",
     "half_yearly_cost": "Semestral - hasta un 28% de ahorro",
     "monthly_cost": "Mensual",
     "free_cost": "Free",
-    "per_month": "Mes / Usuario",
+    "per_month": "Mes / Usuari",
     "single_admin": "1 administrador.",
-    "up_to_5_users": "Hasta 5 usuarios.",
+    "calendar": "Calendari d'espais de treball.",
     "app_for_company": "Plataforma para la empresa.",
-    "app_for_employees": "App para los empleados.",
-    "cost_proposal": "Propuesta de optimización de espacio y reducción de costes.",
-    "remote_work_proposal": "Propuesta de modelo de trabajo ideal.",
-    "unlimited_users": "Usuarios ilimitados.",
-    "unlimited_administrators": "Administradores ilimitados."
+    "limits": "Límits d'ocupació i teletreball.",
+    "reservations": "Reserva d'escriptoris.",
+    "interative_map": "Mapa interactiu.",
+    "unlimited_users": "Usuaris ilimitats.",
+    "reports": "Informes personalitzats.",
+    "talk_with_an_expert": "Parla amb un expert"
   },
-
   "contact_form": {
     "title": "T'interessa? Contacta'ns!",
     "videocall_link": "agendar una videotrucada",
@@ -65,8 +77,8 @@
     "square_meters_placeholder": "¿Cuántos empleados tiene tu empresa?",
 
     "key_utilities": "Subministres",
-  "key_cost": "Cost DW",
-  "key_rent": "Lloguer" ,
+    "key_cost": "Cost DW",
+    "key_rent": "Lloguer",
     "percentage_text": "Quin percentatge de teletreball voldries implementar? (%)",
     "calculation": "¿Com ho calculem?",
     "button_contact": "Contacta'ns",
@@ -161,8 +173,6 @@
     "monthly": "al mes",
     "annually": " l'any",
     "saving": "d'estalvi",
-
-
 
     "Employees": "Employees",
     "office square metres": "office square metres",

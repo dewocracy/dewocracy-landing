@@ -39,7 +39,7 @@
     "reservations": "Reserva de escritorios.",
     "interative_map": "Mapa interactivo.",
     "unlimited_users": "Usuarios ilimitados.",
-    "reports": "Reportes personalizados.", 
+    "reports": "Reportes personalizados.",
     "talk_with_an_expert": "Habla con un experto"
   },
 
@@ -118,10 +118,9 @@
     "annually": "al año",
     "saving": "de ahorro",
 
-"key_utilities": "Suministros",
-"key_cost": "Coste de DW ",
-"key_rent": "Alquiler" 
-
+    "key_utilities": "Suministros",
+    "key_cost": "Coste de DW ",
+    "key_rent": "Alquiler"
   },
 
   "Default": {
