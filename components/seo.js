@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
-
+import Head from 'next/head'
+import config from "../config"
 /*
 const siteMetadata = {
   "siteUrl": "",
@@ -13,11 +14,28 @@ const siteMetadata = {
   image: "src/images/banner-dw.png",
 }*/
 
-function SEO() {
+function SEO({ description, title, url, image }) {
 
+
+  const fullURL = url || "https://dewocracy.com"
+  const fullImage = url ? "https://dewocracy.com" + url : "https://dewocracy.com" + "/images/banner-dw.png"
 
   return (
-    <> </>
+    <Head>
+      <title>{`${title} | ${config.siteTitle}`}</title>
+      <meta name="description" content={description} />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:site_name" content={config.siteTitle} />
+      <meta property="twitter:card" content="summary" />
+      <meta property="twitter:creator" content={config.author} />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={description} />
+      <meta property="og:url" content={fullURL} />
+      <meta property="og:image" content={fullImage} />
+
+    </Head>
   );
 }
 
@@ -33,6 +51,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.array,
   title: PropTypes.string.isRequired,
+  url: PropTypes.string
 };
 
 export default SEO;

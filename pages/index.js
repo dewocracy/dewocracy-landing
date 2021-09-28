@@ -14,11 +14,13 @@ function IndexPage() {
   return (
     <Layout>
       <SEO title="DeWocracy - Remote Work | Work from anywhere" />
+
       <div style={{ backgroundImage: "url('/images/background3.png')" }}
         className="lg:w-full bg-no-repeat	bg-cover mx-4 lg:mx-0 absolute left-0 top-50	 "
 
 
       >
+
         <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen pl-10 pr-0 lg:pb-4">
           <div className="grid content-center px-0 md:px-8 lg:px-0">
             <div className="md:mt-24 lg:mt-0 mb-16">
