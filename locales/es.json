@@ -19,10 +19,12 @@
   },
 
   "payment_plans": {
-    "title": "Selecciona el plan para tu empresa",
+    "title": "Planes y precios",
 
-    "free_plan_title": "Free",
-    "business_plan_title": "Business",
+    "title_question": "Selecciona el plan para tu empresa",
+
+    "free_plan_title": "Oficina Básica",
+    "business_plan_title": "Officina Pro",
     "explore": "Explora",
     "start_free": "Empieza gratis",
     "guidance": "Acompañamiento en todo el proceso.",
@@ -31,13 +33,14 @@
     "free_cost": "Free",
     "per_month": "Mes / Usuario",
     "single_admin": "1 administrador.",
-    "up_to_5_users": "Hasta 5 usuarios.",
+    "calendar": "Calendario de espacios de trabajo.",
     "app_for_company": "Plataforma para la empresa.",
-    "app_for_employees": "App para los empleados.",
-    "cost_proposal": "Propuesta de optimización de espacio y reducción de costes.",
-    "remote_work_proposal": "Propuesta de modelo de trabajo ideal.",
+    "limits": "Límites de ocupación y teletrabajo.",
+    "reservations": "Reserva de escritorios.",
+    "interative_map": "Mapa interactivo.",
     "unlimited_users": "Usuarios ilimitados.",
-    "unlimited_administrators": "Administradores ilimitados."
+    "reports": "Reportes personalizados.", 
+    "talk_with_an_expert": "Habla con un experto"
   },
 
   "contact_form": {
@@ -113,7 +116,12 @@
     "saving_with_dw": "Con DeWocracy podrías ahorrar hasta...",
     "monthly": "al mes",
     "annually": "al año",
-    "saving": "de ahorro"
+    "saving": "de ahorro",
+
+"key_utilities": "Suministros",
+"key_cost": "Coste de DW ",
+"key_rent": "Alquiler" 
+
   },
 
   "Default": {
@@ -159,28 +167,6 @@
     "monthly": "al mes",
     "annually": "al año",
     "saving": "de ahorro",
-    "We help you transition to a more flexible workplace strategy that is less dependant on physical space. From idea to execution, we support you throughout all the stages of the process.": "Te acompañamos en la transición hacia un modelo de trabajo más flexible y con menos dependencia del espacio físico. Te damos soporte desde el diseño de la estrategia hasta la implementación.",
-    "Understand your needs": "Entiende tus necesidades",
-    "We give you the tools to measure office occupancy, understand employees' preferences, and analize costs derived from your current workplace strategy.": "Te damos las herramientas para entender la ocupación de tu oficina, las preferencias de tus empleados y los costes asociados a tu modelo de trabajo actual.",
-    "Find your space": "Encuentra tu espacio",
-    "We use the data gathered to make an office space optimization proposal and find out your ideal workplace strategy (traditional office, flexible office, hybrid work or remote work).": "A partir de nuestro análisis, proponemos tu espacio de oficina ideal y el modelo que más se ajusta a tus necesidades (oficina tradicional, oficina flexible/coworking, teletrabajo flexible).",
-    "Manage remote work": "Gestiona el teletrabajo",
-    "Implement your strategy using our booking, monitoring and cost analysis system. Manage the admin side of remote work efficiently and assess your results to fine-tune your strategy.": "Implementa tu estrategia usando nuestro sistema de booking, monitoreo y análisis de costes. Gestiona la parte administrativa del trabajo remoto de forma eficiente y evalúa los resultados para afinar tu estrategia.",
-    "Web app for the company": "Plataforma web para la empresa",
-    "Real-time monitoring of your company's remote/in-office work breakdown.": "Monitoreo en tiempo real de la proporción de teletrabajo en tu empresa.",
-    "Office occupancy rate analysis.": "Análisis del porcentaje de ocupación de tu oficina.",
-    "Unused space cost.": "Coste del espacio sin usar.",
-    "Digital clock-in, absence and holidays management.": "Control horario y administración de ausencias y vacaciones.",
-    "Mobile app for the employee": "App móvil para los empleados",
-    "Office and remote work booking.": "Reserva de espacio de oficina y de trabajo remoto.",
-    "Management of custom work spaces.": "Gestión de espacios de trabajo personalizados.",
-    "Digital clock-in, absences and holidays request.": "Control horario digitalizado y petición de vacaciones.",
-    "Historical data of workplace habits.": "Datos históricos personales de teletrabajo.",
-
-    "Popular": "Popular",
-
-    "Access web app (company)": "Acceder a la web app (empresa)",
-    "Download mobile app (employee)": "Descargar app móvil (empleado/a)",
     "Employees": "Empleados",
     "office square metres": "office square metres",
     "Page not found.": "Página no encontrada.",
@@ -195,7 +181,6 @@
     "Terms of service": "Términos y condiciones",
     "Legal notice": "Aviso legal",
     "Privacy policy": "Política de privacidad",
-    "Cookies policy": "Política de cookies",
-    "Access": "Acceder"
+    "Cookies policy": "Política de cookies"
   }
 }

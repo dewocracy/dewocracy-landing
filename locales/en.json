@@ -17,16 +17,25 @@
     "not_found": "We could not find the requested page.",
     "back_to_home": "Back to Home"
   },
-  "payment_plans": {
-    "title": "Choose a plan for your company.",
 
-    "free_plan_title": "Free",
-    "business_plan_title": "Business",
+
+  "payment_plans": {
+    "title": "Planes y precios",
+
+    "title_question": "Choose a plan for your company.",
+
+
+    "calendar": "Workspace calendar.",
+    "limits": "Occupancy & remote work limits.",
+    "reservations": "Desk booking.",
+    "interative_map": "Interactive map.",
+    "reports": "Custom reports.", 
+    "talk_with_an_expert": "  Speak with an expert",
+
+    "free_plan_title": "Basic Office",
+    "business_plan_title": "Pro Office ",
     "explore": "Explore",
     "start_free": "Start for free",
-    "guidance": "Guidance throughout the entire process.",
-    "half_yearly_cost": "Semiannual - up to 28% discount",
-    "monthly_cost": "Monthly",
     "free_cost": "Free",
     "per_month": "Month / User",
     "single_admin": "1 administrator.",
@@ -38,6 +47,7 @@
     "unlimited_users": "Unlimited users.",
     "unlimited_administrators": "Unlimited administrators."
   },
+
 
   "contact_form": {
     "title": "Interested? Contact us!",
@@ -113,7 +123,16 @@
     "saving_with_dw": "With DeWocracy you could save up to...",
     "monthly": "monthly",
     "annually": "annually",
-    "saving": "saving"
+    "saving": "saving",
+    "DW cost": "DW cost",
+    "Rent": "Alquiler",
+    "Utilities": "Suministros",
+    "Now": "Ahora",
+    "With DW": "DW cost",
+
+    "key_utilities": "Utilities",
+    "key_cost": "DW Costs",
+    "key_rent": "Rent" 
   },
 
   "Default": {
@@ -193,7 +212,6 @@
     "Terms of service": "Terms of service",
     "Legal notice": "Legal notice",
     "Privacy policy": "Privacy policy",
-    "Cookies policy": "Cookies policy",
-    "Access": "Access"
+    "Cookies policy": "Cookies policy"
   }
 }

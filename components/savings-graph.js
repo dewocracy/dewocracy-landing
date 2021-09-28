@@ -3,11 +3,11 @@ import { BarPropTypes, ResponsiveBar } from "@nivo/bar";
 import { useTranslations } from 'next-intl';
 
 export const SavingsGraph = ({ data }) => {
-  const t = useTranslations("Default");
+  const t = useTranslations("Calculator");
   return (
     <ResponsiveBar
       data={data}
-      keys={[t("Utilities"), t("Rent"), t("DW cost")]}
+      keys={[t("key_utilities"), t("key_rent"), t("key_cost")]}
       indexBy="costType"
       margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
       padding={0.5}

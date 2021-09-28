@@ -269,18 +269,18 @@ export const SavingsCalculator = () => {
               data={[
                 {
                   costType: t("label_now"),
-                  [t("label_utilities")]: !isNaN(suppliesCost) ? suppliesCost : 0,
-                  [t("label_rent")]: !isNaN(rentCostPerMonth) ? rentCostPerMonth : 0,
+                  [t("key_utilities")]: !isNaN(suppliesCost) ? suppliesCost : 0,
+                  [t("key_rent")]: !isNaN(rentCostPerMonth) ? rentCostPerMonth : 0,
                 },
                 {
                   costType: t("label_with_dw"),
-                  [t("label_utilities")]: !isNaN(suppliesCostWithDW)
+                  [t("key_utilities")]: !isNaN(suppliesCostWithDW)
                     ? suppliesCostWithDW
                     : 0,
-                  [t("label_rent")]: !isNaN(rentCostPerMonthWithDW)
+                  [t("key_rent")]: !isNaN(rentCostPerMonthWithDW)
                     ? rentCostPerMonthWithDW
                     : 0,
-                  [t("label_dewocracy_cost")]: !isNaN(techInvestment) ? techInvestment : 0,
+                  [t("key_cost")]: !isNaN(techInvestment) ? techInvestment : 0,
                 },
               ]}
             />
