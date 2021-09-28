@@ -1,72 +1,39 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { Fragment, useCallback, useMemo, useState } from "react";
+import React from "react";
 import { useTranslations } from 'next-intl';
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 import { OutboundLink } from "../utils/OutboundLink";
-const getCurrencyText = (value) =>
-  Number(value).toLocaleString(undefined, {
-    style: "currency",
-    currency: "EUR",
-  });
 
-const plans = {
-  biannual: {
-    text: "half_yearly_cost",
-    startup: getCurrencyText(3),
-    business: getCurrencyText(5),
-  },
-  monthly: {
-    text: "monthly_cost",
-    startup: getCurrencyText(4),
-    business: getCurrencyText(7),
-  },
-};
 
 export const PaymentsPlans = () => {
-  const [plan, setPlan] = useState("biannual");
   const t = useTranslations("payment_plans");
-  const { business } = useMemo(() => plans[plan], [plan]);
-  const changePlan = useCallback(
-    () => setPlan(plan === "biannual" ? "monthly" : "biannual"),
-    [plan]
-  );
+
   return (
-    <Fragment>
-      <h2 className="font-medium text-center pt-24 font-bold text-5xl pb-24">
+    <>
+
+
+      <h2 className="text-2xl pt-24">
         {t('title')}
+
       </h2>
-      <div className="grid  justify-center">
-        <div className="grid md:grid-cols-2 gap-y-4 gap-x-12 lg:gap-x-24 mb-8">
-          {Object.entries(plans).map(([key, { text }]) => (
-            <Fragment key={key}>
-              {key === plan ? (
-                <p className="btn  px-8 py-4 inline-flex items-center	 text-white bg-primary-800 font-bold text-lg rounded-lg  ">
-                  {t(text)}
-                </p>
-              ) : (
-                <button
-                    className="btn  px-8 py-4 inline-flex items-center	  text-white shadow-2xl text-lg font-bold text-white text-primary-800 rounded-lg  bg-white"
-                  onClick={changePlan}
-                >
-                  {t(text)}
-                </button>
-              )}
-            </Fragment>
-          ))}
-        </div>
-      </div>
+
+
+      <h2 className="text-left pt-4 font-bold text-5xl pb-8">
+        {t('title_question')}
+      </h2>
+
       <div className="grid lg:grid-cols-2 gap-10 justify-center h-full">
         <div
           data-sal="zoom-in"
           data-sal-easing="ease"
-          className="grid rounded-lg bg-white p-8 md:p-10 max-w-xl gap-y-8 my-4 lg:my-16"
+          className="grid rounded-lg bg-white p-8 md:p-10 ml-24 max-w-sm gap-y-8 my-4 lg:my-16"
         >
           <div>
             <p className="text-primary-800 text-2xl md:text-4xl font-bold pb-4">
               {t('free_plan_title')}
             </p>
             <p className="text-primary text-2xl md:text-4xl">
-              <span className="font-bold">{getCurrencyText(0)}</span>
+              <span className="font-bold">0 €</span>
               <span className="text-sm">
                 {" "}
                 {t('per_month')}
@@ -74,37 +41,39 @@ export const PaymentsPlans = () => {
             </p>
           </div>
           <ol className="text-black grid gap-6">
+
             <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="text-primary mr-4"
+                className="text-primary mr-4 text-primary-400"
               />
-              {t('single_admin')}
+              {t('unlimited_users')}
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="text-primary mr-4"
+                className="text-primary mr-4 text-primary-400"
               />
-              {t('up_to_5_users')}
+              {t('calendar')}
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="text-primary mr-4"
+                className="text-primary mr-4 text-primary-400"
               />
-              {t('app_for_company')}
+              {t('limits')}
             </li>
-            <li className="flex items-center">
+
+            <li className="text-grey flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="text-primary mr-4"
+                className="mr-4"
               />
-              {t('app_for_employees')}
+              {t('reservations')}
             </li>
             <li className="text-grey flex items-center">
               <FontAwesomeIcon
@@ -112,29 +81,21 @@ export const PaymentsPlans = () => {
                 size="lg"
                 className="mr-4"
               />
-              {t('cost_proposal')}
+              {t('interative_map')}
             </li>
             <li className="text-grey flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="mr-4"
+                className="mr-4 "
               />
-              {t('remote_work_proposal')}
-            </li>
-            <li className="text-grey flex items-center">
-              <FontAwesomeIcon
-                icon={faCheckCircle}
-                size="lg"
-                className="mr-4"
-              />
-              {t('guidance')}
+              {t('reports')}
             </li>
           </ol>
           <OutboundLink
             eventType="signup" eventProperties={{ plan: "free", location: "plan listing" }}
 
-            className="shadow-2xl  h-16 bg-primary-800 hover:bg-primary-400 text-white px-6 pt-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline"
+            className="shadow-2xl h-16 bg-primary-400 hover:bg-primary-800 text-white  pt-4  text-lg  transition-colors duration-500  rounded-full py-4 px-16 text-center focus:shadow-outline"
             href="https://app.dewocracy.com/register/free"
           >
             {t('start_free')}
@@ -143,36 +104,22 @@ export const PaymentsPlans = () => {
         <div
           data-sal="zoom-in"
           data-sal-easing="ease"
-          className="grid rounded-lg bg-white p-8 md:p-10 max-w-xl gap-y-8 my-4 lg:my-16"
+          className=" grid rounded-lg bg-white p-8 md:p-10 max-w-sm gap-y-8 my-4 lg:my-16"
         >
           <div>
             <p className="text-primary text-2xl md:text-4xl font-bold  pb-4">
               {t('business_plan_title')}
             </p>
-            <p className="text-primary text-2xl md:text-4xl">
-              <span className="font-bold">{business}</span>
-              <span className="text-sm">
-                {" "}
-                {t('per_month')}
-              </span>
-            </p>
+            <a className="text-primary-800 mt-4 text-sm   border-b-2 pb-1 hover:border-black leading-8 " href="//calendly.com/dewocracylabs/dewocracy-demo" >
+              {t('talk_with_an_expert')}
+            </a>
           </div>
           <ol className="text-black grid gap-6">
             <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="absolute text-primary mr-4 leading-8"
-              />
-              <span className="ml-8 inline">
-                {t('unlimited_administrators')}
-              </span>
-            </li>
-            <li className="flex items-center">
-              <FontAwesomeIcon
-                icon={faCheckCircle}
-                size="lg"
-                className="text-primary mr-4"
+                className="text-primary mr-4 text-primary-400"
               />
               {t('unlimited_users')}
             </li>
@@ -180,55 +127,54 @@ export const PaymentsPlans = () => {
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="text-primary mr-4"
+                className="text-primary mr-4 text-primary-400"
               />
-              {t('app_for_company')}
+              {t('calendar')}
             </li>
             <li className="flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="text-primary mr-4"
+                className="text-primary mr-4 text-primary-400"
               />
-              {t('app_for_employees')}
+              {t('limits')}
             </li>
-            <li className="flex items-center">
+
+            <li className=" flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="text-primary mr-4"
+                className="mr-4 text-primary-400"
               />
-              <span>
-                {t('cost_proposal')}
-              </span>
+              {t('reservations')}
             </li>
-            <li className="flex items-center">
+            <li className=" flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="text-primary mr-4"
+                className="mr-4 text-primary-400"
               />
-              {t('remote_work_proposal')}
+              {t('interative_map')}
             </li>
-            <li className="flex items-center">
+            <li className=" flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="text-primary mr-4"
+                className="mr-4 text-primary-400 "
               />
-              {t('guidance')}
+              {t('reports')}
             </li>
           </ol>
           <OutboundLink
             eventType="signup"
             eventProperties={{ plan: "business", location: "plan listing" }}
-              className="shadow-2xl  h-16 bg-primary-800 hover:bg-primary-400 text-white px-6 pt-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline"
+            className="shadow-2xl bg-primary-400 hover:bg-primary-800 text-white  h-16  text-lg  transition-colors duration-150  rounded-full py-4 px-16 text-center focus:shadow-outline"
             href="#contact"
           >
             {t('explore')}
           </OutboundLink>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 };
