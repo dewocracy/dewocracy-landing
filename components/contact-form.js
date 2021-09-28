@@ -54,7 +54,7 @@ export const ContactForm = () => {
             name="name"
             required
             placeholder="Mike Wazowski"
-            className="rounded-lg py-6 px-4 h-10 text-primary-800  bg-white bg-opacity-25 placeholder-primary-800 placeholder-opacity-30 "
+              className="rounded-lg py-6 px-4 h-10 text-primary-800  bg-lightBlue bg-opacity-10 placeholder-primary-800 placeholder-opacity-30 "
             onChange={handleChange}
           />
         </div>
@@ -68,7 +68,7 @@ export const ContactForm = () => {
             name="email"
             required
               placeholder={t("email_placeholder")}
-            className="rounded-lg py-6 px-4 h-10  bg-white bg-opacity-25 placeholder-primary-800 placeholder-opacity-30"
+              className="rounded-lg py-6 px-4 h-10  bg-lightBlue bg-opacity-10 placeholder-primary-800 placeholder-opacity-30"
             onChange={handleChange}
           />
         </div>
@@ -82,7 +82,7 @@ export const ContactForm = () => {
             name="company"
             required
               placeholder={t("company_placeholder")}
-            className="rounded-lg py-6 px-4 h-10  bg-white bg-opacity-25 placeholder-primary-800 placeholder-opacity-30"
+              className="rounded-lg py-6 px-4 h-10  bg-lightBlue bg-opacity-10 placeholder-primary-800 placeholder-opacity-30"
             onChange={handleChange}
           />
         </div>
@@ -94,7 +94,7 @@ export const ContactForm = () => {
         </label>
         <textarea
           id="message"
-          className="h-40 p-2 rounded-lg py-6 px-4 h-10 bg-white bg-opacity-25 placeholder-primary-800 placeholder-opacity-30"
+            className="h-40 p-2 rounded-lg py-6 px-4 bg-lightBlue bg-opacity-10 placeholder-primary-800 placeholder-opacity-30"
           required
           maxLength="500"
           name="message"

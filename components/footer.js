@@ -35,7 +35,7 @@ export const Footer = () => {
 
 
   return (
-    <footer className="lg:w-full bg-purple-800 rounded-2xl mt-16 bg-fixed py-10 px-8 md:px-4">
+    <footer className="mx-4 bg-purple-800 rounded-2xl mt-16 bg-fixed py-10 px-8 md:px-4">
       <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4 justify-center lg:justify-between md:gap-y-8">
         <div className="flex justify-center lg:justify-start lg:items-end">
           <a href="/" title="DeWocracy home">

@@ -14,18 +14,18 @@ function IndexPage() {
   return (
     <Layout>
       <SEO title="DeWocracy - Remote Work | Work from anywhere" />
-      <div style={{ backgroundImage: "url('/images/background.png')" }}
-        className="lg:w-full bg-no-repeat	bg-cover mx-4 lg:mx-0	  rounded-2xl"
+      <div style={{ backgroundImage: "url('/images/background3.png')" }}
+        className="lg:w-full bg-no-repeat	bg-cover mx-4 lg:mx-0 absolute left-0 top-50	 "
 
 
       >
-        <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen pl-10 pr-0 lg:pb-40">
+        <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen pl-10 pr-0 lg:pb-4">
           <div className="grid content-center px-0 md:px-8 lg:px-0">
-            <div className="md:mt-24 lg:mt-0 mb-36">
-              <h1 className="text-4xl text-primary-800  lg:text-6xl  font-bold leading-tight pb-4">
+            <div className="md:mt-24 lg:mt-0 mb-16">
+              <h1 className="text-4xl text-white mt-8 lg:text-6xl  font-bold leading-tight pb-4">
                 {t('implement_flexible_remote_work')}
               </h1>
-              <p className="text-3xl text-primary-800 py-12">
+              <p className="text-2xl text-white py-12">
                 <strong className="pr-2">DeWocracy</strong>{t('Save thousands of euros')}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 mt-6 md:mt-0">
@@ -33,12 +33,12 @@ function IndexPage() {
                 <OutboundLink
                   eventType="signup" eventProperties={{ plan: "free", location: "home button" }}
 
-                  className="shadow-2xl mt-2 md:mt-0  h-16 hover:bg-primary-800  hover:text-white bg-white text-primary-800 px-6 pt-4 font-semibold  text-xl  transition-colors duration-150  rounded-lg focus:shadow-outline" href="#pricing">
+                  className="shadow-2xl mt-2 md:mt-0  hover:bg-primary-800  hover:text-white bg-white text-primary-400    text-xl  transition-colors duration-150   rounded-full py-4 px-16 focus:shadow-outline" href="#pricing">
                   {t('Sign up for free')}
                 </OutboundLink>
                 <OutboundLink
                   eventProperties={{ location: "home button" }}
-                  className="shadow-2xl sm:ml-4 md:ml-0 mt-2 md:mt-0  h-16 hover:bg-primary-400 font-semibold	 bg-primary-800 text-white px-6 pt-4  text-xl  transition-colors duration-150  rounded-lg focus:shadow-outline"
+                  className="shadow-2xl sm:ml-4 md:ml-0 mt-2 md:mt-0   hover:bg-primary-800  bg-primary-400 text-white   text-xl  transition-colors duration-500 rounded-full py-4 px-16  focus:shadow-outline"
                   href="https://calendly.com/dewocracylabs/dewocracy-demo"
                 >
                   {t('Request demo')}
@@ -46,16 +46,16 @@ function IndexPage() {
               </div>
             </div>
           </div>
-          <div className="grid content-center px-0 md:px-8 lg:px-0">
-            <div className="mt-80 w-200 max-w-3xl">
+          <div className="mt-20grid content-center px-0 md:px-8 lg:px-0">
+            <div className="mt-20 w-200 ml-8 max-w-2xl">
               <img src="/images/home_mockup.png" alt="Screenshots of the Dewocracy Apps" />
             </div>
           </div>
         </section>
       </div>
 
-      <div className="w-full py-16 lg:py-32">
-        <section className="container  mx-auto mr-3 ">
+      <div style={{ marginTop: "45em" }} className="w-full py-16 lg:py-32">
+        <section className="container  mx-auto ">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-3/5 flex flex-col md:pr-8">
               <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-12 lg:pt-24 text-left">
@@ -75,7 +75,7 @@ function IndexPage() {
               </div>
               <div className="mt-12">
                 <Link href="https://calendly.com/dewocracylabs/dewocracy-demo" >
-                  <a className="shadow-2xl mt-4    bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline ">
+                  <a className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-16 focus:shadow-outline ">
                     {t('hotdesking_button')}
                   </a>
                 </Link>
@@ -116,11 +116,9 @@ function IndexPage() {
                 </Link>
               </div>
               <div className="mt-12">
-                <Link href="/" >
-                  <a className="shadow-2xl mt-4 bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline ">
+                <a href="https://calendly.com/dewocracylabs/dewocracy-demo" className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-16 focus:shadow-outline ">
                     {t('neighbourhoods_button')}
-                  </a>
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -148,8 +146,8 @@ function IndexPage() {
                 </Link>
               </div>
               <div className="mt-12">
-                <Link href="/" >
-                  <a className="shadow-2xl mt-4    bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline ">
+                <Link href="https://app.dewocracy.com/register/free" >
+                  <a className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-16 focus:shadow-outline ">
                     {t('manage_button')}
                   </a>
                 </Link>
@@ -200,12 +198,12 @@ function IndexPage() {
       </div>
 
 
-      <section id="pricing" className="container pb-12  lg:mr-3 text-primary-800  bg-purple-800 mx-auto  rounded-2xl lg:px-32">
+      <section style={{ backgroundImage: "url('/images/background.png')" }} id="pricing" className="container pb-12  text-primary-800  bg-purple-800 mx-auto  rounded-2xl lg:px-32">
 
         <PaymentsPlans />
       </section>
 
-      <section id="contact" className="md:ml-12 lg:ml-0 container bg-yellow-100 mt-32 mb-20 lg:mr-3 text-primary-800  md:rounded-2xl  self-center pt-24">
+      <section id="contact" className="mx-auto container  mt-4 mb-20  text-primary-800  md:rounded-2xl  self-center pt-24">
         <ContactForm />
       </section>
     </Layout>

@@ -20,8 +20,8 @@ function Header() {
   return (
     <header
       id="header"
-      className="grid grid-cols-3 md:flex items-center justify-center md:justify-between content-start pl-0  py-4
-        bg-white h-18 sticky top-0 z-50 transition"
+      className="grid grid-cols-3 md:flex items-center justify-center md:justify-between content-start px-16  py-4
+        bg-white h-18 sticky top-0 z-50 transition  pt-6"
     >
 
       <div className="pl-4 md:hidden ">
@@ -101,7 +101,7 @@ function Header() {
             className={`w-32 md:w-40	 flex items-center text-black hover:text-primary-400 transition-colors duration-150 ${isExpanded ? `hidden` : `block`
             }`}
         >
-            <img src="/images/dw-blue.png" alt="DeWocracy logo" />
+            <img src="/images/dewocracy-blue.svg" alt="DeWocracy logo" />
         </figure>
         </a>
       </Link>
@@ -164,7 +164,7 @@ function Header() {
         >
           <FontAwesomeIcon
             icon={faWhatsapp}
-            className="text-black  text-4xl 	 text-black hover:text-primary-400 transition-colors duration-150 text-4xl"
+            className="text-black    hover:text-primary-400 transition-colors duration-150 text-4xl"
           />
         </OutboundLink>
         <OutboundLink
