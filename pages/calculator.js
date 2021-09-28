@@ -13,7 +13,11 @@ function Calculator() {
 
     return (
         <Layout>
-            <SEO title="DeWocracy - Remote Work | Work from anywhere" />
+            <SEO
+                description={t('subtitle')}
+                title={`${t('title')} | DeWocracy - Remote Work | Work from anywhere"`}
+
+            />
 
             <h1 className="font-bold text-primary-800 my-12	text-4xl text-center">{t('title')}</h1>
             <div className="w-full py-16 ">
