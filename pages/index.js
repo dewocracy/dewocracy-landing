@@ -31,7 +31,7 @@ function IndexPage() {
               <h1 className="text-4xl text-white mt-8 lg:text-6xl  font-bold leading-tight pb-4">
                 {t('implement_flexible_remote_work')}
               </h1>
-              <p className="text-2xl text-white py-12">
+              <p className="text-2xl text-white py-12 mr-20">
                 <strong className="pr-2">DeWocracy</strong>{t('Save thousands of euros')}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 mt-6 md:mt-0">
