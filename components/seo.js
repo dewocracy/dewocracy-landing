@@ -15,7 +15,6 @@ function SEO({ description, title, url, image }) {
 
   const fullDesscription = description ?? siteDescription
 
-  console.log({ fullImage });
   return (
     <Head>
       <title>{`${title} | ${siteTitle}`}</title>
