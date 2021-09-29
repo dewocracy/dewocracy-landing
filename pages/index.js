@@ -18,12 +18,18 @@ function IndexPage() {
 
       <div
         className="lg:w-full bg-no-repeat	bg-cover mx-4 lg:mx-0 absolute left-0 top-50 h-hero	 "
-
-
       >
 
 
-        <Image priority={true} layout="fill" className="absolute pointer-events-none" src="/images/background3.png" alt="Background Image" />
+        <Image
+          priority={true}
+          layout="fill"
+          className="absolute pointer-events-none"
+          src="/images/background3.png"
+          alt="Background Image"
+          placeholder="blur"
+          blurDataURL={`/_next/image?url=/images/background3.png&w=16&q=1`}
+        />
 
         <section className="z-10 container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen pl-10 pr-0 lg:pb-4">
           <div className="z-10 grid content-center px-0 md:px-8 lg:px-0">
