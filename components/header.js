@@ -21,16 +21,16 @@ function Header() {
   return (
     <header
       id="header"
-      className="grid grid-cols-3 md:flex items-center justify-center md:justify-between content-start px-16  py-4
-        bg-white h-18 sticky top-0 z-50 transition  pt-6"
+      className="flex grid-cols-3 items-start lg:items-center lg:justify-between content-start px-16  md:py-4
+        bg-white h-18 sticky top-0 z-50 transition pb-1 pt-1 md:pt-6 pl-4 lg:pl-16"
     >
 
-      <div className="pl-4 md:hidden ">
+      <div className="pl-4 lg:hidden pr-8 lg:pr-0 ">
         <button
           aria-label="menu"
           aria-expanded={isExpanded}
           aria-controls="nav-menu-ex-1"
-          className="items-center block px-3 py-2 border border-lightBlue border-opacity-25 rounded w-10 md:hidden"
+          className="items-center block px-3 py-2 border border-lightBlue border-opacity-25 rounded w-10 lg:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <span className="hidden" aria-hidden="true">
@@ -81,6 +81,39 @@ function Header() {
             />
           </OutboundLink>
           <hr className="my-4 text-opacity-25 text-lightBlue" />
+
+          <div className="flex flex-col">
+
+            <a rel="noreferrer noopener"
+              target="_blank"
+              href="//www.notion.so/DeWocracy-Help-50ccfd99c7ad4e6ea17a441a7a34ca9f"
+              className="mt-1  hover:text-primary-400">{t('help_page')}</a>
+
+
+            <Link href="/calculator"
+              key="Calculator"
+              className={`  block p-4 pl-6 mb-4 hover:underline 
+                }`}
+              role="menuitem"
+            ><a className={`mt-1  hover:text-primary-400`}>{t('calculator')}</a>
+            </Link>
+
+            <a rel="noreferrer noopener"
+              target="_blank"
+
+              href="https://docs.google.com/spreadsheets/d/1QkhYLoNE2JAirZcBtYtTWsU-GZ7alpHrSMCPCsGar14/edit?usp=sharing"
+              className={`mt-1  hover:text-primary-400`}>{t('remotework_management_template')}</a>
+
+
+            <a rel="noreferrer noopener"
+              target="_blank"
+              href="https://survey.dewocracy.com/"
+              className="mt-1  hover:text-primary-400">{t('remotework_survey')}</a>
+
+          </div>
+          <hr className="my-4 text-opacity-25 text-lightBlue" />
+
+
           <ul>
             {locales.map(
               (lng) =>
@@ -118,10 +151,10 @@ function Header() {
         </figure>
         </a>
       </Link>
-      <nav className="hidden md:inline-flex flex justify-center md:justify-end gap-4 text-primary text-sm">
+      <nav className="hidden lg:inline-flex justify-center md:justify-end gap-4 text-primary text-sm">
         <OutboundLink
           eventProperties={{ location: "top navbar" }}
-          className="block mt-2 font-medium 	 text-lg p-2 px-2 text-black hover:text-primary-400 transition-colors duration-150" href="#pricing">
+          className="block mt-2 font-medium text-lg p-2 px-2 text-black hover:text-primary-400 transition-colors duration-150" href="#pricing">
           {t('pricing')}
         </OutboundLink>
         <ResourceDropdown title={t('resources')} theme="navbar">
@@ -135,8 +168,7 @@ function Header() {
 
             <Link href="/calculator"
               key="Calculator"
-              className={`  block p-4 pl-6 mb-4 hover:underline 
-                }`}
+              className="block p-4 pl-6 mb-4 hover:underline"
               role="menuitem"
             ><a className={`mt-1  hover:text-primary-400`}>{t('calculator')}</a>
             </Link>
@@ -182,7 +214,7 @@ function Header() {
         </OutboundLink>
         <OutboundLink
           eventType="signup" eventProperties={{ plan: "free", location: "top navbar" }}
-          className="shadow-2xl  bg-primary-400 hover:bg-primary-800 text-white    text-lg  transition-colors duration-150  rounded-full py-4 px-16 focus:shadow-outline "
+          className="shadow-2xl  bg-primary-400 hover:bg-primary-800 text-white    text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 focus:shadow-outline "
 
           href="https://app.dewocracy.com/register/free"
         >
