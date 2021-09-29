@@ -8,7 +8,8 @@ function CookiesPolicy() {
   return (
     <Layout>
       <SEO title="Política de Cookies" />
-      <div className="w-full bg-fixed min-h-screen  pb-16">
+      <div className="flex justify-center">
+        <div className="w-full bg-fixed min-h-screen max-w-4xl  pb-16">
         <section className="rounded bg-white container mx-auto px-8 py-12 legal">
           <h1 className="text-5xl font-bold mb-12">Política de Cookies</h1>
           <h2 className="text-2xl  font-bold my-4">1. Introducción</h2>
@@ -58,21 +59,20 @@ function CookiesPolicy() {
           <table className=" border border-gray-200 table-auto text-left">
             <thead className=" border border-gray-200">
               <tr  >
-              <th>TIPO</th>
-              <th>TITULAR</th>
-              <th>
-                NOMBRE Y FINALIDAD
-
+                  <th className="border text-left align-top p-2">TIPO</th>
+                  <th className="border text-left align-top p-2">TITULAR</th>
+                  <th className="border text-left align-top p-2">
+                    NOMBRE Y FINALIDAD
               </th>
-              <th>DURACIÓN</th>
+                  <th className="border text-left align-top p-2">DURACIÓN</th>
             </tr>
             </thead>
             <tbody className=" border border-gray-200">
               <tr className=" border border-gray-200">
-              <td>Cookie analítica</td>
-              <td>Amplitude Inc.</td>
-              <td>Distinguir a los usuarios y analizar su comportamiento en el sitio web.</td>
-              <td>1 año</td>
+                  <td className="border text-left align-top p-2">Cookie analítica</td>
+                  <td className="border text-left align-top p-2">Amplitude Inc.</td>
+                  <td className="border text-left align-top p-2">Distinguir a los usuarios y analizar su comportamiento en el sitio web.</td>
+                  <td className="border text-left align-top p-2">1 año</td>
             </tr>
             </tbody>
           </table>
@@ -81,10 +81,10 @@ function CookiesPolicy() {
           <p>Si el Usuario desea borrar de su navegador las cookies registradas por nuestro Sitio Web y/o Plataforma, en general, deberá ir al menú Preferencias o Configuración del navegador y buscar la sección Privacidad. A modo de ejemplo, el Usuario puede seguir las siguientes instrucciones:
           </p>
           <ul>
-            <li><a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer">Firefox</a></li>
-            <li><a href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies">Internet Explorer 10</a></li>
-            <li><a href="https://support.apple.com/en-gb/HT201265">Safari</a></li>
-            <li><a href="https://support.google.com/chrome/answer/95647?hl=en">Google Chrome
+              <li><a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all " href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer">Firefox</a></li>
+              <li><a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all " href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies">Internet Explorer 10</a></li>
+              <li><a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all " href="https://support.apple.com/en-gb/HT201265">Safari</a></li>
+              <li><a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all " href="https://support.google.com/chrome/answer/95647?hl=en">Google Chrome
             </a></li>
           </ul>
           <h2 className="text-2xl  font-bold my-4">6. Contacto</h2>
@@ -94,6 +94,7 @@ function CookiesPolicy() {
             <span className="font-bold">Fecha de actualización</span>: 25 de febrero de 2021
           </p>
         </section>
+      </div>
       </div>
     </Layout>
   );

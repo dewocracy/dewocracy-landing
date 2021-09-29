@@ -8,11 +8,12 @@ function PrivacyPolicy() {
   return (
     <Layout>
       <SEO title="Política de Privacidad" />
-      <div className="w-full bg-fixed min-h-screen  py-16">
+      <div className="flex justify-center">
+        <div className="w-full bg-fixed min-h-screen  max-w-4xl  py-16">
         <section className="rounded bg-white container mx-auto px-8 py-12 legal">
           <h1 className="text-5xl font-bold mb-12">Política de Privacidad</h1>
           <h2 className="text-2xl  font-bold my-4">1. Introducción</h2>
-          <p>
+            <p className="mt-4">
             DeWocracy titular del sitio web en{" "}
             <Link href="/">www.dewocracy.com</Link> (en adelante, el “Sitio Web”)
             y de la plataforma DeWocracy (“Plataforma”) y aplicación para
@@ -20,7 +21,7 @@ function PrivacyPolicy() {
             de los datos de los Usuarios de los servicios y Visitantes que
             acceden al Sitio Web.
           </p>
-          <p>
+            <p className="mt-4">
             Mediante la presente Política de Privacidad informa a los usuarios
             que se hayan registrado en el Sitio Web (“Usuarios”) y otras
             personas que visiten el Sitio Web y/o se comuniquen con DeWocracy
@@ -34,70 +35,70 @@ function PrivacyPolicy() {
             corresponda de los Visitantes del Sitio Web.
           </p>
           <h2 className="text-2xl  font-bold my-4">2. Responsable de Tratamiento</h2>
-          <p>
+            <p className="mt-4">
             El Responsable de Tratamiento es DEWOCRACY LABS, S.L., con domicilio
             social en C/ Balmes 403-407 Escalera A 5º 2ª, 08022, Barcelona,
             España y CIF nº. B02920247. E-mail de contacto:
           </p>
           <h2 className="text-2xl  font-bold my-4">3. Selección de Plan y registro</h2>
-          <table>
+            <table className=" border text-left align-top">
             <thead>
               <tr>
-                <th>Datos recogidos</th>
-                <th>Finalidad</th>
-                <th>Base legal</th>
-                <th>Plazo de conservación</th>
+                  <th className="border text-left align-top p-2">Datos recogidos</th>
+                  <th className="border text-left align-top p-2">Finalidad</th>
+                  <th className="border text-left align-top p-2">Base legal</th>
+                  <th className="border text-left align-top p-2">Plazo de conservación</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>
+              <tbody className="border text-left align-top">
+                <tr className="border text-left align-top">
+                  <td className="border text-left align-top p-2">
                   <span className="font-bold">Identificativos</span>: nombre,
                   apellidos y correo electrónico, nombre empresa.
                 </td>
-                <td>
+                  <td className="border text-left align-top p-2">
                   Prestar por parte de DeWocracy los Servicios contratados.
                 </td>
-                <td>Ejecución del contrato</td>
-                <td>
+                  <td className="border text-left align-top p-2">Ejecución del contrato</td>
+                  <td className="border text-left align-top p-2">
                   Durante el plazo de 5 años tras la formalización de la
                   relación contractual para atender a cualquier responsabilidad
                   legal que pudiera derivarse de la misma.
                 </td>
               </tr>
               <tr>
-                <td>
+                  <td className="border text-left align-top p-2">
                   <span className="font-bold">Identificativos</span>: nombre y
                   correo electrónico.
                 </td>
-                <td>
+                  <td className="border text-left align-top p-2">
                   Gestionar las consultas, solicitud o petición que los Usuarios
                   puedan realizar sobre DeWocracy.
                 </td>
-                <td>Interés legítimo.</td>
-                <td>
+                  <td className="border text-left align-top p-2">Interés legítimo.</td>
+                  <td className="border text-left align-top p-2">
                   Los datos de carácter personal tratados para esta finalidad
                   serán conservados el tiempo que sea necesario para atender la
                   consulta, solicitud o petición realizada por el Usuario.
                 </td>
               </tr>
               <tr>
-                <td>
+                  <td className="border text-left align-top p-2">
                   <span className="font-bold">Identificativos</span>: nombre y
                   correo electrónico.
                 </td>
-                <td>
+                  <td className="border text-left align-top p-2">
                   Cuando lo solicite, enviar comunicaciones comerciales e
                   información relativas a los servicios de DeWocracy.
                 </td>
-                <td>Consentimiento (*).</td>
-                <td>
+                  <td className="border text-left align-top p-2">Consentimiento (*).</td>
+                  <td className="border text-left align-top p-2">
                   Los datos recogidos serán conservados hasta que el Usuario
                   decida retirar el consentimiento.
                 </td>
               </tr>
               <tr>
-                <td>
+                  <td className="border text-left align-top p-2">
                   <span className="font-bold">Navegación</span>: la IP y otras
                   características de la navegación de los Visitantes y Usuarios
                   (ej. ubicación y/o dispositivo) derivadas del uso de las
@@ -107,7 +108,7 @@ function PrivacyPolicy() {
                   uso de las cookies y tecnologías similares de seguimiento que
                   realiza el Sitio Web.
                 </td>
-                <td>
+                  <td className="border text-left align-top p-2">
                   Realizar análisis de comportamiento de navegación y
                   estadísticos: La información recopilada a través de las
                   cookies y otras tecnologías de seguimiento similares que
@@ -116,7 +117,7 @@ function PrivacyPolicy() {
                   Sitio Web, o necesidad de hacer cambios el diseño, funciones y
                   servicios.
                 </td>
-                <td>
+                  <td className="border text-left align-top p-2">
                   Consentimiento prestado a través del banner de cookies al
                   iniciar la navegación. Puedes retirar tu consentimiento
                   siguiendo los pasos indicados en la{" "}
@@ -125,7 +126,7 @@ function PrivacyPolicy() {
                   a nuestro interés legítimo para analizar y evaluar el uso
                   realizado del Sitio Web.
                 </td>
-                <td>
+                  <td className="border text-left align-top p-2">
                   Los plazos de conservación de la información indicada la cual
                   es recopilada, dependen de cada cookie específica. Para más
                   información sobre los plazos de conservación de la información
@@ -135,7 +136,7 @@ function PrivacyPolicy() {
               </tr>
             </tbody>
           </table>
-          <p>
+            <p className="mt-4">
             (*) El Usuario debe tener en cuenta que incluso si opta por no
             recibir comunicaciones promocionales, DeWocracy puede continuar
             enviándole correos electrónicos no promocionales y otros tipos de
@@ -147,7 +148,7 @@ function PrivacyPolicy() {
             en cualquier momento.
           </p>
           <h2 className="text-2xl  font-bold my-4">4. Comunicación de datos</h2>
-          <p>
+            <p className="mt-4">
             De manera general y sin perjuicio de lo específicamente contemplado
             en la presente esta Política de Privacidad, DeWocracy no revelará
             sus datos a terceros, no obstante, DeWocracy informa que para
@@ -156,7 +157,7 @@ function PrivacyPolicy() {
             caso Visitante, a terceros proveedores de servicios como:
           </p>
           <ul>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Netlify Inc.</span>como proveedor de
               servicios de hosting el cual en la ejecución de sus servicios
               puede realizar transferencias internacionales fuera del EEE al
@@ -168,7 +169,7 @@ function PrivacyPolicy() {
               </a>
               .
             </li>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Amplitude Inc.</span>como proveedor de
               herramienta de análisis del comportamiento de los Usuarios y
               Visitantes que hayan aceptado la instalación de cookies de
@@ -182,7 +183,7 @@ function PrivacyPolicy() {
                 .
               </a>
             </li>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Mailchimp Inc.</span>como proveedor de
               servicios de marketing por correo electrónico, a efectos de que
               DeWocracy pueda realizar el envío de newsletters a los Usuarios
@@ -195,7 +196,7 @@ function PrivacyPolicy() {
                 https://mailchimp.com/es/help/about-the-general-data-protection-regulation/
               </a>
             </li>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Salesforce Inc (Heroku)</span>como
               proveedor de servicios de desarrollo en la nube, el cual en la
               ejecución de sus servicios puede realizar transferencias
@@ -207,7 +208,7 @@ function PrivacyPolicy() {
               </a>
             </li>
           </ul>
-          <p>
+            <p className="mt-4">
             DeWocracy podrá compartir los datos de contacto profesional de
             oportunidades de negocio con nuestros clientes y socios comerciales,
             así como poner los datos de carácter personal a disposición de
@@ -221,7 +222,7 @@ function PrivacyPolicy() {
             suprimidos por la entidad receptora.
           </p>
           <h2 className="text-2xl  font-bold my-4">5. Derechos de protección de datos</h2>
-          <p>
+            <p className="mt-4">
             El Usuario podrá ejercer los derechos de acceso, rectificación,
             cancelación, oposición y si procede de, portabilidad y limitación,
             enviando un escrito acompañado de una fotocopia del DNI o documento
@@ -233,7 +234,7 @@ function PrivacyPolicy() {
             representante legal, previa acreditación de su identidad, o si
             procede, de la suficiencia de la representación.
           </p>
-          <p>
+            <p className="mt-4">
             Asimismo, el Usuario tendrá derecho a presentar una reclamación ante
             la Agencia Española de Protección de Datos (
             <a href="https://www.aepd.com">www.aepd.com</a>) si considera que se
@@ -245,7 +246,7 @@ function PrivacyPolicy() {
             ANEXO 1. TRATAMIENTO DE DATOS PERSONALES POR DEWOCRACY EN CALIDAD DE
             ENCARGADO DEL TRATAMIENTO
           </h1>
-          <p>
+            <p className="mt-4">
             DeWocracy podrá acceder a ciertos datos personales bajo la
             responsabilidad de la Empresa que contrata los Servicios a efectos
             de que DeWocracy pueda prestar correctamente los mismos. La Empresa,
@@ -255,17 +256,17 @@ function PrivacyPolicy() {
             la Responsable del Tratamiento, con el fin de prestar el Servicio.
           </p>
           <h2 className="text-2xl  font-bold my-4">1. Definiciones</h2>
-          <p>
+            <p className="mt-4">
             A los fines de este Anexo, los siguientes términos tendrán el
             significado aquí establecido:
           </p>
           <ul>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Acuerdo</span>: acuerdo entre
               DeWocracy y la Empresa para la prestación de los servicios de
               DeWocracy, tal como se establece en DeWocracy.com.
             </li>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Datos personales</span>: toda la
               información sobre un individuo identificado o identificable; una
               persona física identificable significará cualquier persona cuya
@@ -275,23 +276,23 @@ function PrivacyPolicy() {
               online o uno o más elementos de identidad física, fisiológica,
               genética, psicológica, económica, cultural o social.
             </li>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Encargado del Tratamiento</span>: la
               persona física o jurídica, autoridad pública u otra organización
               que procesa datos personales en nombre del Responsable del
               Tratamiento.
             </li>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Interesado</span>: es el individuo
               identificado o identificable.
             </li>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Responsable del Tratamiento</span>: la
               persona física o jurídica, autoridad pública u otra organización
               que, sola o conjuntamente con otros, define los propósitos y los
               medios del tratamiento.
             </li>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Tratamiento</span>: cualquier
               operación o conjunto de operaciones llevadas a cabo con Datos
               personales o conjuntos de datos personales, ya sea por procesos
@@ -301,7 +302,7 @@ function PrivacyPolicy() {
               transmisión. difusión o cualquier otra forma de acceso, cotejo o
               interconexión, limitación, supresión o destrucción.
             </li>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Brecha de seguridad</span>: cualquier
               brecha de seguridad que resulte en la destrucción, pérdida o
               alteración accidental o ilegal de los datos personales
@@ -310,7 +311,7 @@ function PrivacyPolicy() {
             </li>
           </ul>
           <h2 className="text-2xl  font-bold my-4">2. Objecto y duración</h2>
-          <p>
+            <p className="mt-4">
             Este anexo regula el tratamiento de datos personales por parte de
             DeWocracy, como Encargado del Tratamiento, bajo la responsabilidad
             del Responsable del Tratamiento durante el período durante el cual
@@ -319,7 +320,7 @@ function PrivacyPolicy() {
             el Apéndice 1 a continuación.
           </p>
           <h2 className="text-2xl  font-bold my-4">3. Cumplimiento de las leyes de protección de datos</h2>
-          <p>
+            <p className="mt-4">
             Tanto DeWocracy como el Responsable deberán cumplir con todas las
             leyes aplicables relacionadas con la privacidad y la protección de
             datos, incluido (sin limitación) el Reglamento general de protección
@@ -333,28 +334,28 @@ function PrivacyPolicy() {
           <h2 className="text-2xl  font-bold my-4">
             4. Derechos y responsabilidades del Responsable del Tratamiento
           </h2>
-          <p>
+            <p className="mt-4">
             Según lo establecido en el RGPD, el Responsable del Tratamiento
             deberá:
           </p>
-          <p>
-            <p>
+            <p className="mt-4">
+              <p className="mt-4">
               a) Implemente medidas técnicas y organizativas apropiadas para
               garantizar y poder demostrar que el tratamiento se lleva a cabo de
               acuerdo con la legislación aplicable.
             </p>
-            <p>b) Adoptar políticas de protección de datos.</p>
-            <p>
+              <p className="mt-4">b) Adoptar políticas de protección de datos.</p>
+              <p className="mt-4">
               c) Asegúrese de que el Responsable de Privacidad o, en su
               ausencia, el Responsable de Seguridad esté involucrado de manera
               adecuada y oportuna en todos los asuntos relacionados con la
               protección de Datos Personales.
             </p>
-            <p>
+              <p className="mt-4">
               d) Adherirse a un código de conducta que pueda ser aprobado por la
               Comisión u otra autoridad competente.
             </p>
-            <p>
+              <p className="mt-4">
               e) Mantenga un registro de las actividades de tratamiento en el
               caso de tratamiento de Datos personales que puedan suponer un
               riesgo para los derechos y libertades del interesado y/o de manera
@@ -362,12 +363,12 @@ function PrivacyPolicy() {
               especiales de datos y/o datos relacionados con condenas e
               infracciones.
             </p>
-            <p>
+              <p className="mt-4">
               f) Poner a disposición de las partes interesadas los aspectos
               esenciales de este acuerdo, a solicitud del Encargado del
               Tratamiento.
             </p>
-            <p>
+              <p className="mt-4">
               g) Responda a los derechos legales establecidos por la ley
               aplicable sobre la protección de datos personales y cumpla con las
               estipulaciones indicadas en la cláusula 5, incluso si estos se
@@ -377,11 +378,11 @@ function PrivacyPolicy() {
           <h2 className="text-2xl  font-bold my-4">
             5. Derechos y responsabilidades del Encargado del Tratamiento.
           </h2>
-          <p>
+            <p className="mt-4">
             Según lo establecido en el RGPD, DeWocracy como Encargado del
             Tratamiento deberá:
           </p>
-          <p>
+            <p className="mt-4">
             a) Realizar el tratamiento de sus datos personales solo sobre la
             base de instrucciones documentadas del Responsable del Tratamiento,
             incluidas las transferencias de datos personales a un tercer país u
@@ -392,42 +393,42 @@ function PrivacyPolicy() {
             tratamiento, a menos que la ley o el interés público prohíban lo
             contrario.
           </p>
-          <p>
+            <p className="mt-4">
             b) Asegúrese de que las personas autorizadas para procesar datos
             personales se hayan comprometido a respetar la confidencialidad o
             estén sujetas a una obligación de confidencialidad de naturaleza
             legal.
           </p>
-          <p>
+            <p className="mt-4">
             c) Tome todas las medidas técnicas y organizativas adecuadas para
             garantizar un nivel de seguridad adecuado al riesgo de tratamiento.
           </p>
-          <p>
+            <p className="mt-4">
             d) Respetar las condiciones para recurrir a otro Encargado del
             Tratamiento, según lo establecido en la legislación vigente sobre
             protección de datos personales.
           </p>
-          <p>
+            <p className="mt-4">
             e) Asistir al Responsable del Tratamiento, teniendo en cuenta la
             naturaleza del tratamiento, a través de medidas técnicas y
             organizativas apropiadas, siempre que sea posible, para que pueda
             cumplir con su obligación de responder a las solicitudes para el
             ejercicio de los derechos de los interesados.
           </p>
-          <p>
+            <p className="mt-4">
             f) Ayude al Responsable del Tratamiento a garantizar que cumpla con
             sus obligaciones, teniendo en cuenta la naturaleza del tratamiento y
             la información que está disponible para el Encargado del
             Tratamiento.
           </p>
-          <p>
+            <p className="mt-4">
             g) A elección del Responsable del Tratamiento, destruya o devuelva
             todos los Datos personales una vez que se hayan completado los
             servicios de tratamiento y destruya las copias existentes, a menos
             que la ley de la Unión o del Estado miembro aplicable exija la
             conservación de los Datos personales.
           </p>
-          <p>
+            <p className="mt-4">
             h) Poner a disposición del Responsable del Tratamiento toda la
             información necesaria para demostrar el cumplimiento de las
             obligaciones establecidas en este documento, así como para permitir
@@ -435,35 +436,35 @@ function PrivacyPolicy() {
             inspecciones, por parte del controlador u otros auditores
             autorizados para el Responsable del Tratamiento.
           </p>
-          <p>
+            <p className="mt-4">
             i) Procese los Datos personales puestos a disposición del Encargado
             del Tratamiento de una manera que garantice que el personal a cargo
             siga las instrucciones del Responsable del Tratamiento.
           </p>
-          <p>
+            <p className="mt-4">
             j) Asegúrese de que el Responsable de Privacidad o, en su ausencia,
             el Responsable de Seguridad esté involucrado de manera adecuada y
             oportuna en todos los asuntos relacionados con la protección de
             Datos Personales.
           </p>
-          <p>
+            <p className="mt-4">
             k) Adherirse a un Código de Conducta aprobado por la Comisión u otra
             autoridad competente.
           </p>
-          <p>
+            <p className="mt-4">
             l) Mantenga un registro de las actividades de tratamiento en el caso
             de tratamiento de Datos personales que puedan suponer un riesgo para
             los derechos y libertades del interesado y/o de manera no ocasional,
             o que implique el tratamiento de categorías especiales de datos y/o
             datos relacionados con condenas e infracciones.
           </p>
-          <p>
+            <p className="mt-4">
             m) Responda a los derechos legales establecidos por el RGPD y cumpla
             con las estipulaciones indicadas en la cláusula 6, incluso si estos
             se dirigieron originalmente al Responsable del Tratamiento.
           </p>
           <h2 className="text-2xl  font-bold my-4">10. Ejercicio de sus derechos por parte de los interesados</h2>
-          <p>
+            <p className="mt-4">
             Si el interesado aborda una solicitud o ejerce alguno de los
             derechos establecidos en las leyes de protección de datos, el
             controlador y/o el procesador deben proporcionar la información
@@ -472,7 +473,7 @@ function PrivacyPolicy() {
             extenderse por otros dos meses si es necesario, teniendo en cuenta
             la complejidad de la aplicación y el número de solicitudes.
           </p>
-          <p>
+            <p className="mt-4">
             Del mismo modo, pero en el caso de que el Responsable del
             Tratamiento y/o el procesador no procedan con la solicitud del
             interesado, deberá informar a este último sin demora y, a más
@@ -485,13 +486,13 @@ function PrivacyPolicy() {
             que él/ella solicite que se haga lo contrario.
           </p>
           <h2 className="text-2xl  font-bold my-4">7. Consentimiento del Interesado</h2>
-          <p>
+            <p className="mt-4">
             Al proporcionar a DeWocracy datos personales, en la medida permitida
             por la ley, el Responsable deberá recabar los consentimientos
             necesarios para que DeWocracy pueda usarlos datos personales
             indicados para los fines anteriores.
           </p>
-          <p>
+            <p className="mt-4">
             En particular, el Responsable del Tratamiento de los datos de los
             empleados de la Empresa (“Interesados”), declara y garantiza a
             DeWocracy que tiene el consentimiento expreso de los Interesados
@@ -500,7 +501,7 @@ function PrivacyPolicy() {
           </p>
 
           <h2 className="text-2xl  font-bold my-4">8. Subcontratación</h2>
-          <p>
+            <p className="mt-4">
             Como Encargado del Tratamiento, DeWocracy puede proporcionar acceso
             a un procesador de subcontratista a los datos personales si
             consideramos razonablemente que dicho acceso y tratamiento son
@@ -513,7 +514,7 @@ function PrivacyPolicy() {
             1.
           </p>
           <h2 className="text-2xl  font-bold my-4">9. Transferencias internacionales</h2>
-          <p>
+            <p className="mt-4">
             Las transferencias internacionales de datos personales solo se
             pueden realizar si se cumplen los requisitos de las leyes de
             protección de datos. Si una parte realiza una transferencia
@@ -526,7 +527,7 @@ function PrivacyPolicy() {
             contrato con DeWocracy con las garantías contractuales adecuadas.
           </p>
           <h2 className="text-2xl  font-bold my-4">10. Brechas de seguridad</h2>
-          <p>
+            <p className="mt-4">
             En la medida en que exista una instrucción de una autoridad
             supervisora competente, ley nacional o reglamento, en caso de
             violación de la seguridad de los Datos personales, el Responsable
@@ -539,7 +540,7 @@ function PrivacyPolicy() {
           </p>
 
           <h2 className="text-2xl  font-bold my-4">11. Terminación, resolución y caducidad</h2>
-          <p>
+            <p className="mt-4">
             En caso de terminación, resolución o vencimiento de la relación
             contractual para la prestación de los servicios que se establecen a
             continuación entre el Responsable del Tratamiento y el Encargado del
@@ -554,7 +555,7 @@ function PrivacyPolicy() {
           <h2 className="underline">
             Apéndice 1 – Detalle del tratamiento de los datos personales
           </h2>
-          <p>
+            <p className="mt-4">
             De acuerdo con las disposiciones establecidas en este documento y en
             el RGPD, el Encargado del Tratamiento realizará el tratamiento del
             tipo y la categoría de Datos personales proporcionados por el
@@ -562,26 +563,26 @@ function PrivacyPolicy() {
           </p>
           <ul>
             {/* TODO: add employee details here */}
-            <li>
+              <li className="mt-4">
               Empleados de la Empresa que contrata los Servicios de DeWocracy:
               nombre, apellido, dirección de correo electrónico
             </li>
           </ul>
-          <p>
+            <p className="mt-4">
             Se pueden agregar más datos a la lista, previa notificación y
             aprobación del Responsable.
           </p>
-          <p>
+            <p className="mt-4">
             <span className="font-bold">Tipos de tratamiento</span>:
             recopilación, registro, organización, almacenamiento, consulta, uso,
             borrado o destrucción, cifrado, seudonimización, agregación.
           </p>
-          <p>
+            <p className="mt-4">
             <span className="font-bold">Subcontratistas aprobados</span>{" "}
             (Subcontratista/Servicio):
           </p>
           <ul>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Amazon Web Services</span>: Servicio
               de hosting. Puede consultar el Contrato de Encargado del
               Tratamiento en:{" "}
@@ -590,12 +591,12 @@ function PrivacyPolicy() {
               </a>
             </li>
           </ul>
-          <p>
+            <p className="mt-4">
             <span className="font-bold">Transferencias internacionales</span>{" "}
             (Destinatario / Servicio):
           </p>
           <ul>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Netlify Inc.</span>como proveedor de
               servicios de hosting el cual en la ejecución de sus servicios
               puede realizar transferencias internacionales fuera del EEE al
@@ -607,7 +608,7 @@ function PrivacyPolicy() {
               </a>
               .
             </li>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Amplitude Inc.</span>como proveedor de
               herramienta de análisis del comportamiento de los Usuarios y
               Visitantes que hayan aceptado la instalación de cookies de
@@ -621,7 +622,7 @@ function PrivacyPolicy() {
                 .
               </a>
             </li>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Mailchimp Inc.</span>como proveedor de
               servicios de marketing por correo electrónico, a efectos de que
               DeWocracy pueda realizar el envío de newsletters a los Usuarios
@@ -634,7 +635,7 @@ function PrivacyPolicy() {
                 https://mailchimp.com/es/help/about-the-general-data-protection-regulation/
               </a>
             </li>
-            <li>
+              <li className="mt-4">
               <span className="font-bold">Salesforce Inc (Heroku)</span>como
               proveedor de servicios de desarrollo en la nube, el cual en la
               ejecución de sus servicios puede realizar transferencias
@@ -646,10 +647,11 @@ function PrivacyPolicy() {
               </a>
             </li>
           </ul>
-          <p>
+            <p className="mt-4">
             <span className="font-bold">Versión</span>: 22 de febrero de 2021
           </p>
         </section>
+      </div>
       </div>
     </Layout>
   );
