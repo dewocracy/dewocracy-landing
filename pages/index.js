@@ -17,7 +17,7 @@ function IndexPage() {
       <SEO title="DeWocracy - Remote Work | Work from anywhere" />
 
       <div
-        className="lg:w-full bg-no-repeat	bg-cover  absolute left-0 top-50 h-hero	 "
+        className="lg:w-full bg-no-repeat	bg-cover mx-4 lg:mx-0 absolute left-0 top-50 h-hero	 "
 
 
       >
@@ -62,7 +62,7 @@ function IndexPage() {
                 alt="Screenshots of the Dewocracy Apps"
                 layout="fill"
                 placeholder="blur"
-                blurDataURL={`/_next/image?url=/images/home_mockup.png.&w=16&q=1`} />
+                blurDataURL={`/_next/image?url=/images/home_mockup.png&w=16&q=1`} />
 
             </div>
 
@@ -104,7 +104,7 @@ function IndexPage() {
                 alt="Screenshot hotdesking"
                 layout="fill"
                 placeholder="blur"
-                blurDataURL={`/_next/image?url=/images/desk_booking_home.png.&w=16&q=1`} />
+                blurDataURL={`/_next/image?url=/images/desk_booking_home.png&w=16&q=1`} />
 
             </div>
           </div>
@@ -123,7 +123,7 @@ function IndexPage() {
                 alt="Screenshot Neighbourhoods"
                 layout="fill"
                 placeholder="blur"
-                blurDataURL={`/_next/image?url=/images/remote_office_home.png.&w=16&q=1`} />
+                blurDataURL={`/_next/image?url=/images/remote_office_home.png&w=16&q=1`} />
 
             </div>
 
@@ -188,7 +188,7 @@ function IndexPage() {
                 alt="Screenshots Neighourhoods"
                 layout="fill"
                 placeholder="blur"
-                blurDataURL={`/_next/image?url=/images/manage_home.png.&w=16&q=1`} />
+                blurDataURL={`/_next/image?url=/images/manage_home.png&w=16&q=1`} />
 
             </div>
           </div>
@@ -228,7 +228,7 @@ function IndexPage() {
                 alt="Screenshots Analytics and Reports"
                 layout="fill"
                 placeholder="blur"
-                blurDataURL={`/_next/image?url=/images/reports_home.png.&w=16&q=1`} />
+                blurDataURL={`/_next/image?url=/images/reports_home.png&w=16&q=1`} />
 
 
             </div>
