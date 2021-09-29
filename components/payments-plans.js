@@ -12,13 +12,13 @@ export const PaymentsPlans = () => {
     <>
 
 
-      <h2 className="text-2xl pt-24">
+      <h2 className="text-2xl pt-24 text-center md:text-left">
         {t('title')}
 
       </h2>
 
 
-      <h2 className="text-left pt-4 font-bold text-5xl pb-8">
+      <h2 className="pt-4 font-bold text-5xl pb-8 text-center md:text-left">
         {t('title_question')}
       </h2>
 
@@ -26,7 +26,7 @@ export const PaymentsPlans = () => {
         <div
           data-sal="zoom-in"
           data-sal-easing="ease"
-          className="grid rounded-lg bg-white p-8 md:p-10 ml-24 max-w-sm gap-y-8 my-4 lg:my-16"
+          className="grid rounded-lg bg-white p-8 md:p-10 lg:ml-24 max-w-sm gap-y-8 my-4 lg:my-16"
         >
           <div>
             <p className="text-primary-800 text-2xl md:text-4xl font-bold pb-4">
@@ -95,7 +95,7 @@ export const PaymentsPlans = () => {
           <OutboundLink
             eventType="signup" eventProperties={{ plan: "free", location: "plan listing" }}
 
-            className="shadow-2xl h-16 bg-primary-400 hover:bg-primary-800 text-white  pt-4  text-lg  transition-colors duration-500  rounded-full py-4 px-16 text-center focus:shadow-outline"
+            className="shadow-2xl h-16 bg-primary-400 hover:bg-primary-800 text-white  pt-4  text-lg  transition-colors duration-500  rounded-full py-4 px-4 xl:px-16 text-center focus:shadow-outline"
             href="https://app.dewocracy.com/register/free"
           >
             {t('start_free')}
@@ -168,7 +168,7 @@ export const PaymentsPlans = () => {
           <OutboundLink
             eventType="signup"
             eventProperties={{ plan: "business", location: "plan listing" }}
-            className="shadow-2xl bg-primary-400 hover:bg-primary-800 text-white  h-16  text-lg  transition-colors duration-150  rounded-full py-4 px-16 text-center focus:shadow-outline"
+            className="shadow-2xl bg-primary-400 hover:bg-primary-800 text-white  h-16  text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 text-center focus:shadow-outline"
             href="#contact"
           >
             {t('explore')}

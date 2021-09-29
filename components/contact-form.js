@@ -13,7 +13,7 @@ export const ContactForm = () => {
 
   return (
     <>
-      <h2 className="font-bold text-primary-800 text-2xl md:text-4xl lg:text-6xl text-center py-16 lg:pt-24">
+      <h2 className="font-bold text-primary-800 text-4xl lg:text-6xl text-center py-16 lg:pt-24">
         {t('title')}
       </h2>
       <p key="description" className="md:px-24 pb-5 mb-12 text-center text-2xl text-primary-800">
@@ -89,7 +89,7 @@ export const ContactForm = () => {
       </div>
 
       <div className="grid grid-cols-1 justify-center mt-md:mr-16 mt-10 gap-y-4">
-        <label htmlFor="message" className="font-bold">
+          <label htmlFor="message" className="font-bold text-primary-800">
             {t('message')}
         </label>
         <textarea
@@ -105,7 +105,7 @@ export const ContactForm = () => {
         <button
           aria-label="Send"
           type="submit"
-            className="shadow-2xl  bg-primary-400 hover:bg-primary-800 text-white  text-xl  transition-colors duration-150   focus:shadow-outlinet cursor-pointer w-full md:w-auto my-10 rounded-full py-4 px-16"
+            className="shadow-2xl  bg-primary-400 hover:bg-primary-800 text-white  text-xl  transition-colors duration-150   focus:shadow-outlinet cursor-pointer w-full md:w-auto my-10 rounded-full py-4 px-4 xl:px-16"
         >
             {t('submit_button')}
         </button>
