@@ -16,14 +16,17 @@ function IndexPage() {
     <Layout>
       <SEO title="DeWocracy - Remote Work | Work from anywhere" />
 
-      <div style={{ backgroundImage: "url('/images/background3.png')" }}
-        className="lg:w-full bg-no-repeat	bg-cover mx-4 lg:mx-0 absolute left-0 top-50	 "
+      <div
+        className="lg:w-full bg-no-repeat	bg-cover mx-4 lg:mx-0 absolute left-0 top-50 h-hero	 "
 
 
       >
 
-        <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen pl-10 pr-0 lg:pb-4">
-          <div className="grid content-center px-0 md:px-8 lg:px-0">
+
+        <Image layout="fill" className="absolute pointer-events-none" src="/images/background3.png" alt="Background Image" />
+
+        <section className="z-10 container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen pl-10 pr-0 lg:pb-4">
+          <div className="z-10 grid content-center px-0 md:px-8 lg:px-0">
             <div className="md:mt-24 lg:mt-0 mb-16">
               <h1 className="text-4xl text-white mt-8 lg:text-6xl  font-bold leading-tight pb-4">
                 {t('implement_flexible_remote_work')}
@@ -50,9 +53,19 @@ function IndexPage() {
             </div>
           </div>
           <div className="mt-20grid content-center px-0 md:px-8 lg:px-0">
-            <div className="mt-20 w-200 ml-8 max-w-2xl">
-              <img src="/images/home_mockup.png" alt="Screenshots of the Dewocracy Apps" />
+
+
+            <div className="relative mt-20 w-200 ml-6 max-w-2xl h-md lg:h-xl  ">
+              <Image
+                className="object-contain"
+                src="/images/home_mockup.png"
+                alt="Screenshots of the Dewocracy Apps"
+                layout="fill"
+                placeholder="blur"
+                blurDataURL={`/_next/image?url=/images/home_mockup.png.png&w=16&q=1`} />
+
             </div>
+
           </div>
         </section>
       </div>

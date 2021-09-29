@@ -7,6 +7,8 @@ module.exports = {
       md: '18rem',
       logo: '48px',
       xl: '36rem',
+      hero: '48rem',
+
     },
     container: {
       padding: {
