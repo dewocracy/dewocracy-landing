@@ -8,6 +8,7 @@ module.exports = {
       logo: '48px',
       xl: '36rem',
       hero: '48rem',
+      96: "32rem"
 
     },
     container: {
