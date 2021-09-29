@@ -51,7 +51,7 @@
     "submit_button": "Enviar mensaje",
     "name_label": "Nombre",
     "email_label": "Email",
-    "message": "",
+    "message": "Mensaje",
     "email_placeholder": "michaelwazowski@monstruos-sa.com",
     "company_placeholder": "Monstruos, S.A.",
     "thanks": "Thanks for contacting us! We will get in touch with you shortly",
