@@ -2,17 +2,20 @@ import PropTypes from "prop-types";
 import React from "react";
 import Head from 'next/head'
 import config from "../config"
+import { useRouter } from 'next/router'
 
 function SEO({ description, title, url, image }) {
+  const { locale } = useRouter()
 
   const { siteUrl, siteDescription, siteTitle, author } = config
 
 
   const fullURL = url ?? siteUrl
-  const fullImage = image ? siteUrl + image : siteUrl + "/images/banner-dw.png"
+  const fullImage = image ? siteUrl + `images/og/${image}_${locale}.jpg` : siteUrl + `images/og/default_${locale}.jpg`
 
   const fullDesscription = description ?? siteDescription
 
+  console.log({ fullImage });
   return (
     <Head>
       <title>{`${title} | ${siteTitle}`}</title>

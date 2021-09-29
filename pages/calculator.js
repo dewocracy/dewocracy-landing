@@ -16,6 +16,7 @@ function Calculator() {
             <SEO
                 description={t('subtitle')}
                 title={`${t('title')} | DeWocracy - Remote Work | Work from anywhere"`}
+                image="calculator"
 
             />
 

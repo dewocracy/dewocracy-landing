@@ -16,6 +16,7 @@ function Neighbourhoods() {
             <SEO
                 description={t('text_1')}
                 title={`${t('title')} | DeWocracy - Flexible Remote Work`}
+                image="analytics"
 
             />
             <h1 className="font-bold text-primary-800 my-12	text-4xl text-center">{t('title')}</h1>
