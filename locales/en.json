@@ -58,7 +58,7 @@
     "submit_button": "Send Message",
     "name_label": "Name",
     "email_label": "Email",
-    "message": "",
+    "message": "Message",
     "email_placeholder": "michaelwazowski@monstersinc.com",
     "company_placeholder": "Monsters, Inc",
     "thanks": "Thanks for contacting us! We will get in touch with you shortly",
