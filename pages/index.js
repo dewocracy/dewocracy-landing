@@ -23,7 +23,7 @@ function IndexPage() {
       >
 
 
-        <Image layout="fill" className="absolute pointer-events-none" src="/images/background3.png" alt="Background Image" />
+        <Image priority={true} layout="fill" className="absolute pointer-events-none" src="/images/background3.png" alt="Background Image" />
 
         <section className="z-10 container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen pl-10 pr-0 lg:pb-4">
           <div className="z-10 grid content-center px-0 md:px-8 lg:px-0">
@@ -31,7 +31,7 @@ function IndexPage() {
               <h1 className="text-4xl text-white mt-8 lg:text-6xl  font-bold leading-tight pb-4">
                 {t('implement_flexible_remote_work')}
               </h1>
-              <p className="text-2xl text-white py-12 mr-20">
+              <p className="text-2xl text-white py-12 pr-24">
                 <strong className="pr-2">DeWocracy</strong>{t('Save thousands of euros')}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 mt-6 md:mt-0">
@@ -56,7 +56,7 @@ function IndexPage() {
 
 
             <div className="relative mt-20 w-200 ml-6 max-w-2xl h-md lg:h-xl  ">
-              <Image
+              <Image priority={true}
                 className="object-contain"
                 src="/images/home_mockup.png"
                 alt="Screenshots of the Dewocracy Apps"
