@@ -9,6 +9,7 @@ import { useTranslations } from 'next-intl';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { ResourceDropdown } from "./resourcesDropdown"
+import Image from "next/image";
 
 function Header() {
   const [isExpanded, toggleExpansion] = React.useState(false);
@@ -101,7 +102,19 @@ function Header() {
             className={`w-32 md:w-40	 flex items-center text-black hover:text-primary-400 transition-colors duration-150 ${isExpanded ? `hidden` : `block`
             }`}
         >
-            <img src="/images/dewocracy-blue.svg" alt="DeWocracy logo" />
+            <div className="relative max-w-lg w-full h-logo  flex  flex-col items-center lg:flex-row">
+
+              <Image
+                className="object-contain"
+                src="/images/dewocracy-blue.svg"
+                alt="DeWocracy logo"
+                layout="fill"
+                placeholder="blur"
+                blurDataURL={`/_next/image?url=/images/dewocracy-blue.svg&w=16&q=1`} />
+
+
+            </div>
+
         </figure>
         </a>
       </Link>

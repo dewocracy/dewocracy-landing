@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 
 import { useTranslations } from 'next-intl';
 import Link from "next/link";
+import Image from "next/image";
 
 
 
@@ -48,9 +49,15 @@ function Neighbourhoods() {
                     </p>
                 </div>
 
-                <div className="flex mb-8 flex-col items-center lg:flex-row">
+                <div className="relative w-full h-md lg:h-xl  flex mb-8 flex-col items-center lg:flex-row">
 
-                    <img className="object-contain" src="/images/analytics.png" alt="Analytics Screenshot" />
+                    <Image
+                        className="object-contain"
+                        src="/images/analytics.png"
+                        alt="Analytics Screenshot"
+                        layout="fill"
+                        placeholder="blur"
+                        blurDataURL={`/_next/image?url=/images/analytics.png&w=16&q=1`} />
 
 
                 </div>

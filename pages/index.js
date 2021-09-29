@@ -1,12 +1,13 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
 import Link from 'next/link'
+import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 import { PaymentsPlans } from "../components/payments-plans";
 import { ContactForm } from "../components/contact-form";
 import { OutboundLink } from "../utils/OutboundLink";
-import { useTranslations } from 'next-intl';
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 function IndexPage() {
   const t = useTranslations("Default");
@@ -83,11 +84,15 @@ function IndexPage() {
                 </Link>
               </div>
             </div>
-            <div className="mt-8 md:mt-0 md:w-2/5 ml-2 lg:ml-20">
-              <img
+            <div className="relative mt-12 md:mt-0 md:w-3/5 ml-2 lg:ml-10 h-md lg:h-xl  ">
+              <Image
+                className="object-contain"
                 src="/images/desk_booking_home.png"
                 alt="Screenshot hotdesking"
-              />
+                layout="fill"
+                placeholder="blur"
+                blurDataURL={`/_next/image?url=/images/desk_booking_home.png.png&w=16&q=1`} />
+
             </div>
           </div>
 
@@ -96,12 +101,19 @@ function IndexPage() {
         <section className="container  mx-auto mr-3 mt-24">
 
           <div className="flex flex-col-reverse md:flex-row">
-            <div className="md:w-2/5">
-              <img
+
+
+            <div className="relative mt-12 w-full md:w-2/5 h-md lg:h-xl  ">
+              <Image
+                className="object-contain"
                 src="/images/remote_office_home.png"
                 alt="Screenshot Neighbourhoods"
-              />
+                layout="fill"
+                placeholder="blur"
+                blurDataURL={`/_next/image?url=/images/remote_office_home.png.png&w=16&q=1`} />
+
             </div>
+
             <div className="md:ml-12 lg:ml-32 mt-12 md:w-3/5 flex flex-col pr-8">
               <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 lg:pt-8 text-left">
                 {t('title_neighbourhoods')}
@@ -120,7 +132,7 @@ function IndexPage() {
               </div>
               <div className="mt-12">
                 <a href="https://calendly.com/dewocracylabs/dewocracy-demo" className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-16 focus:shadow-outline ">
-                    {t('neighbourhoods_button')}
+                  {t('neighbourhoods_button')}
                 </a>
               </div>
             </div>
@@ -156,11 +168,15 @@ function IndexPage() {
                 </Link>
               </div>
             </div>
-            <div className="mt-12 md:mt-0md:w-3/5 ml-2 lg:ml-10  ">
-              <img
+            <div className="relative mt-12 md:mt-0 md:w-3/5 ml-2 lg:ml-10 h-md lg:h-xl  ">
+              <Image
+                className="object-contain"
                 src="/images/manage_home.png"
                 alt="Screenshots Neighourhoods"
-              />
+                layout="fill"
+                placeholder="blur"
+                blurDataURL={`/_next/image?url=/images/manage_home.png.png&w=16&q=1`} />
+
             </div>
           </div>
 
@@ -188,11 +204,21 @@ function IndexPage() {
 
           </div>
 
-          <div className="flex  justify-center">
-            <img className="mt-8 w-3/4"
-              src="/images/reports_home.png"
-              alt="Screenshots Analytics and Reports"
-            />
+
+
+          <div className="flex justify-center">
+            <div className="relative  w-full h-md lg:h-xl  flex mb-8 flex-col items-center lg:flex-row">
+
+              <Image
+                className="object-contain"
+                src="/images/reports_home.png"
+                alt="Screenshots Analytics and Reports"
+                layout="fill"
+                placeholder="blur"
+                blurDataURL={`/_next/image?url=/images/reports_home.png.png&w=16&q=1`} />
+
+
+            </div>
           </div>
 
         </section>

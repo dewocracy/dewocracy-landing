@@ -2,6 +2,12 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    height: {
+      sm: '8px',
+      md: '18rem',
+      logo: '48px',
+      xl: '36rem',
+    },
     container: {
       padding: {
         DEFAULT: "1rem",

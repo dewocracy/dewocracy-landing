@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 
 import { useTranslations } from 'next-intl';
 import Link from "next/link";
+import Image from "next/image";
 
 
 
@@ -49,8 +50,32 @@ function Neighbourhoods() {
 
                 <div className="flex flex-col items-center lg:flex-row">
 
-                    <img className="object-contain	 max-w-lg h-auto" src="/images/desk-booking2.png" alt="Desk Booking Mobile " />
-                    <img className="object-contain	max-w-lg h-auto" src="/images/desk-booking1.png" alt="Desk Booking Dashbord" />
+                    <div className="relative max-w-lg w-full h-md lg:h-xl  flex mb-8 flex-col items-center lg:flex-row">
+
+                        <Image
+                            className="object-contain"
+                            src="/images/desk-booking2.png"
+                            alt="Desk Booking Mobile"
+                            layout="fill"
+                            placeholder="blur"
+                            blurDataURL={`/_next/image?url=/images/desk-booking2.png&w=16&q=1`} />
+
+
+                    </div>
+
+                    <div className="relative max-w-lg w-full h-md lg:h-xl  flex mb-8 flex-col items-center lg:flex-row">
+
+                        <Image
+                            className="object-contain"
+                            src="/images/desk-booking1.png"
+                            alt="Desk Booking Dashbord"
+                            layout="fill"
+                            placeholder="blur"
+                            blurDataURL={`/_next/image?url=/images/desk-booking1.png&w=16&q=1`} />
+
+
+                    </div>
+
 
 
                 </div>
