@@ -1,4 +1,3 @@
-const nextBuildId = require('next-build-id')
 
 
 module.exports = {
@@ -6,7 +5,7 @@ module.exports = {
         locales: ['en', 'es', 'ca'],
         defaultLocale: 'es',
     },
-    generateBuildId: () => nextBuildId({ dir: __dirname })
+    generateBuildId: () => 'build'
 
 }
 
