@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { useTranslations } from 'next-intl';
-
+import Link from "next/link";
 function ContactPage() {
 
   const t = useTranslations("contact_form");
@@ -20,13 +20,13 @@ function ContactPage() {
 
           </div>
           <div className="flex  text-primary-800 text-2xl justify-center mt-16">
-
-            <a
-              href="/"
+            <Link href="">
+              <a
               className="shadow-2xl  bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline "
             >
               {t('back_to_home')}
             </a>
+            </Link>
           </div>
         </section>
       </div>

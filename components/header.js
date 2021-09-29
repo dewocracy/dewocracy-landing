@@ -15,7 +15,7 @@ function Header() {
   const t = useTranslations("navigation")
   const { locale, locales } = useRouter()
 
-  const handleClickSubmenu = useCallback(() => toggleExpansion(!isExpanded));
+  const handleClickSubmenu = useCallback(() => toggleExpansion(!isExpanded), [isExpanded]);
 
   return (
     <header

@@ -69,7 +69,7 @@ function IndexPage() {
               </p>
 
               <div className="	mt-4 text-xl text-primary-800">
-                <Link href="/desk-booking">
+                <Link href="/hotdesking">
                   <a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
                     {t('more_about_hotdesking')}
                   </a>
@@ -86,6 +86,7 @@ function IndexPage() {
             <div className="mt-8 md:mt-0 md:w-2/5 ml-2 lg:ml-20">
               <img
                 src="/images/desk_booking_home.png"
+                alt="Screenshot hotdesking"
               />
             </div>
           </div>
@@ -98,7 +99,7 @@ function IndexPage() {
             <div className="md:w-2/5">
               <img
                 src="/images/remote_office_home.png"
-
+                alt="Screenshot Neighbourhoods"
               />
             </div>
             <div className="md:ml-12 lg:ml-32 mt-12 md:w-3/5 flex flex-col pr-8">
@@ -158,7 +159,7 @@ function IndexPage() {
             <div className="mt-12 md:mt-0md:w-3/5 ml-2 lg:ml-10  ">
               <img
                 src="/images/manage_home.png"
-
+                alt="Screenshots Neighourhoods"
               />
             </div>
           </div>
@@ -190,6 +191,7 @@ function IndexPage() {
           <div className="flex  justify-center">
             <img className="mt-8 w-3/4"
               src="/images/reports_home.png"
+              alt="Screenshots Analytics and Reports"
             />
           </div>
 
