@@ -64,7 +64,7 @@ function IndexPage() {
         </section>
       </div>
 
-      <div style={{ marginTop: "45em" }} className="w-full py-16 md:py-48  lg:py-32">
+      <div className="w-full py-16 md:py-48  lg:py-32">
         <section className=" mt-48 lg:mt-0 text-center md:text-left container  mx-auto ">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-3/5 flex flex-col md:pr-8">
