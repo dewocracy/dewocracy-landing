@@ -48,7 +48,7 @@ export const Footer = () => {
 
         </div>
         <div className="grid justify-items-center lg:justify-items-end items-center  my-4 lg:my-0">
-          <p className="text-primary font-bold text-right flex justify-between w-64 mr-4">
+          <p className="text-primary font-bold text-right flex justify-between w-64 md:mr-4">
             <OutboundLink
               href="//www.linkedin.com/company/dewocracy/"
               rel="noreferrer noopener"
@@ -103,10 +103,10 @@ export const Footer = () => {
         </div>
         <div></div>
         <div></div>
-        <div className="grid justify-items-end">
-          <div className="flex" >
+        <div className="grid justify-center md:justify-items-end">
+          <div className="flex flex-col md:flex-row" >
             <a
-              className="pr-4 grid content-center grid-x-4 justify-center"
+              className="md:pr-4 grid content-center grid-x-4 justify-center"
               href="#contact"
               title="Download DeWocracy app from the apple store"
             >
@@ -128,8 +128,8 @@ export const Footer = () => {
           </div>
         </div>
       </section>
-      <section className="lg:pt-10 lg:pr-24">
-        <ul className="flex justify-center lg:justify-end text-md gap-4 lg:gap-10">
+      <section className="text-center md:text-left pt-10 lg:pr-24">
+        <ul className="flex flex-col lg:flex-row justify-center lg:justify-end text-md gap-4 lg:gap-10">
           <li className="hover:text-primary-800">
             <Link href="/terms-and-conditions"><a>{t('Terms of service')}</a></Link>
           </li>
