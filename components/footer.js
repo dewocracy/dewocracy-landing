@@ -40,7 +40,14 @@ export const Footer = () => {
         <div className="flex justify-center lg:justify-start lg:items-end">
           <Link href="">
             <a title="DeWocracy home">
-              <Image className="rounded-2xl" width="120px" height="120px" src="/images/dw-blue.png" alt="" />
+              <Image
+                className="rounded-2xl"
+                width="120px"
+                height="120px"
+                src="/images/dw-blue.png"
+                alt="Dewocracy Logo"
+                placeholder="blur"
+                blurDataURL={`/_next/image?url=/images/dw-blue.png&w=16&q=1`} />
           </a>
           </Link>
         </div>
@@ -110,8 +117,16 @@ export const Footer = () => {
               href="#contact"
               title="Download DeWocracy app from the apple store"
             >
-              <Image className="object-cover	"
-                width="120px" height="40px" src={appleStoreI18n[locale]} alt="" />
+              <Image
+                className="object-cover	"
+                width="120px"
+                height="40px"
+                src={appleStoreI18n[locale]}
+                alt="Apple Logo Logo"
+                placeholder="blur"
+                blurDataURL={`/_next/image?url=${appleStoreI18n[locale]}&w=16&q=1`}
+
+              />
             </a>
             <a
               href="#contact"
@@ -123,6 +138,8 @@ export const Footer = () => {
                 width="150px"
                 className="object-contain	"
                 alt="Playstore Logo"
+                placeholder="blur"
+                blurDataURL={`/_next/image?url=${googleStoreI18n[locale]}&w=16&q=1`}
               />
             </a>
           </div>
