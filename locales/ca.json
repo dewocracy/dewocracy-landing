@@ -55,7 +55,8 @@
   "contact_form": {
     "title": "T'interessa? Contacta'ns!",
     "videocall_link": "agendar una videotrucada",
-    "description": "Pots {link}, contactar-nos a info@dewocracy.com o escriure'ns a través del formulari de contacte.",
+    "contact": "contactar-nos",
+    "description": "Pots {link}, {contact} o escriure'ns a través del formulari de contacte.",
     "company_label": "Empresa",
     "submit_button": "Enviar missatge",
     "name_label": "Nom",

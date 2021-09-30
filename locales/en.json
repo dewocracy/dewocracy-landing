@@ -51,9 +51,9 @@
 
   "contact_form": {
     "title": "Interested? Contact us!",
-    "videocall_link": "request a video call ",
-
-    "description": "You can {link} at your convenience, contact us at info@dewocracy.com or send us a message via the contact form below.",
+    "videocall_link": "request a video call",
+    "contact": "contact us",
+    "description": "You can {link} at your convenience, {contact} or send us a message via the contact form below.",
     "company_label": "Company",
     "submit_button": "Send Message",
     "name_label": "Name",

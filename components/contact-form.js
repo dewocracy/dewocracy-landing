@@ -1,29 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslations } from 'next-intl';
 import { OutboundLink } from "../utils/OutboundLink";
+import mailgo from "mailgo";
+import { useRouter } from 'next/router'
+
 
 
 export const ContactForm = () => {
   const [state, setState] = useState({});
   const t = useTranslations("contact_form");
+  const { locale, locales } = useRouter()
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
+
+
+
+  useEffect(() => {
+    mailgo({
+      showFooter: false,
+    });
+  }, [locale]);
 
   return (
     <>
       <h2 className="font-bold text-primary-800 text-4xl lg:text-6xl text-center py-16 lg:pt-24">
         {t('title')}
       </h2>
-      <p key="description" className="md:px-24 pb-5 mb-12 text-center text-2xl text-primary-800">
+      <p key="leading-8 description" className="md:px-24 pb-5 mb-12 text-center text-2xl text-primary-800">
         {t.rich('description', {
-          link: <OutboundLink eventProperties={{ location: "form description" }} href="https://calendly.com/dewocracylabs/dewocracy-demo" className="font-bold">
+          link: <OutboundLink
+            eventProperties={{ location: "form description" }}
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://calendly.com/dewocracylabs/dewocracy-demo"
+            className="border-b-2  hover:border-black leading-8">
             {t('videocall_link')}
-          </OutboundLink>
-        })}
-
-
+          </OutboundLink>,
+          'contact': <a className="border-b-2  hover:border-black leading-8 " href='#mailgo' data-address='info' data-domain='dewocracy.com'>{t('contact')}</a>
+        },
+        )}
 
 
 

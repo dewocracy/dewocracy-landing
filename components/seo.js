@@ -17,6 +17,8 @@ function SEO({ description, title, url, image }) {
 
   return (
     <Head>
+      <html lang={locale} />
+
       <title>{`${title} | ${siteTitle}`}</title>
       <meta name="description" content={fullDesscription} />
       <meta property="og:type" content="website" />

@@ -46,7 +46,8 @@
   "contact_form": {
     "title": "¿Te interesa? ¡Contáctanos!",
     "videocall_link": "agendar una videollamada",
-    "description": "Puedes {link} a la hora que más te convenga, contactarnos a info@dewocracy.com o escribirnos en el formulario de contacto.",
+    "contact": "contactarnos",
+    "description": "Puedes {link} a la hora que más te convenga, {contact} o escribirnos en el formulario de contacto.",
     "company_label": "Empresa",
     "submit_button": "Enviar mensaje",
     "name_label": "Nombre",
