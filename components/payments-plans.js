@@ -9,7 +9,7 @@ export const PaymentsPlans = () => {
   const t = useTranslations("payment_plans");
 
   return (
-    <>
+    <div className="relative z-10">
 
 
       <h2 className="text-2xl pt-24 text-center md:text-left">
@@ -175,6 +175,6 @@ export const PaymentsPlans = () => {
           </OutboundLink>
         </div>
       </div>
-    </>
+    </div>
   );
 };

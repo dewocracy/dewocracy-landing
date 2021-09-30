@@ -16,12 +16,22 @@ function IndexPage() {
     <Layout>
       <SEO title="DeWocracy - Remote Work | Work from anywhere" />
 
-      <div style={{ backgroundImage: "url('/images/background3.webp')" }}
-        className="md:w-full bg-no-repeat	bg-cover  absolute left-0 top-50">
 
-        <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen md:pl-10 pr-0 lg:pb-4">
+      <div
+        className="md:w-full relative ">
+        <Image
+          layout="fill"
+          className="object-center object-cover pointer-events-none"
+          src="/images/background-home-banner.webp"
+          alt="Office Background"
+          placeholder="blur"
+          blurDataURL={`/_next/image?url=/images/background-home-banner.webp&w=16&q=1`}
+
+        />
+
+        <section className="z-10 relative container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen md:pl-10 pr-0 lg:pb-4">
           <div className="grid content-center px-0 md:px-8 lg:px-0">
-            <div className="md:mt-24 lg:mt-0 lg:mb-16">
+            <div className="md:mt-24 lg:mt-0 lg:mb-24">
               <h1 className="text-4xl text-white mt-8 lg:text-6xl  font-bold leading-tight pb-4">
                 {t('implement_flexible_remote_work')}
               </h1>
