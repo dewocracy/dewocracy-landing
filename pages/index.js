@@ -198,7 +198,7 @@ function IndexPage() {
 
         </section>
 
-        <section className="container  mx-auto mr-3 mt-8 lg:mt-36 ">
+        <section className="container  mx-auto mr-3 mt-8 lg:mt-24 ">
           <div className=" flex flex-col pr-8">
             <h2 className="font-bold text-primary-800	 text-4xl pb-2 md:pb-8 pt-24 text-center">
               {t('title_reports')}
