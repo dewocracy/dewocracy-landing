@@ -58,7 +58,15 @@ function IndexPage() {
           </div>
           <div className="md:mt-4 lg:mt-20 grid content-center px-0 md:px-8 lg:px-0">
             <div className="mt-4 lg:mt-20 lg:w-200 ml-8 max-w-2xl">
-              <img src="/images/home_mockup.webp" alt="Screenshots of the Dewocracy Apps" />
+              <div className="relative w-full h-xl">
+                <Image
+                  className="object-contain"
+                  src="/images/home_mockup.webp"
+                  alt="Screenshots of the Dewocracy Apps"
+                  layout="fill"
+                  placeholder="blur"
+                  blurDataURL={`/_next/image?url=/images/home_mockup.webp&w=16&q=1`} />
+              </div>
             </div>
           </div>
         </section>
