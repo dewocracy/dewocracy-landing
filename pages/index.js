@@ -225,7 +225,7 @@ function IndexPage() {
       </div>
 
 
-      <section style={{ backgroundImage: "url('/images/background.webp')" }} id="pricing" className="container pb-12  text-primary-800  bg-purple-800 mx-auto  rounded-2xl lg:px-32">
+      <section style={{ w: "url('/images/background.webp')" }} id="pricing" className="container pb-12  text-primary-800  bg-purple-800 mx-auto  rounded-2xl lg:px-32">
 
         <PaymentsPlans />
       </section>
