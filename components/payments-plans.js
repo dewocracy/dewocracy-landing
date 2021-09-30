@@ -67,27 +67,27 @@ export const PaymentsPlans = () => {
               {t('limits')}
             </li>
 
-            <li className="text-grey flex items-center">
+            <li className="line-through  opacity-50 flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="mr-4"
+                className="mr-4 text-white"
               />
               {t('reservations')}
             </li>
-            <li className="text-grey flex items-center">
+            <li className="line-through  opacity-50 flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="mr-4"
+                className="mr-4 text-white"
               />
               {t('interative_map')}
             </li>
-            <li className="text-grey flex items-center">
+            <li className="line-through  opacity-50 text-str flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
-                className="mr-4 "
+                className="mr-4 text-white "
               />
               {t('reports')}
             </li>
