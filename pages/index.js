@@ -16,7 +16,7 @@ function IndexPage() {
     <Layout>
       <SEO title="DeWocracy - Remote Work | Work from anywhere" />
 
-      <div style={{ backgroundImage: "url('/images/background3.png')" }}
+      <div style={{ backgroundImage: "url('/images/background3.webp')" }}
         className="md:w-full bg-no-repeat	bg-cover  absolute left-0 top-50">
 
         <section className="container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen md:pl-10 pr-0 lg:pb-4">
@@ -225,7 +225,7 @@ function IndexPage() {
       </div>
 
 
-      <section style={{ backgroundImage: "url('/images/background.png')" }} id="pricing" className="container pb-12  text-primary-800  bg-purple-800 mx-auto  rounded-2xl lg:px-32">
+      <section style={{ backgroundImage: "url('/images/background.webp')" }} id="pricing" className="container pb-12  text-primary-800  bg-purple-800 mx-auto  rounded-2xl lg:px-32">
 
         <PaymentsPlans />
       </section>
