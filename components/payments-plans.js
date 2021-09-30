@@ -67,7 +67,7 @@ export const PaymentsPlans = () => {
               {t('limits')}
             </li>
 
-            <li className="line-through  opacity-50 flex items-center">
+            <li className="line-through  opacity-70 flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -75,7 +75,7 @@ export const PaymentsPlans = () => {
               />
               {t('reservations')}
             </li>
-            <li className="line-through  opacity-50 flex items-center">
+            <li className="line-through  opacity-70 flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
@@ -83,7 +83,7 @@ export const PaymentsPlans = () => {
               />
               {t('interative_map')}
             </li>
-            <li className="line-through  opacity-50 text-str flex items-center">
+            <li className="line-through  opacity-70 text-str flex items-center">
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 size="lg"
