@@ -7,17 +7,4 @@ const amplitudeEventTypes = {
 };
 
 
-const logEvent = (type, properties) => {
-
-    const parsedType = amplitudeEventTypes[type] || type;
-
-
-    if (typeof window.amplitude === 'object') {
-        window.amplitude.getInstance().logEvent(parsedType, properties)
-    }
-
-}
-
-const amplitudeExcludePaths = []
-
-export { amplitudeEventTypes, amplitudeExcludePaths, logEvent }
+export { amplitudeEventTypes }

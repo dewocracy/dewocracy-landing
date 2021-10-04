@@ -4,9 +4,9 @@ import { SavingsGraph } from "./savings-graph";
 import { useDebounce } from "../hooks/use-debounce";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
-import { logEvent } from "../utils/AmplitudeHelper";
 import { OutboundLink } from "../utils/OutboundLink";
-
+import { Amplitude } from '@amplitude/react-amplitude';
+import { useRouter } from "next/router";
 const AVG_PRICE_METER_PER_MONTH = 28;
 
 const AVG_COST_PER_METER = {
@@ -58,7 +58,8 @@ const getDWCost = (employees) => {
 };
 
 export const SavingsCalculator = () => {
-  const t = useTranslations("Calculator");
+  const router = useRouter()
+  const t = useTranslations("Calculator")
 
   const [employees, setEmployees, { signal: employeesSignal }] = useDebounce(
     DEFAULTS.EMPLOYEES
@@ -144,7 +145,7 @@ export const SavingsCalculator = () => {
     setSavingsPercentage(monthlySavings / (rentCostPerMonth + suppliesCost));
   }, [monthlySavings, rentCostPerMonth, suppliesCost]);
 
-  const handleEmployeesChange = useCallback((e) => {
+  const handleEmployeesChange = useCallback((logEvent, e) => {
     if (!Number(e.target.value)) {
       return setEmployees("");
     }
@@ -157,7 +158,7 @@ export const SavingsCalculator = () => {
 
 
   }, []);
-  const handleSizeOfficeChange = useCallback((e) => {
+  const handleSizeOfficeChange = useCallback((logEvent, e) => {
     if (!Number(e.target.value)) {
       return setOfficeSize("");
     }
@@ -169,7 +170,7 @@ export const SavingsCalculator = () => {
 
   }, []);
 
-  const handleTargetChange = useCallback((e) => {
+  const handleTargetChange = useCallback((logEvent, e) => {
     const newValue = Number(e.target.value);
     if (!newValue) {
       return setTarget("");
@@ -202,7 +203,18 @@ export const SavingsCalculator = () => {
   // });
   const showData = !!(employees && officeSize && target);
   return (
-    <Fragment>
+    <Amplitude
+      eventProperties={(inheritedProps) => ({
+        ...inheritedProps,
+        page: {
+          ...inheritedProps.page,
+          name: 'calculator page',
+          language: router.locale,
+          path: router.pathname
+        },
+      })}>
+
+      {({ instrument, logEvent }) => (
       <div className="md:grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-24 ">
         <div className="grid text-primary-800 content-start justify-center md:mt-10   xl:p-8">
           <label htmlFor="employees" className="font-bold pr-4 pb-4 text-2xl text-center">
@@ -216,7 +228,7 @@ export const SavingsCalculator = () => {
             required
             placeholder={t("employees_placeholder")}
             className="rounded-lg text-black py-6 px-4 h-10 mb-8 w-full text-center bg-opacity-25 "
-            onChange={handleEmployeesChange}
+              onChange={(e) => handleEmployeesChange(logEvent, e)}
             value={employees}
           />
           <label htmlFor="sizeOffice" className="font-bold pr-4 pt-10 pb-4 text-2xl text-center">
@@ -229,7 +241,7 @@ export const SavingsCalculator = () => {
             required
             placeholder={t("square_meters_placeholder")}
             className="rounded-lg text-black py-6 px-4 mb-8 h-10 w-full text-center "
-            onChange={handleSizeOfficeChange}
+              onChange={(e) => handleSizeOfficeChange(logEvent, e)}
             value={officeSize}
             max={10000}
           />
@@ -242,7 +254,7 @@ export const SavingsCalculator = () => {
             name="target"
             required
             className="rounded-lg text-black py-6 mb-8 px-4 h-10 w-full text-center "
-            onChange={handleTargetChange}
+              onChange={(e) => handleTargetChange(logEvent, e)}
             value={target}
           />
           <p className="text-center text-2xl font-bold text-primary-800 pt-10">
@@ -345,6 +357,7 @@ export const SavingsCalculator = () => {
           </div>
         </div>
       </div>
-    </Fragment>
+      )}
+    </Amplitude>
   );
 };

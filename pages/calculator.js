@@ -43,7 +43,7 @@ function Calculator() {
                     <h2 className="font-bold text-primary-800	text-3xl pb-2 md:pb-8 pt-24 text-center">
                         {t('sub_title')}
                     </h2>
-                    <SavingsCalculator />
+                        <SavingsCalculator />
 
 
 
