@@ -43,12 +43,12 @@ function IndexPage() {
                 <OutboundLink
                   eventType="signup" eventProperties={{ plan: "free", location: "home button" }}
 
-                  className="shadow-2xl mt-2 md:mt-0  hover:bg-primary-800  hover:text-white bg-white text-primary-400    text-xl  transition-colors duration-150   rounded-full py-4 px-4 xl:px-16 focus:shadow-outline" href="#pricing">
+                    className="text-center shadow-2xl mt-2 md:mt-0  hover:bg-primary-800  hover:text-white bg-white text-primary-400    text-xl  transition-colors duration-150   rounded-full py-4 px-4 xl:px-16 focus:shadow-outline" href="#pricing">
                   {t('Sign up for free')}
                 </OutboundLink>
                 <OutboundLink
                   eventProperties={{ location: "home button" }}
-                  className="shadow-2xl sm:ml-4  md:ml-0 mt-2 md:mt-0   hover:bg-primary-800  bg-primary-400 text-white   text-xl  transition-colors duration-500 rounded-full py-4 px-4 xl:px-16  focus:shadow-outline"
+                    className="text-center shadow-2xl sm:ml-4  md:ml-0 mt-2 md:mt-0   hover:bg-primary-800  bg-primary-400 text-white   text-xl  transition-colors duration-500 rounded-full py-4 px-4 xl:px-16  focus:shadow-outline"
                   href="https://calendly.com/dewocracylabs/dewocracy-demo"
                 >
                   {t('Request demo')}
