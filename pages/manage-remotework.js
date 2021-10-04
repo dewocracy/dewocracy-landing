@@ -6,19 +6,34 @@ import SEO from "../components/seo";
 import { useTranslations } from 'next-intl';
 import Link from "next/link";
 import Image from "next/image";
-
+import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
+import { useRouter } from "next/router"
 
 
 function Neighbourhoods() {
     const t = useTranslations("manage_remotework");
+    const router = useRouter()
 
     return (
+        <Amplitude
+            eventProperties={(inheritedProps) => ({
+                ...inheritedProps,
+                page: {
+                    ...inheritedProps.page,
+                    name: 'manage remotework',
+                    language: router.locale,
+                    path: router.pathname
+                },
+            })}
+        >
         <Layout>
             <SEO
                 description={t('text_1')}
                 title={`${t('title')} | DeWocracy - Flexible Remote Work`}
                 image="manage_remotework"
             />
+                <LogOnMount eventType="page view" />
+
             <h1 className="font-bold text-primary-800 my-12	text-4xl text-center">{t('title')}</h1>
             <section className="container pb-12 text-primary-800  rounded-2xl  text-xl mx-auto mr-3 ">
                 <div className=" flex flex-col items-center">
@@ -70,7 +85,8 @@ function Neighbourhoods() {
 
 
             </section>
-        </Layout>)
+            </Layout>
+        </Amplitude>)
 }
 
 export function getStaticProps({ locale }) {

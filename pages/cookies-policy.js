@@ -3,10 +3,27 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Link from 'next/link'
+import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
+import { useRouter } from "next/router"
 
 function CookiesPolicy() {
+  const router = useRouter()
+
   return (
+    <Amplitude
+      eventProperties={(inheritedProps) => ({
+        ...inheritedProps,
+        page: {
+          ...inheritedProps.page,
+          name: 'cookie policy',
+          language: router.locale,
+          path: router.pathname
+        },
+      })}
+    >
     <Layout>
+        <LogOnMount eventType="page view" />
+
       <SEO title="Política de Cookies" />
       <div className="flex justify-center">
         <div className="w-full bg-fixed min-h-screen max-w-4xl  pb-16">
@@ -97,6 +114,7 @@ function CookiesPolicy() {
       </div>
       </div>
     </Layout>
+    </Amplitude>
   );
 }
 

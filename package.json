@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Gerard Brull <gbblanes@gmail.com>",
   "dependencies": {
+    "@amplitude/react-amplitude": "^1.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-regular-svg-icons": "^5.15.1",
@@ -12,6 +13,8 @@
     "@nivo/bar": "^0.66.0",
     "@nivo/core": "^0.66.0",
     "@tailwindcss/custom-forms": "^0.2.1",
+    "@unly/utils": "^1.0.3",
+    "amplitude-js": "^8.8.0",
     "lodash.debounce": "^4.0.8",
     "mailgo": "^0.12.2",
     "next": "latest",

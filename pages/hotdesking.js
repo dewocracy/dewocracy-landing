@@ -6,14 +6,30 @@ import SEO from "../components/seo";
 import { useTranslations } from 'next-intl';
 import Link from "next/link";
 import Image from "next/image";
+import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
+import { useRouter } from "next/router"
 
 
 
 function DeskBooking() {
     const t = useTranslations("desk_booking");
+    const router = useRouter()
 
     return (
+        <Amplitude
+            eventProperties={(inheritedProps) => ({
+                ...inheritedProps,
+                page: {
+                    ...inheritedProps.page,
+                    name: 'hotdesking page',
+                    language: router.locale,
+                    path: router.pathname
+                },
+            })}
+        >
         <Layout>
+                <LogOnMount eventType="page view" />
+
             <SEO
                 description={t('text_1')}
                 title={`${t('title')} | DeWocracy - Flexible Remote Work`}
@@ -86,7 +102,9 @@ function DeskBooking() {
 
 
             </section>
-        </Layout>)
+            </Layout>
+        </Amplitude>
+    )
 }
 
 export function getStaticProps({ locale }) {

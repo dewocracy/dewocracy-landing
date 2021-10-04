@@ -8,14 +8,27 @@ import { ContactForm } from "../components/contact-form";
 import { OutboundLink } from "../utils/OutboundLink";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
+import { useRouter } from 'next/router'
 
 function IndexPage() {
   const t = useTranslations("Default");
-
+  const router = useRouter()
   return (
+    <Amplitude
+      eventProperties={(inheritedProps) => ({
+        ...inheritedProps,
+        page: {
+          ...inheritedProps.page,
+          name: 'home page',
+          language: router.locale,
+          path: router.pathname
+        },
+      })}
+    >
     <Layout>
       <SEO title="DeWocracy - Remote Work | Work from anywhere" />
-
+        <LogOnMount eventType="page view" />
 
       <div
         className="md:w-full relative ">
@@ -252,7 +265,8 @@ function IndexPage() {
         <ContactForm />
       </section>
     </Layout>
-  );
+    </Amplitude>
+  )
 }
 
 export function getStaticProps({ locale }) {

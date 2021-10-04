@@ -3,10 +3,27 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Link from 'next/link'
+import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
+import { useRouter } from "next/router"
 
 function PrivacyPolicy() {
+  const router = useRouter()
+
   return (
+    <Amplitude
+      eventProperties={(inheritedProps) => ({
+        ...inheritedProps,
+        page: {
+          ...inheritedProps.page,
+          name: 'privacy policy page',
+          language: router.locale,
+          path: router.pathname
+        },
+      })}
+    >
     <Layout>
+        <LogOnMount eventType="page view" />
+
       <SEO title="Política de Privacidad" />
       <div className="flex justify-center">
         <div className="w-full bg-fixed min-h-screen  max-w-4xl  py-16">
@@ -654,6 +671,7 @@ function PrivacyPolicy() {
       </div>
       </div>
     </Layout>
+    </Amplitude>
   );
 }
 

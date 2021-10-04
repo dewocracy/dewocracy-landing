@@ -4,12 +4,29 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { useTranslations } from 'next-intl';
 import Link from "next/link";
+import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
+import { useRouter } from "next/router"
+
 function ContactPage() {
+  const router = useRouter()
 
   const t = useTranslations("contact_form");
 
   return (
+    <Amplitude
+      eventProperties={(inheritedProps) => ({
+        ...inheritedProps,
+        page: {
+          ...inheritedProps.page,
+          name: 'contact-thanks',
+          language: router.locale,
+          path: router.pathname
+        },
+      })}
+    >
     <Layout>
+        <LogOnMount eventType="page view" />
+
       <SEO title="Thanks for contacting us!" />
       <div className="w-full bg-fixed min-h-screen  py-32">
         <section className="container mx-auto  px-8 md:px-0">
@@ -31,6 +48,7 @@ function ContactPage() {
         </section>
       </div>
     </Layout>
+    </Amplitude>
   );
 }
 

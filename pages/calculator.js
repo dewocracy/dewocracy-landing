@@ -5,14 +5,31 @@ import SEO from "../components/seo";
 import { SavingsCalculator } from "../components/savings-calculator";
 
 import { useTranslations } from 'next-intl';
+import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
+import { useRouter } from "next/router"
 
 
 
 function Calculator() {
+    const router = useRouter()
+
     const t = useTranslations("Calculator");
 
     return (
+        <Amplitude
+            eventProperties={(inheritedProps) => ({
+                ...inheritedProps,
+                page: {
+                    ...inheritedProps.page,
+                    name: 'calculator page',
+                    language: router.locale,
+                    path: router.pathname
+                },
+            })}
+        >
         <Layout>
+                <LogOnMount eventType="page view" />
+
             <SEO
                 description={t('sub_title')}
                 title={`${t('title')} | DeWocracy - Remote Work | Work from anywhere"`}
@@ -34,7 +51,8 @@ function Calculator() {
 
                 </section>
             </div>
-        </Layout>)
+            </Layout>
+        </Amplitude>)
 }
 
 export function getStaticProps({ locale }) {

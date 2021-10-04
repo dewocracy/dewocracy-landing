@@ -3,10 +3,27 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Link from 'next/link'
+import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
+import { useRouter } from "next/router"
 
 function TermsAndConditions() {
+  const router = useRouter()
+
   return (
+    <Amplitude
+      eventProperties={(inheritedProps) => ({
+        ...inheritedProps,
+        page: {
+          ...inheritedProps.page,
+          name: 'termns and conditions page',
+          language: router.locale,
+          path: router.pathname
+        },
+      })}
+    >
     <Layout>
+        <LogOnMount eventType="page view" />
+
       <SEO title="Condiciones de uso" />
       <div className="flex justify-center">
         <div className="w-full bg-fixed min-h-screen max-w-4xl  py-16">
@@ -341,7 +358,8 @@ function TermsAndConditions() {
       </div>
       </div>
     </Layout>
-  );
+    </Amplitude>
+  )
 }
 
 export function getStaticProps({ locale }) {
