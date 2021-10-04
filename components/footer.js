@@ -38,8 +38,9 @@ export const Footer = () => {
     <footer className="mx-4 bg-purple-800 rounded-2xl mt-16 bg-fixed py-10 px-8 md:px-4">
       <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4 justify-center lg:justify-between md:gap-y-8">
         <div className="flex justify-center lg:justify-start lg:items-end">
-          <Link href="">
-            <a title="DeWocracy home">
+          <Link href="/" passHref><OutboundLink
+            eventProperties={{ location: "footer" }}
+            title="DeWocracy home">
               <Image
                 className="rounded-2xl"
                 width="120px"
@@ -48,7 +49,7 @@ export const Footer = () => {
                 alt="Dewocracy Logo"
                 placeholder="blur"
                 blurDataURL={`/_next/image?url=/images/dw-blue.png&w=16&q=1`} />
-          </a>
+          </OutboundLink>
           </Link>
         </div>
         <div className="grid justify-center gap-y-4 text-primary  text-center">
@@ -112,7 +113,7 @@ export const Footer = () => {
         <div></div>
         <div className="grid justify-center md:justify-items-end">
           <div className="flex flex-col md:flex-row" >
-            <a
+            <OutboundLink eventProperties={{ location: "footer" }}
               className="md:pr-4 grid content-center grid-x-4 justify-center"
               href="#contact"
               title="Download DeWocracy app from the apple store"
@@ -127,8 +128,8 @@ export const Footer = () => {
                 blurDataURL={`/_next/image?url=${appleStoreI18n[locale]}&w=16&q=1`}
 
               />
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink eventProperties={{ location: "footer" }}
               href="#contact"
               title="Download DeWocracy app from the play store"
               className="grid content-center justify-center align-center"
@@ -141,23 +142,23 @@ export const Footer = () => {
                 placeholder="blur"
                 blurDataURL={`/_next/image?url=${googleStoreI18n[locale]}&w=16&q=1`}
               />
-            </a>
+            </OutboundLink>
           </div>
         </div>
       </section>
       <section className="text-center md:text-left pt-10 lg:pr-24">
         <ul className="flex flex-col lg:flex-row justify-center lg:justify-end text-md gap-4 lg:gap-10">
           <li className="hover:text-primary-800">
-            <Link href="/terms-and-conditions"><a>{t('Terms of service')}</a></Link>
+            <Link href="/terms-and-conditions" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('Terms of service')}</OutboundLink></Link>
           </li>
           <li className="hover:text-primary-800">
-            <Link href="/legal-notice"><a>{t('Legal notice')}</a></Link>
+            <Link href="/legal-notice" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('Legal notice')}</OutboundLink></Link>
           </li>
           <li className="hover:text-primary-800">
-            <Link href="/privacy-policy"><a>{t('Privacy policy')}</a></Link>
+            <Link href="/privacy-policy" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('Privacy policy')}</OutboundLink></Link>
           </li>
           <li className="hover:text-primary-800">
-            <Link href="/cookies-policy"><a>{t('Cookies policy')}</a></Link>
+            <Link href="/cookies-policy" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('Cookies policy')}</OutboundLink></Link>
           </li>
         </ul>
       </section>

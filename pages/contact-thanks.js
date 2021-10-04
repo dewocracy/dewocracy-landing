@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import Link from "next/link";
 import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
 import { useRouter } from "next/router"
+import { OutboundLink } from "../utils/OutboundLink";
 
 function ContactPage() {
   const router = useRouter()
@@ -37,12 +38,12 @@ function ContactPage() {
 
           </div>
           <div className="flex  text-primary-800 text-2xl justify-center mt-16">
-            <Link href="">
-              <a
+              <Link href="" passHref>
+                <OutboundLink eventProperties={{ location: "contact-thanks" }}
               className="shadow-2xl  bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline "
             >
               {t('back_to_home')}
-            </a>
+                </OutboundLink>
             </Link>
           </div>
         </section>

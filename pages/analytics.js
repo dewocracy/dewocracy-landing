@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
 import { useRouter } from "next/router"
+import { OutboundLink } from "../utils/OutboundLink";
 
 
 
@@ -56,12 +57,15 @@ function Neighbourhoods() {
                 <div className="flex flex-col items-center">
 
                     <p className="mt-12  mb-16">
-                        <a href="https://calendly.com/dewocracylabs/dewocracy-demo"
+                            <OutboundLink
+                                eventProperties={{ location: "analytics page" }}
+
+                                href="https://calendly.com/dewocracylabs/dewocracy-demo"
 
                             className="shadow-2xl bg-primary-400 hover:bg-primary-800 text-white text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 focus:shadow-outline "
                         >
                             {t('button')}
-                        </a>
+                            </OutboundLink>
 
                     </p>
                 </div>
@@ -79,11 +83,12 @@ function Neighbourhoods() {
 
                 </div>
                 <div className="flex flex-col items-center">
-                    <Link href="/">
-                        <a className="text-center border-b-2 pb-1 hover:border-black leading-8 	transition-all "
+                        <Link href="/" passHref>
+                            <OutboundLink
+                                eventProperties={{ location: "analytics page" }} className="text-center border-b-2 pb-1 hover:border-black leading-8 	transition-all "
                         >
                             {t('link_text')} &#8594;
-                        </a>
+                            </OutboundLink>
                     </Link>
                 </div>
 

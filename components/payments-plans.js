@@ -110,9 +110,12 @@ export const PaymentsPlans = () => {
             <p className="text-primary text-2xl md:text-4xl font-bold  pb-4">
               {t('business_plan_title')}
             </p>
-            <a className="text-primary-800 mt-4 text-sm   border-b-2 pb-1 hover:border-black leading-8 " href="//calendly.com/dewocracylabs/dewocracy-demo" >
+            <OutboundLink
+              eventProperties={{ location: "payment-plans-box" }}
+              className="text-primary-800 mt-4 text-sm   border-b-2 pb-1 hover:border-black leading-8 "
+              href="//calendly.com/dewocracylabs/dewocracy-demo" >
               {t('talk_with_an_expert')}
-            </a>
+            </OutboundLink>
           </div>
           <ol className="text-black grid gap-6">
             <li className="flex items-center">

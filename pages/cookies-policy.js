@@ -1,4 +1,5 @@
 import React from "react";
+import { OutboundLink } from "../utils/OutboundLink";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -98,11 +99,11 @@ function CookiesPolicy() {
           <p>Si el Usuario desea borrar de su navegador las cookies registradas por nuestro Sitio Web y/o Plataforma, en general, deberá ir al menú Preferencias o Configuración del navegador y buscar la sección Privacidad. A modo de ejemplo, el Usuario puede seguir las siguientes instrucciones:
           </p>
           <ul>
-              <li><a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all " href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer">Firefox</a></li>
-              <li><a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all " href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies">Internet Explorer 10</a></li>
-              <li><a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all " href="https://support.apple.com/en-gb/HT201265">Safari</a></li>
-              <li><a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all " href="https://support.google.com/chrome/answer/95647?hl=en">Google Chrome
-            </a></li>
+                <li><OutboundLink className="border-b-2 pb-1 hover:border-black leading-8 	transition-all " href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer">Firefox</OutboundLink></li>
+                <li><OutboundLink className="border-b-2 pb-1 hover:border-black leading-8 	transition-all " href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies">Internet Explorer 10</OutboundLink></li>
+                <li><OutboundLink className="border-b-2 pb-1 hover:border-black leading-8 	transition-all " href="https://support.apple.com/en-gb/HT201265">Safari</OutboundLink></li>
+                <li><OutboundLink className="border-b-2 pb-1 hover:border-black leading-8 	transition-all " href="https://support.google.com/chrome/answer/95647?hl=en">Google Chrome
+                </OutboundLink></li>
           </ul>
           <h2 className="text-2xl  font-bold my-4">6. Contacto</h2>
           <p>En caso de cualquier duda sobre nuestras cookies, el Usuario podrá ponerse en contacto con nosotros por correo electrónico a info@dewocracy.com, así como a la dirección indicada en el <Link href="/legal-notice">Aviso Legal</Link>, en cuyo caso trataremos sus datos para contestar a su petición o consulta según se detalla en nuestra <Link href="/privacy-policy">Política de Privacidad</Link>.

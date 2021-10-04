@@ -1,5 +1,5 @@
 const amplitudeEventTypes = {
-    outboundLinkClick: 'outbound link click',
+    outboundLinkClick: 'link-clicked',
     pageView: 'page view',
     signup: 'create owner account started',
     accessApp: 'access web app',

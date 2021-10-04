@@ -6,6 +6,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
 import { useRouter } from "next/router"
+import { OutboundLink } from "../utils/OutboundLink";
 
 function NotFoundPage() {
   const t = useTranslations("404");
@@ -34,12 +35,14 @@ function NotFoundPage() {
           </h1>
           <div className="flex justify-center">
           <p className="mt-16">
-            <Link href="/"><a
+                <Link href="/" passHref>
+                  <OutboundLink eventProperties={{ location: "404-error-page" }}
+
 
                 className="shadow-2xl  bg-primary-800 hover:bg-primary-400 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-lg focus:shadow-outline "
             >
                 {t('back_to_home')}
-            </a>
+                  </OutboundLink>
             </Link>
           </p>
           </div>

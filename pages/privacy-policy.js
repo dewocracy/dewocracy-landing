@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import Link from 'next/link'
 import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
 import { useRouter } from "next/router"
+import { OutboundLink } from "../utils/OutboundLink";
 
 function PrivacyPolicy() {
   const router = useRouter()
@@ -181,9 +182,9 @@ function PrivacyPolicy() {
               contar con las garantías adecuadas según las exigencias legales en
               materia de protección de datos. Para más información visita su
               Política de Privacidad en:{" "}
-              <a href="https://www.netlify.com/privacy">
+                  <OutboundLink eventProperties={{ location: "privacy-policy-page" }} href="https://www.netlify.com/privacy">
                 https://www.netlify.com/privacy
-              </a>
+                  </OutboundLink>
               .
             </li>
               <li className="mt-4">
@@ -195,10 +196,10 @@ function PrivacyPolicy() {
               EEE al contar con las garantías adecuadas según las exigencias
               legales en materia de protección de datos. Para más información
               visita su Política de Privacidad en:{" "}
-              <a href="https://amplitude.com/amplitude-security-and-privacy/data-protection-and-storage .">
+                  <OutboundLink eventproperties={{ location: "privacy-policy-page" }} href="https://amplitude.com/amplitude-security-and-privacy/data-protection-and-storage .">
                 https://amplitude.com/amplitude-security-and-privacy/data-protection-and-storage
                 .
-              </a>
+                  </OutboundLink>
             </li>
               <li className="mt-4">
               <span className="font-bold">Mailchimp Inc.</span>como proveedor de
@@ -209,9 +210,9 @@ function PrivacyPolicy() {
               con las garantías adecuadas según las exigencias legales en
               materia de protección de datos. Para más información visita su
               Política de Privacidad en:{" "}
-              <a href="https://mailchimp.com/es/help/about-the-general-data-protection-regulation/">
+                  <OutboundLink eventproperties={{ location: "privacy-policy-page" }} href="https://mailchimp.com/es/help/about-the-general-data-protection-regulation/">
                 https://mailchimp.com/es/help/about-the-general-data-protection-regulation/
-              </a>
+                  </OutboundLink>
             </li>
               <li className="mt-4">
               <span className="font-bold">Salesforce Inc (Heroku)</span>como
@@ -220,9 +221,9 @@ function PrivacyPolicy() {
               internacionales fuera del EEE al contar con las garantías
               adecuadas según las exigencias legales en materia de protección de
               datos. Para más información visita su Política de Privacidad en:{" "}
-              <a href="https://www.salesforce.com/company/privacy/">
+                  <OutboundLink eventproperties={{ location: "privacy-policy-page" }} href="https://www.salesforce.com/company/privacy/">
                 https://www.salesforce.com/company/privacy/
-              </a>
+                  </OutboundLink>
             </li>
           </ul>
             <p className="mt-4">
@@ -254,7 +255,7 @@ function PrivacyPolicy() {
             <p className="mt-4">
             Asimismo, el Usuario tendrá derecho a presentar una reclamación ante
             la Agencia Española de Protección de Datos (
-            <a href="https://www.aepd.com">www.aepd.com</a>) si considera que se
+                <OutboundLink eventproperties={{ location: "privacy-policy-page" }} href="https://www.aepd.com">www.aepd.com</OutboundLink>) si considera que se
             vulneran los derechos anteriormente expuestos en la presente
             Política de Privacidad o si considera que el tratamiento de datos
             personales que le conciernen infringe la normativa aplicable.
@@ -603,9 +604,9 @@ function PrivacyPolicy() {
               <span className="font-bold">Amazon Web Services</span>: Servicio
               de hosting. Puede consultar el Contrato de Encargado del
               Tratamiento en:{" "}
-              <a href="https://d1.awsstatic.com/legal/aws-gdpr/AWS_GDPR_DPA.pdf">
+                  <OutboundLink eventproperties={{ location: "privacy-policy-page" }} href="https://d1.awsstatic.com/legal/aws-gdpr/AWS_GDPR_DPA.pdf">
                 https://d1.awsstatic.com/legal/aws-gdpr/AWS_GDPR_DPA.pdf
-              </a>
+                  </OutboundLink>
             </li>
           </ul>
             <p className="mt-4">
@@ -620,9 +621,9 @@ function PrivacyPolicy() {
               contar con las garantías adecuadas según las exigencias legales en
               materia de protección de datos. Para más información visita su
               Política de Privacidad en:{" "}
-              <a href="https://www.netlify.com/privacy">
+                  <OutboundLink eventproperties={{ location: "privacy-policy-page" }} href="https://www.netlify.com/privacy">
                 https://www.netlify.com/privacy
-              </a>
+                  </OutboundLink>
               .
             </li>
               <li className="mt-4">
@@ -634,10 +635,10 @@ function PrivacyPolicy() {
               EEE al contar con las garantías adecuadas según las exigencias
               legales en materia de protección de datos. Para más información
               visita su Política de Privacidad en:{" "}
-              <a href="https://amplitude.com/amplitude-security-and-privacy/data-protection-and-storage .">
+                  <OutboundLink eventproperties={{ location: "privacy-policy-page" }} href="https://amplitude.com/amplitude-security-and-privacy/data-protection-and-storage .">
                 https://amplitude.com/amplitude-security-and-privacy/data-protection-and-storage
                 .
-              </a>
+                  </OutboundLink>
             </li>
               <li className="mt-4">
               <span className="font-bold">Mailchimp Inc.</span>como proveedor de
@@ -648,9 +649,9 @@ function PrivacyPolicy() {
               con las garantías adecuadas según las exigencias legales en
               materia de protección de datos. Para más información visita su
               Política de Privacidad en:{" "}
-              <a href="https://mailchimp.com/es/help/about-the-general-data-protection-regulation/">
+                  <OutboundLink eventproperties={{ location: "privacy-policy-page" }} href="https://mailchimp.com/es/help/about-the-general-data-protection-regulation/">
                 https://mailchimp.com/es/help/about-the-general-data-protection-regulation/
-              </a>
+                  </OutboundLink>
             </li>
               <li className="mt-4">
               <span className="font-bold">Salesforce Inc (Heroku)</span>como
@@ -659,9 +660,9 @@ function PrivacyPolicy() {
               internacionales fuera del EEE al contar con las garantías
               adecuadas según las exigencias legales en materia de protección de
               datos. Para más información visita su Política de Privacidad en:{" "}
-              <a href="https://www.salesforce.com/company/privacy/">
+                  <OutboundLink eventproperties={{ location: "privacy-policy-page" }} href="https://www.salesforce.com/company/privacy/">
                 https://www.salesforce.com/company/privacy/
-              </a>
+                  </OutboundLink>
             </li>
           </ul>
             <p className="mt-4">

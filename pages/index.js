@@ -54,7 +54,7 @@ function IndexPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 mt-6 md:mt-0 mr-4 md:mr-0">
 
                 <OutboundLink
-                  eventType="signup" eventProperties={{ plan: "free", location: "home button" }}
+                    eventProperties={{ location: "home button" }}
 
                     className="text-center shadow-2xl mt-2 md:mt-0  hover:bg-primary-800  hover:text-white bg-white text-primary-400    text-xl  transition-colors duration-150   rounded-full py-4 px-4 xl:px-16 focus:shadow-outline" href="#pricing">
                   {t('Sign up for free')}
@@ -98,17 +98,17 @@ function IndexPage() {
               </p>
 
               <div className="	mt-4 text-xl text-primary-800">
-                <Link href="/hotdesking">
-                  <a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
+                  <Link href="/hotdesking" passHref>
+                    <OutboundLink eventProperties={{ location: "home-hotdesking-box" }} className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
                     {t('more_about_hotdesking')}
-                  </a>
+                    </OutboundLink>
                 </Link>
               </div>
               <div className="mt-12">
-                <Link href="https://calendly.com/dewocracylabs/dewocracy-demo" >
-                  <a className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 focus:shadow-outline ">
+                  <Link href="https://calendly.com/dewocracylabs/dewocracy-demo" passHref >
+                    <OutboundLink eventProperties={{ location: "home-hotdesking-box" }} className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 focus:shadow-outline ">
                     {t('hotdesking_button')}
-                  </a>
+                    </OutboundLink>
                 </Link>
               </div>
             </div>
@@ -152,16 +152,16 @@ function IndexPage() {
               </p>
 
               <div className="mt-4  text-xl text-primary-800">
-                <Link href="/neighbourhoods">
-                  <a className="border-b-2 pb-1 hover:border-black leading-8	 	transition-all  ">
+                  <Link href="/neighbourhoods" passHref>
+                    <OutboundLink eventProperties={{ location: "home-neighbourhood-box" }} className="border-b-2 pb-1 hover:border-black leading-8	 	transition-all  ">
                     {t('more_about_neighbourhoods')}
-                  </a>
+                    </OutboundLink>
                 </Link>
               </div>
               <div className="mt-12">
-                <a href="https://calendly.com/dewocracylabs/dewocracy-demo" className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 focus:shadow-outline ">
+                  <OutboundLink eventProperties={{ location: "home-neighbourhood-box" }} href="https://calendly.com/dewocracylabs/dewocracy-demo" className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 focus:shadow-outline ">
                   {t('neighbourhoods_button')}
-                </a>
+                  </OutboundLink>
               </div>
             </div>
 
@@ -182,17 +182,17 @@ function IndexPage() {
               </p>
 
               <div className="mt-4 text-xl  text-primary-800">
-                <Link href="/manage-remotework">
-                  <a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
+                  <Link href="/manage-remotework" passHref>
+                    <OutboundLink eventProperties={{ location: "home-manaage-remotework-box" }} className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
                     {t('more_about_manage')}
-                  </a>
+                    </OutboundLink>
                 </Link>
               </div>
               <div className="mt-12">
-                <Link href="https://app.dewocracy.com/register/free" >
-                  <a className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 focus:shadow-outline ">
+                  <Link href="https://app.dewocracy.com/register/free" passHref >
+                    <OutboundLink eventProperties={{ location: "home-manaage-remotework-box" }} className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 focus:shadow-outline ">
                     {t('manage_button')}
-                  </a>
+                    </OutboundLink>
                 </Link>
               </div>
             </div>
@@ -223,10 +223,10 @@ function IndexPage() {
               </p>
             </div>
             <div className="mt-8 mb-8 text-xl text-center  text-primary-800">
-              <Link href="/analytics">
-                <a className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
+                <Link href="/analytics" passHref>
+                  <OutboundLink eventProperties={{ location: "home-analytics-box" }} className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
                   {t('more_about_reports')}
-                </a>
+                  </OutboundLink>
               </Link>
             </div>
 

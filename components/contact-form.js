@@ -38,7 +38,7 @@ export const ContactForm = () => {
             className="border-b-2  hover:border-black leading-8">
             {t('videocall_link')}
           </OutboundLink>,
-          'contact': <a className="border-b-2  hover:border-black leading-8 " href='#mailgo' data-address='info' data-domain='dewocracy.com'>{t('contact')}</a>
+          'contact': <OutboundLink eventProperties={{ location: "home-contactform" }} className="border-b-2  hover:border-black leading-8 " href='#mailgo' data-address='info' data-domain='dewocracy.com'>{t('contact')}</OutboundLink>
         },
         )}
 

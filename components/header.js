@@ -83,32 +83,36 @@ function Header() {
           <hr className="my-4 text-opacity-25 text-lightBlue" />
 
           <div className="flex flex-col">
-
-            <a rel="noreferrer noopener"
+            <OutboundLink
+              eventProperties={{ location: "top navbar", device: "mobile" }}
+              rel="noreferrer noopener"
               target="_blank"
               href="//www.notion.so/DeWocracy-Help-50ccfd99c7ad4e6ea17a441a7a34ca9f"
-              className="mt-1  hover:text-primary-400">{t('help_page')}</a>
+              className="mt-1  hover:text-primary-400">{t('help_page')}  </OutboundLink>
 
 
-            <Link href="/calculator"
+            <Link href="/calculator" passHref
               key="Calculator"
               className={`  block p-4 pl-6 mb-4 hover:underline 
                 }`}
               role="menuitem"
-            ><a className={`mt-1  hover:text-primary-400`}>{t('calculator')}</a>
+            ><OutboundLink
+              eventProperties={{ location: "top navbar", device: "mobile" }} className={`mt-1  hover:text-primary-400`}>{t('calculator')}</OutboundLink>
             </Link>
 
-            <a rel="noreferrer noopener"
+            <OutboundLink
+              eventProperties={{ location: "top navbar", device: "mobile" }} rel="noreferrer noopener"
               target="_blank"
 
               href="https://docs.google.com/spreadsheets/d/1QkhYLoNE2JAirZcBtYtTWsU-GZ7alpHrSMCPCsGar14/edit?usp=sharing"
-              className={`mt-1  hover:text-primary-400`}>{t('remotework_management_template')}</a>
+              className={`mt-1  hover:text-primary-400`}>{t('remotework_management_template')}</OutboundLink>
 
 
-            <a rel="noreferrer noopener"
+            <OutboundLink
+              eventProperties={{ location: "top navbar", device: "mobile" }} rel="noreferrer noopener"
               target="_blank"
               href="https://survey.dewocracy.com/"
-              className="mt-1  hover:text-primary-400">{t('remotework_survey')}</a>
+              className="mt-1  hover:text-primary-400">{t('remotework_survey')}</OutboundLink>
 
           </div>
           <hr className="my-4 text-opacity-25 text-lightBlue" />
@@ -119,22 +123,28 @@ function Header() {
               (lng) =>
                 locale !== lng && (
                   <li key={lng} className="block mt-4 no-underline">
-                    <Link href="/" locale={lng}><a>{t(lng)}</a></Link>
+                    <Link href="/" locale={lng} passHref>
+                      <OutboundLink
+                        eventProperties={{ location: "top navbar", device: "mobile" }}>
+                        {t(lng)}
+                      </OutboundLink>
+                    </Link>
                   </li>
                 )
             )}
           </ul>
         </nav>
       </div>
-      <Link
+      <Link passHref
         href="/"
         className="md:order-first flex "
         aria-label="Go to home"
-      ><a>
-        <figure
+      ><OutboundLink
+        eventProperties={{ location: "top navbar", device: "mobile" }}>
+          <figure
             className={`w-32 md:w-40	 flex items-center text-black hover:text-primary-400 transition-colors duration-150 ${isExpanded ? `hidden` : `block`
-            }`}
-        >
+              }`}
+          >
             <div className="relative max-w-lg w-full h-logo  flex  flex-col items-center lg:flex-row">
 
               <Image
@@ -148,8 +158,8 @@ function Header() {
 
             </div>
 
-        </figure>
-        </a>
+          </figure>
+        </OutboundLink>
       </Link>
       <nav className="hidden lg:inline-flex justify-center md:justify-end gap-4 text-primary text-sm">
         <OutboundLink
@@ -160,30 +170,40 @@ function Header() {
         <ResourceDropdown title={t('resources')} theme="navbar">
           <div className="flex flex-col p-2 mr-2">
 
-            <a rel="noreferrer noopener"
+            <OutboundLink
+              eventProperties={{ location: "top navbar" }}
+              rel="noreferrer noopener"
               target="_blank"
               href="//www.notion.so/DeWocracy-Help-50ccfd99c7ad4e6ea17a441a7a34ca9f"
-              className="mt-1  hover:text-primary-400">{t('help_page')}</a>
+              className="mt-1  hover:text-primary-400">{t('help_page')}</OutboundLink>
 
 
             <Link href="/calculator"
               key="Calculator"
               className="block p-4 pl-6 mb-4 hover:underline"
-              role="menuitem"
-            ><a className={`mt-1  hover:text-primary-400`}>{t('calculator')}</a>
+              role="menuitem" passHref
+            >
+              <OutboundLink
+                eventProperties={{ location: "top navbar" }}
+                className={`mt-1  hover:text-primary-400`}>
+                {t('calculator')}
+              </OutboundLink>
             </Link>
 
-            <a rel="noreferrer noopener"
+            <OutboundLink
+              eventProperties={{ location: "top navbar" }}
+              rel="noreferrer noopener"
               target="_blank"
 
               href="https://docs.google.com/spreadsheets/d/1QkhYLoNE2JAirZcBtYtTWsU-GZ7alpHrSMCPCsGar14/edit?usp=sharing"
-              className={`mt-1  hover:text-primary-400`}>{t('remotework_management_template')}</a>
+              className={`mt-1  hover:text-primary-400`}>{t('remotework_management_template')}</OutboundLink>
 
 
-            <a rel="noreferrer noopener"
+            <OutboundLink
+              eventProperties={{ location: "top navbar" }} rel="noreferrer noopener"
               target="_blank"
               href="https://survey.dewocracy.com/"
-              className="mt-1  hover:text-primary-400">{t('remotework_survey')}</a>
+              className="mt-1  hover:text-primary-400">{t('remotework_survey')}</OutboundLink>
 
 
 
@@ -191,7 +211,7 @@ function Header() {
         </ResourceDropdown>
 
 
-        <OutboundLink eventType="accessApp"
+        <OutboundLink eventType="link-clicked"
           eventProperties={{ location: "top navbar" }}
           className=" text-lg mt-2 block py-2 font-medium	 text-black hover:text-primary-400 transition-colors duration-150"
           href="https://app.dewocracy.com/"
@@ -199,7 +219,7 @@ function Header() {
           {t('access')}
         </OutboundLink>
 
-        <OutboundLink eventType="signup" eventProperties={{ location: "top navbar" }}
+        <OutboundLink eventType="link-clicked" eventProperties={{ location: "top navbar" }}
 
           href="https://wa.me/message/NULJD4OWUB3CA1"
           rel="noreferrer noopener"
@@ -223,15 +243,16 @@ function Header() {
         <Dropdown isLocaleDropDown={true} title={t(locale)} theme="navbar">
           <div className="flex flex-col p-2">
             {locales.map((lng, key) => (
-              <Link href="/"
-              key={key}
+              <Link href="/" passHref
+                key={key}
                 className={` uppercase block p-4 pl-6 mb-4 hover:underline ${lng === locale ? "underline" : ""
-                }`}
-              role="menuitem"
+                  }`}
+                role="menuitem"
                 locale={lng}
-              ><a className={` ${lng === locale ? "font-bold	" : ""} mt-1  hover:text-primary-400`}>{t(lng)}</a>
-            </Link>
-          ))}
+              > <OutboundLink
+                eventProperties={{ location: "top navbar", type: "changed-locale" }} className={` ${lng === locale ? "font-bold	" : ""} mt-1  hover:text-primary-400`}>{t(lng)}</OutboundLink>
+              </Link>
+            ))}
           </div>
         </Dropdown>
       </nav>
