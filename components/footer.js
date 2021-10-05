@@ -103,7 +103,7 @@ export const Footer = () => {
             >
               <FontAwesomeIcon
                 icon={faWhatsapp}
-                className="text-primary-800 md:mr-4"
+                className="text-primary-800 md:mr-2"
                 size="2x"
               />
             </OutboundLink>
