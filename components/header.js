@@ -168,14 +168,14 @@ function Header() {
           {t('pricing')}
         </OutboundLink>
         <ResourceDropdown title={t('resources')} theme="navbar">
-          <div className="flex flex-col p-2 mr-2">
+          <div className="flex flex-col py-4 ">
 
             <OutboundLink
               eventProperties={{ location: "top navbar" }}
               rel="noreferrer noopener"
               target="_blank"
               href="//www.notion.so/DeWocracy-Help-50ccfd99c7ad4e6ea17a441a7a34ca9f"
-              className="mt-1  hover:text-primary-400">{t('help_page')}</OutboundLink>
+              className="mt-1 pl-4 p-2 rounded-lg hover:bg-lightGrey  hover:text-primary-400">{t('help_page')}</OutboundLink>
 
 
             <Link href="/calculator"
@@ -185,7 +185,7 @@ function Header() {
             >
               <OutboundLink
                 eventProperties={{ location: "top navbar" }}
-                className={`mt-1  hover:text-primary-400`}>
+                className={`mt-1 pl-4 p-2 rounded-lg hover:bg-lightGrey  hover:text-primary-400`}>
                 {t('calculator')}
               </OutboundLink>
             </Link>
@@ -196,14 +196,14 @@ function Header() {
               target="_blank"
 
               href="https://docs.google.com/spreadsheets/d/1QkhYLoNE2JAirZcBtYtTWsU-GZ7alpHrSMCPCsGar14/edit?usp=sharing"
-              className={`mt-1  hover:text-primary-400`}>{t('remotework_management_template')}</OutboundLink>
+              className={`mt-1 pl-4 p-2 rounded-lg hover:bg-lightGrey  hover:text-primary-400`}>{t('remotework_management_template')}</OutboundLink>
 
 
             <OutboundLink
               eventProperties={{ location: "top navbar" }} rel="noreferrer noopener"
               target="_blank"
               href="https://survey.dewocracy.com/"
-              className="mt-1  hover:text-primary-400">{t('remotework_survey')}</OutboundLink>
+              className="mt-1 pl-4 p-2 rounded-lg hover:bg-lightGrey  hover:text-primary-400">{t('remotework_survey')}</OutboundLink>
 
 
 
@@ -243,13 +243,13 @@ function Header() {
         <Dropdown isLocaleDropDown={true} title={t(locale)} theme="navbar">
           <div className="flex flex-col p-2">
             {locales.map((lng, key) => (
-              <Link href="/" passHref
+              <Link href={`/${lng}`} passHref
                 key={key}
                 className={` uppercase block p-4 pl-6 mb-4 hover:underline ${lng === locale ? "underline" : ""
                   }`}
                 role="menuitem"
                 locale={lng}
-              > <OutboundLink
+              ><OutboundLink
                 eventProperties={{ location: "top navbar", type: "changed-locale" }} className={` ${lng === locale ? "font-bold	" : ""} mt-1  hover:text-primary-400`}>{t(lng)}</OutboundLink>
               </Link>
             ))}
