@@ -111,7 +111,7 @@ export const ContactForm = () => {
         </label>
         <textarea
           id="message"
-            className="h-40 p-2 rounded-lg py-6 px-4 bg-lightBlue bg-opacity-10 placeholder-primary-800 placeholder-opacity-30"
+            className="p-2 h-md rounded-lg py-6 px-4 bg-lightBlue bg-opacity-10 placeholder-primary-800 placeholder-opacity-30"
           required
           maxLength="500"
           name="message"
@@ -122,7 +122,7 @@ export const ContactForm = () => {
         <button
           aria-label="Send"
           type="submit"
-            className="shadow-2xl  bg-primary-400 hover:bg-primary-800 text-white  text-xl  transition-colors duration-150   focus:shadow-outlinet cursor-pointer w-full md:w-auto my-10 rounded-full py-4 px-4 xl:px-16"
+            className="shadow-2xl  bg-primary-400 hover:bg-primary-800 text-white  text-lg xl:text-xl  transition-colors duration-150   focus:shadow-outlinet cursor-pointer w-full md:w-auto my-10 rounded-full py-4 px-4 xl:px-16"
         >
             {t('submit_button')}
         </button>

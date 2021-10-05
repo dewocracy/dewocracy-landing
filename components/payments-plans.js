@@ -26,7 +26,7 @@ export const PaymentsPlans = () => {
         <div
           data-sal="zoom-in"
           data-sal-easing="ease"
-          className="grid rounded-lg bg-white p-8 md:p-10 lg:ml-24 max-w-sm gap-y-8 my-4 lg:my-16"
+          className="grid rounded-lg bg-white p-8 md:p-10 xl:ml-24 max-w-sm gap-y-8 my-4 lg:my-16"
         >
           <div>
             <p className="text-primary-800 text-2xl md:text-4xl font-bold pb-4">
