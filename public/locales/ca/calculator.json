@@ -1,0 +1,27 @@
+{
+    "title": "Calculadora d'estalvi",
+
+    "sub_title": "¿Quant podria estalviar la teva empresa amb DeWocracy?",
+    "employees_text": "¿Quant podria estalviar la teva empresa amb DeWocracy?",
+    "employees_placeholder": "",
+    "square_meters_text": "Quants metres quadrats té la teva oficina actual? (m2)",
+    "square_meters_placeholder": "¿Cuántos empleados tiene tu empresa?",
+
+    "key_utilities": "Subministres",
+    "key_cost": "Cost DW",
+    "key_rent": "Lloguer",
+    "percentage_text": "Quin percentatge de teletreball voldries implementar? (%)",
+    "calculation": "¿Com ho calculem?",
+    "button_contact": "Contacta'ns",
+    "cost_type_now": "Ara",
+    "cost_type_dewocracy": "Cost DW",
+    "label_rent": "Lloguer",
+    "label_utilities": "Subministres",
+    "label_dewocracy_cost": "Amb DW",
+    "label_now": "Ara",
+    "label_with_dw": "Amb DW",
+    "saving_with_dw": "Amb DeWocracy podries estalviar fins a...",
+    "monthly": "al mes",
+    "annually": "l'any",
+    "saving": "d'estalvi"
+  }

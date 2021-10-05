@@ -2,8 +2,9 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import { useTranslations } from 'next-intl';
+import { useTranslation } from 'next-i18next';
 import Link from "next/link";
 import Image from "next/image";
 import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
@@ -15,7 +16,7 @@ import { OutboundLink } from "../utils/OutboundLink";
 function Neighbourhoods() {
     const router = useRouter()
 
-    const t = useTranslations("analytics");
+    const { t } = useTranslation("analytics");
 
     return (
         <Amplitude
@@ -98,10 +99,11 @@ function Neighbourhoods() {
         </Amplitude>)
 }
 
-export function getStaticProps({ locale }) {
+export async function getStaticProps({ locale }) {
     return {
         props: {
-            messages: require(`../locales/${locale}.json`),
+            ...(await serverSideTranslations(locale, ['footer', 'header', 'analytics'])),
+            // Will be passed to the page component as props
         },
     };
 }

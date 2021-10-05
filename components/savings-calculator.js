@@ -1,5 +1,5 @@
 import React, { Fragment, useCallback, useEffect, useState } from "react";
-import { useTranslations } from 'next-intl';
+import { useTranslation } from 'next-i18next';
 import { SavingsGraph } from "./savings-graph";
 import { useDebounce } from "../hooks/use-debounce";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -59,7 +59,7 @@ const getDWCost = (employees) => {
 
 export const SavingsCalculator = () => {
   const router = useRouter()
-  const t = useTranslations("Calculator")
+  const { t } = useTranslation("calculator")
 
   const [employees, setEmployees, { signal: employeesSignal }] = useDebounce(
     DEFAULTS.EMPLOYEES

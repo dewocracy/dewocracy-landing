@@ -1,9 +1,9 @@
 import * as React from "react";
 import { BarPropTypes, ResponsiveBar } from "@nivo/bar";
-import { useTranslations } from 'next-intl';
+import { useTranslation } from 'next-i18next';
 
 export const SavingsGraph = ({ data }) => {
-  const t = useTranslations("Calculator");
+  const { t } = useTranslation("calculator");
   return (
     <ResponsiveBar
       data={data}

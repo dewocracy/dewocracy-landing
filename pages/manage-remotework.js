@@ -3,7 +3,8 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-import { useTranslations } from 'next-intl';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 import Link from "next/link";
 import Image from "next/image";
 import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
@@ -12,7 +13,7 @@ import { OutboundLink } from "../utils/OutboundLink";
 
 
 function Neighbourhoods() {
-    const t = useTranslations("manage_remotework");
+    const { t } = useTranslation("manage-remotework");
     const router = useRouter()
 
     return (
@@ -94,10 +95,11 @@ function Neighbourhoods() {
         </Amplitude>)
 }
 
-export function getStaticProps({ locale }) {
+export async function getStaticProps({ locale }) {
     return {
         props: {
-            messages: require(`../locales/${locale}.json`),
+            ...(await serverSideTranslations(locale, ['footer', 'header', 'manage-remotework'])),
+            // Will be passed to the page component as props
         },
     };
 }

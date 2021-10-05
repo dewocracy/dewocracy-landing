@@ -1,6 +1,7 @@
 import React from "react";
-import { useTranslations } from 'next-intl';
+import { useTranslation } from 'next-i18next';
 import Link from "next/link";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -9,7 +10,7 @@ import { useRouter } from "next/router"
 import { OutboundLink } from "../utils/OutboundLink";
 
 function NotFoundPage() {
-  const t = useTranslations("404");
+  const { t } = useTranslation("404");
   const router = useRouter()
 
   return (
@@ -54,10 +55,11 @@ function NotFoundPage() {
 }
 
 
-export function getStaticProps({ locale }) {
+export async function getStaticProps({ locale }) {
   return {
     props: {
-      messages: require(`../locales/${locale}.json`),
+      ...(await serverSideTranslations(locale, ['footer', 'header', '404'])),
+      // Will be passed to the page component as props
     },
   };
 }
