@@ -35,10 +35,11 @@ function IndexPage() {
         <Image
           layout="fill"
           className="object-center object-cover pointer-events-none"
-          src="/images/background-home-banner.webp"
+            src="/images/background-home-banner.jpg"
           alt="Office Background"
           placeholder="blur"
-          blurDataURL={`/_next/image?url=/images/background-home-banner.webp&w=16&q=1`}
+            quality="100"
+            blurDataURL={`/_next/image?url=/images/background-home-banner.jpg&w=16&q=100`}
 
         />
 
@@ -71,7 +72,7 @@ function IndexPage() {
           </div>
           <div className="md:mt-4 lg:mt-20 grid content-center px-0 md:px-8 lg:px-0">
             <div className="mt-4 lg:mt-20 lg:w-200 ml-8 max-w-2xl">
-              <div className="relative w-full h-xl">
+                <div className="relative w-full h-md md:h-xl">
                 <Image
                   className="object-contain"
                   src="/images/home_mockup.webp"
