@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { useTranslation } from 'next-i18next';
+import { useTranslations } from 'next-intl';
 import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 import { OutboundLink } from "../utils/OutboundLink";
 
 
 export const PaymentsPlans = () => {
-  const { t } = useTranslation("plans");
+  const t = useTranslations("payment_plans");
 
   return (
     <div className="relative z-10">

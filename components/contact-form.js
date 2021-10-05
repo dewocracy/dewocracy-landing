@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useTranslation } from 'next-i18next';
+import { useTranslations } from 'next-intl';
 import { OutboundLink } from "../utils/OutboundLink";
 import mailgo from "mailgo";
 import { useRouter } from 'next/router'
@@ -8,8 +8,8 @@ import { useRouter } from 'next/router'
 
 export const ContactForm = () => {
   const [state, setState] = useState({});
-  const { t } = useTranslation("contact");
-  const { locale } = useRouter()
+  const t = useTranslations("contact_form");
+  const { locale, locales } = useRouter()
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
@@ -28,8 +28,8 @@ export const ContactForm = () => {
       <h2 className="font-bold text-primary-800 text-4xl lg:text-6xl text-center py-16 lg:pt-24">
         {t('title')}
       </h2>
-      {/* <p key="leading-8 description" className="md:px-24 pb-5 mb-12 text-center text-2xl text-primary-800">
-         {t.rich('description', {
+      <p key="leading-8 description" className="md:px-24 pb-5 mb-12 text-center text-2xl text-primary-800">
+        {t.rich('description', {
           link: <OutboundLink
             eventProperties={{ location: "form description" }}
             rel="noreferrer noopener"
@@ -44,7 +44,7 @@ export const ContactForm = () => {
 
 
 
-      </p> */}
+      </p>
     <form
       name="contact"
       method="POST"

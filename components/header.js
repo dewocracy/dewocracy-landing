@@ -5,7 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Dropdown } from "./dropdown";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { OutboundLink } from "../utils/OutboundLink";
-import { useTranslation } from 'next-i18next';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { ResourceDropdown } from "./resourcesDropdown"
@@ -13,11 +13,10 @@ import Image from "next/image";
 
 function Header() {
   const [isExpanded, toggleExpansion] = React.useState(false);
-  const { t } = useTranslation("header")
+  const t = useTranslations("navigation")
   const { locale, locales } = useRouter()
 
   const handleClickSubmenu = useCallback(() => toggleExpansion(!isExpanded), [isExpanded]);
-
 
   return (
     <header
@@ -244,13 +243,13 @@ function Header() {
         <Dropdown isLocaleDropDown={true} title={t(locale)} theme="navbar">
           <div className="flex flex-col p-2">
             {locales.map((lng, key) => (
-              <Link href={`/${lng}`} passHref
+              <Link href="/" passHref
                 key={key}
                 className={` uppercase block p-4 pl-6 mb-4 hover:underline ${lng === locale ? "underline" : ""
                   }`}
                 role="menuitem"
                 locale={lng}
-              ><OutboundLink
+              > <OutboundLink
                 eventProperties={{ location: "top navbar", type: "changed-locale" }} className={` ${lng === locale ? "font-bold	" : ""} mt-1  hover:text-primary-400`}>{t(lng)}</OutboundLink>
               </Link>
             ))}

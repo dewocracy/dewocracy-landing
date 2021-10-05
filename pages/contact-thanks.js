@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { useTranslation } from 'next-i18next';
+import { useTranslations } from 'next-intl';
 import Link from "next/link";
 import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
 import { useRouter } from "next/router"
@@ -11,7 +11,7 @@ import { OutboundLink } from "../utils/OutboundLink";
 function ContactPage() {
   const router = useRouter()
 
-  const { t } = useTranslation("contact_form");
+  const t = useTranslations("contact_form");
 
   return (
     <Amplitude

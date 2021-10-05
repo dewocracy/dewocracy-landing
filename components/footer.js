@@ -8,7 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { OutboundLink } from "../utils/OutboundLink";
-import { useTranslation } from 'next-i18next';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -29,7 +29,7 @@ const appleStoreI18n = {
 }
 
 export const Footer = () => {
-  const { t } = useTranslation("footer")
+  const t = useTranslations("Default")
   const { locale } = useRouter()
 
 

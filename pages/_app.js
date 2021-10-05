@@ -1,6 +1,7 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css'
 
+import { NextIntlProvider } from 'next-intl';
 import {
     AmplitudeProvider,
     Amplitude,
@@ -8,7 +9,6 @@ import {
 
 import { isBrowser } from '@unly/utils';
 import CookieBot from "react-cookiebot"
-import { appWithTranslation } from 'next-i18next';
 
 
 // eslint-disable-next-line react/prop-types
@@ -50,13 +50,15 @@ function MyApp({ Component, pageProps }) {
         >
             <CookieBot domainGroupId={process.env.NEXT_PUBLIC_COOKIEBOT_GROUP_ID} />
 
+            <NextIntlProvider messages={pageProps.messages}>
 
-            <Component {...pageProps} />
+                <Component {...pageProps} />
+            </NextIntlProvider>
         </Amplitude>
     </AmplitudeProvider>
 
 }
 
-export default appWithTranslation(MyApp);
 
 
+export default MyApp

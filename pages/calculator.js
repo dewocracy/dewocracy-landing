@@ -3,8 +3,8 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { SavingsCalculator } from "../components/savings-calculator";
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'next-i18next';
+
+import { useTranslations } from 'next-intl';
 import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
 import { useRouter } from "next/router"
 
@@ -13,7 +13,7 @@ import { useRouter } from "next/router"
 function Calculator() {
     const router = useRouter()
 
-    const { t } = useTranslation("calculator");
+    const t = useTranslations("Calculator");
 
     return (
         <Amplitude
@@ -52,14 +52,13 @@ function Calculator() {
                 </section>
             </div>
             </Layout>
-        </Amplitude>
-    )
+        </Amplitude>)
 }
 
-export async function getStaticProps({ locale }) {
+export function getStaticProps({ locale }) {
     return {
         props: {
-            ...(await serverSideTranslations(locale, ['footer', 'header', 'calculator'])),
+            messages: require(`../locales/${locale}.json`),
         },
     };
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from 'next/link'
 import Image from "next/image";
-import { useTranslation } from 'next-i18next';
+import { useTranslations } from 'next-intl';
 
 import { PaymentsPlans } from "../components/payments-plans";
 import { ContactForm } from "../components/contact-form";
@@ -10,10 +10,9 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
 import { useRouter } from 'next/router'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 function IndexPage() {
-  const { t } = useTranslation("home");
+  const t = useTranslations("Default");
   const router = useRouter()
   return (
     <Amplitude
@@ -66,7 +65,7 @@ function IndexPage() {
                     className="text-center shadow-2xl sm:ml-4  md:ml-0 mt-2 md:mt-0   hover:bg-primary-800  bg-primary-400 text-white   text-xl  transition-colors duration-500 rounded-full py-4 px-4 xl:px-16  focus:shadow-outline"
                   href="https://calendly.com/dewocracylabs/dewocracy-demo"
                 >
-                    {t('request_demo')}
+                  {t('Request demo')}
                 </OutboundLink>
               </div>
             </div>
@@ -271,13 +270,10 @@ function IndexPage() {
   )
 }
 
-
-
-export async function getStaticProps({ locale }) {
+export function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['footer', 'header', 'plans', 'home', 'contact'])),
-      // Will be passed to the page component as props
+      messages: require(`../locales/${locale}.json`),
     },
   };
 }

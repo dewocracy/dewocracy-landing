@@ -3,9 +3,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
+import { useTranslations } from 'next-intl';
 import Link from "next/link";
 import Image from "next/image";
 import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
@@ -15,7 +13,7 @@ import { OutboundLink } from "../utils/OutboundLink";
 
 
 function DeskBooking() {
-    const { t } = useTranslation("hotdesking");
+    const t = useTranslations("desk_booking");
     const router = useRouter()
 
     return (
@@ -114,11 +112,10 @@ function DeskBooking() {
     )
 }
 
-export async function getStaticProps({ locale }) {
+export function getStaticProps({ locale }) {
     return {
         props: {
-            ...(await serverSideTranslations(locale, ['footer', 'header', 'hotdesking'])),
-            // Will be passed to the page component as props
+            messages: require(`../locales/${locale}.json`),
         },
     };
 }
