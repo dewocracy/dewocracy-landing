@@ -8,7 +8,7 @@ import {
 } from "@amplitude/react-amplitude";
 
 import { isBrowser } from '@unly/utils';
-
+import CookieBot from "react-cookiebot"
 
 
 // eslint-disable-next-line react/prop-types
@@ -18,9 +18,6 @@ function MyApp({ Component, pageProps }) {
     if (isBrowser()) {
         const amplitude = require('amplitude-js');
         amplitudeInstance = amplitude.getInstance();
-
-        console.log({ KEY: process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY })
-        console.log({ CONTEXT: process.env.CONTEXT })
 
         // https://help.amplitude.com/hc/en-us/articles/115001361248#settings-configuration-options
         amplitudeInstance.init(process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY, null, {
@@ -51,6 +48,8 @@ function MyApp({ Component, pageProps }) {
                 }
             }}
         >
+            <CookieBot domainGroupId={process.env.NEXT_PUBLIC_COOKIEBOT_GROUP_ID} />
+
             <NextIntlProvider messages={pageProps.messages}>
 
                 <Component {...pageProps} />
