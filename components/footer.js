@@ -35,8 +35,8 @@ export const Footer = () => {
 
 
   return (
-    <footer className="mx-4 bg-purple-800 rounded-2xl mt-16 bg-fixed py-10 px-8 md:px-4">
-      <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4 justify-center lg:justify-between md:gap-y-8">
+    <footer className="pt-24 bg-purple-800 mt-16 bg-fixed py-6 px-4 md:px-2 pr-2 pl-2">
+      <section className="container mx-auto text-white grid lg:grid-cols-3 gap-4 justify-center lg:justify-between md:gap-y-0">
         <div className="flex justify-center lg:justify-start lg:items-end">
           <Link href="/" passHref><OutboundLink
             eventProperties={{ location: "footer" }}
@@ -55,8 +55,8 @@ export const Footer = () => {
         <div className="grid justify-center gap-y-4 text-primary  text-center">
 
         </div>
-        <div className="grid justify-items-center lg:justify-items-end items-center  my-4 lg:my-0">
-          <p className="text-primary font-bold text-right flex justify-between w-64 md:mr-4">
+        <div className="grid justify-items-center lg:justify-items-end items-start  my-4 lg:my-0">
+          <p className="mt-4 justify-end	text-primary font-bold text-right flex  w-64 ">
             <OutboundLink
               href="//www.linkedin.com/company/dewocracy/"
               rel="noreferrer noopener"
@@ -65,7 +65,7 @@ export const Footer = () => {
             >
               <FontAwesomeIcon
                 icon={faLinkedinIn}
-                className="text-primary-800"
+                className="text-primary-800 md:mr-6"
                 size="2x"
               />
             </OutboundLink>
@@ -77,7 +77,7 @@ export const Footer = () => {
             >
               <FontAwesomeIcon
                 icon={faTwitter}
-                className="text-primary-800"
+                className="text-primary-800  md:mr-6"
                 size="2x"
               />
             </OutboundLink>
@@ -89,7 +89,7 @@ export const Footer = () => {
             >
               <FontAwesomeIcon
                 icon={faMedium}
-                className="text-primary-800"
+                className="text-primary-800  md:mr-6"
                 size="2x"
               />
             </OutboundLink>
@@ -103,7 +103,7 @@ export const Footer = () => {
             >
               <FontAwesomeIcon
                 icon={faWhatsapp}
-                className="text-primary-800"
+                className="text-primary-800 md:mr-4"
                 size="2x"
               />
             </OutboundLink>
@@ -111,7 +111,7 @@ export const Footer = () => {
         </div>
         <div></div>
         <div></div>
-        <div className="grid justify-center md:justify-items-end">
+        <div className="grid justify-center md:justify-end">
           <div className="flex flex-col md:flex-row" >
             <OutboundLink eventProperties={{ location: "footer" }}
               className="md:pr-4 grid content-center grid-x-4 justify-center"
@@ -146,8 +146,8 @@ export const Footer = () => {
           </div>
         </div>
       </section>
-      <section className="text-center md:text-left pt-10 lg:pr-24">
-        <ul className="flex flex-col lg:flex-row justify-center lg:justify-end text-md gap-4 lg:gap-10">
+      <section className="text-center md:text-left lg:pr-24">
+        <ul className="flex flex-col lg:flex-row justify-center lg:justify-end text-md gap-4 lg:gap-6">
           <li className="hover:text-primary-800">
             <Link href="/terms-and-conditions" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('Terms of service')}</OutboundLink></Link>
           </li>
@@ -157,7 +157,7 @@ export const Footer = () => {
           <li className="hover:text-primary-800">
             <Link href="/privacy-policy" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('Privacy policy')}</OutboundLink></Link>
           </li>
-          <li className="hover:text-primary-800">
+          <li className="hover:text-primary-800 mr-7">
             <Link href="/cookies-policy" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('Cookies policy')}</OutboundLink></Link>
           </li>
         </ul>
