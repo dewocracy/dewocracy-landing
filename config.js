@@ -1,4 +1,5 @@
-export default {
+
+const config = {
   siteUrl: "https://deploy-preview-21--dewocracy.netlify.app/",
   siteTitle: `DeWocracy`,
   siteDescription: `DeWocracy offers remote work solutions for a hybrid office strategy. Manage your company's human capital, control the office occupancy rate, lower costs and increase flexibility without compromising productivity.`,
@@ -8,4 +9,6 @@ export default {
   medium: "https://medium.com/dewocracy",
 
 
-};
+}
+
+export default config;

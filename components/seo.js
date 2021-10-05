@@ -31,6 +31,9 @@ function SEO({ description, title, url, image }) {
       <meta property="og:url" content={fullURL} />
       <meta property="og:image" content={fullImage} />
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="keywords" content="" />
+      <link rel="canonical" href={fullURL} />
+
     </Head>
   );
 }
