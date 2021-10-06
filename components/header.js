@@ -51,14 +51,14 @@ function Header() {
 
 
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
-            className="block py-2 hover:text-primary-400"
+            className="block pb-1 hover:text-primary-400"
             href="#pricing"
             onClick={handleClickSubmenu}
           >
             {t('pricing')}
           </OutboundLink>
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
-            className="block py-2 hover:text-primary-400"
+            className="block pb-1 hover:text-primary-400"
             href="https://app.dewocracy.com/"
             onClick={handleClickSubmenu}
           >
@@ -66,7 +66,7 @@ function Header() {
           </OutboundLink>
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
 
-            className="block py-2 hover:text-primary-400"
+            className="block  hover:text-primary-400"
             href="https://app.dewocracy.com/register/free"
             onClick={handleClickSubmenu}
           >

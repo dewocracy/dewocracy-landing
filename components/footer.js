@@ -54,7 +54,7 @@ export const Footer = () => {
           </Link>
           <div></div>
           <p className=" mt-4  mr-4 max-w-xs">
-            {t('company_description')}
+            <span className="font-bold"> {t('office_is_a_tool')} </span> {t('company_description')}
           </p>
 
           <p className=" mt-4  mr-4" >{t('questions')}<OutboundLink href="https://calendly.com/dewocracylabs/dewocracy-demo" className="border-b-2 pb-1 text-primary-400 hover:text-black hover:border-black ">Request a call</OutboundLink></p>
