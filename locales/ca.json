@@ -71,13 +71,13 @@
     "survey": "Qüestionari teletreball",
     "template": "Plantilla de gestió del teletreball",
     "access-app": "Accedir a la Web App",
-    "appstore": "Accedir a la applicacion iOS App",
-    "play-store": "Accedir a la applicacion Android",
+    "appstore": "Descargar la applicacion iOS App",
+    "play-store": "Descargar la applicacion Android",
     "questions": "Preguntes? ",
     "company_description": "XOffice space should be a tool, not a constraint. We make hybrid work possible for better companies and happier people.",
     "resources": "Recursos",
     "explore": "Explora",
-    "legal": "Legítim"
+    "legal": "Legal"
   },
 
   "Calculator": {
