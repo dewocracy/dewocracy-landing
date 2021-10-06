@@ -36,7 +36,7 @@ export const Footer = () => {
 
   return (
     <footer className="py-16 text-grey  bg-purple-800 mt-16 bg-fixed  px-4 md:px-2 pr-2 pl-2">
-      <section className="mx-4 lg:mx-14 lg:px-0  lg:container   flex flex-wrap md:flex-nowrap  justify-start ">
+      <section className="mx-4 lg:mx-14 lg:px-0  lg:container w-full xl:w-auto  flex flex-wrap lg:flex-nowrap  justify-start ">
 
         <div className="flex flex-col mr-12">
           <Link href="/" passHref><OutboundLink
@@ -132,7 +132,7 @@ export const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col  mr-12 mt-8 md:mt-0 ">
+        <div className="flex w-full lg:w-auto flex-col  mr-12 mt-8 md:mt-0 ">
           <p className="text-md md:mb-8 uppercase font-bold text-greyBlue">{t('explore')}</p>
           <ul className="flex flex-col  justify-center lg:justify-end text-md  gap-0">
             <li className="hover:text-primary-800">
@@ -153,7 +153,7 @@ export const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col mt-8 md:mt-0 mr-4 lg:mr-12 ">
+        <div className="flex w-full lg:w-auto flex-col mt-8 md:mt-0 mr-4 lg:mr-12 ">
           <p className="text-md md:mb-8 uppercase font-bold text-greyBlue">{t('resources')}</p>
           <ul className="flex flex-col  justify-center lg:justify-end text-md gap-0">
             <li className="hover:text-primary-800">
@@ -180,7 +180,7 @@ export const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col mt-8 md:mt-0 mr-4 lg:mr-12 ">
+        <div className="flex w-full lg:w-auto flex-col mt-8 md:mt-0 mr-4 lg:mr-12 ">
           <p className="text-md md:mb-8 uppercase font-bold text-greyBlue">{t('legal')}</p>
           <ul className="flex flex-col  justify-center lg:justify-end text-md gap-0">
 
@@ -198,123 +198,8 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-
-
-        {/*   <div className="flex justify-center lg:justify-start lg:items-end">
-
-        </div>
-        <div className="grid justify-center gap-y-4 text-primary  text-center">
-
-        </div>
-        <div className="grid justify-items-center lg:justify-items-end items-start  my-4 lg:my-0">
-          <p className="mt-4 justify-end	text-primary font-bold text-right flex  w-64 ">
-            <OutboundLink
-              href="//www.linkedin.com/company/dewocracy/"
-              rel="noreferrer noopener"
-              target="_blank"
-              title="DeWocracy Linkedin"
-            >
-              <FontAwesomeIcon
-                icon={faLinkedinIn}
-                className="text-primary-800 md:mr-6"
-                size="2x"
-              />
-            </OutboundLink>
-            <OutboundLink
-              href="//twitter.com/de_wocracy"
-              rel="noreferrer noopener"
-              target="_blank"
-              title="DeWocracy twitter"
-            >
-              <FontAwesomeIcon
-                icon={faTwitter}
-                className="text-primary-800  md:mr-6"
-                size="2x"
-              />
-            </OutboundLink>
-            <OutboundLink
-              href="//medium.com/dewocracy"
-              rel="noreferrer noopener"
-              target="_blank"
-              title="DeWocracy Medium blog"
-            >
-              <FontAwesomeIcon
-                icon={faMedium}
-                className="text-primary-800  md:mr-6"
-                size="2x"
-              />
-            </OutboundLink>
-            <OutboundLink
-              eventProperties={{ location: "footer" }}
-
-              href="https://wa.me/message/NULJD4OWUB3CA1"
-              rel="noreferrer noopener"
-              target="_blank"
-              title="Whatsapp"
-            >
-              <FontAwesomeIcon
-                icon={faWhatsapp}
-                className="text-primary-800 md:mr-2"
-                size="2x"
-              />
-            </OutboundLink>
-          </p>
-        </div>
-        <div></div>
-        <div></div>
-        <div className="grid justify-center md:justify-end">
-          <div className="flex flex-col md:flex-row" >
-            <OutboundLink eventProperties={{ location: "footer" }}
-              className="md:pr-4 grid content-center grid-x-4 justify-center"
-              href="#contact"
-              title="Download DeWocracy app from the apple store"
-            >
-              <Image
-                className="object-cover	"
-                width="120px"
-                height="40px"
-                src={appleStoreI18n[locale]}
-                alt="Apple Logo Logo"
-                placeholder="blur"
-                blurDataURL={`/_next/image?url=${appleStoreI18n[locale]}&w=16&q=1`}
-
-              />
-            </OutboundLink>
-            <OutboundLink eventProperties={{ location: "footer" }}
-              href="#contact"
-              title="Download DeWocracy app from the play store"
-              className="grid content-center justify-center align-center"
-            >
-              <Image src={googleStoreI18n[locale]}
-                height="80px"
-                width="150px"
-                className="object-contain	"
-                alt="Playstore Logo"
-                placeholder="blur"
-                blurDataURL={`/_next/image?url=${googleStoreI18n[locale]}&w=16&q=1`}
-              />
-            </OutboundLink>
-          </div>
-        </div>*/}
       </section>
-      {/*
-      <section className="text-center md:text-left lg:pr-24">
-        <ul className="flex flex-col lg:flex-row justify-center lg:justify-end text-md gap-4 lg:gap-6">
-          <li className="hover:text-primary-800">
-            <Link href="/terms-and-conditions" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('Terms of service')}</OutboundLink></Link>
-          </li>
-          <li className="hover:text-primary-800">
-            <Link href="/legal-notice" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('Legal notice')}</OutboundLink></Link>
-          </li>
-          <li className="hover:text-primary-800">
-            <Link href="/privacy-policy" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('Privacy policy')}</OutboundLink></Link>
-          </li>
-          <li className="hover:text-primary-800 mr-7">
-            <Link href="/cookies-policy" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('Cookies policy')}</OutboundLink></Link>
-          </li>
-        </ul>
-      </section>
-       */}
+
     </footer>
   );
 };
