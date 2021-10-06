@@ -95,7 +95,7 @@ export const PaymentsPlans = () => {
           <OutboundLink
             eventType="signup" eventProperties={{ plan: "free", location: "plan listing" }}
 
-            className="shadow-2xl h-16 bg-primary-400 hover:bg-primary-800 text-white  pt-4  text-lg  transition-colors duration-500  rounded-full py-4 px-4 xl:px-16 text-center focus:shadow-outline"
+            className="shadow-2xl h-16 bg-primary-400 hover:bg-primary-800 text-white  pt-4  text-lg  transition-colors duration-500  rounded-full py-4 px-4 xl:px-8 text-center focus:shadow-outline"
             href="https://app.dewocracy.com/register/free"
           >
             {t('start_free')}
@@ -171,7 +171,7 @@ export const PaymentsPlans = () => {
           <OutboundLink
             eventType="signup"
             eventProperties={{ plan: "business", location: "plan listing" }}
-            className="shadow-2xl bg-primary-400 hover:bg-primary-800 text-white  h-16  text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 text-center focus:shadow-outline"
+            className="shadow-2xl bg-primary-400 hover:bg-primary-800 text-white  h-16  text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 text-center focus:shadow-outline"
             href="#contact"
           >
             {t('explore')}

@@ -59,7 +59,7 @@ function Neighbourhoods() {
 
                                 href="https://app.dewocracy.com/register/free"
 
-                            className="shadow-2xl bg-primary-400 hover:bg-primary-800 text-white text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 focus:shadow-outline "
+                                className="shadow-2xl bg-primary-400 hover:bg-primary-800 text-white text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline "
                         >
                             {t('button')}
                             </OutboundLink>

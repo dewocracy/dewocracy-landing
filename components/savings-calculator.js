@@ -264,7 +264,7 @@ export const SavingsCalculator = () => {
           <p className="text-center pt-12">
             <OutboundLink
               eventType={"accessed contact form"} eventProperties={{ location: "plans" }}
-              href="/#contact" className="shadow-2xl   bg-primary-400 hover:bg-primary-800 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 focus:shadow-outline">
+                href="/#contact" className="shadow-2xl   bg-primary-400 hover:bg-primary-800 text-white px-6 py-4  text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline">
 
 
               {t('button_contact')}

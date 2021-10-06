@@ -58,25 +58,7 @@ export const Footer = () => {
           </p>
 
           <p className=" mt-4  mr-4" >{t('questions')}<OutboundLink href="https://calendly.com/dewocracylabs/dewocracy-demo" className="border-b-2 pb-1 text-primary-400 hover:text-black hover:border-black ">Request a call</OutboundLink></p>
-          {/*<div className="mt-4 flex flex-col  mr-24 ">
-            <ul className="flex flex-col  justify-center lg:justify-end text-md mb-4 gap-0">
-              <li className="hover:text-primary-800 hover:opacity-100">
-                <OutboundLink href="//www.linkedin.com/company/dewocracy/" eventProperties={{ location: "footer" }}>LinkedIn</OutboundLink>
-              </li>
-              <li className="hover:text-primary-800 hover:opacity-100">
-                <OutboundLink href="//twitter.com/de_wocracy" eventProperties={{ location: "footer" }}>Twitter</OutboundLink>
-              </li>
-              <li className="hover:text-primary-800 hover:opacity-100">
-                <OutboundLink href="//medium.com/dewocracy" eventProperties={{ location: "footer" }}>Medium</OutboundLink>
-              </li>
-              <li className="hover:text-primary-800 hover:opacity-100 mr-7">
-                <OutboundLink href="//www.linkedin.com/company/dewocracy/" eventProperties={{ location: "footer" }}>Facebook</OutboundLink>
-              </li>
-              <li className="hover:text-primary-800 hover:opacity-100 mr-7">
-                <OutboundLink href="//www.linkedin.com/company/dewocracy/" eventProperties={{ location: "footer" }}>Whatsapp</OutboundLink>
-              </li>
-            </ul>
-          </div> */}
+
           <div className="grid justify-items-start items-start  my-4 lg:my-0">
             <p className="mt-12 md:mt-16 justify-start	text-primary font-bold text-right flex  w-64 ">
               <OutboundLink
@@ -87,7 +69,7 @@ export const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faLinkedinIn}
-                  className="text-primary-800 mr-4 md:mr-6"
+                  className="text-primary-400 mr-4 md:mr-6"
                   size="2x"
                 />
               </OutboundLink>
@@ -99,7 +81,7 @@ export const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faTwitter}
-                  className="text-primary-800 mr-4 md:mr-6"
+                  className="text-primary-400 mr-4 md:mr-6"
                   size="2x"
                 />
               </OutboundLink>
@@ -111,7 +93,7 @@ export const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faMedium}
-                  className="text-primary-800 mr-4 md:mr-6"
+                  className="text-primary-400 mr-4 md:mr-6"
                   size="2x"
                 />
               </OutboundLink>
@@ -125,7 +107,7 @@ export const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faWhatsapp}
-                  className="text-primary-800 "
+                  className="text-primary-400 "
                   size="2x"
                 />
               </OutboundLink>

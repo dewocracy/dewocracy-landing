@@ -84,14 +84,14 @@ function IndexPage() {
 
                   <OutboundLink
                     eventProperties={{ location: "home button" }}
-                    className="text-center shadow-2xl sm:ml-4  md:ml-0 md:mt-0 hover:text-white bg-white text-primary-800  md:border-0 mt-8 mr-2 md:mr-0   hover:bg-primary-800  md:bg-white   text-xl  transition-colors duration-500 rounded-full py-4 px-4 xl:px-16  focus:shadow-outline"
+                    className="text-center shadow-2xl sm:ml-4  md:ml-0 md:mt-0 hover:text-white bg-white text-primary-800  md:border-0 mt-8 mr-2 md:mr-0   hover:bg-primary-800  md:bg-white   text-xl  transition-colors duration-500 rounded-full py-4 px-4 xl:px-8  focus:shadow-outline"
                     href="https://calendly.com/dewocracylabs/dewocracy-demo"
                   >
                     {t('Sign up for free')}
                 </OutboundLink>
                 <OutboundLink
                   eventProperties={{ location: "home button" }}
-                    className="text-center shadow-2xl sm:ml-4  md:ml-0 md:mt-0 bg-transparent border border-1 mt-8 mr-2 md:mr-0 hover:border-opacity-0   hover:bg-primary-800  md:bg-primary-400 text-white   text-xl  transition-colors duration-500 rounded-full py-4 px-4 xl:px-16  focus:shadow-outline"
+                    className="text-center shadow-2xl sm:ml-4  md:ml-0 md:mt-0 bg-transparent border border-1 mt-8 mr-2 md:mr-0 hover:border-opacity-0   hover:bg-primary-800  md:bg-primary-400 text-white   text-xl  transition-colors duration-500 rounded-full py-4 px-4 xl:px-8  focus:shadow-outline"
                   href="https://calendly.com/dewocracylabs/dewocracy-demo"
                 >
                   {t('Request demo')}
@@ -136,7 +136,7 @@ function IndexPage() {
               </div>
               <div className="mt-12">
                   <Link href="https://calendly.com/dewocracylabs/dewocracy-demo" passHref >
-                    <OutboundLink eventProperties={{ location: "home-hotdesking-box" }} className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 focus:shadow-outline ">
+                    <OutboundLink eventProperties={{ location: "home-hotdesking-box" }} className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline ">
                     {t('hotdesking_button')}
                     </OutboundLink>
                 </Link>
@@ -189,7 +189,7 @@ function IndexPage() {
                 </Link>
               </div>
               <div className="mt-12">
-                  <OutboundLink eventProperties={{ location: "home-neighbourhood-box" }} href="https://calendly.com/dewocracylabs/dewocracy-demo" className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 focus:shadow-outline ">
+                  <OutboundLink eventProperties={{ location: "home-neighbourhood-box" }} href="https://calendly.com/dewocracylabs/dewocracy-demo" className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline ">
                   {t('neighbourhoods_button')}
                   </OutboundLink>
               </div>
@@ -220,7 +220,7 @@ function IndexPage() {
               </div>
               <div className="mt-12">
                   <Link href="https://app.dewocracy.com/register/free" passHref >
-                    <OutboundLink eventProperties={{ location: "home-manaage-remotework-box" }} className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-16 focus:shadow-outline ">
+                    <OutboundLink eventProperties={{ location: "home-manaage-remotework-box" }} className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline ">
                     {t('manage_button')}
                     </OutboundLink>
                 </Link>
