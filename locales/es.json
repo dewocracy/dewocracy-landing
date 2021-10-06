@@ -124,6 +124,31 @@
     "key_rent": "Alquiler"
   },
 
+  "footer": {
+    "pricing": "Precios",
+    "Terms of service": "Términos y condiciones",
+    "Legal notice": "Aviso legal",
+    "Privacy policy": "Política de privacidad",
+    "Cookies policy": "Política de cookies",
+    "hotdesking": "Hotdesking",
+    "neighbourhoods": "Vecindarios",
+    "manage-remoteworks": "Gestiona el teletrabajo",
+    "analytics": "Analíticas",
+    "help": "Páginas de ayuda",
+    "calculator": "Calculadora de ahorro",
+    "survey": "Cuestionario teletrabajo",
+    "template": "Plantilla de gestión del teletrabajo",
+    "access-app": "Acceder a la Web App",
+    "appstore": "Acceder a la applicacion iOS App",
+    "play-store": "Acceder a la applicacion Android",
+    "questions": "Preguntas? ",
+    "company_description": "XOffice space should be a tool, not a constraint. We make hybrid work possible for better companies and happier people.",
+    "resources": "Recursos",
+    "explore": "Explora",
+    "legal": "Jurídico"
+
+  },
+
   "Default": {
     "title_hotdesking": "Hot desking, más fácil que nunca",
     "description_hotdesking": "Reserva de escritorios de forma intuitiva a través de un mapa interactivo de tu oficina.",
@@ -177,10 +202,7 @@
     "remote work": "trabajo en remoto",
     "teleworking": "teletrabajo",
     "work office": "oficina",
-    "occupancy": "opcupación",
-    "Terms of service": "Términos y condiciones",
-    "Legal notice": "Aviso legal",
-    "Privacy policy": "Política de privacidad",
-    "Cookies policy": "Política de cookies"
+    "occupancy": "opcupación"
+
   }
 }

@@ -5,7 +5,7 @@
     "pricing": "Preus",
     "sign_up": "Registra't gratis",
     "calculator": "Calculadora d'estalvi",
-    "help_page": " Pàgines d'ajuda",
+    "help_page": "Pàgines d'ajuda",
     "remotework_management_template": "Plantilla de gestió del teletreball",
     "remotework_survey": "Qüestionari teletreball",
     "ca": "CAT",
@@ -18,21 +18,9 @@
     "back_to_home": "Tornar al inici"
   },
 
-  
-
-
-
-
-
-
-
-
-
   "payment_plans": {
-    "title": "Planes y precios",
-
+    "title": "Planes y preus",
     "title_question": "Selecciona el plan para tu empresa",
-
     "free_plan_title": "Oficina Básica",
     "business_plan_title": "Officina Pro",
     "explore": "Comença ara",
@@ -66,6 +54,30 @@
     "company_placeholder": "Monstres, S.A.",
     "thanks": "Thanks for contacting us! We will get in touch with you shortly",
     "back_to_home": "Tornar al inici"
+  },
+
+  "footer": {
+    "pricing": "Preus",
+    "Terms of service": "Termes i condicions",
+    "Legal notice": "Avís legal",
+    "Privacy policy": "Política de privacitat",
+    "Cookies policy": "Política de cookies",
+    "hotdesking": "Hot desking",
+    "neighbourhoods": "Organitza la oficina",
+    "manage-remoteworks": "Gestiona el teletreball",
+    "analytics": "Analítiques",
+    "help": "Pàgines d'ajuda",
+    "calculator": "Calculadora d'estalvi",
+    "survey": "Qüestionari teletreball",
+    "template": "Plantilla de gestió del teletreball",
+    "access-app": "Accedir a la Web App",
+    "appstore": "Accedir a la applicacion iOS App",
+    "play-store": "Accedir a la applicacion Android",
+    "questions": "Preguntes? ",
+    "company_description": "XOffice space should be a tool, not a constraint. We make hybrid work possible for better companies and happier people.",
+    "resources": "Recursos",
+    "explore": "Explora",
+    "legal": "Legítim"
   },
 
   "Calculator": {
@@ -181,10 +193,7 @@
     "Back to home": "Tornar al inici",
     "Thanks for containing us! We will get in touch with you shortly.": "¡Gràcies per contactar amb nosaltres! Et respondrem el mes aviat possible.",
     "DeWocracy - Remote Work | Work from anywhere": "DeWocracy - Teletreball | Treballa des de qualsevol lloc",
-    "DeWocracy offers remote work solutions for a hybrid office strategy. Manage your company's human capital, control the office occupancy rate, lower costs and increase flexibility without compromising productivity.": "DeWocracy ofereix solucions per al teletreball i el desenvolupament d'una estratègia d'oficina híbrida. Gestiona el treball remot, controla l'ocupació de l'oficina, redueix costos i incrementa la flexibilitat de la teva empresa sense disminuir la productivitat.",
-    "Terms of service": "Termes i condicions",
-    "Legal notice": "Avís legal",
-    "Privacy policy": "Política de privacitat",
-    "Cookies policy": "Política de cookies"
+    "DeWocracy offers remote work solutions for a hybrid office strategy. Manage your company's human capital, control the office occupancy rate, lower costs and increase flexibility without compromising productivity.": "DeWocracy ofereix solucions per al teletreball i el desenvolupament d'una estratègia d'oficina híbrida. Gestiona el treball remot, controla l'ocupació de l'oficina, redueix costos i incrementa la flexibilitat de la teva empresa sense disminuir la productivitat."
+
   }
 }

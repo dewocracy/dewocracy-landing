@@ -18,18 +18,16 @@
     "back_to_home": "Back to Home"
   },
 
-
   "payment_plans": {
     "title": "Plans and pricing",
 
     "title_question": "Choose a plan for your company.",
 
-
     "calendar": "Workspace calendar.",
     "limits": "Occupancy & remote work limits.",
     "reservations": "Desk booking.",
     "interative_map": "Interactive map.",
-    "reports": "Custom reports.", 
+    "reports": "Custom reports.",
     "talk_with_an_expert": "  Speak with an expert",
 
     "free_plan_title": "Basic Office",
@@ -47,7 +45,6 @@
     "unlimited_users": "Unlimited users.",
     "unlimited_administrators": "Unlimited administrators."
   },
-
 
   "contact_form": {
     "title": "Interested? Contact us!",
@@ -132,7 +129,31 @@
 
     "key_utilities": "Utilities",
     "key_cost": "DW Costs",
-    "key_rent": "Rent" 
+    "key_rent": "Rent"
+  },
+
+  "footer": {
+    "pricing": "Pricing",
+    "Terms of service": "Terms of service",
+    "Legal notice": "Legal notice",
+    "Privacy policy": "Privacy policy",
+    "Cookies policy": "Cookies policy",
+    "hotdesking": "Hotdesking",
+    "neighbourhoods": "Neighbourhoods",
+    "manage-remoteworks": "Manage Remotework",
+    "analytics": "Analytics",
+    "help": "Help",
+    "calculator": "Saving Calculator",
+    "survey": "Remotework Survey",
+    "template": "Remote work management template",
+    "access-app": "Access the Web App",
+    "appstore": "Download the iOS App",
+    "play-store": "Download the Android App",
+    "questions": "Questions? ",
+    "company_description": "Office space should be a tool, not a constraint. We make hybrid work possible for better companies and happier people.",
+    "resources": "Resources",
+    "legal": "Legal",
+    "explore": "Explore"
   },
 
   "Default": {
@@ -208,10 +229,6 @@
     "remote work": "remote work",
     "teleworking": "teleworking",
     "work office": "work office",
-    "occupancy": "occupancy",
-    "Terms of service": "Terms of service",
-    "Legal notice": "Legal notice",
-    "Privacy policy": "Privacy policy",
-    "Cookies policy": "Cookies policy"
+    "occupancy": "occupancy"
   }
 }
