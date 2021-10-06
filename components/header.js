@@ -1,7 +1,7 @@
 
 import React, { useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { Dropdown } from "./dropdown";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { OutboundLink } from "../utils/OutboundLink";
@@ -25,34 +25,66 @@ function Header() {
         bg-white h-18 sticky top-0 z-50 transition pb-1 pt-1 md:pt-6 pl-4 lg:pl-16"
     >
 
-      <div className="pl-4 lg:hidden pr-8 lg:pr-0 ">
+      <div className="lg:hidden pr-8 lg:pr-0 ">
+
+
+        <div className="flex">
         <button
           aria-label="menu"
           aria-expanded={isExpanded}
           aria-controls="nav-menu-ex-1"
-          className="items-center block px-3 py-2 border border-lightBlue border-opacity-25 rounded w-10 lg:hidden"
+            className="items-center block px-3 py-2 mr-4 rounded w-10 lg:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <span className="hidden" aria-hidden="true">
             Menu
           </span>
-          <FontAwesomeIcon icon={faBars} className="text-primary" />
+            <FontAwesomeIcon icon={isExpanded ? faTimes : faBars} className="text-2xl font-light text-primary" />
         </button>
+          <Link passHref
+            href="/"
+            className="md:order-first flex ml-4 "
+            aria-label="Go to home"
+          >
+            <OutboundLink
+              eventProperties={{ location: "top navbar", device: "mobile" }}>
+              <figure
+                className={`w-32 md:w-40	 flex items-center text-black hover:text-primary-400 transition-colors duration-150 
+              `}
+              >
+                <div className="relative max-w-lg w-full h-logo  flex  flex-col items-center lg:flex-row">
+
+                  <Image
+                    className="object-contain"
+                    src="/images/dewocracy-blue.svg"
+                    alt="DeWocracy logo"
+                    layout="fill"
+                    placeholder="blur"
+                    blurDataURL={`/_next/image?url=/images/dewocracy-blue.svg&w=16&q=1`} />
+
+
+                </div>
+
+              </figure>
+            </OutboundLink>
+          </Link>
+        </div>
         <nav
           id="nav-menu-ex-1"
           className={`${isExpanded ? `block` : `hidden`
-            } md:items-center w-full md:w-auto text-primary`}
+            } md:items-center w-full md:w-auto text-primary mb-4 ml-4`}
         >
 
+
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
-            className="block py-2 hover:underline"
+            className="block py-2 hover:text-primary-400"
             href="#pricing"
             onClick={handleClickSubmenu}
           >
             {t('pricing')}
           </OutboundLink>
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
-            className="block py-2 hover:underline"
+            className="block py-2 hover:text-primary-400"
             href="https://app.dewocracy.com/"
             onClick={handleClickSubmenu}
           >
@@ -60,7 +92,7 @@ function Header() {
           </OutboundLink>
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
 
-            className="block py-2 hover:underline"
+            className="block py-2 hover:text-primary-400"
             href="https://app.dewocracy.com/register/free"
             onClick={handleClickSubmenu}
           >
@@ -93,7 +125,7 @@ function Header() {
 
             <Link href="/calculator" passHref
               key="Calculator"
-              className={`  block p-4 pl-6 mb-4 hover:underline 
+              className={`  block p-4 pl-6 mb-4 hover:text-primary-400
                 }`}
               role="menuitem"
             ><OutboundLink
@@ -125,6 +157,7 @@ function Header() {
                   <li key={lng} className="block mt-4 no-underline">
                     <Link href="/" locale={lng} passHref>
                       <OutboundLink
+                        className="hover:text-primary-400"
                         eventProperties={{ location: "top navbar", device: "mobile" }}>
                         {t(lng)}
                       </OutboundLink>
@@ -135,32 +168,7 @@ function Header() {
           </ul>
         </nav>
       </div>
-      <Link passHref
-        href="/"
-        className="md:order-first flex "
-        aria-label="Go to home"
-      ><OutboundLink
-        eventProperties={{ location: "top navbar", device: "mobile" }}>
-          <figure
-            className={`w-32 md:w-40	 flex items-center text-black hover:text-primary-400 transition-colors duration-150 ${isExpanded ? `hidden` : `block`
-              }`}
-          >
-            <div className="relative max-w-lg w-full h-logo  flex  flex-col items-center lg:flex-row">
 
-              <Image
-                className="object-contain"
-                src="/images/dewocracy-blue.svg"
-                alt="DeWocracy logo"
-                layout="fill"
-                placeholder="blur"
-                blurDataURL={`/_next/image?url=/images/dewocracy-blue.svg&w=16&q=1`} />
-
-
-            </div>
-
-          </figure>
-        </OutboundLink>
-      </Link>
       <nav className="hidden lg:inline-flex justify-center md:justify-end gap-4 text-primary text-sm">
         <OutboundLink
           eventProperties={{ location: "top navbar" }}
@@ -180,7 +188,7 @@ function Header() {
 
             <Link href="/calculator"
               key="Calculator"
-              className="block p-4 pl-6 mb-4 hover:underline"
+              className="block p-4 pl-6 mb-4 hover:text-primary-400"
               role="menuitem" passHref
             >
               <OutboundLink
@@ -245,7 +253,7 @@ function Header() {
             {locales.map((lng, key) => (
               <Link href={`/${lng}`} passHref
                 key={key}
-                className={` uppercase block p-4 pl-6 mb-4 hover:underline ${lng === locale ? "underline" : ""
+                className={` uppercase block p-4 pl-6 mb-4 hover:text-primary-400 ${lng === locale ? "underline" : ""
                   }`}
                 role="menuitem"
                 locale={lng}

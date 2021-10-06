@@ -31,10 +31,10 @@ function IndexPage() {
         <LogOnMount eventType="page view" />
 
       <div
-        className="md:w-full relative ">
+          className="md:w-full relative ">
         <Image
           layout="fill"
-          className="object-center object-cover pointer-events-none"
+            className="object-center hidden object-cover pointer-events-none"
             src="/images/background-home-banner.jpg"
           alt="Office Background"
           placeholder="blur"
@@ -43,7 +43,7 @@ function IndexPage() {
 
         />
 
-        <section className="z-10 relative container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen md:pl-10 pr-0 lg:pb-4">
+          <section className="z-10 relative container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen md:pl-4 pr-0 lg:pb-4">
           <div className="grid content-center px-0 md:px-8 lg:px-0">
             <div className="md:mt-24 lg:mt-0 lg:mb-24">
                 <h1 className="text-4xl text-white mt-8 lg:text-5xl  font-bold leading-tight pb-4">

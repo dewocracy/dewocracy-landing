@@ -14,7 +14,7 @@ function Layout({ children }) {
 
       <div className="max-w-screen-2xl">
         <ScrollArrow />
-        <main className="overflow-x-hidden">{children}</main>
+        <main className="overflow-x-hidden -mt-6">{children}</main>
         <Footer />
       </div>
     </div>

@@ -36,7 +36,7 @@ export const Footer = () => {
 
   return (
     <footer className="py-16 text-grey  bg-purple-800 mt-16 bg-fixed  px-4 md:px-2 pr-2 pl-2">
-      <section className="container mx-auto  flex flex-wrap md:flex-nowrap  justify-start ">
+      <section className="mx-4 lg:mx-14 lg:px-0  lg:container   flex flex-wrap md:flex-nowrap  justify-start ">
 
         <div className="flex flex-col mr-12">
           <Link href="/" passHref><OutboundLink
@@ -153,7 +153,7 @@ export const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col mt-8 md:mt-0  mr-12 ">
+        <div className="flex flex-col mt-8 md:mt-0 mr-4 lg:mr-12 ">
           <p className="text-md md:mb-8 uppercase font-bold text-greyBlue">{t('resources')}</p>
           <ul className="flex flex-col  justify-center lg:justify-end text-md gap-0">
             <li className="hover:text-primary-800">
@@ -180,7 +180,7 @@ export const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col mt-8 md:mt-0 mr-12 ">
+        <div className="flex flex-col mt-8 md:mt-0 mr-4 lg:mr-12 ">
           <p className="text-md md:mb-8 uppercase font-bold text-greyBlue">{t('legal')}</p>
           <ul className="flex flex-col  justify-center lg:justify-end text-md gap-0">
 
