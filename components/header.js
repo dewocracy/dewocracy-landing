@@ -25,49 +25,23 @@ function Header() {
         bg-white h-18 sticky top-0 z-50 transition pb-1 pt-1 md:pt-6 pl-4 lg:pl-16"
     >
 
-      <div className="lg:hidden pr-8 lg:pr-0 ">
+      <div className="lg:hidden pr-0 ">
 
 
         <div className="flex">
-        <button
+          <button
           aria-label="menu"
           aria-expanded={isExpanded}
           aria-controls="nav-menu-ex-1"
-            className="items-center block px-3 py-2 mr-4 rounded w-10 lg:hidden"
+            className="items-center block px-3 py-2 pt-2 mr-4 rounded w-10 lg:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <span className="hidden" aria-hidden="true">
             Menu
           </span>
             <FontAwesomeIcon icon={isExpanded ? faTimes : faBars} className="text-2xl font-light text-primary" />
-        </button>
-          <Link passHref
-            href="/"
-            className="md:order-first flex ml-4 "
-            aria-label="Go to home"
-          >
-            <OutboundLink
-              eventProperties={{ location: "top navbar", device: "mobile" }}>
-              <figure
-                className={`w-32 md:w-40	 flex items-center text-black hover:text-primary-400 transition-colors duration-150 
-              `}
-              >
-                <div className="relative max-w-lg w-full h-logo  flex  flex-col items-center lg:flex-row">
+          </button>
 
-                  <Image
-                    className="object-contain"
-                    src="/images/dewocracy-blue.svg"
-                    alt="DeWocracy logo"
-                    layout="fill"
-                    placeholder="blur"
-                    blurDataURL={`/_next/image?url=/images/dewocracy-blue.svg&w=16&q=1`} />
-
-
-                </div>
-
-              </figure>
-            </OutboundLink>
-          </Link>
         </div>
         <nav
           id="nav-menu-ex-1"
@@ -169,7 +143,34 @@ function Header() {
         </nav>
       </div>
 
+      <Link passHref
+        href="/"
+        className="md:order-first  hidden lg:flex "
+        aria-label="Go to home"
+      ><OutboundLink
+        eventProperties={{ location: "top navbar", device: "mobile" }}>
+          <figure
+            className={`w-32 md:w-40	 flex items-center text-black hover:text-primary-400 transition-colors duration-150 ${isExpanded ? `hidden` : `block`
+              }`}
+          >
+            <div className="relative max-w-lg w-full h-logo  flex  flex-col items-center lg:flex-row">
+
+              <Image
+                className="object-contain"
+                src="/images/logo-medium-blue.png"
+                alt="DeWocracy logo"
+                layout="fill"
+                placeholder="blur"
+                blurDataURL={`/_next/image?url=/images/logo-medium-blue.png&w=16&q=1`} />
+
+
+            </div>
+
+          </figure>
+        </OutboundLink>
+      </Link>
       <nav className="hidden lg:inline-flex justify-center md:justify-end gap-4 text-primary text-sm">
+
         <OutboundLink
           eventProperties={{ location: "top navbar" }}
           className="block mt-2 font-medium text-lg p-2 px-2 text-black hover:text-primary-400 transition-colors duration-150" href="#pricing">
