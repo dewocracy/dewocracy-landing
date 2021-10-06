@@ -18,7 +18,7 @@ export const PaymentsPlans = () => {
       </h2>
 
 
-      <h2 className="pt-4 font-bold text-5xl pb-8 text-center md:text-left">
+      <h2 className="pt-4 font-bold text-4xl pb-8 text-center md:text-left">
         {t('title_question')}
       </h2>
 
@@ -29,10 +29,10 @@ export const PaymentsPlans = () => {
           className="grid rounded-lg bg-white p-8 md:p-10 xl:ml-24 max-w-sm gap-y-8 my-4 lg:my-16"
         >
           <div>
-            <p className="text-primary-800 text-2xl md:text-4xl font-bold pb-4">
+            <p className="text-primary-800 text-2xl md:text-3xl font-bold pb-4">
               {t('free_plan_title')}
             </p>
-            <p className="text-primary text-2xl md:text-4xl">
+            <p className="text-primary text-2xl md:text-3xl">
               <span className="font-bold">0 €</span>
               <span className="text-sm">
                 {" "}
@@ -107,7 +107,7 @@ export const PaymentsPlans = () => {
           className=" grid rounded-lg bg-white p-8 md:p-10 max-w-sm gap-y-8 my-4 lg:my-16"
         >
           <div>
-            <p className="text-primary text-2xl md:text-4xl font-bold  pb-4">
+            <p className="text-primary text-2xl md:text-3xl font-bold  pb-4">
               {t('business_plan_title')}
             </p>
             <OutboundLink

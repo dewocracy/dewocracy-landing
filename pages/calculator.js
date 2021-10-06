@@ -37,7 +37,7 @@ function Calculator() {
 
             />
 
-            <h1 className="font-bold text-primary-800 my-12	text-4xl text-center">{t('title')}</h1>
+                <h1 className="font-bold text-primary-800 my-12	text-3xl text-center">{t('title')}</h1>
             <div className="w-full py-16 ">
                 <section className="container pb-12 bg-purple-800 rounded-2xl  mx-auto  ">
                     <h2 className="font-bold text-primary-800	text-3xl pb-2 md:pb-8 pt-24 text-center">

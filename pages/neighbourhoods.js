@@ -36,7 +36,7 @@ function Neighbourhoods() {
                 title={`${t('title')} | DeWocracy - Flexible Remote Work`}
                 image="neighbourhoods"
             />
-            <h1 className="font-bold text-primary-800 my-12	text-4xl text-center">{t('title')}</h1>
+                <h1 className="font-bold text-primary-800 my-12	text-3xl text-center">{t('title')}</h1>
             <section className="container pb-12 text-primary-800  rounded-2xl  text-xl mx-auto mr-3 ">
                 <div className=" flex flex-col items-center">
 

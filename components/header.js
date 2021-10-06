@@ -229,7 +229,7 @@ function Header() {
         >
           <FontAwesomeIcon
             icon={faWhatsapp}
-            className="text-black    hover:text-primary-400 transition-colors duration-150 text-4xl"
+            className="text-black    hover:text-primary-400 transition-colors duration-150 text-3xl"
           />
         </OutboundLink>
         <OutboundLink

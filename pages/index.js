@@ -70,7 +70,7 @@ function IndexPage() {
               </div>
             </div>
           </div>
-          <div className="md:mt-4 lg:mt-20 grid content-center px-0 md:px-8 lg:px-0">
+            <div className="md:mt-4 lg:mt-16 grid content-center px-0 md:px-8 lg:px-0">
             <div className="mt-4 lg:mt-20 lg:w-200 ml-8 max-w-2xl">
                 <div className="relative w-full h-md md:h-xl">
                 <Image
@@ -86,11 +86,11 @@ function IndexPage() {
         </section>
       </div>
 
-      <div className="w-full py-16 md:py-48  lg:py-32">
+        <div className="w-full py-16 md:py-48  lg:py-24">
         <section className=" mt-48 lg:mt-0 text-center md:text-left container  mx-auto ">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-3/5 flex flex-col md:pr-8">
-              <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-12 lg:pt-24 text-center md:text-left">
+                <h2 className="font-bold text-primary-800	text-3xl pb-2 md:pb-8 pt-12 lg:pt-24 text-center md:text-left">
                 {t('title_hotdesking')}
               </h2>
 
@@ -127,7 +127,7 @@ function IndexPage() {
 
 
         </section>
-        <section className="container text-center md:text-left  mx-auto lg:mr-3 mt-24">
+          <section className="container text-center md:text-left  mx-auto lg:mr-3 mt-18">
 
           <div className="flex flex-col-reverse md:flex-row">
 
@@ -144,7 +144,7 @@ function IndexPage() {
             </div>
 
             <div className="md:ml-12 lg:ml-32 mt-12 md:w-3/5 flex flex-col md:pr-8">
-              <h2 className="font-bold text-primary-800	text-4xl pb-8  lg:pt-8 text-center md:text-left">
+                <h2 className="font-bold text-primary-800	text-3xl pb-8  lg:pt-8 text-center md:text-left">
                 {t('title_neighbourhoods')}
               </h2>
 
@@ -171,10 +171,10 @@ function IndexPage() {
 
         </section>
 
-        <section className="text-center md:text-left container  mx-auto lg:mr-3 mt-8 lg:mt-36 ">
+          <section className="text-center md:text-left container  mx-auto lg:mr-3 mt-8 lg:mt-18 ">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-3/5 flex flex-col md:pr-8">
-              <h2 className="font-bold text-primary-800	text-4xl pb-2 md:pb-8 pt-4 lg:pt-24 text-center md:text-left">
+                <h2 className="font-bold text-primary-800	text-3xl pb-2 md:pb-8 pt-4 lg:pt-24 text-center md:text-left">
                 {t('title_manage')}
               </h2>
 
@@ -212,9 +212,9 @@ function IndexPage() {
 
         </section>
 
-        <section className="container  mx-auto mr-3 mt-8 lg:mt-24 ">
+          <section className="container  mx-auto mr-3 mt-4 ">
           <div className=" flex flex-col pr-8">
-            <h2 className="font-bold text-primary-800	 text-4xl pb-2 md:pb-8 pt-24 text-center">
+              <h2 className="font-bold text-primary-800	 text-3xl pb-2 md:pb-8 pt-24 text-center">
               {t('title_reports')}
             </h2>
 
