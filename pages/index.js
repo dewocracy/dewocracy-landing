@@ -32,9 +32,37 @@ function IndexPage() {
 
       <div
           className="md:w-full relative ">
-        <Image
-          layout="fill"
-            className="object-center hidden object-cover pointer-events-none"
+
+          <style>
+            {`
+  .hero__desktop-image {
+    display: none !important;
+  }
+  @media(orientation: landscape) {
+    .hero__desktop-image {
+      display: block !important;
+    }
+    .hero__mobile-image {
+      display: none !important;
+    }
+  }
+`}
+          </style>
+
+
+          <Image
+            layout="fill"
+            className="hero__mobile-image object-center hidden object-cover pointer-events-none"
+            src="/images/background-home-banner-mobile.png"
+            alt="Office Background"
+            placeholder="blur"
+            quality="100"
+            blurDataURL={`/_next/image?url=/images/background-home-banner-mobile.pnh&w=16&q=100`}
+
+          />
+          <Image
+            layout="fill"
+            className="hero__desktop-image object-center hidden object-cover pointer-events-none"
             src="/images/background-home-banner.jpg"
           alt="Office Background"
           placeholder="blur"
@@ -54,15 +82,16 @@ function IndexPage() {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 mt-6 md:mt-0 mr-4 md:mr-0">
 
-                <OutboundLink
+                  <OutboundLink
                     eventProperties={{ location: "home button" }}
-
-                    className="text-center shadow-2xl mt-2 md:mt-0  hover:bg-primary-800  hover:text-white bg-white text-primary-400    text-xl  transition-colors duration-150   rounded-full py-4 px-4 xl:px-16 focus:shadow-outline" href="#pricing">
-                  {t('Sign up for free')}
+                    className="text-center shadow-2xl sm:ml-4  md:ml-0 md:mt-0 hover:text-white bg-white text-primary-800  md:border-0 mt-8 mr-2 md:mr-0   hover:bg-primary-800  md:bg-white   text-xl  transition-colors duration-500 rounded-full py-4 px-4 xl:px-16  focus:shadow-outline"
+                    href="https://calendly.com/dewocracylabs/dewocracy-demo"
+                  >
+                    {t('Sign up for free')}
                 </OutboundLink>
                 <OutboundLink
                   eventProperties={{ location: "home button" }}
-                    className="text-center shadow-2xl sm:ml-4  md:ml-0 mt-2 md:mt-0   hover:bg-primary-800  bg-primary-400 text-white   text-xl  transition-colors duration-500 rounded-full py-4 px-4 xl:px-16  focus:shadow-outline"
+                    className="text-center shadow-2xl sm:ml-4  md:ml-0 md:mt-0 bg-transparent border border-1 mt-8 mr-2 md:mr-0 hover:border-opacity-0   hover:bg-primary-800  md:bg-primary-400 text-white   text-xl  transition-colors duration-500 rounded-full py-4 px-4 xl:px-16  focus:shadow-outline"
                   href="https://calendly.com/dewocracylabs/dewocracy-demo"
                 >
                   {t('Request demo')}
