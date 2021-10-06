@@ -46,7 +46,7 @@ function IndexPage() {
         <section className="z-10 relative container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen md:pl-10 pr-0 lg:pb-4">
           <div className="grid content-center px-0 md:px-8 lg:px-0">
             <div className="md:mt-24 lg:mt-0 lg:mb-24">
-              <h1 className="text-4xl text-white mt-8 lg:text-6xl  font-bold leading-tight pb-4">
+                <h1 className="text-4xl text-white mt-8 lg:text-5xl  font-bold leading-tight pb-4">
                 {t('implement_flexible_remote_work')}
               </h1>
               <p className="text-2xl text-white py-8 md:py-4 md:pb-12 md:pr-24">
