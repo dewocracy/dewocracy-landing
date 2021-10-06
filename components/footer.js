@@ -78,7 +78,7 @@ export const Footer = () => {
             </ul>
           </div> */}
           <div className="grid justify-items-start items-start  my-4 lg:my-0">
-            <p className="mt-16 justify-start	text-primary font-bold text-right flex  w-64 ">
+            <p className="mt-12 md:mt-16 justify-start	text-primary font-bold text-right flex  w-64 ">
               <OutboundLink
                 href="//www.linkedin.com/company/dewocracy/"
                 rel="noreferrer noopener"
@@ -87,7 +87,7 @@ export const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faLinkedinIn}
-                  className="text-primary-800 md:mr-6"
+                  className="text-primary-800 mr-4 md:mr-6"
                   size="2x"
                 />
               </OutboundLink>
@@ -99,7 +99,7 @@ export const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faTwitter}
-                  className="text-primary-800  md:mr-6"
+                  className="text-primary-800 mr-4 md:mr-6"
                   size="2x"
                 />
               </OutboundLink>
@@ -111,7 +111,7 @@ export const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faMedium}
-                  className="text-primary-800  md:mr-6"
+                  className="text-primary-800 mr-4 md:mr-6"
                   size="2x"
                 />
               </OutboundLink>
@@ -125,7 +125,7 @@ export const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faWhatsapp}
-                  className="text-primary-800 md:mr-2"
+                  className="text-primary-800 "
                   size="2x"
                 />
               </OutboundLink>
