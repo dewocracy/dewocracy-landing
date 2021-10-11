@@ -27,7 +27,7 @@ function IndexPage() {
       })}
     >
     <Layout>
-      <SEO title="DeWocracy - Remote Work | Work from anywhere" />
+        <SEO title={t("DeWocracy - Remote Work | Work from anywhere")} />
         <LogOnMount eventType="page view" />
 
       <div
