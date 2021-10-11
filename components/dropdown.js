@@ -1,8 +1,8 @@
-import * as React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import PropTypes from "prop-types";
-import { useCallback, useState } from "react";
+import { useCallback, useState, useRef } from "react";
+import { useClickAway } from 'react-use';
 
 /**
  * Dropdown panel, show/hide based on dropdown state.
@@ -25,12 +25,18 @@ const themes = {
   },
 };
 export function Dropdown({ title, children, theme = "default" }) {
-  const [isOpen, setIsOpen] = useState(false);
+
+  const dropdownRef = useRef(null);
+  useClickAway(dropdownRef, () => {
+    setIsOpen(false)
+  })
+
+  const [isOpen, setIsOpen] = useState(false)
   const toggleHandler = useCallback(() => {
     setIsOpen(!isOpen);
-  }, [isOpen]);
+  }, [isOpen])
   return (
-    <div className="relative mt-2 inline-block text-left">
+    <div ref={dropdownRef} className="relative mt-2 inline-block text-left">
       <div>
         <button
           type="button"
