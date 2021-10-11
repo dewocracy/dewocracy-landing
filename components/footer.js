@@ -139,25 +139,25 @@ export const Footer = () => {
           <p className="text-md md:mb-8 uppercase font-bold text-greyBlue">{t('resources')}</p>
           <ul className="flex flex-col  justify-center lg:justify-end text-md gap-0">
             <li className="hover:text-primary-800">
-              <Link href="/#pricing" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('help')}</OutboundLink></Link>
+              <Link href="//www.notion.so/DeWocracy-Help-50ccfd99c7ad4e6ea17a441a7a34ca9f" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('help')}</OutboundLink></Link>
             </li>
             <li className="hover:text-primary-800">
-              <Link href="/legal-notice" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('calculator')}</OutboundLink></Link>
+              <Link href="/calculator" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('calculator')}</OutboundLink></Link>
             </li>
             <li className="hover:text-primary-800">
-              <Link href="/privacy-policy" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('survey')}</OutboundLink></Link>
+              <Link href="https://survey.dewocracy.com/" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('survey')}</OutboundLink></Link>
             </li>
             <li className="hover:text-primary-800 mr-7">
-              <Link href="/cookies-policy" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('template')}</OutboundLink></Link>
+              <Link href="https://docs.google.com/spreadsheets/d/1QkhYLoNE2JAirZcBtYtTWsU-GZ7alpHrSMCPCsGar14/edit?usp=sharing" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('template')}</OutboundLink></Link>
             </li>
             <li className="hover:text-primary-800 mr-7">
-              <Link href="/cookies-policy" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('access-app')}</OutboundLink></Link>
+              <Link href="//app.dewocracy.com" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('access-app')}</OutboundLink></Link>
             </li>
             <li className="hover:text-primary-800 mr-7">
-              <Link href="/cookies-policy" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('appstore')}</OutboundLink></Link>
+              <Link href="https://apps.apple.com/es/app/dewocracy/id1556483760" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('appstore')}</OutboundLink></Link>
             </li>
             <li className="hover:text-primary-800 mr-7">
-              <Link href="/cookies-policy" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('play-store')}</OutboundLink></Link>
+              <Link href="https://play.google.com/store/apps/details?id=com.dewocracy.dewocracyapp" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('play-store')}</OutboundLink></Link>
             </li>
           </ul>
         </div>
