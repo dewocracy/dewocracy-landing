@@ -155,7 +155,7 @@ function Header() {
             className={`w-32 md:w-40	 flex items-center text-black hover:text-primary-400 transition-colors duration-150 ${isExpanded ? `hidden` : `block`
               }`}
           >
-            <div className="relative max-w-lg w-full h-logo  flex  flex-col items-center lg:flex-row">
+                <div className="relative max-w-lg w-full mt-2 pt-1 flex  flex-col items-center lg:flex-row">
 
               <Image
                 className="object-contain"
