@@ -72,7 +72,7 @@ function IndexPage() {
         />
 
           <section className="z-10 relative container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen md:pl-4 pr-0 lg:pb-4">
-            <div className="grid pt-28 px-0 md:px-8 lg:px-0 2xl:max-w-3xl 2xl:ml-24">
+            <div className="grid pt-8 md:pt-28 px-0 md:px-8 lg:px-0 2xl:max-w-3xl 2xl:ml-24">
               <div className="md:mt-24 lg:mt-0 ">
                 <h1 className="text-4xl text-white mt-8 lg:text-5xl  font-bold leading-tight pb-4">
                 {t('implement_flexible_remote_work')}
@@ -117,7 +117,7 @@ function IndexPage() {
       </div>
 
         <div className="w-full py-16 md:py-48  lg:py-24">
-        <section className=" mt-48 lg:mt-0 text-center md:text-left container  mx-auto ">
+          <section className="  md:mt-48 lg:mt-0 text-center md:text-left container  mx-auto ">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-3/5 flex flex-col md:pr-8">
                 <h2 className="font-bold 	text-3xl pb-2 md:pb-8 pt-12 lg:pt-24 text-center md:text-left">
@@ -242,9 +242,9 @@ function IndexPage() {
 
         </section>
 
-          <section className="container  mx-auto mr-3 2xl:mr-auto  mt-4 ">
+          <section className="container  mx-auto mr-3 2xl:mr-auto  md:mt-4 ">
           <div className=" flex flex-col pr-8">
-              <h2 className="font-bold 	 text-3xl pb-2 md:pb-8 pt-24 text-center">
+              <h2 className="font-bold text-3xl pb-2 md:pb-8 pt-24 text-center">
               {t('title_reports')}
             </h2>
 

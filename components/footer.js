@@ -35,7 +35,7 @@ export const Footer = () => {
 
 
   return (
-    <footer className=" 2xl:flex 2xl:justify-center py-16 text-grey  bg-purple-800 mt-16 bg-fixed  px-4 md:px-2 pr-2 pl-2">
+    <footer className=" 2xl:flex 2xl:justify-center py-16 text-grey  bg-purple-800 mt-16 bg-fixed  px-4 md:px-2 ">
       <section className="mx-4 lg:mx-14 lg:px-0  lg:container w-full xl:w-auto  flex flex-wrap lg:flex-nowrap  justify-start ">
 
         <div className="flex flex-col mr-12">

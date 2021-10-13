@@ -9,6 +9,7 @@ import {
 
 import { isBrowser } from '@unly/utils';
 import CookieBot from "react-cookiebot"
+import '../css/style.css'
 
 
 // eslint-disable-next-line react/prop-types
