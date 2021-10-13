@@ -22,7 +22,7 @@ function Header() {
     <header
       id="header"
       className=" flex grid-cols-3 items-start lg:items-center lg:justify-between content-start px-16  md:py-4
-        bg-white h-18 sticky top-0 z-50 transition pb-1 pt-1 md:pt-6 pl-4 lg:pl-16 "
+        bg-white h-18 sticky top-0 z-50 transition pb-4 pt-1 md:pt-6 pl-4 lg:pl-16 "
     >
 
       <div className="lg:hidden pr-0 ">
@@ -46,19 +46,19 @@ function Header() {
         <nav
           id="nav-menu-ex-1"
           className={`${isExpanded ? `block` : `hidden`
-            } md:items-center w-full md:w-auto text-primary mb-4 ml-4`}
+            } md:items-center w-full md:w-auto text-primary mt-14 mb-4 ml-4`}
         >
 
 
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
-            className="block pb-1 hover:text-primary-400"
+            className="block pb-4 hover:text-primary-400"
             href="#pricing"
             onClick={handleClickSubmenu}
           >
             {t('pricing')}
           </OutboundLink>
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
-            className="block pb-1 hover:text-primary-400"
+            className="block pb-4 hover:text-primary-400"
             href="https://app.dewocracy.com/"
             onClick={handleClickSubmenu}
           >
@@ -94,7 +94,7 @@ function Header() {
               rel="noreferrer noopener"
               target="_blank"
               href="//www.notion.so/DeWocracy-Help-50ccfd99c7ad4e6ea17a441a7a34ca9f"
-              className="mt-1  hover:text-primary-400">{t('help_page')}  </OutboundLink>
+              className="mt-4  hover:text-primary-400">{t('help_page')}  </OutboundLink>
 
 
             <Link href="/calculator" passHref
@@ -103,7 +103,7 @@ function Header() {
                 }`}
               role="menuitem"
             ><OutboundLink
-              eventProperties={{ location: "top navbar", device: "mobile" }} className={`mt-1  hover:text-primary-400`}>{t('calculator')}</OutboundLink>
+                eventProperties={{ location: "top navbar", device: "mobile" }} className={`mt-4  hover:text-primary-400`}>{t('calculator')}</OutboundLink>
             </Link>
 
             <OutboundLink
@@ -111,14 +111,14 @@ function Header() {
               target="_blank"
 
               href="https://docs.google.com/spreadsheets/d/1QkhYLoNE2JAirZcBtYtTWsU-GZ7alpHrSMCPCsGar14/edit?usp=sharing"
-              className={`mt-1  hover:text-primary-400`}>{t('remotework_management_template')}</OutboundLink>
+              className={`mt-4  hover:text-primary-400`}>{t('remotework_management_template')}</OutboundLink>
 
 
             <OutboundLink
               eventProperties={{ location: "top navbar", device: "mobile" }} rel="noreferrer noopener"
               target="_blank"
               href="https://survey.dewocracy.com/"
-              className="mt-1  hover:text-primary-400">{t('remotework_survey')}</OutboundLink>
+              className="mt-4  hover:text-primary-400">{t('remotework_survey')}</OutboundLink>
 
           </div>
           <hr className="my-4 text-opacity-25 text-lightBlue" />
@@ -187,7 +187,7 @@ function Header() {
               rel="noreferrer noopener"
               target="_blank"
               href="//www.notion.so/DeWocracy-Help-50ccfd99c7ad4e6ea17a441a7a34ca9f"
-              className="mt-1 pl-4 p-2 rounded-lg hover:bg-lightGrey  hover:text-primary-400">{t('help_page')}</OutboundLink>
+                  className="mt-4 pl-4 p-2 rounded-lg hover:bg-lightGrey  hover:text-primary-400">{t('help_page')}</OutboundLink>
 
 
             <Link href="/calculator"
@@ -197,7 +197,7 @@ function Header() {
             >
               <OutboundLink
                 eventProperties={{ location: "top navbar" }}
-                className={`mt-1 pl-4 p-2 rounded-lg hover:bg-lightGrey  hover:text-primary-400`}>
+                    className={`mt-4 pl-4 p-2 rounded-lg hover:bg-lightGrey  hover:text-primary-400`}>
                 {t('calculator')}
               </OutboundLink>
             </Link>
@@ -208,14 +208,14 @@ function Header() {
               target="_blank"
 
               href="https://docs.google.com/spreadsheets/d/1QkhYLoNE2JAirZcBtYtTWsU-GZ7alpHrSMCPCsGar14/edit?usp=sharing"
-              className={`mt-1 pl-4 p-2 rounded-lg hover:bg-lightGrey  hover:text-primary-400`}>{t('remotework_management_template')}</OutboundLink>
+                  className={`mt-4 pl-4 p-2 rounded-lg hover:bg-lightGrey  hover:text-primary-400`}>{t('remotework_management_template')}</OutboundLink>
 
 
             <OutboundLink
               eventProperties={{ location: "top navbar" }} rel="noreferrer noopener"
               target="_blank"
               href="https://survey.dewocracy.com/"
-              className="mt-1 pl-4 p-2 rounded-lg hover:bg-lightGrey  hover:text-primary-400">{t('remotework_survey')}</OutboundLink>
+                  className="mt-4 pl-4 p-2 rounded-lg hover:bg-lightGrey  hover:text-primary-400">{t('remotework_survey')}</OutboundLink>
 
 
 
@@ -262,7 +262,7 @@ function Header() {
                 role="menuitem"
                 locale={lng}
               ><OutboundLink
-                eventProperties={{ location: "top navbar", type: "changed-locale" }} className={` ${lng === locale ? "font-bold	" : ""} mt-1  hover:text-primary-400`}>{t(lng)}</OutboundLink>
+                  eventProperties={{ location: "top navbar", type: "changed-locale" }} className={` ${lng === locale ? "font-bold	" : ""} mt-4  hover:text-primary-400`}>{t(lng)}</OutboundLink>
               </Link>
             ))}
           </div>
