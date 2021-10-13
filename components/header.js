@@ -21,8 +21,8 @@ function Header() {
   return (
     <header
       id="header"
-      className="flex grid-cols-3 items-start lg:items-center lg:justify-between content-start px-16  md:py-4
-        bg-white h-18 sticky top-0 z-50 transition pb-1 pt-1 md:pt-6 pl-4 lg:pl-16"
+      className=" flex grid-cols-3 items-start lg:items-center lg:justify-between content-start px-16  md:py-4
+        bg-white h-18 sticky top-0 z-50 transition pb-1 pt-1 md:pt-6 pl-4 lg:pl-16 "
     >
 
       <div className="lg:hidden pr-0 ">
@@ -143,6 +143,8 @@ function Header() {
         </nav>
       </div>
 
+      <div className="w-full flex justify-center">
+        <div className="flex w-full 2xl:w-2/3  justify-between">
       <Link passHref
         href="/"
         className="md:order-first  hidden lg:flex "
@@ -265,6 +267,8 @@ function Header() {
           </div>
         </Dropdown>
       </nav>
+        </div>
+      </div>
     </header>
   );
 }
