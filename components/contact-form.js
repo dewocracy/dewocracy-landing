@@ -35,10 +35,10 @@ export const ContactForm = () => {
             rel="noreferrer noopener"
             target="_blank"
             href="https://calendly.com/dewocracylabs/dewocracy-demo"
-            className="border-b-2  hover:border-black leading-8">
+            className="border-b-2 text-primary-400 hover:text-black hover:border-black leading-8">
             {t('videocall_link')}
           </OutboundLink>,
-          'contact': <OutboundLink eventProperties={{ location: "home-contactform" }} className="border-b-2  hover:border-black leading-8 " href='#mailgo' data-address='info' data-domain='dewocracy.com'>{t('contact')}</OutboundLink>
+          'contact': <OutboundLink eventProperties={{ location: "home-contactform" }} className="border-b-2 text-primary-400 hover:text-black hover:text-black hover:border-black leading-8 " href='#mailgo' data-address='info' data-domain='dewocracy.com'>{t('contact')}</OutboundLink>
         },
         )}
 

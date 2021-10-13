@@ -85,7 +85,7 @@ function Neighbourhoods() {
                 <div className="flex flex-col items-center">
                         <Link href="/" passHref>
                             <OutboundLink
-                                eventProperties={{ location: "analytics page" }} className="text-center border-b-2 pb-1 hover:border-black leading-8 	transition-all "
+                                eventProperties={{ location: "analytics page" }} className="text-center border-b-2 pb-1 hover:border-black text-primary-400 hover:text-black leading-8 	transition-all "
                         >
                             {t('link_text')} &#8594;
                             </OutboundLink>

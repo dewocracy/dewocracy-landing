@@ -112,7 +112,7 @@ export const PaymentsPlans = () => {
             </p>
             <OutboundLink
               eventProperties={{ location: "payment-plans-box" }}
-              className=" mt-4 text-sm   border-b-2 pb-1 hover:border-black leading-8 "
+              className=" mt-4 text-sm   border-b-2 pb-1 hover:border-black text-primary-400 hover:text-black leading-8 "
               href="//calendly.com/dewocracylabs/dewocracy-demo" >
               {t('talk_with_an_expert')}
             </OutboundLink>

@@ -106,8 +106,7 @@ function DeskBooking() {
                         <Link href="/" passHref>
                             <OutboundLink
                                 eventProperties={{ location: "hotdesk-landing" }}
-                                className="text-center border-b-2 pb-1 hover:border-black leading-8 	transition-all "
-                            >
+                                className="text-center border-b-2 pb-1 hover:border-black text-primary-400 hover:text-black leading-8 text-xl 	transition-all ">
                                 {t('link_text')} &#8594;
                             </OutboundLink>
                         </Link>
