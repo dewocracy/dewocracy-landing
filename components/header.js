@@ -143,8 +143,8 @@ function Header() {
         </nav>
       </div>
 
-      <div className="w-full flex justify-center">
-        <div className="flex w-full 2xl:w-2/3  justify-between">
+      <div className="w-full flex 3xl:justify-center">
+        <div className="flex w-full 3xl:w-2/3  justify-between">
       <Link passHref
         href="/"
         className="md:order-first  hidden lg:flex "

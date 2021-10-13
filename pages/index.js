@@ -73,7 +73,7 @@ function IndexPage() {
 
           <section className="z-10 relative container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen md:pl-4 pr-0 lg:pb-4">
           <div className="grid content-center px-0 md:px-8 lg:px-0">
-            <div className="md:mt-24 lg:mt-0 lg:mb-24">
+              <div className="md:mt-24 lg:mt-0 lg:mb-72">
                 <h1 className="text-4xl text-white mt-8 lg:text-5xl  font-bold leading-tight pb-4">
                 {t('implement_flexible_remote_work')}
               </h1>
@@ -102,16 +102,15 @@ function IndexPage() {
             </div>
           </div>
             <div className="md:mt-4 lg:mt-16 grid content-center px-0 md:px-8 lg:px-0">
-            <div className="mt-4 lg:mt-20 lg:w-200 ml-8 max-w-2xl">
-                <div className="relative w-full h-md md:h-xl">
+              <div className="mt-4 lg:mt-24 lg:ml-4 lg:w-200  ">
                 <Image
-                  className="object-contain"
+                  className="object-contain w-auto inline-block "
                   src="/images/home_mockup.webp"
                   alt="Screenshots of the Dewocracy Apps"
-                  layout="fill"
                   placeholder="blur"
+                  width="1337" height="1027"
+                  quality={100}
                   blurDataURL={`/_next/image?url=/images/home_mockup.webp&w=16&q=1`} />
-              </div>
             </div>
           </div>
         </section>
