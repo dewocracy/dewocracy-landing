@@ -38,8 +38,8 @@ function Neighbourhoods() {
                 image="analytics"
 
             />
-                <h1 className="font-bold text-primary-800 my-12	text-3xl text-center">{t('title')}</h1>
-                <section className="container pb-12 text-primary-800  rounded-2xl  text-xl mx-auto  ">
+                <h1 className="font-bold  my-12	text-3xl text-center">{t('title')}</h1>
+                <section className="container pb-12   rounded-2xl  text-xl mx-auto  ">
                 <div className=" flex flex-col items-center">
 
                     <p className="mb-4 max-w-xl text-center">{t('text_1')}</p>

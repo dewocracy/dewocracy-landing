@@ -25,10 +25,10 @@ export const ContactForm = () => {
 
   return (
     <>
-      <h2 className="font-bold text-primary-800 text-3xl lg:text-3xl text-center py-16 lg:pt-24">
+      <h2 className="font-bold  text-3xl lg:text-3xl text-center py-16 lg:pt-24">
         {t('title')}
       </h2>
-      <p key="leading-8 description" className="md:px-24 pb-5 mb-12 text-center text-xl text-primary-800">
+      <p key="leading-8 description" className="md:px-24 pb-5 mb-12 text-center text-xl ">
         {t.rich('description', {
           link: <OutboundLink
             eventProperties={{ location: "form description" }}
@@ -71,7 +71,7 @@ export const ContactForm = () => {
             name="name"
             required
             placeholder="Mike Wazowski"
-              className="rounded-lg py-6 px-4 h-10 text-primary-800  bg-lightBlue bg-opacity-10 placeholder-primary-800 placeholder-opacity-30 "
+              className="rounded-lg py-6 px-4 h-10   bg-lightBlue bg-opacity-10 placeholder-primary-800 placeholder-opacity-30 "
             onChange={handleChange}
           />
         </div>
@@ -106,7 +106,7 @@ export const ContactForm = () => {
       </div>
 
       <div className="grid grid-cols-1 justify-center mt-md:mr-16 mt-10 gap-y-4">
-          <label htmlFor="message" className="font-bold text-primary-800">
+          <label htmlFor="message" className="font-bold ">
             {t('message')}
         </label>
         <textarea

@@ -38,8 +38,8 @@ function DeskBooking() {
                 />
                 <div className="flex justify-center mt-12">
                     <div className=" max-w-3xl">
-                        <h1 className="font-bold  text-primary-800 my-12	text-3xl text-left">{t('title')}</h1>
-                        <section className=" max-w-2xl pb-12 text-primary-800  rounded-2xl  text-xl ">
+                        <h1 className="font-bold   my-12	text-3xl text-left">{t('title')}</h1>
+                        <section className=" max-w-2xl pb-12   rounded-2xl  text-xl ">
                             <div className=" flex flex-col">
 
                                 <p className="mb-4 max-w-xl">{t('text_1')}</p>

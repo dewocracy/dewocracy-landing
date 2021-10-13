@@ -84,7 +84,7 @@ function IndexPage() {
 
                   <OutboundLink
                     eventProperties={{ location: "home button" }}
-                    className="text-center shadow-2xl sm:ml-4  md:ml-0 md:mt-0 hover:text-white bg-white text-primary-800  md:border-0 mt-8 mr-2 md:mr-0   hover:bg-primary-800  md:bg-white   text-xl  transition-colors duration-500 rounded-full py-4 px-4 xl:px-8  focus:shadow-outline"
+                    className="text-center shadow-2xl sm:ml-4  md:ml-0 md:mt-0 hover:text-white bg-white text-black  md:border-0 mt-8 mr-2 md:mr-0   hover:bg-primary-800  md:bg-white   text-xl  transition-colors duration-500 rounded-full py-4 px-4 xl:px-8  focus:shadow-outline"
                     href="//app.dewocracy.com/register/free"
                     rel="noreferrer noopener" target="_blank"
                   >
@@ -120,7 +120,7 @@ function IndexPage() {
         <section className=" mt-48 lg:mt-0 text-center md:text-left container  mx-auto ">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-3/5 flex flex-col md:pr-8">
-                <h2 className="font-bold text-primary-800	text-3xl pb-2 md:pb-8 pt-12 lg:pt-24 text-center md:text-left">
+                <h2 className="font-bold 	text-3xl pb-2 md:pb-8 pt-12 lg:pt-24 text-center md:text-left">
                 {t('title_hotdesking')}
               </h2>
 
@@ -128,7 +128,7 @@ function IndexPage() {
                 {t('description_hotdesking')}
               </p>
 
-              <div className="	mt-4 text-xl text-primary-800">
+                <div className="	mt-4 text-xl ">
                   <Link href="/hotdesking" passHref>
                     <OutboundLink eventProperties={{ location: "home-hotdesking-box" }} className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
                     {t('more_about_hotdesking')}
@@ -174,7 +174,7 @@ function IndexPage() {
             </div>
 
             <div className="md:ml-12 lg:ml-32 mt-12 md:w-3/5 flex flex-col md:pr-8">
-                <h2 className="font-bold text-primary-800	text-3xl pb-8  lg:pt-8 text-center md:text-left">
+                <h2 className="font-bold 	text-3xl pb-8  lg:pt-8 text-center md:text-left">
                 {t('title_neighbourhoods')}
               </h2>
 
@@ -182,7 +182,7 @@ function IndexPage() {
                 {t('description_neighbourhoods')}
               </p>
 
-              <div className="mt-4  text-xl text-primary-800">
+                <div className="mt-4  text-xl ">
                   <Link href="/neighbourhoods" passHref>
                     <OutboundLink eventProperties={{ location: "home-neighbourhood-box" }} className="border-b-2 pb-1 hover:border-black leading-8	 	transition-all  ">
                     {t('more_about_neighbourhoods')}
@@ -204,7 +204,7 @@ function IndexPage() {
           <section className="text-center md:text-left container  mx-auto lg:mr-3 2xl:mr-auto mt-8 lg:mt-18 ">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-3/5 flex flex-col md:pr-8">
-                <h2 className="font-bold text-primary-800	text-3xl pb-2 md:pb-8 pt-4 lg:pt-24 text-center md:text-left">
+                <h2 className="font-bold 	text-3xl pb-2 md:pb-8 pt-4 lg:pt-24 text-center md:text-left">
                 {t('title_manage')}
               </h2>
 
@@ -212,7 +212,7 @@ function IndexPage() {
                 {t('description_manage')}
               </p>
 
-              <div className="mt-4 text-xl  text-primary-800">
+                <div className="mt-4 text-xl  ">
                   <Link href="/manage-remotework" passHref>
                     <OutboundLink eventProperties={{ location: "home-manaage-remotework-box" }} className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
                     {t('more_about_manage')}
@@ -244,7 +244,7 @@ function IndexPage() {
 
           <section className="container  mx-auto mr-3 2xl:mr-auto  mt-4 ">
           <div className=" flex flex-col pr-8">
-              <h2 className="font-bold text-primary-800	 text-3xl pb-2 md:pb-8 pt-24 text-center">
+              <h2 className="font-bold 	 text-3xl pb-2 md:pb-8 pt-24 text-center">
               {t('title_reports')}
             </h2>
 
@@ -253,7 +253,7 @@ function IndexPage() {
                 {t('description_reports')}
               </p>
             </div>
-            <div className="mt-8 mb-8 text-xl text-center  text-primary-800">
+              <div className="mt-8 mb-8 text-xl text-center  ">
                 <Link href="/analytics" passHref>
                   <OutboundLink eventProperties={{ location: "home-analytics-box" }} className="border-b-2 pb-1 hover:border-black leading-8 	transition-all  ">
                   {t('more_about_reports')}
@@ -287,12 +287,12 @@ function IndexPage() {
       </div>
 
 
-      <section style={{ background: "url('/images/background-plans.webp')" }} id="pricing" className="container pb-12  text-primary-800  bg-purple-800 mx-auto  rounded-2xl lg:px-32">
+        <section style={{ background: "url('/images/background-plans.webp')" }} id="pricing" className="container pb-12    bg-purple-800 mx-auto  rounded-2xl lg:px-32">
 
         <PaymentsPlans />
       </section>
 
-      <section id="contact" className="mx-auto container  mt-4 mb-20  text-primary-800  md:rounded-2xl  self-center pt-24">
+        <section id="contact" className="mx-auto container  mt-4 mb-20    md:rounded-2xl  self-center pt-24">
         <ContactForm />
       </section>
     </Layout>
