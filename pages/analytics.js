@@ -38,39 +38,45 @@ function Neighbourhoods() {
                 image="analytics"
 
             />
-                <h1 className="font-bold  my-12	text-3xl text-center">{t('title')}</h1>
-                <section className="container pb-12   rounded-2xl  text-xl mx-auto  ">
-                <div className=" flex flex-col items-center">
+                <div className="flex justify-center mt-12">
+                    <div className=" max-w-3xl">
+                        <h1 className="font-bold   my-12	text-3xl text-left">{t('title')}</h1>
+                        <section className=" max-w-2xl pb-12   rounded-2xl  text-xl ">
+                            <div className=" flex flex-col">
 
-                    <p className="mb-4 max-w-xl text-center">{t('text_1')}</p>
-                </div>
-                <div className=" flex flex-col items-center">
+                                <p className="mb-4 max-w-xl">{t('text_1')}</p>
+                            </div>
+                            <div className=" flex flex-col ">
 
-                    <p className="max-w-3xl mb-4 text-center ">{t('text_2')}</p>
-                </div>
-                <div className=" flex flex-col items-center">
+                                <p className="max-w-3xl mb-4 ">{t('text_2')}</p>
+                            </div>
+                            <div className=" flex flex-col">
 
-                    <p className="mb-4 max-w-xl text-center">  {t('text_3')}</p>
-                </div>
+                                <p className="mb-4 max-w-xl">  {t('text_3')}</p>
+                            </div>
 
 
-                <div className="flex flex-col items-center">
+                            <div className="flex flex-col items-center mt-4">
 
-                    <p className="mt-12  mb-16">
+                                <p className="mt-8  mb-12 justify-center">
                             <OutboundLink
-                                eventProperties={{ location: "analytics page" }}
-
+                                        eventProperties={{ location: "analytics-landing" }}
                                 href="https://calendly.com/dewocracylabs/dewocracy-demo"
 
                                 className="shadow-2xl bg-primary-400 hover:bg-primary-800 text-white text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline "
-                        >
-                            {t('button')}
+                                    >
+                                        {t('button')}
                             </OutboundLink>
 
-                    </p>
-                </div>
+                                </p>
+                            </div>
+                        </section>
+                    </div>
 
-                <div className="relative w-full h-md lg:h-xl  flex mb-8 flex-col items-center lg:flex-row">
+                </div>
+                <section>
+                    <div className="flex container mx-auto flex-col items-center lg:flex-row">
+                        <div className="relative  w-full h-md lg:h-xl  flex mb-8 flex-col items-center lg:flex-row">
 
                     <Image
                         className="object-contain"
@@ -80,20 +86,22 @@ function Neighbourhoods() {
                         placeholder="blur"
                         blurDataURL={`/_next/image?url=/images/analytics.png&w=16&q=1`} />
 
+                        </div>
 
-                </div>
-                <div className="flex flex-col items-center">
+                    </div>
+
+
+                    <div className="flex flex-col items-center">
                         <Link href="/" passHref>
                             <OutboundLink
-                                eventProperties={{ location: "analytics page" }} className="text-center border-b-2 pb-1 hover:border-black text-primary-400 hover:text-black leading-8 	transition-all "
-                        >
-                            {t('link_text')} &#8594;
+                                eventProperties={{ location: "analytics-landing" }}
+                                className="text-center border-b-2 pb-1 hover:border-black text-primary-400 hover:text-black leading-8 text-xl 	transition-all ">
+                                {t('link_text')} &#8594;
                             </OutboundLink>
-                    </Link>
-                </div>
+                        </Link>
+                    </div>
 
-
-            </section>
+                </section>
             </Layout>
         </Amplitude>)
 }
