@@ -21,11 +21,11 @@ function Header() {
   return (
     <header
       id="header"
-      className=" flex grid-cols-3 items-start lg:items-center lg:justify-between content-start px-16  md:py-4
+      className=" w-full flex md:grid-cols-3 items-start lg:items-center lg:justify-between content-start px-16  md:py-4
         bg-white h-18 sticky top-0 z-50 transition pb-4 pt-1 md:pt-6 pl-4 lg:pl-16 "
     >
 
-      <div className="lg:hidden pr-0 ">
+      <div className="lg:hidden pr-0 w-full  ">
 
 
         <div className="flex">
@@ -41,12 +41,19 @@ function Header() {
           </span>
             <FontAwesomeIcon icon={isExpanded ? faTimes : faBars} className="text-2xl font-light text-primary" />
           </button>
-
+          <Image
+            className="object-contain"
+            src="/images/logo-medium-blue.png"
+            alt="DeWocracy logo"
+            width="160px"
+            height="30px"
+            placeholder="blur"
+            blurDataURL={`/_next/image?url=/images/logo-medium-blue.png&w=16&q=1`} />
         </div>
         <nav
           id="nav-menu-ex-1"
           className={`${isExpanded ? `block` : `hidden`
-            } md:items-center w-full md:w-auto text-primary mt-14 mb-4 ml-4`}
+            } md:items-center w-full md:w-auto text-primary mt-14 ml-4 min-h-screen`}
         >
 
 
@@ -143,7 +150,7 @@ function Header() {
         </nav>
       </div>
 
-      <div className="w-full flex 3xl:justify-center">
+      <div className="hidden w-full lg:flex 3xl:justify-center">
         <div className="flex w-full 3xl:w-2/3  justify-between">
       <Link passHref
         href="/"
