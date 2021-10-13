@@ -72,15 +72,15 @@ function IndexPage() {
         />
 
           <section className="z-10 relative container mx-auto text-white grid grid-cols-1 lg:grid-cols-2 content-center min-h-screen md:pl-4 pr-0 lg:pb-4">
-          <div className="grid content-center px-0 md:px-8 lg:px-0">
-              <div className="md:mt-24 lg:mt-0 lg:mb-72">
+            <div className="grid pt-28 px-0 md:px-8 lg:px-0 2xl:max-w-3xl 2xl:ml-24">
+              <div className="md:mt-24 lg:mt-0 ">
                 <h1 className="text-4xl text-white mt-8 lg:text-5xl  font-bold leading-tight pb-4">
                 {t('implement_flexible_remote_work')}
               </h1>
               <p className="text-2xl text-white py-8 md:py-4 md:pb-12 md:pr-24">
                 <strong className="pr-2">DeWocracy</strong>{t('Save thousands of euros')}
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 mt-6 md:mt-0 mr-4 md:mr-0">
+                <div className="grid  grid-cols-1 sm:grid-cols-2 md:gap-8 mt-6 md:mt-0 mr-4 md:mr-0">
 
                   <OutboundLink
                     eventProperties={{ location: "home button" }}
@@ -101,16 +101,16 @@ function IndexPage() {
               </div>
             </div>
           </div>
-            <div className="md:mt-4 lg:mt-16 grid content-center px-0 md:px-8 lg:px-0">
-              <div className="mt-4 lg:mt-24 lg:ml-4 lg:w-200  ">
+            <div className="md:mt-4  grid  px-0 md:px-8 lg:px-0">
+              <div className=" lg:w-200  ">
                 <Image
                   className="object-contain w-auto inline-block "
-                  src="/images/home_mockup.webp"
+                  src="/images/home_mockup.png"
                   alt="Screenshots of the Dewocracy Apps"
                   placeholder="blur"
-                  width="1337" height="1027"
+                  width="1100" height="1027"
                   quality={100}
-                  blurDataURL={`/_next/image?url=/images/home_mockup.webp&w=16&q=1`} />
+                  blurDataURL={`/_next/image?url=/images/home_mockup.png&w=16&q=1`} />
             </div>
           </div>
         </section>

@@ -161,7 +161,8 @@ function Header() {
                 className="object-contain"
                 src="/images/logo-medium-blue.png"
                 alt="DeWocracy logo"
-                layout="fill"
+                    width="160px"
+                    height="30px"
                 placeholder="blur"
                 blurDataURL={`/_next/image?url=/images/logo-medium-blue.png&w=16&q=1`} />
 
