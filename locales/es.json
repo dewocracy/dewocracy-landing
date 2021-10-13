@@ -141,7 +141,9 @@
     "access-app": "Acceder a la Web App",
     "appstore": "Descargar la applicacion iOS App",
     "play-store": "Descargar la applicacion Android",
-    "questions": "¿Preguntas? Pide una llamada",
+    "questions": "¿Preguntas? ",
+    "request_a_call": "Pide una llamada",
+
     "office_is_a_tool": "La oficina debería ser una herramienta, no una limitación. ",
     "company_description": "Hacemos posible el trabajo híbrido para mejorar a las empresas y hacer más felices a las personas que trabajan en ellas.",
     "resources": "Recursos",
