@@ -216,7 +216,7 @@ export const SavingsCalculator = () => {
 
       {({ instrument, logEvent }) => (
       <div className="md:grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-24 ">
-          <div className="grid  content-start justify-center md:mt-10   xl:p-8">
+        <div className="grid text-primary-800 content-start justify-center md:mt-10   xl:p-8">
           <label htmlFor="employees" className="font-bold pr-4 pb-4 text-2xl text-center">
             {t('employees_text')}
           </label>
@@ -257,7 +257,7 @@ export const SavingsCalculator = () => {
               onChange={(e) => handleTargetChange(logEvent, e)}
             value={target}
           />
-            <p className="text-center text-2xl font-bold  pt-10">
+          <p className="text-center text-2xl font-bold text-primary-800 pt-10">
             {t('calculation')}
             <br />
           </p>
@@ -297,7 +297,7 @@ export const SavingsCalculator = () => {
               ]}
             />
           </div>
-            <div className="text-center md:text-left mt-10 grid  justify-center">
+          <div className="text-center md:text-left mt-10 grid text-primary-800 justify-center">
             {showData ? (
               <>
                 <p className="my-4 font-bold text-2xl">

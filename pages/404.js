@@ -29,7 +29,7 @@ function NotFoundPage() {
 
       <SEO title="404: Not found" />
       <div className="w-full bg-fixed min-h-screen  py-32">
-          <section className=" container mx-auto  px-8 md:px-0">
+        <section className=" container mx-auto text-primary-800 px-8 md:px-0">
             <h1 className="text-center font-bold text-3xl">
             {t('not_found')}
           </h1>

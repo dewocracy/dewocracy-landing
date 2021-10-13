@@ -38,36 +38,37 @@ function Neighbourhoods() {
                 />
                 <div className="flex justify-center mt-12">
                     <div className=" max-w-3xl">
-                        <h1 className="font-bold   my-12	text-3xl text-left">{t('title')}</h1>
-                        <section className=" max-w-2xl pb-12   rounded-2xl  text-xl ">
+                        <h1 className="font-bold my-12 text-primary-800 text-3xl text-left">{t('title')}</h1>
+                        <section className=" max-w-2xl pb-12 text-primary-800 rounded-2xl  text-xl ">
                             <div className=" flex flex-col">
 
+
                                 <p className="mb-4 max-w-xl">{t('text_1')}</p>
-                    </div>
+                            </div>
                             <div className=" flex flex-col ">
 
                                 <p className="max-w-3xl mb-4 ">{t('text_2')}</p>
-                    </div>
+                            </div>
                             <div className=" flex flex-col">
 
                                 <p className="mb-4 max-w-xl">  {t('text_3')}</p>
-                    </div>
+                            </div>
 
 
                             <div className="flex flex-col items-center mt-4">
 
                                 <p className="mt-8  mb-12 justify-center">
-                            <OutboundLink
+                                    <OutboundLink
                                         eventProperties={{ location: "neighbourhood-landing" }}
                                         href="https://calendly.com/dewocracylabs/dewocracy-demo"
 
-                                className="shadow-2xl bg-primary-400 hover:bg-primary-800 text-white text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline "
-                            >
-                                {t('button')}
-                            </OutboundLink>
+                                        className="shadow-2xl bg-primary-400 hover:bg-primary-800 text-white text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline "
+                                    >
+                                        {t('button')}
+                                    </OutboundLink>
 
-                        </p>
-                    </div>
+                                </p>
+                            </div>
                         </section>
                     </div>
 
