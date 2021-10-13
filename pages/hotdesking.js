@@ -36,25 +36,27 @@ function DeskBooking() {
                     title={`${t('title')} | DeWocracy - Flexible Remote Work`}
                     image="hotdesking"
                 />
-                <h1 className="font-bold text-primary-800 my-12	text-3xl text-center">{t('title')}</h1>
-                <section className="container pb-12 text-primary-800  rounded-2xl  text-xl mx-auto  ">
-                    <div className=" flex flex-col items-center">
+                <div className="flex justify-center mt-12">
+                    <div className=" max-w-3xl">
+                        <h1 className="font-bold  text-primary-800 my-12	text-3xl text-left">{t('title')}</h1>
+                        <section className=" max-w-2xl pb-12 text-primary-800  rounded-2xl  text-xl ">
+                            <div className=" flex flex-col">
 
-                        <p className="mb-4 max-w-xl text-center">{t('text_1')}</p>
+                                <p className="mb-4 max-w-xl">{t('text_1')}</p>
                     </div>
-                    <div className=" flex flex-col items-center">
+                            <div className=" flex flex-col ">
 
-                        <p className="max-w-3xl mb-4 text-center ">{t('text_2')}</p>
+                                <p className="max-w-3xl mb-4 ">{t('text_2')}</p>
                     </div>
-                    <div className=" flex flex-col items-center">
+                            <div className=" flex flex-col">
 
-                        <p className="mb-4 max-w-xl text-center">  {t('text_3')}</p>
+                                <p className="mb-4 max-w-xl">  {t('text_3')}</p>
                     </div>
 
 
-                    <div className="flex flex-col items-center">
+                            <div className="flex flex-col items-center mt-4">
 
-                        <p className="mt-8  mb-12">
+                                <p className="mt-8  mb-12 justify-center">
                             <OutboundLink
                                 eventProperties={{ location: "hotdesk-landing" }}
                                 href="https://calendly.com/dewocracylabs/dewocracy-demo"
@@ -66,7 +68,11 @@ function DeskBooking() {
 
                         </p>
                     </div>
+                        </section>
+                    </div>
 
+                </div>
+                <section>
                     <div className="flex container mx-auto flex-col items-center lg:flex-row">
                         <div className="relative  w-full h-md lg:h-xl  flex mb-8 flex-col items-center lg:flex-row">
 
@@ -107,8 +113,8 @@ function DeskBooking() {
                         </Link>
                     </div>
 
-
                 </section>
+
             </Layout>
         </Amplitude>
     )
