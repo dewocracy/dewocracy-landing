@@ -74,18 +74,7 @@ function Neighbourhoods() {
                 </div>
                 <section>
                     <div className="flex container mx-auto flex-col items-center lg:flex-row">
-                        <div className="relative  w-full h-md lg:h-xl  flex mb-8 flex-col items-center lg:flex-row">
 
-                            <Image
-                                className="object-contain"
-                                src="/images/desk-booking2.png"
-                                alt="Desk Booking Mobile"
-                                layout="fill"
-                                placeholder="blur"
-                                blurDataURL={`/_next/image?url=/images/desk-booking2.png&w=16&q=1`} />
-
-
-                        </div>
                         <div className="relative  w-full h-md lg:h-xl  flex mb-8 flex-col items-center lg:flex-row">
 
                             <Image

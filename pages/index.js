@@ -161,8 +161,7 @@ function IndexPage() {
 
             <div className="flex flex-col-reverse md:flex-row">
 
-
-              <div className="relative mt-12 w-full md:w-2/5 h-md lg:h-xl  ">
+              <div className="relative mt-12 md:mt-0 w-3/5 ml-2 lg:ml-0 h-md md:h-96  ">
                 <Image
                   className="object-contain"
                   src="/images/remote_office_home.png"
@@ -173,7 +172,8 @@ function IndexPage() {
 
               </div>
 
-              <div className="md:ml-12 lg:ml-32 mt-12 md:w-3/5 flex flex-col md:pr-8">
+
+              <div className="md:ml-12 lg:ml-16 mt-12 md:w-2/5 flex flex-col md:pr-8">
                 <h2 className="font-bold text-primary-800	text-3xl pb-8  lg:pt-8 text-center md:text-left">
                   {t('title_neighbourhoods')}
                 </h2>
@@ -231,7 +231,7 @@ function IndexPage() {
                 <Image
                   className="object-contain"
                   src="/images/manage_home.png"
-                  alt="Screenshots Neighourhoods"
+                  alt="Screenshots Manage Remotework"
                   layout="fill"
                   placeholder="blur"
                   blurDataURL={`/_next/image?url=/images/manage_home.png&w=16&q=1`} />
