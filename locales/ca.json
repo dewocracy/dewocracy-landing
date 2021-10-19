@@ -1,0 +1,202 @@
+{
+  "navigation": {
+    "access": "Accedir",
+    "resources": "Recursos",
+    "pricing": "Preus",
+    "sign_up": "Registra't gratis",
+    "calculator": "Calculadora d'estalvi",
+    "help_page": "Pàgines d'ajuda",
+    "remotework_management_template": "Plantilla de gestió del teletreball",
+    "remotework_survey": "Qüestionari teletreball",
+    "ca": "CAT",
+    "en": "EN",
+    "es": "ES"
+  },
+
+  "404": {
+    "not_found": "No hem pogut trobar la pàgina.",
+    "back_to_home": "Tornar al inici"
+  },
+
+  "payment_plans": {
+    "title": "Planes y preus",
+    "title_question": "Selecciona el plan para tu empresa",
+    "free_plan_title": "Oficina Básica",
+    "business_plan_title": "Officina Pro",
+    "explore": "Comença ara",
+    "start_free": "Registra't gratis",
+    "guidance": "Acompañamiento en todo el proceso.",
+    "half_yearly_cost": "Semestral - hasta un 28% de ahorro",
+    "monthly_cost": "Mensual",
+    "free_cost": "Free",
+    "per_month": "Mes / Usuari",
+    "single_admin": "1 administrador.",
+    "calendar": "Calendari d'espais de treball.",
+    "app_for_company": "Plataforma para la empresa.",
+    "limits": "Límits d'ocupació i teletreball.",
+    "reservations": "Reserva d'escriptoris.",
+    "interative_map": "Mapa interactiu.",
+    "unlimited_users": "Usuaris ilimitats.",
+    "reports": "Informes personalitzats.",
+    "talk_with_an_expert": "Parla amb un expert"
+  },
+  "contact_form": {
+    "title": "T'interessa? Contacta'ns!",
+    "videocall_link": "agendar una videotrucada",
+    "contact": "contactar-nos",
+    "description": "Pots {link}, {contact} o escriure'ns a través del formulari de contacte.",
+    "company_label": "Empresa",
+    "submit_button": "Enviar missatge",
+    "name_label": "Nom",
+    "email_label": "Correu",
+    "message": "Missatge",
+    "email_placeholder": "michaelwazowski@monstruos-sa.com",
+    "company_placeholder": "Monstres, S.A.",
+    "thanks": "Thanks for contacting us! We will get in touch with you shortly",
+    "back_to_home": "Tornar al inici"
+  },
+
+  "footer": {
+    "pricing": "Preus",
+    "Terms of service": "Termes i condicions",
+    "Legal notice": "Avís legal",
+    "Privacy policy": "Política de privacitat",
+    "Cookies policy": "Política de cookies",
+    "hotdesking": "Hot desking",
+    "neighbourhoods": "Organitza la oficina",
+    "manage-remoteworks": "Gestiona el teletreball",
+    "analytics": "Analítiques",
+    "help": "Pàgines d'ajuda",
+    "calculator": "Calculadora d'estalvi",
+    "survey": "Qüestionari teletreball",
+    "template": "Plantilla de gestió del teletreball",
+    "access-app": "Accedir a la Web App",
+    "appstore": "Descarregar l’aplicación iOS ",
+    "play-store": "Descarregar l’aplicación Android",
+    "questions": "Preguntes? ",
+    "request_a_call": "Demana una trucada",
+    "office_is_a_tool": "L’oficina hauria de ser una eina, no una limitació. ",
+    "company_description": "Fem possible el treball híbrid per a millorar les empreses i fer més felices les persones que hi treballen.",
+    "resources": "Recursos",
+    "explore": "Explora",
+    "legal": "Legal",
+    "employee-app": "Accés Web Plantilla"
+  },
+
+  "Calculator": {
+    "title": "Calculadora d'estalvi",
+
+    "sub_title": "¿Quant podria estalviar la teva empresa amb DeWocracy?",
+    "employees_text": "¿Quant podria estalviar la teva empresa amb DeWocracy?",
+    "employees_placeholder": "",
+    "square_meters_text": "Quants metres quadrats té la teva oficina actual? (m2)",
+    "square_meters_placeholder": "¿Cuántos empleados tiene tu empresa?",
+
+    "key_utilities": "Subministres",
+    "key_cost": "Cost DW",
+    "key_rent": "Lloguer",
+    "percentage_text": "Quin percentatge de teletreball voldries implementar? (%)",
+    "calculation": "¿Com ho calculem?",
+    "button_contact": "Contacta'ns",
+    "cost_type_now": "Ara",
+    "cost_type_dewocracy": "Cost DW",
+    "label_rent": "Lloguer",
+    "label_utilities": "Subministres",
+    "label_dewocracy_cost": "Amb DW",
+    "label_now": "Ara",
+    "label_with_dw": "Amb DW",
+    "saving_with_dw": "Amb DeWocracy podries estalviar fins a...",
+    "monthly": "al mes",
+    "annually": "l'any",
+    "saving": "d'estalvi"
+  },
+
+  "desk_booking": {
+    "title": "Hot desking, més fàcil que mai",
+    "text_1": "Reserva d'escriptoris de forma intuitiva a través d'un mapa interactiu de la teva oficina.",
+    "text_2": "Crea veïnats assignant grups d'escriptoris a equips o persones. Desectiva i activa escriptoris segons convingui.",
+    "text_3": "Parla amb un expert per començar ara i consultar preus.",
+    "button": "Comença ara",
+    "link_text": "Descobreix més funcionalitats"
+  },
+
+  "neighbourhoods": {
+    "title": "Organitza la oficina i les persones",
+    "text_1": "Organitza la teva oficina per tal d'utilitzar l'espai de forma eficient i flexible.",
+    "text_2": "Crea veïnats assignant grups d'escriptoris a equips o persones per a facilitar el treball en equip la interacció cara a cara. Activa i desectiva escriptoris i implemente les mesures necessàries derivades de la pendèmia.",
+    "text_3": "Parla amb un expert per començar ara i consultar preus.",
+    "button": "Comença ara",
+    "link_text": "Descobreix més funcionalitats"
+  },
+  "manage_remotework": {
+    "title": "Gestiona el teletreball de forma eficient",
+    "text_1": "Facilita a la plantilla un calendari d'espais de treball vinculat al panell d'administració.",
+    "text_2": "Estableix límits d'ocupació i aforament per tal que cap persona es quedi sense lloc a l'oficina i respectar les mesures sanitàries derivades de la pandèmia.",
+    "text_3": "Fixa límits de teletreball per a mantenir un mínim de presenciaitat i implementar les polítiques de treball de la teva empresa.",
+    "button": "  Registra't gratis",
+    "link_text": "Descobreix més funcionalitats"
+  },
+  "analytics": {
+    "title": "Analítiques i informes",
+    "text_1": "FAnalitza la ocupació, l'ús de l'espai i els costos que s'en deriven. Obté detalls a nivell de plantilla i individu per a assegurar el compliment dela llei del teletreball.",
+    "text_2": "Amb DeWocracy pots auditar l'històric de presencialitat i quantitat de teletreball de la teva plantilla.",
+    "text_3": "A més, amb el pla Oficina Pro tindràs accés a informes personalitzats amb les dades que t'interessen en format .xls o .csv.",
+    "button": "Comença ara",
+    "link_text": "Descobreix més funcionalitats"
+  },
+
+  "Default": {
+    "title_hotdesking": "Hot desking, més fàcil que mai",
+    "description_hotdesking": "Reserva d'escriptoris de forma intuitiva a través d'un mapa interactiu de la teva oficina.",
+
+    "more_about_hotdesking": "Vull saber-ne més sobre el hot desking",
+    "hotdesking_button": "Comença ara",
+
+    "title_neighbourhoods": "Organitza la oficina i les persones",
+    "description_neighbourhoods": "Crea veïnats assignant grups d'escriptoris a equips o persones. Activa i desectiva escriptoris segons convingui.",
+
+    "more_about_neighbourhoods": "Dona'm més detalls sobre veïnats i equips",
+    "neighbourhoods_button": "Comença ara",
+
+    "title_manage": "Gestiona el teletreball de forma eficient",
+    "description_manage": "Estableix límits d'ocupació i teletreball. Gestiona l'aforament i la presencialitat amb un calendari dinàmic d'espais.",
+
+    "more_about_manage": "Vull saber-ne més sobre la gestió del teletreball",
+    "manage_button": "Registra't gratis",
+
+    "title_reports": "La informació és poder... I diners",
+    "description_reports": "Analitza la ocupació, l'ús de l'espai i els costos que s'en deriven. Obté detalls a nivell de plantilla i individu per a assegurar el compliment dela llei del teletreball.",
+
+    "more_about_reports": "Més detalls sobre analítiques i informes",
+
+    "implement_flexible_remote_work": "Implementa el teletreball flexible a la teva oficina.",
+
+    "Save thousands of euros": "és la primera eina exclusivament dissenyada per a gestionar una estratègiahíbrida de treball remot i presencial.",
+    "Sign up for free": "Registra't gratis",
+    "Request demo": "Demanar demo",
+    "How much could your company save with DeWocracy?": "¿Quant podria estalviar la teva empresa amb DeWocracy?",
+    "How many employees does your company have?": "Quants treballadors té la teva empresa?",
+    "How many square meters of office space do you currently have? (sqm)": "Quants metres quadrats té la teva oficina actual? (m2)",
+    "What's the percentage of remote work you would like to implement? (%)": "Quin percentatge de teletreball voldries implementar? (%)",
+    "How do we calculate it?": "Com ho calculem?",
+    "Contact us": "Contacta'ns",
+    "DW cost": "Cost DW",
+    "Rent": "Lloguer",
+    "Utilities": "Subministres",
+    "Now": "Ara",
+    "With DW": "Amb DW",
+    "With DeWocracy you could save up to...": "Amb DeWocracy podries estalviar fins a...",
+    "monthly": "al mes",
+    "annually": " l'any",
+    "saving": "d'estalvi",
+
+    "Employees": "Employees",
+    "office square metres": "office square metres",
+    "Page not found.": "No hem pogut trobar la pàgina.",
+    "Back to home": "Tornar al inici",
+    "Thanks for containing us! We will get in touch with you shortly.": "¡Gràcies per contactar amb nosaltres! Et respondrem el mes aviat possible.",
+    "DeWocracy - Remote Work | Work from anywhere": "DeWocracy - Teletreball | Treballa des de qualsevol lloc",
+    "DeWocracy offers remote work solutions for a hybrid office strategy. Manage your company's human capital, control the office occupancy rate, lower costs and increase flexibility without compromising productivity.": "DeWocracy ofereix solucions per al teletreball i el desenvolupament d'una estratègia d'oficina híbrida. Gestiona el treball remot, controla l'ocupació de l'oficina, redueix costos i incrementa la flexibilitat de la teva empresa sense disminuir la productivitat."
+
+  }
+}
