@@ -158,6 +158,9 @@ export const Footer = () => {
             <li className="hover:text-primary-800 mr-7">
               <OutboundLink rel="noreferrer noopener" target="_blank" href="https://play.google.com/store/apps/details?id=com.dewocracy.dewocracyapp" eventProperties={{ location: "footer" }}>{t('play-store')}</OutboundLink>
             </li>
+            <li className="hover:text-primary-800 mr-7">
+              <OutboundLink rel="noreferrer noopener" target="_blank" href="https://employee.dewocracy.com" eventProperties={{ location: "footer" }}>{t('employee-app')}</OutboundLink>
+            </li>
           </ul>
         </div>
 
