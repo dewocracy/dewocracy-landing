@@ -29,12 +29,11 @@ function SEO({ description, title, url, image }) {
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={fullDescription} />
       <meta property="og:url" content={fullURL} />
-      <meta property="og:image" content={fullImage} />
+      <meta name="image" property="og:image" content={fullImage} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="keywords" content="" />
       <link rel="canonical" href={fullURL} />
       <meta property="og:type" content="website" />
-
     </Head>
   );
 }
