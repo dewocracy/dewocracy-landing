@@ -17,8 +17,6 @@ function SEO({ description, title, url, image }) {
 
   return (
     <Head>
-      <html lang={locale} />
-
       <title>{`${title} | ${siteTitle}`}</title>
       <meta name="description" content={fullDescription} />
       <meta property="og:type" content="website" />
@@ -31,7 +29,6 @@ function SEO({ description, title, url, image }) {
       <meta property="og:url" content={fullURL} />
       <meta name="image" property="og:image" content={fullImage} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="keywords" content="" />
       <link rel="canonical" href={fullURL} />
       <meta property="og:type" content="website" />
     </Head>

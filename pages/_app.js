@@ -11,6 +11,9 @@ import { isBrowser } from '@unly/utils';
 import CookieBot from "react-cookiebot"
 import '../css/style.css'
 
+import { config } from '@fortawesome/fontawesome-svg-core'
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 // eslint-disable-next-line react/prop-types
 function MyApp({ Component, pageProps }) {
