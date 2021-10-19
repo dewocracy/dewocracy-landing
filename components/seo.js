@@ -35,7 +35,7 @@ function SEO({ description, title, url, image }) {
       <link rel="canonical" href={fullURL} />
       <meta property="og:type" content="website" />
     </Head>
-  );
+  )
 }
 
 SEO.defaultProps = {
