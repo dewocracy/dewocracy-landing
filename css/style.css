@@ -1,0 +1,24 @@
+/*! purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/*! purgecss end ignore */
+@tailwind utilities;
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+    @apply leading-normal;
+  }
+}
+
+
+
+
+/*! Remove Cookiebot backlinks */
+a#CybotCookiebotDialogPoweredbyCybot, #CybotCookiebotDialogDetailFooter {
+  display: none !important;
+}
+/*! Remove default Styling on Focus */
+#CybotCookiebotDialog :focus-visible {
+    outline: none !important;
+}

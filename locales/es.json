@@ -1,0 +1,213 @@
+{
+  "404": {
+    "not_found": "No hem pogut trobar la pàgina.",
+    "back_to_home": "Tornar al inici"
+  },
+
+  "navigation": {
+    "access": "Acceder",
+    "resources": "Recursos",
+    "pricing": "Precios",
+    "sign_up": "Regístrate gratis",
+    "calculator": "Calculadora de ahorro",
+    "ca": "CAT",
+    "en": "EN",
+    "es": "ES",
+    "help_page": "Páginas de ayuda",
+    "remotework_management_template": "Plantilla de gestión del teletrabajo",
+    "remotework_survey": "Cuestionario teletrabajo"
+  },
+
+  "payment_plans": {
+    "title": "Planes y precios",
+
+    "title_question": "Selecciona el plan para tu empresa",
+
+    "free_plan_title": "Oficina Básica",
+    "business_plan_title": "Officina Pro",
+    "explore": "Explora",
+    "start_free": "Empieza gratis",
+    "guidance": "Acompañamiento en todo el proceso.",
+    "half_yearly_cost": "Semestral - hasta un 28% de ahorro",
+    "monthly_cost": "Mensual",
+    "free_cost": "Free",
+    "per_month": "Mes / Usuario",
+    "single_admin": "1 administrador.",
+    "calendar": "Calendario de espacios de trabajo.",
+    "app_for_company": "Plataforma para la empresa.",
+    "limits": "Límites de ocupación y teletrabajo.",
+    "reservations": "Reserva de escritorios.",
+    "interative_map": "Mapa interactivo.",
+    "unlimited_users": "Usuarios ilimitados.",
+    "reports": "Reportes personalizados.",
+    "talk_with_an_expert": "Habla con un experto"
+  },
+
+  "contact_form": {
+    "title": "¿Te interesa? ¡Contáctanos!",
+    "videocall_link": "agendar una videollamada",
+    "contact": "contactarnos",
+    "description": "Puedes {link} a la hora que más te convenga, {contact} o escribirnos en el formulario de contacto.",
+    "company_label": "Empresa",
+    "submit_button": "Enviar mensaje",
+    "name_label": "Nombre",
+    "email_label": "Email",
+    "message": "Mensaje",
+    "email_placeholder": "michaelwazowski@monstruos-sa.com",
+    "company_placeholder": "Monstruos, S.A.",
+    "thanks": "Thanks for contacting us! We will get in touch with you shortly",
+    "back_to_home": "Tornar al inici"
+  },
+
+  "desk_booking": {
+    "title": "Hot desking, más fácil que nunca",
+    "text_1": "Reserva de escritorios de forma intuitiva a través de un mapa interactivo de tu oficina.",
+    "text_2": "Crea vecindarios asignando grupos de escritorios a equipos o personas. Desactiva y activa escritorios según su necesidad.",
+    "text_3": "Habla con un experto para empezar ahora y consultar precios.",
+    "button": "Empezar ahora",
+    "link_text": "Descubre más funcionalidades"
+  },
+
+  "neighbourhoods": {
+    "title": "Organiza la oficina y las personas",
+    "text_1": "Organiza tu oficina para usar el espacio de forma eficiente y flexible.",
+    "text_2": "Crea vecindarios asignando grupos de escritorios a equipos o personas para facilitar el trabajo en equipo y la interacción cara a cara. Desactiva y activa escritorios e implementa las medidas necesarias derivadas de la pandemia.",
+    "text_3": "Habla con un experto para empezar ahora y consultar precios.",
+    "button": "Empezar ahora",
+    "link_text": "Descubre más funcionalidades"
+  },
+
+  "manage_remotework": {
+    "title": "Gestiona el teletrabajo de forma eficiente",
+    "text_1": "Facilita a tu plantilla un calendario de espacios de trabajo a vinculado al panel de administración. ",
+    "text_2": "Establece límites de ocuación y aforo para que nadie se quede sin sitio en la oficina y respetar las medidas sanitarias derivadas de la pandemia.",
+    "text_3": "Fija límites de teletrabajo para mantener un mínimo de presencialidad e implementar las políticas de trabajo de tu empresa.",
+    "button": "Regístrate gratis",
+    "link_text": "Descubre más funcionalidades"
+  },
+
+  "analytics": {
+    "title": "Analíticas y reportes",
+    "text_1": "Analiza la ocupación, el uso del espacio y los costes asociados. Obtén detalles a nivel de plantilla e individuo para asegurar el cumplimiento de la ley del teletrabajo.",
+    "text_2": "Con DeWocracy puedes auditar el histórico de presencialidad y cantidad de teletrabajo de tu plantilla.",
+    "text_3": "FAdemás, con el plan Oficina Pro tendrás acceso a reportes personalizados con los datos que te interesan en formato .xls o .csv.",
+    "button": "Empezar ahora",
+    "link_text": "Descubre más funcionalidades"
+  },
+
+  "Calculator": {
+    "title": "Calculadora de ahorro",
+
+    "sub_title": "¿Cuánto podría ahorrar tu empresa con DeWocracy?",
+    "employees_text": "¿Cuántos empleados tiene tu empresa?",
+    "employees_placeholder": "Empleados",
+    "square_meters_text": "¿Cuántos empleados tiene tu empresa?",
+    "square_meters_placeholder": "¿Cuántos empleados tiene tu empresa?",
+
+    "percentage_text": "¿Cuántos empleados tiene tu empresa?",
+    "calculation": "¿Cuántos empleados tiene tu empresa?",
+    "button_contact": "Contáctanos",
+    "cost_type_now": "Now",
+    "cost_type_dewocracy": "With DW",
+    "label_rent": "Alquiler",
+    "label_utilities": "Suministros",
+    "label_dewocracy_cost": "Coste de DW",
+    "label_now": "Ahora",
+    "label_with_dw": "Con DW",
+    "saving_with_dw": "Con DeWocracy podrías ahorrar hasta...",
+    "monthly": "al mes",
+    "annually": "al año",
+    "saving": "de ahorro",
+
+    "key_utilities": "Suministros",
+    "key_cost": "Coste de DW ",
+    "key_rent": "Alquiler"
+  },
+
+  "footer": {
+    "pricing": "Precios",
+    "Terms of service": "Términos y condiciones",
+    "Legal notice": "Aviso legal",
+    "Privacy policy": "Política de privacidad",
+    "Cookies policy": "Política de cookies",
+    "hotdesking": "Hotdesking",
+    "neighbourhoods": "Vecindarios",
+    "manage-remoteworks": "Gestiona el teletrabajo",
+    "analytics": "Analíticas",
+    "help": "Páginas de ayuda",
+    "calculator": "Calculadora de ahorro",
+    "survey": "Cuestionario teletrabajo",
+    "template": "Plantilla de gestión del teletrabajo",
+    "access-app": "Acceder a la Web App",
+    "appstore": "Descargar la applicacion iOS App",
+    "play-store": "Descargar la applicacion Android",
+    "questions": "¿Preguntas? ",
+    "request_a_call": "Pide una llamada",
+
+    "office_is_a_tool": "La oficina debería ser una herramienta, no una limitación. ",
+    "company_description": "Hacemos posible el trabajo híbrido para mejorar a las empresas y hacer más felices a las personas que trabajan en ellas.",
+    "resources": "Recursos",
+    "explore": "Explora",
+    "legal": "Legal",
+    "employee-app": "Acceso Web Plantilla"
+
+
+  },
+
+  "Default": {
+    "title_hotdesking": "Hot desking, más fácil que nunca",
+    "description_hotdesking": "Reserva de escritorios de forma intuitiva a través de un mapa interactivo de tu oficina.",
+
+    "more_about_hotdesking": "Quiero saber más sobre el hot desking",
+    "hotdesking_button": "Empieza ahora",
+
+    "title_neighbourhoods": "Organiza la oficina y las personas",
+    "description_neighbourhoods": "Crea vecindarios asignando grupos de escritorios a equipos o personas. Activa y desactiva escritorios según necesidad.",
+
+    "more_about_neighbourhoods": "Cuéntame más sobre vecindarios y equipos",
+    "neighbourhoods_button": "Empieza ahora",
+
+    "title_manage": "Gestiona el teletrabajo de forma eficiente ",
+    "description_manage": "Establece límites de ocupación y teletrabajo. Gestiona el aforo y la presencialidad con un calendario dinámico de espacios.",
+
+    "more_about_manage": "Quiero saber más sobre la gestión del teletrabajo",
+    "manage_button": "Regístrate gratis",
+
+    "title_reports": "La información es poder... Y dinero",
+    "description_reports": "Analiza la ocupación, el uso del espacio y los costes asociados. Obtén detalles a nivel de plantilla e individuo para asegurar el cumplimiento de la ley del teletrabajo. ",
+
+    "more_about_reports": "Más detalles sobre analíticas y reportes",
+
+    "implement_flexible_remote_work": "Implementa el teletrabajo flexible en tu oficina.",
+    "Save thousands of euros": "es la primera herramienta exclusivamente diseñada para gestionar tu estrategia híbrida de trabajo remoto y presencial. ",
+    "Sign up for free": "Regístrate gratis",
+    "Request demo": "Pedir demo",
+    "How much could your company save with DeWocracy?": "¿Cuánto podría ahorrar tu empresa con DeWocracy?",
+    "How many employees does your company have?": "¿Cuántos empleados tiene tu empresa?",
+    "How many square meters of office space do you currently have? (sqm)": "¿Cuántos metros cuadrados tiene tu oficina actual? (m2)",
+    "What's the percentage of remote work you would like to implement? (%)": "¿Qué porcentaje de trabajo remoto querrías implementar? (%)",
+    "How do we calculate it?": "¿Cómo lo calculamos?",
+    "Contact us": "Contáctanos",
+    "DW cost": "Coste de DW",
+    "Rent": "Alquiler",
+    "Utilities": "Suministros",
+    "Now": "Ahora",
+    "With DW": "Con DW",
+    "With DeWocracy you could save up to...": "Con DeWocracy podrías ahorrar hasta...",
+    "monthly": "al mes",
+    "annually": "al año",
+    "saving": "de ahorro",
+    "Employees": "Empleados",
+    "office square metres": "office square metres",
+    "Page not found.": "Página no encontrada.",
+    "Back to home": "Volver al inicio",
+    "Thanks for containing us! We will get in touch with you shortly.": "¡Gracias por contactar con nostros! Te responderemos lo antes possible.",
+    "DeWocracy - Remote Work | Work from anywhere": "DeWocracy - Teletrabajo | Trabaja desde cualquier lugar",
+    "DeWocracy offers remote work solutions for a hybrid office strategy. Manage your company's human capital, control the office occupancy rate, lower costs and increase flexibility without compromising productivity.": "DeWocracy ofrece soluciones para el teletrabajo y el desarrollo de una estrategia de oficina híbrida. Gestiona el trabajo remoto, controla la ocupación de tu oficina, reduce costes e incrementa la flexibilidad de tu empresa sin disminuir la productividad.",
+    "remote work": "trabajo en remoto",
+    "teleworking": "teletrabajo",
+    "work office": "oficina",
+    "occupancy": "opcupación"
+
+  }
+}
