@@ -13,21 +13,21 @@ function SEO({ description, title, url, image }) {
   const fullURL = url ?? siteUrl
   const fullImage = image ? siteUrl + `images/og/${image}_${locale}.jpg` : siteUrl + `images/og/default_${locale}.jpg`
 
-  const fullDesscription = description ?? siteDescription
+  const fullDescription = description || siteDescription
 
   return (
     <Head>
       <html lang={locale} />
 
       <title>{`${title} | ${siteTitle}`}</title>
-      <meta name="description" content={fullDesscription} />
+      <meta name="description" content={fullDescription} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={fullDescription} />
       <meta property="og:site_name" content={siteTitle} />
       <meta property="twitter:creator" content={author} />
       <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={description} />
+      <meta property="twitter:description" content={fullDescription} />
       <meta property="og:url" content={fullURL} />
       <meta property="og:image" content={fullImage} />
       <meta name="twitter:card" content="summary_large_image" />
