@@ -33,6 +33,7 @@ function SEO({ description, title, url, image }) {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="keywords" content="" />
       <link rel="canonical" href={fullURL} />
+      <meta property="og:type" content="website" />
 
     </Head>
   );
