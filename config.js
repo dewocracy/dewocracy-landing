@@ -1,6 +1,6 @@
 
 const config = {
-  siteUrl: "https://deploy-preview-21--dewocracy.netlify.app/",
+  siteUrl: "https://dewocracy.com/",
   siteTitle: `DeWocracy`,
   siteDescription: `DeWocracy offers remote work solutions for a hybrid office strategy. Manage your company's human capital, control the office occupancy rate, lower costs and increase flexibility without compromising productivity.`,
   author: `@de_wocracy`,
