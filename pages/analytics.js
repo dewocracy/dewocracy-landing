@@ -11,9 +11,8 @@ import { OutboundLink } from "../utils/OutboundLink";
 
 
 
-function Neighbourhoods() {
+function Analytics() {
     const router = useRouter()
-
     const t = useTranslations("analytics");
 
     return (
@@ -114,4 +113,4 @@ export function getStaticProps({ locale }) {
     };
 }
 
-export default Neighbourhoods;
+export default Analytics

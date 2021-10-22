@@ -165,7 +165,7 @@ function IndexPage() {
                 <Image
                   className="object-contain"
                   src="/images/remote_office_home.png"
-                  alt="Screenshot Neighbourhoods"
+                  alt="Screenshot Neighborhoods "
                   layout="fill"
                   placeholder="blur"
                   blurDataURL={`/_next/image?url=/images/remote_office_home.png&w=16&q=1`} />
@@ -175,23 +175,23 @@ function IndexPage() {
 
               <div className="md:ml-12 lg:ml-16 mt-12 md:w-2/5 flex flex-col md:pr-8">
                 <h2 className="font-bold text-primary-800	text-3xl pb-8  lg:pt-8 text-center md:text-left">
-                  {t('title_neighbourhoods')}
+                  {t('title_neighborhoods ')}
                 </h2>
 
                 <p className=" text-xl">
-                  {t('description_neighbourhoods')}
+                  {t('description_neighborhoods ')}
                 </p>
 
                 <div className="mt-4  text-xl text-primary-800">
-                  <Link href="/neighbourhoods" passHref>
+                  <Link href="/neighborhoods " passHref>
                     <OutboundLink eventProperties={{ location: "home-neighbourhood-box" }} className="border-b-2 pb-1 hover:border-black text-primary-400 hover:text-black leading-8	 	transition-all  ">
-                      {t('more_about_neighbourhoods')}
+                      {t('more_about_neighborhoods ')}
                     </OutboundLink>
                   </Link>
                 </div>
                 <div className="mt-12">
                   <OutboundLink eventProperties={{ location: "home-neighbourhood-box" }} href="https://calendly.com/dewocracylabs/dewocracy-demo" className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline ">
-                    {t('neighbourhoods_button')}
+                    {t('neighborhoods _button')}
                   </OutboundLink>
                 </div>
               </div>
