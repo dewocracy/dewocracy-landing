@@ -245,8 +245,9 @@ function Header() {
           target="_blank"
           title="Whatsapp"
           className="block mt-3 px-4 "
-        >
+            >
           <FontAwesomeIcon
+                size="2x"
             icon={faWhatsapp}
             className="text-black    hover:text-primary-400 transition-colors duration-150 text-3xl"
           />
