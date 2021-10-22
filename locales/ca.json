@@ -42,7 +42,7 @@
   },
   "contact_form": {
     "title": "T'interessa? Contacta amb nosaltres!",
-    "videocall_link": "agendar una videotrucada",
+    "videocall_link": "concertar una videotrucada",
     "contact": "contactar amb nosaltres",
     "description": "Pots {link}, {contact} o escriure'ns a través del formulari de contacte.",
     "company_label": "Empresa",
