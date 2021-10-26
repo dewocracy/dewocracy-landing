@@ -244,7 +244,7 @@ function Header() {
           rel="noreferrer noopener"
           target="_blank"
           title="Whatsapp"
-          className="block mt-3 px-4 "
+              className="text-3xl block mt-3 px-4 "
         >
           <FontAwesomeIcon
             icon={faWhatsapp}
