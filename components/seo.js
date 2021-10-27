@@ -28,6 +28,7 @@ function SEO({ description, title, url, image }) {
       <meta property="twitter:description" content={fullDescription} />
       <meta property="og:url" content={fullURL} />
       <meta name="image" property="og:image" content={fullImage} />
+      <meta property="og:image" content={fullImage} />
       <meta name="twitter:card" content="summary_large_image" />
       <link rel="canonical" href={fullURL} />
       <meta property="og:type" content="website" />
