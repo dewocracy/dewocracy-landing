@@ -244,7 +244,7 @@ function IndexPage() {
 
           <section className="container  mx-auto mr-3 2xl:mr-auto  md:mt-4 ">
             <div className=" flex flex-col md:pr-8">
-              <h2 className="font-bold text-primary-800 text-3xl pb-8 pt-24 ">
+              <h2 className="font-bold md:text-center  text-primary-800 text-3xl pb-8 pt-24 ">
                 {t('title_reports')}
               </h2>
 
@@ -253,7 +253,7 @@ function IndexPage() {
                   {t('description_reports')}
                 </p>
               </div>
-              <div className="mt-8 mb-8 text-xl   text-primary-800">
+              <div className="mt-8 mb-8 text-xl md:text-center   text-primary-800">
                 <Link href="/analytics" passHref>
                   <OutboundLink eventProperties={{ location: "home-analytics-box" }} className="border-b-2 pb-1 hover:border-black text-primary-400 hover:text-black leading-8 	transition-all  ">
                     {t('more_about_reports')}
