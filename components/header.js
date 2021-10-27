@@ -22,7 +22,7 @@ function Header() {
     <header
       id="header"
       className=" w-full flex md:grid-cols-3 items-start lg:items-center lg:justify-between content-start px-16  md:py-4
-        bg-white h-18 sticky top-0 z-50 transition pb-4 pt-1 md:pt-6 pl-4 lg:pl-16 "
+        bg-white h-12 md:h-18 sticky top-0 z-50 transition pb-2 md:pb-4 pt-2 md:pt-6 pl-4 lg:pl-16 "
     >
 
       <div className="lg:hidden pr-0 w-full  ">
