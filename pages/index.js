@@ -120,7 +120,7 @@ function IndexPage() {
           <section className="  md:mt-48 lg:mt-0 text-center md:text-left container  mx-auto ">
             <div className="flex flex-col md:flex-row">
               <div className="md:w-3/5 flex flex-col md:pr-8">
-                <h2 className="font-bold text-primary-800	text-3xl pb-2 md:pb-8 pt-12 lg:pt-24 text-center md:text-left">
+                <h2 className="font-bold text-primary-800	text-3xl pb-8 pt-12 lg:pt-24 text-center md:text-left">
                   {t('title_hotdesking')}
                 </h2>
 
@@ -161,7 +161,7 @@ function IndexPage() {
 
             <div className="flex flex-col-reverse md:flex-row">
 
-              <div className="relative mt-12 md:mt-0 w-3/5 ml-2 lg:ml-0 h-md md:h-96  ">
+              <div className="relative mt-12 md:mt-0 md:w-3/5 ml-2 lg:ml-0 h-md md:h-96  ">
                 <Image
                   className="object-contain"
                   src="/images/remote_office_home.png"
@@ -204,7 +204,7 @@ function IndexPage() {
           <section className="text-center md:text-left container  mx-auto lg:mr-3 2xl:mr-auto mt-8 lg:mt-18 ">
             <div className="flex flex-col md:flex-row">
               <div className="md:w-3/5 flex flex-col md:pr-8">
-                <h2 className="font-bold text-primary-800	text-3xl pb-2 md:pb-8 pt-4 lg:pt-24 text-center md:text-left">
+                <h2 className="font-bold text-primary-800	text-3xl pb-8 pt-4 lg:pt-24 text-center md:text-left">
                   {t('title_manage')}
                 </h2>
 
@@ -219,7 +219,7 @@ function IndexPage() {
                     </OutboundLink>
                   </Link>
                 </div>
-                <div className="mt-12">
+                <div className="mt-12 mb-12 md:mb-0">
                   <Link href="https://app.dewocracy.com/register/free" passHref >
                     <OutboundLink eventProperties={{ location: "home-manaage-remotework-box" }} className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline ">
                       {t('manage_button')}
@@ -243,13 +243,13 @@ function IndexPage() {
           </section>
 
           <section className="container  mx-auto mr-3 2xl:mr-auto  md:mt-4 ">
-            <div className=" flex flex-col pr-8">
-              <h2 className="font-bold text-primary-800 text-3xl pb-2 md:pb-8 pt-24 text-center">
+            <div className=" flex flex-col md:pr-8">
+              <h2 className="font-bold text-primary-800 text-3xl pb-8 pt-24 text-center">
                 {t('title_reports')}
               </h2>
 
               <div className="flex justify-center">
-                <p className=" w-3/5 text-xl text-center">
+                <p className=" md:w-3/5 text-xl text-center">
                   {t('description_reports')}
                 </p>
               </div>
