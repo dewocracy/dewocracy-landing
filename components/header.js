@@ -166,12 +166,12 @@ function Header() {
 
               <Image
                 className="object-contain"
-                src="/images/logo-medium-blue.png"
+                    src="/images/dewocracy-blue.svg"
                 alt="DeWocracy logo"
                     width="160px"
                     height="30px"
                 placeholder="blur"
-                blurDataURL={`/_next/image?url=/images/logo-medium-blue.png&w=16&q=1`} />
+                    blurDataURL={`/_next/image?url=/images/dewocracy-blue.svg&w=16&q=1`} />
 
 
             </div>
