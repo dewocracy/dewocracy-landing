@@ -25,10 +25,10 @@ export const ContactForm = () => {
 
   return (
     <>
-      <h2 className="font-bold text-primary-800 text-3xl lg:text-3xl text-center py-16 lg:pt-24">
+      <h2 className="font-bold text-primary-800 text-3xl lg:text-3xl text-left md:text-center py-6 md:py-16 lg:pt-24">
         {t('title')}
       </h2>
-      <p key="leading-8 description" className="md:px-24 pb-5 mb-12 text-center text-xl text-primary-800">
+      <p key="leading-8 description" className="md:px-24 pb-5 mb-12 text-left md:text-center text-xl text-primary-800">
         {t.rich('description', {
           link: <OutboundLink
             eventProperties={{ location: "form description" }}

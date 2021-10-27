@@ -12,13 +12,13 @@ export const PaymentsPlans = () => {
     <div className="relative z-10">
 
 
-      <h2 className="text-2xl pt-24 text-center md:text-left">
+      <h2 className="text-2xl pt-24 text-left">
         {t('title')}
 
       </h2>
 
 
-      <h2 className="pt-4 font-bold text-4xl pb-8 text-center md:text-left">
+      <h2 className="pt-4 font-bold text-4xl pb-8 text-left">
         {t('title_question')}
       </h2>
 

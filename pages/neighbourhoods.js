@@ -37,7 +37,7 @@ function Neighbourhoods() {
                     image="neighbourhoods"
                 />
                 <div className="flex justify-center mt-12">
-                    <div className=" max-w-3xl">
+                    <div className=" max-w-3xl  px-8 md:mx-0">
                         <h1 className="font-bold my-12 text-primary-800 text-3xl text-left">{t('title')}</h1>
                         <section className=" max-w-2xl pb-12 text-primary-800 rounded-2xl  text-xl ">
                             <div className=" flex flex-col">
