@@ -117,18 +117,18 @@ function IndexPage() {
         </div>
 
         <div className="w-full py-16 md:py-48  lg:py-24">
-          <section className="  md:mt-48 lg:mt-0 text-center md:text-left container  mx-auto ">
+          <section className="text-center md:mt-48 lg:mt-0  md:text-left container  mx-auto ">
             <div className="flex flex-col md:flex-row">
               <div className="md:w-3/5 flex flex-col md:pr-8">
-                <h2 className="font-bold text-primary-800	text-3xl pb-2 md:pb-8 pt-12 lg:pt-24 text-center md:text-left">
+                <h2 className="text-left font-bold text-primary-800	text-3xl pb-8 pt-12 lg:pt-24  md:text-left">
                   {t('title_hotdesking')}
                 </h2>
 
-                <p className=" text-xl">
+                <p className="text-left text-xl">
                   {t('description_hotdesking')}
                 </p>
 
-                <div className="	mt-4 text-xl text-primary-800">
+                <div className="text-left	mt-4 text-xl text-primary-800">
                   <Link href="/hotdesking" passHref>
                     <OutboundLink eventProperties={{ location: "home-hotdesking-box" }} className="border-b-2 pb-1 hover:border-black text-primary-400 hover:text-black leading-8 	transition-all  ">
                       {t('more_about_hotdesking')}
@@ -161,7 +161,7 @@ function IndexPage() {
 
             <div className="flex flex-col-reverse md:flex-row">
 
-              <div className="relative mt-12 md:mt-0 w-3/5 ml-2 lg:ml-0 h-md md:h-96  ">
+              <div className="relative mt-12 md:mt-0 md:w-3/5 ml-2 lg:ml-0 h-md md:h-96  ">
                 <Image
                   className="object-contain"
                   src="/images/remote_office_home.png"
@@ -173,17 +173,18 @@ function IndexPage() {
               </div>
 
 
-              <div className="md:ml-12 lg:ml-16 mt-12 md:w-2/5 flex flex-col md:pr-8">
-                <h2 className="font-bold text-primary-800	text-3xl pb-8  lg:pt-8 text-center md:text-left">
-                  {t('title_neighborhoods ')}
+
+              <div className="text-center  md:ml-12 lg:ml-16 mt-12 md:w-2/5 flex flex-col md:pr-8">
+                <h2 className="font-bold text-left text-primary-800	text-3xl pb-8  lg:pt-8  md:text-left">
+                  {t('title_neighbourhoods')}
                 </h2>
 
-                <p className=" text-xl">
-                  {t('description_neighborhoods ')}
+                <p className="text-left  text-xl">
+                  {t('description_neighbourhoods')}
                 </p>
 
-                <div className="mt-4  text-xl text-primary-800">
-                  <Link href="/neighborhoods " passHref>
+                <div className="mt-4 text-left  text-xl text-primary-800">
+                  <Link href="/neighbourhoods" passHref>
                     <OutboundLink eventProperties={{ location: "home-neighbourhood-box" }} className="border-b-2 pb-1 hover:border-black text-primary-400 hover:text-black leading-8	 	transition-all  ">
                       {t('more_about_neighborhoods ')}
                     </OutboundLink>
@@ -204,22 +205,22 @@ function IndexPage() {
           <section className="text-center md:text-left container  mx-auto lg:mr-3 2xl:mr-auto mt-8 lg:mt-18 ">
             <div className="flex flex-col md:flex-row">
               <div className="md:w-3/5 flex flex-col md:pr-8">
-                <h2 className="font-bold text-primary-800	text-3xl pb-2 md:pb-8 pt-4 lg:pt-24 text-center md:text-left">
+                <h2 className="text-left font-bold text-primary-800	text-3xl pb-8 pt-4 lg:pt-24  md:text-left">
                   {t('title_manage')}
                 </h2>
 
-                <p className=" text-xl">
+                <p className="text-left  text-xl">
                   {t('description_manage')}
                 </p>
 
-                <div className="mt-4 text-xl  text-primary-800">
+                <div className="text-left mt-4 text-xl  text-primary-800">
                   <Link href="/manage-remotework" passHref>
                     <OutboundLink eventProperties={{ location: "home-manaage-remotework-box" }} className="border-b-2 pb-1 hover:border-black text-primary-400 hover:text-black leading-8 	transition-all  ">
                       {t('more_about_manage')}
                     </OutboundLink>
                   </Link>
                 </div>
-                <div className="mt-12">
+                <div className="mt-12 mb-12 md:mb-0">
                   <Link href="https://app.dewocracy.com/register/free" passHref >
                     <OutboundLink eventProperties={{ location: "home-manaage-remotework-box" }} className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline ">
                       {t('manage_button')}
@@ -243,17 +244,17 @@ function IndexPage() {
           </section>
 
           <section className="container  mx-auto mr-3 2xl:mr-auto  md:mt-4 ">
-            <div className=" flex flex-col pr-8">
-              <h2 className="font-bold text-primary-800 text-3xl pb-2 md:pb-8 pt-24 text-center">
+            <div className=" flex flex-col md:pr-8">
+              <h2 className="font-bold md:text-center  text-primary-800 text-3xl pb-8 pt-24 ">
                 {t('title_reports')}
               </h2>
 
               <div className="flex justify-center">
-                <p className=" w-3/5 text-xl text-center">
+                <p className=" md:w-3/5 text-xl ">
                   {t('description_reports')}
                 </p>
               </div>
-              <div className="mt-8 mb-8 text-xl text-center  text-primary-800">
+              <div className="mt-8 mb-8 text-xl md:text-center   text-primary-800">
                 <Link href="/analytics" passHref>
                   <OutboundLink eventProperties={{ location: "home-analytics-box" }} className="border-b-2 pb-1 hover:border-black text-primary-400 hover:text-black leading-8 	transition-all  ">
                     {t('more_about_reports')}

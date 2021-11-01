@@ -217,7 +217,7 @@ export const SavingsCalculator = () => {
       {({ instrument, logEvent }) => (
       <div className="md:grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-24 ">
         <div className="grid text-primary-800 content-start justify-center md:mt-10   xl:p-8">
-          <label htmlFor="employees" className="font-bold pr-4 pb-4 text-2xl text-center">
+            <label htmlFor="employees" className="pr-4 pb-4 text-xl text-center">
             {t('employees_text')}
           </label>
           <input
@@ -231,7 +231,7 @@ export const SavingsCalculator = () => {
               onChange={(e) => handleEmployeesChange(logEvent, e)}
             value={employees}
           />
-          <label htmlFor="sizeOffice" className="font-bold pr-4 pt-10 pb-4 text-2xl text-center">
+            <label htmlFor="sizeOffice" className=" pr-4 pt-10 pb-4 text-xl text-center">
             {t('square_meters_text')}
           </label>
           <input
@@ -245,7 +245,7 @@ export const SavingsCalculator = () => {
             value={officeSize}
             max={10000}
           />
-          <label htmlFor="target" className="font-bold pr-4 pt-10 pb-4 text-2xl text-center">
+            <label htmlFor="target" className="pr-4 pt-10 pb-4 text-xl text-center">
             {t('percentage_text')}
           </label>
           <input
@@ -257,7 +257,7 @@ export const SavingsCalculator = () => {
               onChange={(e) => handleTargetChange(logEvent, e)}
             value={target}
           />
-          <p className="text-center text-2xl font-bold text-primary-800 pt-10">
+            <p className="text-center font-bold text-xl  text-primary-800 pt-10">
             {t('calculation')}
             <br />
           </p>

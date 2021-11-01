@@ -12,13 +12,13 @@ export const PaymentsPlans = () => {
     <div className="relative z-10">
 
 
-      <h2 className="text-2xl pt-24 text-center md:text-left">
+      <h2 className="text-2xl pt-24 text-left">
         {t('title')}
 
       </h2>
 
 
-      <h2 className="pt-4 font-bold text-4xl pb-8 text-center md:text-left">
+      <h2 className="pt-4 font-bold text-4xl pb-8 text-left">
         {t('title_question')}
       </h2>
 
@@ -112,7 +112,7 @@ export const PaymentsPlans = () => {
             </p>
             <OutboundLink
               eventProperties={{ location: "payment-plans-box" }}
-              className=" mt-4 text-sm   border-b-2 pb-1 hover:border-black text-primary-800 hover:text-black leading-8 "
+              className=" mt-4 text-sm   border-b-2 pb-1 hover:border-black text-primary-400 hover:text-primary-800 leading-8 "
               href="//calendly.com/dewocracylabs/dewocracy-demo" >
               {t('talk_with_an_expert')}
             </OutboundLink>

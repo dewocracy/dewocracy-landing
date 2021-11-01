@@ -46,10 +46,10 @@ export const Footer = () => {
               width="160px"
               height="30px
 "
-              src="/images/logo-medium-blue.png"
+              src="/images/dewocracy-blue.svg"
               alt="Dewocracy Logo"
               placeholder="blur"
-              blurDataURL={`/_next/image?url=/images/logo-medium-blue.png&w=16&q=1`} />
+              blurDataURL={`/_next/image?url=/images/dewocracy-blue.svg&w=16&q=1`} />
           </OutboundLink>
           </Link>
           <div></div>

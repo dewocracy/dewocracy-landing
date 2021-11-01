@@ -22,7 +22,7 @@ function Header() {
     <header
       id="header"
       className=" w-full flex md:grid-cols-3 items-start lg:items-center lg:justify-between content-start px-16  md:py-4
-        bg-white h-18 sticky top-0 z-50 transition pb-4 pt-1 md:pt-6 pl-4 lg:pl-16 "
+        bg-white h-12 md:h-18 sticky top-0 z-50 transition pb-2 md:pb-4 pt-2 md:pt-6 pl-4 lg:pl-16 "
     >
 
       <div className="lg:hidden pr-0 w-full  ">
@@ -43,12 +43,12 @@ function Header() {
           </button>
           <Image
             className="object-contain"
-            src="/images/logo-medium-blue.png"
+            src="/images/dewocracy-blue.svg"
             alt="DeWocracy logo"
             width="160px"
             height="30px"
             placeholder="blur"
-            blurDataURL={`/_next/image?url=/images/logo-medium-blue.png&w=16&q=1`} />
+            blurDataURL={`/_next/image?url=/images/dewocracy-blue.svg&w=16&q=1`} />
         </div>
         <nav
           id="nav-menu-ex-1"
@@ -166,12 +166,12 @@ function Header() {
 
               <Image
                 className="object-contain"
-                src="/images/logo-medium-blue.png"
+                    src="/images/dewocracy-blue.svg"
                 alt="DeWocracy logo"
                     width="160px"
                     height="30px"
                 placeholder="blur"
-                blurDataURL={`/_next/image?url=/images/logo-medium-blue.png&w=16&q=1`} />
+                    blurDataURL={`/_next/image?url=/images/dewocracy-blue.svg&w=16&q=1`} />
 
 
             </div>
@@ -244,8 +244,8 @@ function Header() {
           rel="noreferrer noopener"
           target="_blank"
           title="Whatsapp"
-          className="block mt-3 px-4 "
-            >
+          className="text-3xl block mt-3 px-4 "
+        >
           <FontAwesomeIcon
                 size="2x"
             icon={faWhatsapp}
