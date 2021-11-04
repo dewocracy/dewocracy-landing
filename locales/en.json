@@ -71,10 +71,10 @@
     "link_text": "Explore more features"
   },
 
-  "neighbourhoods": {
+  "neighborhoods ": {
     "title": "Organize the office and your people",
     "text_1": "Organize your office and use your space in an efficient and flexible way.",
-    "text_2": "Create neighborhoods assigning groups of desks to teams or individuals to facilitate team work and face-to-face interaction. Activate and deactivate desks to implement contingency measures derived from the pandemic.",
+    "text_2": "Create neighborhoods assigning groups of desks to teams or individuals to facilitate teamwork and face-to-face interaction. Activate and deactivate desks to implement contingency measures derived from the pandemic.",
     "text_3": "Speak with an expert to start now and know our prices.",
     "button": "Start now",
     "link_text": "Explore more features"
@@ -91,9 +91,9 @@
 
   "analytics": {
     "title": "Analytics and reports",
-    "text_1": "Analyze occupancy, space usage and costs associated to it. Gain insights on your workforce at a group and individual level to ensure compliance with remote work laws.",
+    "text_1": "Analyze occupancy, space usage, and costs associated with it. Gain insights on your workforce at a group and individual level to ensure compliance with remote work laws.",
     "text_2": "With DeWocracy you can historically audit your workforce office attendance and remote work prevalence.",
-    "text_3": "Additionally, with the Pro Office plan you will have access to custom reports with the data you care about in .xls or .csv format.",
+    "text_3": "Additionally, with the Pro Office plan, you will have access to custom reports with the data you care about in .xls or .csv format.",
     "button": "Start now",
     "link_text": "Explore more features"
   },
@@ -139,12 +139,12 @@
     "Privacy policy": "Privacy policy",
     "Cookies policy": "Cookies policy",
     "hotdesking": "Hotdesking",
-    "neighbourhoods": "Neighbourhoods",
-    "manage-remoteworks": "Manage Remotework",
+    "neighborhoods ": "Neighborhoods ",
+    "manage-remoteworks": "Manage remote work",
     "analytics": "Analytics",
     "help": "Help",
     "calculator": "Saving Calculator",
-    "survey": "Remotework Survey",
+    "survey": "Remote work Survey",
     "template": "Remote work management template",
     "access-app": "Access the Web App",
     "appstore": "Download the iOS App",
@@ -167,11 +167,11 @@
     "more_about_hotdesking": "I want to know more about hot desking",
     "hotdesking_button": "Start now",
 
-    "title_neighbourhoods": "Organize the office and your people",
-    "description_neighbourhoods": "Create neighborhoods assigning groups of desks to teams or individuals. Activate and deactivate desks according to your needs.",
+    "title_neighborhoods ": "Organize the office and your people",
+    "description_neighborhoods ": "Create neighborhoods assigning groups of desks to teams or individuals. Activate and deactivate desks according to your needs.",
 
-    "more_about_neighbourhoods": "Tell me more about neighborhoods and teams.",
-    "neighbourhoods_button": "Start now",
+    "more_about_neighborhoods ": "Tell me more about neighborhoods and teams.",
+    "neighborhoods _button": "Start now",
 
     "title_manage": "Manage remote work efficiently ",
     "description_manage": "Set occupancy and remote work limits. Manage office capacity and employee presence through a dynamic workspace calendar.",
@@ -180,7 +180,7 @@
     "manage_button": "Sign up for free",
 
     "title_reports": "Information is power... And money",
-    "description_reports": "Analyze occupancy, space usage and costs associated to it. Gain insights on your workforce at a group and individual level to ensure compliance with remote work laws.",
+    "description_reports": "Analyze occupancy, space usage, and costs associated with it. Gain insights on your workforce at a group and individual level to ensure compliance with remote work laws.",
 
     "more_about_reports": "More details on analytics and reports",
 

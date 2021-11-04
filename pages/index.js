@@ -165,12 +165,13 @@ function IndexPage() {
                 <Image
                   className="object-contain"
                   src="/images/remote_office_home.png"
-                  alt="Screenshot Neighbourhoods"
+                  alt="Screenshot Neighborhoods "
                   layout="fill"
                   placeholder="blur"
                   blurDataURL={`/_next/image?url=/images/remote_office_home.png&w=16&q=1`} />
 
               </div>
+
 
 
               <div className="text-center  md:ml-12 lg:ml-16 mt-12 md:w-2/5 flex flex-col md:pr-8">
@@ -185,13 +186,13 @@ function IndexPage() {
                 <div className="mt-4 text-left  text-xl text-primary-800">
                   <Link href="/neighbourhoods" passHref>
                     <OutboundLink eventProperties={{ location: "home-neighbourhood-box" }} className="border-b-2 pb-1 hover:border-black text-primary-400 hover:text-black leading-8	 	transition-all  ">
-                      {t('more_about_neighbourhoods')}
+                      {t('more_about_neighborhoods ')}
                     </OutboundLink>
                   </Link>
                 </div>
                 <div className="mt-12">
                   <OutboundLink eventProperties={{ location: "home-neighbourhood-box" }} href="https://calendly.com/dewocracylabs/dewocracy-demo" className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline ">
-                    {t('neighbourhoods_button')}
+                    {t('neighborhoods _button')}
                   </OutboundLink>
                 </div>
               </div>

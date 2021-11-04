@@ -11,7 +11,7 @@ import { useRouter } from "next/router"
 import { OutboundLink } from "../utils/OutboundLink";
 
 
-function Neighbourhoods() {
+function ManageRemoteWork() {
     const t = useTranslations("manage_remotework");
     const router = useRouter()
 
@@ -113,4 +113,4 @@ export function getStaticProps({ locale }) {
     };
 }
 
-export default Neighbourhoods;
+export default ManageRemoteWork

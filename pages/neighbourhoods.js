@@ -12,8 +12,8 @@ import { OutboundLink } from "../utils/OutboundLink";
 
 
 
-function Neighbourhoods() {
-    const t = useTranslations("neighbourhoods");
+function Neighborhoods() {
+    const t = useTranslations("neighborhoods ");
     const router = useRouter()
 
     return (
@@ -22,7 +22,7 @@ function Neighbourhoods() {
                 ...inheritedProps,
                 page: {
                     ...inheritedProps.page,
-                    name: 'neighbourhoods page',
+                    name: 'neighborhoods  page',
                     language: router.locale,
                     path: router.pathname
                 },
@@ -34,7 +34,7 @@ function Neighbourhoods() {
                 <SEO
                     description={t('text_1')}
                     title={`${t('title')} | DeWocracy - Flexible Remote Work`}
-                    image="neighbourhoods"
+                    image="neighborhoods "
                 />
                 <div className="flex justify-center mt-12">
                     <div className=" max-w-3xl  px-8 md:mx-0">
@@ -127,4 +127,4 @@ export function getStaticProps({ locale }) {
     };
 }
 
-export default Neighbourhoods;
+export default Neighborhoods

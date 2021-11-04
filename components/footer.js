@@ -123,7 +123,7 @@ export const Footer = () => {
               <Link href="/hotdesking" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('hotdesking')}</OutboundLink></Link>
             </li>
             <li className="hover:text-primary-800">
-              <Link href="/neighbourhoods" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('neighbourhoods')}</OutboundLink></Link>
+              <Link href="/neighborhoods " passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('neighborhoods ')}</OutboundLink></Link>
             </li>
             <li className="hover:text-primary-800 mr-7">
               <Link href="/manage-remotework" passHref><OutboundLink eventProperties={{ location: "footer" }}>{t('manage-remoteworks')}</OutboundLink></Link>
