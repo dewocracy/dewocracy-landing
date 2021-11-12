@@ -186,13 +186,13 @@ function IndexPage() {
                 <div className="mt-4 text-left  text-xl text-primary-800">
                   <Link href="/neighbourhoods" passHref>
                     <OutboundLink eventProperties={{ location: "home-neighbourhood-box" }} className="border-b-2 pb-1 hover:border-black text-primary-400 hover:text-black leading-8	 	transition-all  ">
-                      {t('more_about_neighborhoods ')}
+                      {t('more_about_neighborhoods')}
                     </OutboundLink>
                   </Link>
                 </div>
                 <div className="mt-12">
                   <OutboundLink eventProperties={{ location: "home-neighbourhood-box" }} href="https://calendly.com/dewocracylabs/dewocracy-demo" className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline ">
-                    {t('neighborhoods _button')}
+                    {t('neighborhoods_button')}
                   </OutboundLink>
                 </div>
               </div>
