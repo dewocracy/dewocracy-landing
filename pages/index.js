@@ -176,11 +176,11 @@ function IndexPage() {
 
               <div className="text-center  md:ml-12 lg:ml-16 mt-12 md:w-2/5 flex flex-col md:pr-8">
                 <h2 className="font-bold text-left text-primary-800	text-3xl pb-8  lg:pt-8  md:text-left">
-                  {t('title_neighbourhoods')}
+                  {t('title_neighborhoods')}
                 </h2>
 
                 <p className="text-left  text-xl">
-                  {t('description_neighbourhoods')}
+                  {t('description_neighborhoods')}
                 </p>
 
                 <div className="mt-4 text-left  text-xl text-primary-800">
