@@ -78,7 +78,7 @@ function IndexPage() {
                   {t('implement_flexible_remote_work')}
                 </h1>
                 <p className="text-2xl text-white py-8 md:py-4 md:pb-12 md:pr-24">
-                  <strong className="pr-2">DeWocracy</strong>{t('Save thousands of euros')}
+                  {t('Save thousands of euros')}
                 </p>
                 <div className="grid  grid-cols-1 sm:grid-cols-2 md:gap-8 mt-6 md:mt-0 mr-4 md:mr-0">
 
