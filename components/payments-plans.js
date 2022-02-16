@@ -96,7 +96,7 @@ export const PaymentsPlans = () => {
             eventType="signup" eventProperties={{ plan: "free", location: "plan listing" }}
 
             className="shadow-2xl h-16 bg-primary-400 hover:bg-primary-800 text-white  pt-4  text-lg  transition-colors duration-500  rounded-full py-4 px-4 xl:px-8 text-center focus:shadow-outline"
-            href="https://app.dewocracy.com/register/free"
+            href="https://app.dewocracy.com/auth/register/basic"
           >
             {t('start_free')}
           </OutboundLink>

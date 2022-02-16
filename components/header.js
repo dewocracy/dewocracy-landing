@@ -74,7 +74,7 @@ function Header() {
           <OutboundLink eventProperties={{ location: "top navbar", device: "mobile" }}
 
             className="block  hover:text-primary-400"
-            href="https://app.dewocracy.com/register/free"
+            href="https://app.dewocracy.com/auth/register/basic"
             onClick={handleClickSubmenu}
           >
             {t('sign_up')}
@@ -255,7 +255,7 @@ function Header() {
           eventType="signup" eventProperties={{ plan: "free", location: "top navbar" }}
           className="shadow-2xl  bg-primary-400 hover:bg-primary-800 text-white    text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline "
 
-          href="https://app.dewocracy.com/register/free"
+          href="https://app.dewocracy.com/auth/register/basic"
         >
           {t('sign_up')}
         </OutboundLink>

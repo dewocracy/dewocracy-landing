@@ -85,7 +85,7 @@ function IndexPage() {
                   <OutboundLink
                     eventProperties={{ location: "home button" }}
                     className="text-center shadow-2xl sm:ml-4  md:ml-0 md:mt-0 hover:text-white bg-white text-primary-800  md:border-0 mt-8 mr-2 md:mr-0   hover:bg-primary-800  md:bg-white   text-xl  transition-colors duration-500 rounded-full py-4 px-4 xl:px-8  focus:shadow-outline"
-                    href="//app.dewocracy.com/register/free"
+                    href="//app.dewocracy.com/auth/register/basic"
                     rel="noreferrer noopener" target="_blank"
                   >
                     {t('Sign up for free')}
@@ -221,7 +221,7 @@ function IndexPage() {
                   </Link>
                 </div>
                 <div className="mt-12 mb-12 md:mb-0">
-                  <Link href="https://app.dewocracy.com/register/free" passHref >
+                  <Link href="https://app.dewocracy.com/auth/register/basic" passHref >
                     <OutboundLink eventProperties={{ location: "home-manaage-remotework-box" }} className="shadow-2xl mt-4 bg-primary-400 hover:bg-primary-800 text-white   text-lg  transition-colors duration-150  rounded-full py-4 px-4 xl:px-8 focus:shadow-outline ">
                       {t('manage_button')}
                     </OutboundLink>
