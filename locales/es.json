@@ -22,14 +22,16 @@
     "title": "Planes y precios",
 
     "title_question": "Selecciona el plan para tu empresa",
+    "per_year": "Año / Usuario",
 
     "free_plan_title": "Oficina Básica",
     "business_plan_title": "Oficina Pro",
-    "explore": "Explora",
+    "explore": "Pruébalo Gratis",
     "start_free": "Empieza gratis",
     "guidance": "Acompañamiento en todo el proceso.",
     "half_yearly_cost": "Semestral - hasta un 28% de ahorro",
     "monthly_cost": "Mensual",
+    "yearly_cost": "Anual", 
     "free_cost": "Free",
     "per_month": "Mes / Usuario",
     "single_admin": "1 administrador.",
