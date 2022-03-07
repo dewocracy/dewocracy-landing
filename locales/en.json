@@ -22,6 +22,7 @@
     "title": "Plans and pricing",
 
     "title_question": "Choose a plan for your company.",
+    "per_year": "Year / User",
 
     "calendar": "Workspace calendar.",
     "limits": "Occupancy & remote work limits.",
@@ -29,10 +30,12 @@
     "interative_map": "Interactive map.",
     "reports": "Custom reports.",
     "talk_with_an_expert": "  Speak with an expert",
+    "yearly_cost": "Yearly", 
+    "monthly_cost": "Monthly", 
 
     "free_plan_title": "Basic Office",
     "business_plan_title": "Pro Office ",
-    "explore": "Explore",
+    "explore": "Try it for free",
     "start_free": "Start for free",
     "free_cost": "Free",
     "per_month": "Month / User",
